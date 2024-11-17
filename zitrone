@@ -1,0 +1,2 @@
+local clientId = game:GetService("RbxAnalyticsService"):GetClientId()
+print("key=" .. clientId)
