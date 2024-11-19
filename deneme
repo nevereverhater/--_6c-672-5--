@@ -1,0 +1,4010 @@
+-- // GUI TO LUA \\ --
+
+-- // INSTANCES: 257 | SCRIPTS: 50 | MODULES: 0 \\ --
+
+local UI = {}
+
+-- // StarterGui.prof \\ --
+UI["1"] = Instance.new("ScreenGui", game:GetService("CoreGui")["remake ui"].ImageLabel)
+UI["1"]["Name"] = [[prof]]
+UI["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling
+UI["1"]["ResetOnSpawn"] = false
+
+-- // StarterGui.prof.profile_panel \\ --
+UI["2"] = Instance.new("ImageButton", UI["1"])
+UI["2"]["BorderSizePixel"] = 0
+UI["2"]["AutoButtonColor"] = false
+UI["2"]["ImageTransparency"] = 0.5
+UI["2"]["BackgroundColor3"] = Color3.fromRGB(13, 13, 13)
+UI["2"]["ZIndex"] = 3
+UI["2"]["AnchorPoint"] = Vector2.new(0.5, 0.5)
+UI["2"]["Image"] = [[rbxassetid://16286761786]]
+UI["2"]["Size"] = UDim2.new(0.28967, 0, 1.00134, 0)
+UI["2"]["BackgroundTransparency"] = 0.85
+UI["2"]["Name"] = [[profile_panel]]
+UI["2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["2"]["Visible"] = false
+UI["2"]["Position"] = UDim2.new(0.58821, 0, 0.49651, 0)
+
+-- // StarterGui.prof.profile_panel.frame \\ --
+UI["3"] = Instance.new("ImageButton", UI["2"])
+UI["3"]["BorderSizePixel"] = 0
+UI["3"]["SliceCenter"] = Rect.new(512, 512, 512, 512)
+UI["3"]["AutoButtonColor"] = false
+UI["3"]["SliceScale"] = 0.1
+UI["3"]["ScaleType"] = Enum.ScaleType.Slice
+UI["3"]["ImageTransparency"] = 0.1
+UI["3"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0)
+UI["3"]["ImageColor3"] = Color3.fromRGB(71, 71, 71)
+UI["3"]["Selectable"] = false
+UI["3"]["AnchorPoint"] = Vector2.new(0.5, 0.5)
+UI["3"]["Image"] = [[rbxassetid://16286719854]]
+UI["3"]["Size"] = UDim2.new(0.1, 300, 0.54854, 160)
+UI["3"]["BackgroundTransparency"] = 1
+UI["3"]["Name"] = [[frame]]
+UI["3"]["ClipsDescendants"] = true
+UI["3"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["3"]["Position"] = UDim2.new(0.5, 0, 0.50643, 0)
+
+-- // StarterGui.prof.profile_panel.frame.shadow \\ --
+UI["4"] = Instance.new("ImageLabel", UI["3"])
+UI["4"]["ZIndex"] = -10
+UI["4"]["BorderSizePixel"] = 0
+UI["4"]["SliceCenter"] = Rect.new(512, 512, 512, 512)
+UI["4"]["SliceScale"] = 0.19
+UI["4"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["4"]["ScaleType"] = Enum.ScaleType.Slice
+UI["4"]["ImageTransparency"] = 0.5
+UI["4"]["AnchorPoint"] = Vector2.new(0.5, 0.5)
+UI["4"]["Image"] = [[rbxassetid://16286730454]]
+UI["4"]["Size"] = UDim2.new(1, 110, 1, 110)
+UI["4"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["4"]["BackgroundTransparency"] = 1
+UI["4"]["Rotation"] = 0.0001
+UI["4"]["Name"] = [[shadow]]
+UI["4"]["Position"] = UDim2.new(-1.36783, 0, -0.50616, 0)
+
+-- // StarterGui.prof.profile_panel.frame.prism \\ --
+UI["5"] = Instance.new("ImageLabel", UI["3"])
+UI["5"]["ZIndex"] = -10
+UI["5"]["BorderSizePixel"] = 0
+UI["5"]["SliceCenter"] = Rect.new(512, 512, 512, 512)
+UI["5"]["SliceScale"] = 0.19
+UI["5"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0)
+UI["5"]["ScaleType"] = Enum.ScaleType.Crop
+UI["5"]["ImageTransparency"] = 0.8
+UI["5"]["ImageColor3"] = Color3.fromRGB(144, 144, 144)
+UI["5"]["AnchorPoint"] = Vector2.new(0.5, 0.5)
+UI["5"]["Image"] = [[rbxassetid://16255699706]]
+UI["5"]["Size"] = UDim2.new(1, 20, 1.00625, 20)
+UI["5"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["5"]["Rotation"] = 0.0001
+UI["5"]["Name"] = [[prism]]
+UI["5"]["Position"] = UDim2.new(0.5, 0, 0.50133, 0)
+
+-- // StarterGui.prof.profile_panel.frame.prism.corner \\ --
+UI["6"] = Instance.new("UICorner", UI["5"])
+UI["6"]["Name"] = [[corner]]
+UI["6"]["CornerRadius"] = UDim.new(0, 27)
+
+-- // StarterGui.prof.profile_panel.frame.prism.stroke \\ --
+UI["7"] = Instance.new("UIStroke", UI["5"])
+UI["7"]["Transparency"] = 0.85
+UI["7"]["Name"] = [[stroke]]
+UI["7"]["Color"] = Color3.fromRGB(255, 255, 255)
+
+-- // StarterGui.prof.profile_panel.frame.scroll \\ --
+UI["8"] = Instance.new("ScrollingFrame", UI["3"])
+UI["8"]["Active"] = true
+UI["8"]["ScrollingDirection"] = Enum.ScrollingDirection.Y
+UI["8"]["BorderSizePixel"] = 0
+UI["8"]["CanvasSize"] = UDim2.new(0, 0, 0, 0)
+UI["8"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["8"]["Name"] = [[scroll]]
+UI["8"]["ScrollBarImageTransparency"] = 0.8
+UI["8"]["AnchorPoint"] = Vector2.new(0.5, 1)
+UI["8"]["AutomaticCanvasSize"] = Enum.AutomaticSize.Y
+UI["8"]["ClipsDescendants"] = false
+UI["8"]["Size"] = UDim2.new(1, 0, 1, -60)
+UI["8"]["Position"] = UDim2.new(0.5, 0, 1, -10)
+UI["8"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["8"]["ScrollBarThickness"] = 2
+UI["8"]["BackgroundTransparency"] = 1
+
+-- // StarterGui.prof.profile_panel.frame.scroll.details \\ --
+UI["9"] = Instance.new("Frame", UI["8"])
+UI["9"]["BorderSizePixel"] = 0
+UI["9"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["9"]["Size"] = UDim2.new(1, 0, 0, 170)
+UI["9"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["9"]["Name"] = [[details]]
+UI["9"]["LayoutOrder"] = 1
+UI["9"]["BackgroundTransparency"] = 1
+
+-- // StarterGui.prof.profile_panel.frame.scroll.details.profile \\ --
+UI["a"] = Instance.new("ImageLabel", UI["9"])
+UI["a"]["BorderSizePixel"] = 0
+UI["a"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0)
+UI["a"]["ScaleType"] = Enum.ScaleType.Fit
+UI["a"]["ImageTransparency"] = 0.05
+UI["a"]["ImageColor3"] = Color3.fromRGB(117, 117, 117)
+UI["a"]["Image"] = [[rbxassetid://111073133971859]]
+UI["a"]["Size"] = UDim2.new(0, 100, 0, 100)
+UI["a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["a"]["BackgroundTransparency"] = 1
+UI["a"]["Name"] = [[profile]]
+UI["a"]["Position"] = UDim2.new(0, 174, 0, 5)
+
+-- // StarterGui.prof.profile_panel.frame.scroll.details.profile.corner \\ --
+UI["b"] = Instance.new("UICorner", UI["a"])
+UI["b"]["Name"] = [[corner]]
+UI["b"]["CornerRadius"] = UDim.new(1, 0)
+
+-- // StarterGui.prof.profile_panel.frame.scroll.details.list \\ --
+UI["c"] = Instance.new("UIListLayout", UI["9"])
+UI["c"]["HorizontalAlignment"] = Enum.HorizontalAlignment.Center
+UI["c"]["Padding"] = UDim.new(0, 5)
+UI["c"]["SortOrder"] = Enum.SortOrder.LayoutOrder
+UI["c"]["Name"] = [[list]]
+
+-- // StarterGui.prof.profile_panel.frame.scroll.details.display_name \\ --
+UI["d"] = Instance.new("TextLabel", UI["9"])
+UI["d"]["BorderSizePixel"] = 0
+UI["d"]["TextYAlignment"] = Enum.TextYAlignment.Bottom
+UI["d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["d"]["TextSize"] = 18
+UI["d"]["FontFace"] = Font.new([[rbxassetid://12187365364]], Enum.FontWeight.Medium, Enum.FontStyle.Normal)
+UI["d"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["d"]["BackgroundTransparency"] = 1
+UI["d"]["Size"] = UDim2.new(1, 0, 0, 25)
+UI["d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["d"]["Text"] = [[Emergency Hamburg]]
+UI["d"]["Name"] = [[display_name]]
+UI["d"]["Position"] = UDim2.new(-0.31648, 0, 1.85294, 0)
+
+-- // StarterGui.prof.profile_panel.frame.scroll.details.username \\ --
+UI["e"] = Instance.new("TextLabel", UI["9"])
+UI["e"]["BorderSizePixel"] = 0
+UI["e"]["TextTransparency"] = 0.5
+UI["e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["e"]["TextSize"] = 15
+UI["e"]["FontFace"] = Font.new([[rbxassetid://12187365364]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["e"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["e"]["BackgroundTransparency"] = 1
+UI["e"]["Size"] = UDim2.new(1, 0, 0, 15)
+UI["e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["e"]["Text"] = [[@KanistayScripting]]
+UI["e"]["Name"] = [[username]]
+UI["e"]["Position"] = UDim2.new(0, 0, 0.88235, 0)
+
+-- // StarterGui.prof.profile_panel.frame.scroll.list \\ --
+UI["f"] = Instance.new("UIListLayout", UI["8"])
+UI["f"]["HorizontalAlignment"] = Enum.HorizontalAlignment.Center
+UI["f"]["Padding"] = UDim.new(0, 9)
+UI["f"]["SortOrder"] = Enum.SortOrder.LayoutOrder
+UI["f"]["Name"] = [[list]]
+
+-- // StarterGui.prof.profile_panel.frame.scroll.direct_actions \\ --
+UI["10"] = Instance.new("Frame", UI["8"])
+UI["10"]["BorderSizePixel"] = 0
+UI["10"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["10"]["AnchorPoint"] = Vector2.new(0.5, 0)
+UI["10"]["Size"] = UDim2.new(1, 0, 0, 185)
+UI["10"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["10"]["Name"] = [[direct_actions]]
+UI["10"]["LayoutOrder"] = 2
+UI["10"]["BackgroundTransparency"] = 1
+
+-- // StarterGui.prof.profile_panel.frame.scroll.direct_actions.wespe \\ --
+UI["11"] = Instance.new("ImageButton", UI["10"])
+UI["11"]["BorderSizePixel"] = 0
+UI["11"]["SliceCenter"] = Rect.new(512, 214, 512, 214)
+UI["11"]["SliceScale"] = 0.12
+UI["11"]["ScaleType"] = Enum.ScaleType.Slice
+UI["11"]["ImageTransparency"] = 0.6
+UI["11"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["11"]["ImageColor3"] = Color3.fromRGB(0, 0, 0)
+UI["11"]["LayoutOrder"] = 1
+UI["11"]["Image"] = [[rbxassetid://16287196357]]
+UI["11"]["Size"] = UDim2.new(1, 0, 0, 45)
+UI["11"]["BackgroundTransparency"] = 1
+UI["11"]["Name"] = [[wespe]]
+UI["11"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+
+-- // StarterGui.prof.profile_panel.frame.scroll.direct_actions.wespe.label \\ --
+UI["12"] = Instance.new("TextLabel", UI["11"])
+UI["12"]["TextWrapped"] = true
+UI["12"]["BorderSizePixel"] = 0
+UI["12"]["TextXAlignment"] = Enum.TextXAlignment.Left
+UI["12"]["TextTransparency"] = 0.2
+UI["12"]["TextScaled"] = true
+UI["12"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["12"]["TextSize"] = 16
+UI["12"]["FontFace"] = Font.new([[rbxassetid://12187365364]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["12"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["12"]["BackgroundTransparency"] = 1
+UI["12"]["AnchorPoint"] = Vector2.new(0, 0.5)
+UI["12"]["Size"] = UDim2.new(0.44535, -50, 0.46195, 0)
+UI["12"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["12"]["Text"] = [[WalkSpeed]]
+UI["12"]["Name"] = [[label]]
+UI["12"]["Position"] = UDim2.new(0.05119, 0, 0.51987, 0)
+
+-- // StarterGui.prof.profile_panel.frame.scroll.direct_actions.wespe.buwa \\ --
+UI["13"] = Instance.new("Frame", UI["11"])
+UI["13"]["BorderSizePixel"] = 0
+UI["13"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0)
+UI["13"]["Size"] = UDim2.new(0, 42, 0, 18)
+UI["13"]["Position"] = UDim2.new(0.80209, 0, 0.29207, 0)
+UI["13"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["13"]["Name"] = [[buwa]]
+
+-- // StarterGui.prof.profile_panel.frame.scroll.direct_actions.wespe.buwa.TextButton \\ --
+UI["14"] = Instance.new("TextButton", UI["13"])
+UI["14"]["BorderSizePixel"] = 0
+UI["14"]["TextSize"] = 14
+UI["14"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
+UI["14"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["14"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["14"]["ZIndex"] = 3
+UI["14"]["Size"] = UDim2.new(0, 24, 0, 15)
+UI["14"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["14"]["Text"] = [[]]
+UI["14"]["Position"] = UDim2.new(0, 0, 0.07, 0)
+
+-- // StarterGui.prof.profile_panel.frame.scroll.direct_actions.wespe.buwa.TextButton.UICorner \\ --
+UI["15"] = Instance.new("UICorner", UI["14"])
+
+
+-- // StarterGui.prof.profile_panel.frame.scroll.direct_actions.wespe.buwa.TextButton.renk \\ --
+UI["16"] = Instance.new("LocalScript", UI["14"])
+UI["16"]["Name"] = [[renk]]
+
+-- // StarterGui.prof.profile_panel.frame.scroll.direct_actions.wespe.buwa.TextButton.TextBox \\ --
+UI["17"] = Instance.new("TextBox", UI["14"])
+UI["17"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
+UI["17"]["BorderSizePixel"] = 0
+UI["17"]["TextWrapped"] = true
+UI["17"]["TextSize"] = 14
+UI["17"]["TextScaled"] = true
+UI["17"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["17"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["17"]["Size"] = UDim2.new(0, 44, 0, 16)
+UI["17"]["Position"] = UDim2.new(-4.40055, 0, 0.82564, 0)
+UI["17"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["17"]["Text"] = [[WalkSpeed]]
+UI["17"]["BackgroundTransparency"] = 0.5
+
+-- // StarterGui.prof.profile_panel.frame.scroll.direct_actions.wespe.buwa.TextButton.TextBox.LocalScript \\ --
+UI["18"] = Instance.new("LocalScript", UI["17"])
+
+
+-- // StarterGui.prof.profile_panel.frame.scroll.direct_actions.wespe.buwa.TextButton.TextBox.UICorner \\ --
+UI["19"] = Instance.new("UICorner", UI["17"])
+UI["19"]["CornerRadius"] = UDim.new(0, 20)
+
+-- // StarterGui.prof.profile_panel.frame.scroll.direct_actions.wespe.buwa.TextButton.LocalScript \\ --
+UI["1a"] = Instance.new("LocalScript", UI["14"])
+
+
+-- // StarterGui.prof.profile_panel.frame.scroll.direct_actions.wespe.buwa.TextButton.TextLabel \\ --
+UI["1b"] = Instance.new("TextLabel", UI["14"])
+UI["1b"]["TextWrapped"] = true
+UI["1b"]["BorderSizePixel"] = 0
+UI["1b"]["TextScaled"] = true
+UI["1b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["1b"]["TextSize"] = 14
+UI["1b"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["1b"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["1b"]["BackgroundTransparency"] = 1
+UI["1b"]["Size"] = UDim2.new(0, 80, 0, 13)
+UI["1b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["1b"]["Text"] = [[⬇ Type A Value ⬇]]
+UI["1b"]["Position"] = UDim2.new(-4.95238, 0, -0.7515, 0)
+
+-- // StarterGui.prof.profile_panel.frame.scroll.direct_actions.wespe.buwa.TextLabel \\ --
+UI["1c"] = Instance.new("TextLabel", UI["13"])
+UI["1c"]["BorderSizePixel"] = 0
+UI["1c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["1c"]["TextSize"] = 14
+UI["1c"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["1c"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
+UI["1c"]["Size"] = UDim2.new(0, 85, 0, 14)
+UI["1c"]["Visible"] = false
+UI["1c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["1c"]["Text"] = [[Walk Speed]]
+UI["1c"]["Position"] = UDim2.new(-2.31683, 0, -1.28716, 0)
+
+-- // StarterGui.prof.profile_panel.frame.scroll.direct_actions.wespe.buwa.TextLabel.UICorner \\ --
+UI["1d"] = Instance.new("UICorner", UI["1c"])
+
+
+-- // StarterGui.prof.profile_panel.frame.scroll.direct_actions.wespe.buwa.UICorner \\ --
+UI["1e"] = Instance.new("UICorner", UI["13"])
+UI["1e"]["CornerRadius"] = UDim.new(0, 25)
+
+-- // StarterGui.prof.profile_panel.frame.scroll.direct_actions.wespe.buwa.UIStroke \\ --
+UI["1f"] = Instance.new("UIStroke", UI["13"])
+UI["1f"]["Thickness"] = 1.6
+
+-- // StarterGui.prof.profile_panel.frame.scroll.direct_actions.wespe.buwa.ImageLabel \\ --
+UI["20"] = Instance.new("ImageLabel", UI["13"])
+UI["20"]["BorderSizePixel"] = 0
+UI["20"]["BackgroundColor3"] = Color3.fromRGB(86, 0, 128)
+UI["20"]["ImageColor3"] = Color3.fromRGB(131, 131, 131)
+UI["20"]["Image"] = [[rbxassetid://93433450915529]]
+UI["20"]["Size"] = UDim2.new(0, 42, 0, 20)
+UI["20"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["20"]["Position"] = UDim2.new(0, 0, -0.06722, 0)
+
+-- // StarterGui.prof.profile_panel.frame.scroll.direct_actions.wespe.buwa.ImageLabel.UICorner \\ --
+UI["21"] = Instance.new("UICorner", UI["20"])
+UI["21"]["CornerRadius"] = UDim.new(0, 25)
+
+-- // StarterGui.prof.profile_panel.frame.scroll.direct_actions.jupo \\ --
+UI["22"] = Instance.new("ImageButton", UI["10"])
+UI["22"]["BorderSizePixel"] = 0
+UI["22"]["SliceCenter"] = Rect.new(0, 61, 1024, 1024)
+UI["22"]["SliceScale"] = 0.05
+UI["22"]["ScaleType"] = Enum.ScaleType.Crop
+UI["22"]["ImageTransparency"] = 0.6
+UI["22"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["22"]["ImageColor3"] = Color3.fromRGB(0, 0, 0)
+UI["22"]["LayoutOrder"] = 2
+UI["22"]["Image"] = [[rbxassetid://16286719854]]
+UI["22"]["Size"] = UDim2.new(1, 0, 0, 45)
+UI["22"]["BackgroundTransparency"] = 1
+UI["22"]["Name"] = [[jupo]]
+UI["22"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["22"]["Position"] = UDim2.new(-0, 0, 0.24865, 0)
+
+-- // StarterGui.prof.profile_panel.frame.scroll.direct_actions.jupo.label \\ --
+UI["23"] = Instance.new("TextLabel", UI["22"])
+UI["23"]["TextWrapped"] = true
+UI["23"]["BorderSizePixel"] = 0
+UI["23"]["TextXAlignment"] = Enum.TextXAlignment.Left
+UI["23"]["TextTransparency"] = 0.2
+UI["23"]["TextScaled"] = true
+UI["23"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["23"]["TextSize"] = 16
+UI["23"]["FontFace"] = Font.new([[rbxassetid://12187365364]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["23"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["23"]["BackgroundTransparency"] = 1
+UI["23"]["AnchorPoint"] = Vector2.new(0, 0.5)
+UI["23"]["Size"] = UDim2.new(0.51681, -50, 0.45893, 0)
+UI["23"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["23"]["Text"] = [[JumpPower]]
+UI["23"]["Name"] = [[label]]
+UI["23"]["Position"] = UDim2.new(-0.02081, 0, 0.52154, 0)
+
+-- // StarterGui.prof.profile_panel.frame.scroll.direct_actions.jupo.padding \\ --
+UI["24"] = Instance.new("UIPadding", UI["22"])
+UI["24"]["PaddingRight"] = UDim.new(0, 20)
+UI["24"]["Name"] = [[padding]]
+UI["24"]["PaddingLeft"] = UDim.new(0, 20)
+
+-- // StarterGui.prof.profile_panel.frame.scroll.direct_actions.jupo.bujum \\ --
+UI["25"] = Instance.new("Frame", UI["22"])
+UI["25"]["BorderSizePixel"] = 0
+UI["25"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0)
+UI["25"]["Size"] = UDim2.new(0, 42, 0, 18)
+UI["25"]["Position"] = UDim2.new(0.85, 0, 0.29207, 0)
+UI["25"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["25"]["Name"] = [[bujum]]
+
+-- // StarterGui.prof.profile_panel.frame.scroll.direct_actions.jupo.bujum.TextButton \\ --
+UI["26"] = Instance.new("TextButton", UI["25"])
+UI["26"]["BorderSizePixel"] = 0
+UI["26"]["TextSize"] = 14
+UI["26"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
+UI["26"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["26"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["26"]["ZIndex"] = 3
+UI["26"]["Size"] = UDim2.new(0, 24, 0, 15)
+UI["26"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["26"]["Text"] = [[]]
+UI["26"]["Position"] = UDim2.new(0, 0, 0.07, 0)
+
+-- // StarterGui.prof.profile_panel.frame.scroll.direct_actions.jupo.bujum.TextButton.UICorner \\ --
+UI["27"] = Instance.new("UICorner", UI["26"])
+
+
+-- // StarterGui.prof.profile_panel.frame.scroll.direct_actions.jupo.bujum.TextButton.TextBox \\ --
+UI["28"] = Instance.new("TextBox", UI["26"])
+UI["28"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
+UI["28"]["BorderSizePixel"] = 0
+UI["28"]["TextWrapped"] = true
+UI["28"]["TextSize"] = 14
+UI["28"]["TextScaled"] = true
+UI["28"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["28"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["28"]["Size"] = UDim2.new(0, 44, 0, 16)
+UI["28"]["Position"] = UDim2.new(-4.40055, 0, 0.82564, 0)
+UI["28"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["28"]["Text"] = [[JumpPower]]
+UI["28"]["BackgroundTransparency"] = 0.5
+
+-- // StarterGui.prof.profile_panel.frame.scroll.direct_actions.jupo.bujum.TextButton.TextBox.UICorner \\ --
+UI["29"] = Instance.new("UICorner", UI["28"])
+UI["29"]["CornerRadius"] = UDim.new(0, 20)
+
+-- // StarterGui.prof.profile_panel.frame.scroll.direct_actions.jupo.bujum.TextButton.TextLabel \\ --
+UI["2a"] = Instance.new("TextLabel", UI["26"])
+UI["2a"]["TextWrapped"] = true
+UI["2a"]["BorderSizePixel"] = 0
+UI["2a"]["TextScaled"] = true
+UI["2a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["2a"]["TextSize"] = 14
+UI["2a"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["2a"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["2a"]["BackgroundTransparency"] = 1
+UI["2a"]["Size"] = UDim2.new(0, 80, 0, 13)
+UI["2a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["2a"]["Text"] = [[⬇ Type A Value ⬇]]
+UI["2a"]["Position"] = UDim2.new(-4.95238, 0, -0.7515, 0)
+
+-- // StarterGui.prof.profile_panel.frame.scroll.direct_actions.jupo.bujum.TextButton.LocalScript \\ --
+UI["2b"] = Instance.new("LocalScript", UI["26"])
+
+
+-- // StarterGui.prof.profile_panel.frame.scroll.direct_actions.jupo.bujum.TextButton.renk \\ --
+UI["2c"] = Instance.new("LocalScript", UI["26"])
+UI["2c"]["Name"] = [[renk]]
+
+-- // StarterGui.prof.profile_panel.frame.scroll.direct_actions.jupo.bujum.TextLabel \\ --
+UI["2d"] = Instance.new("TextLabel", UI["25"])
+UI["2d"]["BorderSizePixel"] = 0
+UI["2d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["2d"]["TextSize"] = 14
+UI["2d"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["2d"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
+UI["2d"]["Size"] = UDim2.new(0, 85, 0, 14)
+UI["2d"]["Visible"] = false
+UI["2d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["2d"]["Text"] = [[Walk Speed]]
+UI["2d"]["Position"] = UDim2.new(-2.31683, 0, -1.28716, 0)
+
+-- // StarterGui.prof.profile_panel.frame.scroll.direct_actions.jupo.bujum.TextLabel.UICorner \\ --
+UI["2e"] = Instance.new("UICorner", UI["2d"])
+
+
+-- // StarterGui.prof.profile_panel.frame.scroll.direct_actions.jupo.bujum.UICorner \\ --
+UI["2f"] = Instance.new("UICorner", UI["25"])
+UI["2f"]["CornerRadius"] = UDim.new(0, 25)
+
+-- // StarterGui.prof.profile_panel.frame.scroll.direct_actions.jupo.bujum.UIStroke \\ --
+UI["30"] = Instance.new("UIStroke", UI["25"])
+UI["30"]["Thickness"] = 1.6
+
+-- // StarterGui.prof.profile_panel.frame.scroll.direct_actions.jupo.bujum.ImageLabel \\ --
+UI["31"] = Instance.new("ImageLabel", UI["25"])
+UI["31"]["BorderSizePixel"] = 0
+UI["31"]["BackgroundColor3"] = Color3.fromRGB(86, 0, 128)
+UI["31"]["ImageColor3"] = Color3.fromRGB(131, 131, 131)
+UI["31"]["Image"] = [[rbxassetid://93433450915529]]
+UI["31"]["Size"] = UDim2.new(0, 42, 0, 20)
+UI["31"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["31"]["Position"] = UDim2.new(0, 0, -0.06722, 0)
+
+-- // StarterGui.prof.profile_panel.frame.scroll.direct_actions.jupo.bujum.ImageLabel.UICorner \\ --
+UI["32"] = Instance.new("UICorner", UI["31"])
+UI["32"]["CornerRadius"] = UDim.new(0, 25)
+
+-- // StarterGui.prof.profile_panel.frame.scroll.direct_actions.list \\ --
+UI["33"] = Instance.new("UIListLayout", UI["10"])
+UI["33"]["Padding"] = UDim.new(0, 1)
+UI["33"]["SortOrder"] = Enum.SortOrder.LayoutOrder
+UI["33"]["Name"] = [[list]]
+
+-- // StarterGui.prof.profile_panel.frame.scroll.direct_actions.anfal \\ --
+UI["34"] = Instance.new("ImageButton", UI["10"])
+UI["34"]["BorderSizePixel"] = 0
+UI["34"]["SliceCenter"] = Rect.new(0, 61, 1024, 1024)
+UI["34"]["SliceScale"] = 0.05
+UI["34"]["ScaleType"] = Enum.ScaleType.Crop
+UI["34"]["ImageTransparency"] = 0.6
+UI["34"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["34"]["ImageColor3"] = Color3.fromRGB(0, 0, 0)
+UI["34"]["LayoutOrder"] = 3
+UI["34"]["Image"] = [[rbxassetid://16286719854]]
+UI["34"]["Size"] = UDim2.new(1, 0, 0, 45)
+UI["34"]["BackgroundTransparency"] = 1
+UI["34"]["Name"] = [[anfal]]
+UI["34"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+
+-- // StarterGui.prof.profile_panel.frame.scroll.direct_actions.anfal.label \\ --
+UI["35"] = Instance.new("TextLabel", UI["34"])
+UI["35"]["TextWrapped"] = true
+UI["35"]["BorderSizePixel"] = 0
+UI["35"]["TextXAlignment"] = Enum.TextXAlignment.Left
+UI["35"]["TextTransparency"] = 0.2
+UI["35"]["TextScaled"] = true
+UI["35"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["35"]["TextSize"] = 16
+UI["35"]["FontFace"] = Font.new([[rbxassetid://12187365364]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["35"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["35"]["BackgroundTransparency"] = 1
+UI["35"]["AnchorPoint"] = Vector2.new(0, 0.5)
+UI["35"]["Size"] = UDim2.new(0.51681, -50, 0.462, 0)
+UI["35"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["35"]["Text"] = [[Anti-Fall]]
+UI["35"]["Name"] = [[label]]
+UI["35"]["Position"] = UDim2.new(-0.02081, 0, 0.52, 0)
+
+-- // StarterGui.prof.profile_panel.frame.scroll.direct_actions.anfal.padding \\ --
+UI["36"] = Instance.new("UIPadding", UI["34"])
+UI["36"]["PaddingRight"] = UDim.new(0, 20)
+UI["36"]["Name"] = [[padding]]
+UI["36"]["PaddingLeft"] = UDim.new(0, 20)
+
+-- // StarterGui.prof.profile_panel.frame.scroll.direct_actions.anfal.swaf \\ --
+UI["37"] = Instance.new("Frame", UI["34"])
+UI["37"]["Visible"] = false
+UI["37"]["BorderSizePixel"] = 0
+UI["37"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0)
+UI["37"]["Size"] = UDim2.new(0, 42, 0, 18)
+UI["37"]["Position"] = UDim2.new(0.85, 0, 0.29207, 0)
+UI["37"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["37"]["Name"] = [[swaf]]
+
+-- // StarterGui.prof.profile_panel.frame.scroll.direct_actions.anfal.swaf.TextButton \\ --
+UI["38"] = Instance.new("TextButton", UI["37"])
+UI["38"]["BorderSizePixel"] = 0
+UI["38"]["TextSize"] = 14
+UI["38"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
+UI["38"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["38"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["38"]["ZIndex"] = 3
+UI["38"]["Size"] = UDim2.new(0, 24, 0, 15)
+UI["38"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["38"]["Text"] = [[]]
+UI["38"]["Position"] = UDim2.new(0, 0, 0.07, 0)
+
+-- // StarterGui.prof.profile_panel.frame.scroll.direct_actions.anfal.swaf.TextButton.UICorner \\ --
+UI["39"] = Instance.new("UICorner", UI["38"])
+
+
+-- // StarterGui.prof.profile_panel.frame.scroll.direct_actions.anfal.swaf.TextButton.renk \\ --
+UI["3a"] = Instance.new("LocalScript", UI["38"])
+UI["3a"]["Name"] = [[renk]]
+
+-- // StarterGui.prof.profile_panel.frame.scroll.direct_actions.anfal.swaf.TextButton.LocalScript \\ --
+UI["3b"] = Instance.new("LocalScript", UI["38"])
+
+
+-- // StarterGui.prof.profile_panel.frame.scroll.direct_actions.anfal.swaf.kontrakcı \\ --
+UI["3c"] = Instance.new("LocalScript", UI["37"])
+UI["3c"]["Name"] = [[kontrakcı]]
+
+-- // StarterGui.prof.profile_panel.frame.scroll.direct_actions.anfal.swaf.UICorner \\ --
+UI["3d"] = Instance.new("UICorner", UI["37"])
+UI["3d"]["CornerRadius"] = UDim.new(0, 25)
+
+-- // StarterGui.prof.profile_panel.frame.scroll.direct_actions.anfal.swaf.UIStroke \\ --
+UI["3e"] = Instance.new("UIStroke", UI["37"])
+UI["3e"]["Thickness"] = 1.6
+
+-- // StarterGui.prof.profile_panel.frame.scroll.direct_actions.anfal.swaf.ImageLabel \\ --
+UI["3f"] = Instance.new("ImageLabel", UI["37"])
+UI["3f"]["BorderSizePixel"] = 0
+UI["3f"]["BackgroundColor3"] = Color3.fromRGB(86, 0, 128)
+UI["3f"]["ImageColor3"] = Color3.fromRGB(131, 131, 131)
+UI["3f"]["Image"] = [[rbxassetid://93433450915529]]
+UI["3f"]["Size"] = UDim2.new(0, 42, 0, 20)
+UI["3f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["3f"]["Position"] = UDim2.new(0, 0, -0.06722, 0)
+
+-- // StarterGui.prof.profile_panel.frame.scroll.direct_actions.anfal.swaf.ImageLabel.UICorner \\ --
+UI["40"] = Instance.new("UICorner", UI["3f"])
+UI["40"]["CornerRadius"] = UDim.new(0, 25)
+
+-- // StarterGui.prof.profile_panel.frame.scroll.direct_actions.anfal.swaf.renkoco \\ --
+UI["41"] = Instance.new("LocalScript", UI["37"])
+UI["41"]["Enabled"] = false
+UI["41"]["Name"] = [[renkoco]]
+UI["41"]["Disabled"] = true
+
+-- // StarterGui.prof.profile_panel.frame.scroll.direct_actions.anfal.swaf.TextBox \\ --
+UI["42"] = Instance.new("TextBox", UI["37"])
+UI["42"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
+UI["42"]["BorderSizePixel"] = 0
+UI["42"]["TextSize"] = 14
+UI["42"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["42"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["42"]["Size"] = UDim2.new(0, 86, 0, 11)
+UI["42"]["Position"] = UDim2.new(-2.94138, 0, 1, 0)
+UI["42"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["42"]["Text"] = [[Keybind Box]]
+UI["42"]["BackgroundTransparency"] = 0.5
+
+-- // StarterGui.prof.profile_panel.frame.scroll.direct_actions.anfal.swaf.TextBox.LocalScript \\ --
+UI["43"] = Instance.new("LocalScript", UI["42"])
+
+
+-- // StarterGui.prof.profile_panel.frame.scroll.direct_actions.anfal.swaf.TextBox.LocalScript \\ --
+UI["44"] = Instance.new("LocalScript", UI["42"])
+
+
+-- // StarterGui.prof.profile_panel.frame.scroll.direct_actions.anfal.swaf.TextLabel \\ --
+UI["45"] = Instance.new("TextLabel", UI["37"])
+UI["45"]["TextWrapped"] = true
+UI["45"]["BorderSizePixel"] = 0
+UI["45"]["TextScaled"] = true
+UI["45"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["45"]["TextSize"] = 14
+UI["45"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["45"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["45"]["BackgroundTransparency"] = 1
+UI["45"]["Size"] = UDim2.new(0, 84, 0, 12)
+UI["45"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["45"]["Text"] = [[⬇ Keybind⬇]]
+UI["45"]["Position"] = UDim2.new(-2.94138, 0, 0.07, 0)
+
+-- // StarterGui.prof.profile_panel.frame.scroll.direct_actions.anfal.swaf.TextLabel \\ --
+UI["46"] = Instance.new("TextLabel", UI["37"])
+UI["46"]["BorderSizePixel"] = 0
+UI["46"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["46"]["TextSize"] = 14
+UI["46"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["46"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
+UI["46"]["Size"] = UDim2.new(0, 60, 0, 18)
+UI["46"]["Visible"] = false
+UI["46"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["46"]["Position"] = UDim2.new(-2.66667, 0, -0.77778, 0)
+
+-- // StarterGui.prof.profile_panel.frame.scroll.direct_actions.anfal.swaf.TextLabel.alıcı \\ --
+UI["47"] = Instance.new("LocalScript", UI["46"])
+UI["47"]["Name"] = [[alıcı]]
+
+-- // StarterGui.prof.profile_panel.frame.scroll.direct_actions.anfal.swaf.TextLabel.LocalScript \\ --
+UI["48"] = Instance.new("LocalScript", UI["46"])
+
+
+-- // StarterGui.prof.profile_panel.frame.scroll.direct_actions.anfal.anfa \\ --
+UI["49"] = Instance.new("Frame", UI["34"])
+UI["49"]["BorderSizePixel"] = 0
+UI["49"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0)
+UI["49"]["Size"] = UDim2.new(0, 42, 0, 18)
+UI["49"]["Position"] = UDim2.new(0.85, 0, 0.29207, 0)
+UI["49"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["49"]["Name"] = [[anfa]]
+
+-- // StarterGui.prof.profile_panel.frame.scroll.direct_actions.anfal.anfa.TextButton \\ --
+UI["4a"] = Instance.new("TextButton", UI["49"])
+UI["4a"]["BorderSizePixel"] = 0
+UI["4a"]["TextSize"] = 14
+UI["4a"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
+UI["4a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["4a"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["4a"]["ZIndex"] = 3
+UI["4a"]["Size"] = UDim2.new(0, 24, 0, 15)
+UI["4a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["4a"]["Text"] = [[]]
+UI["4a"]["Position"] = UDim2.new(0, 0, 0.07, 0)
+
+-- // StarterGui.prof.profile_panel.frame.scroll.direct_actions.anfal.anfa.TextButton.UICorner \\ --
+UI["4b"] = Instance.new("UICorner", UI["4a"])
+
+
+-- // StarterGui.prof.profile_panel.frame.scroll.direct_actions.anfal.anfa.TextButton.LocalScript \\ --
+UI["4c"] = Instance.new("LocalScript", UI["4a"])
+
+
+-- // StarterGui.prof.profile_panel.frame.scroll.direct_actions.anfal.anfa.TextButton.renk \\ --
+UI["4d"] = Instance.new("LocalScript", UI["4a"])
+UI["4d"]["Name"] = [[renk]]
+
+-- // StarterGui.prof.profile_panel.frame.scroll.direct_actions.anfal.anfa.kontrakcı \\ --
+UI["4e"] = Instance.new("LocalScript", UI["49"])
+UI["4e"]["Name"] = [[kontrakcı]]
+
+-- // StarterGui.prof.profile_panel.frame.scroll.direct_actions.anfal.anfa.UICorner \\ --
+UI["4f"] = Instance.new("UICorner", UI["49"])
+UI["4f"]["CornerRadius"] = UDim.new(0, 25)
+
+-- // StarterGui.prof.profile_panel.frame.scroll.direct_actions.anfal.anfa.UIStroke \\ --
+UI["50"] = Instance.new("UIStroke", UI["49"])
+UI["50"]["Thickness"] = 1.6
+
+-- // StarterGui.prof.profile_panel.frame.scroll.direct_actions.anfal.anfa.ImageLabel \\ --
+UI["51"] = Instance.new("ImageLabel", UI["49"])
+UI["51"]["BorderSizePixel"] = 0
+UI["51"]["BackgroundColor3"] = Color3.fromRGB(86, 0, 128)
+UI["51"]["ImageColor3"] = Color3.fromRGB(131, 131, 131)
+UI["51"]["Image"] = [[rbxassetid://93433450915529]]
+UI["51"]["Size"] = UDim2.new(0, 42, 0, 20)
+UI["51"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["51"]["Position"] = UDim2.new(0, 0, -0.06722, 0)
+
+-- // StarterGui.prof.profile_panel.frame.scroll.direct_actions.anfal.anfa.ImageLabel.UICorner \\ --
+UI["52"] = Instance.new("UICorner", UI["51"])
+UI["52"]["CornerRadius"] = UDim.new(0, 25)
+
+-- // StarterGui.prof.profile_panel.frame.scroll.direct_actions.anfal.anfa.renkoco \\ --
+UI["53"] = Instance.new("LocalScript", UI["49"])
+UI["53"]["Enabled"] = false
+UI["53"]["Name"] = [[renkoco]]
+UI["53"]["Disabled"] = true
+
+-- // StarterGui.prof.profile_panel.frame.scroll.direct_actions.ınfıyel \\ --
+UI["54"] = Instance.new("ImageButton", UI["10"])
+UI["54"]["BorderSizePixel"] = 0
+UI["54"]["SliceCenter"] = Rect.new(512, 0, 512, 0)
+UI["54"]["SliceScale"] = 0.12
+UI["54"]["ScaleType"] = Enum.ScaleType.Slice
+UI["54"]["ImageTransparency"] = 0.6
+UI["54"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["54"]["ImageColor3"] = Color3.fromRGB(0, 0, 0)
+UI["54"]["LayoutOrder"] = 4
+UI["54"]["Image"] = [[rbxassetid://16287194510]]
+UI["54"]["Size"] = UDim2.new(1, 0, 0, 45)
+UI["54"]["BackgroundTransparency"] = 1
+UI["54"]["Name"] = [[ınfıyel]]
+UI["54"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+
+-- // StarterGui.prof.profile_panel.frame.scroll.direct_actions.ınfıyel.label \\ --
+UI["55"] = Instance.new("TextLabel", UI["54"])
+UI["55"]["TextWrapped"] = true
+UI["55"]["BorderSizePixel"] = 0
+UI["55"]["TextXAlignment"] = Enum.TextXAlignment.Left
+UI["55"]["TextTransparency"] = 0.2
+UI["55"]["TextScaled"] = true
+UI["55"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["55"]["TextSize"] = 16
+UI["55"]["FontFace"] = Font.new([[rbxassetid://12187365364]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["55"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["55"]["BackgroundTransparency"] = 1
+UI["55"]["AnchorPoint"] = Vector2.new(0, 0.5)
+UI["55"]["Size"] = UDim2.new(0.66194, -50, 0.59696, 0)
+UI["55"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["55"]["Text"] = [[İnfinite Yield (Safe)]]
+UI["55"]["Name"] = [[label]]
+UI["55"]["Position"] = UDim2.new(-0.03347, 0, 0.48418, 0)
+
+-- // StarterGui.prof.profile_panel.frame.scroll.direct_actions.ınfıyel.padding \\ --
+UI["56"] = Instance.new("UIPadding", UI["54"])
+UI["56"]["PaddingRight"] = UDim.new(0, 20)
+UI["56"]["Name"] = [[padding]]
+UI["56"]["PaddingLeft"] = UDim.new(0, 20)
+
+-- // StarterGui.prof.profile_panel.frame.scroll.direct_actions.ınfıyel.noclip \\ --
+UI["57"] = Instance.new("Frame", UI["54"])
+UI["57"]["Visible"] = false
+UI["57"]["BorderSizePixel"] = 0
+UI["57"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0)
+UI["57"]["Size"] = UDim2.new(0, 42, 0, 18)
+UI["57"]["Position"] = UDim2.new(0.85, 0, 0.29207, 0)
+UI["57"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["57"]["Name"] = [[noclip]]
+
+-- // StarterGui.prof.profile_panel.frame.scroll.direct_actions.ınfıyel.noclip.TextButton \\ --
+UI["58"] = Instance.new("TextButton", UI["57"])
+UI["58"]["BorderSizePixel"] = 0
+UI["58"]["TextSize"] = 14
+UI["58"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
+UI["58"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["58"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["58"]["ZIndex"] = 3
+UI["58"]["Size"] = UDim2.new(0, 24, 0, 15)
+UI["58"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["58"]["Text"] = [[]]
+UI["58"]["Position"] = UDim2.new(0, 0, 0.07, 0)
+
+-- // StarterGui.prof.profile_panel.frame.scroll.direct_actions.ınfıyel.noclip.TextButton.UICorner \\ --
+UI["59"] = Instance.new("UICorner", UI["58"])
+
+
+-- // StarterGui.prof.profile_panel.frame.scroll.direct_actions.ınfıyel.noclip.TextButton.renk \\ --
+UI["5a"] = Instance.new("LocalScript", UI["58"])
+UI["5a"]["Name"] = [[renk]]
+
+-- // StarterGui.prof.profile_panel.frame.scroll.direct_actions.ınfıyel.noclip.TextButton.LocalScript \\ --
+UI["5b"] = Instance.new("LocalScript", UI["58"])
+
+
+-- // StarterGui.prof.profile_panel.frame.scroll.direct_actions.ınfıyel.noclip.kontrakcı \\ --
+UI["5c"] = Instance.new("LocalScript", UI["57"])
+UI["5c"]["Name"] = [[kontrakcı]]
+
+-- // StarterGui.prof.profile_panel.frame.scroll.direct_actions.ınfıyel.noclip.UICorner \\ --
+UI["5d"] = Instance.new("UICorner", UI["57"])
+UI["5d"]["CornerRadius"] = UDim.new(0, 25)
+
+-- // StarterGui.prof.profile_panel.frame.scroll.direct_actions.ınfıyel.noclip.UIStroke \\ --
+UI["5e"] = Instance.new("UIStroke", UI["57"])
+UI["5e"]["Thickness"] = 1.6
+
+-- // StarterGui.prof.profile_panel.frame.scroll.direct_actions.ınfıyel.noclip.ImageLabel \\ --
+UI["5f"] = Instance.new("ImageLabel", UI["57"])
+UI["5f"]["BorderSizePixel"] = 0
+UI["5f"]["BackgroundColor3"] = Color3.fromRGB(86, 0, 128)
+UI["5f"]["ImageColor3"] = Color3.fromRGB(131, 131, 131)
+UI["5f"]["Image"] = [[rbxassetid://93433450915529]]
+UI["5f"]["Size"] = UDim2.new(0, 42, 0, 20)
+UI["5f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["5f"]["Position"] = UDim2.new(0, 0, -0.06722, 0)
+
+-- // StarterGui.prof.profile_panel.frame.scroll.direct_actions.ınfıyel.noclip.ImageLabel.UICorner \\ --
+UI["60"] = Instance.new("UICorner", UI["5f"])
+UI["60"]["CornerRadius"] = UDim.new(0, 25)
+
+-- // StarterGui.prof.profile_panel.frame.scroll.direct_actions.ınfıyel.noclip.renkoco \\ --
+UI["61"] = Instance.new("LocalScript", UI["57"])
+UI["61"]["Enabled"] = false
+UI["61"]["Name"] = [[renkoco]]
+UI["61"]["Disabled"] = true
+
+-- // StarterGui.prof.profile_panel.frame.scroll.direct_actions.ınfıyel.noclip.TextBox \\ --
+UI["62"] = Instance.new("TextBox", UI["57"])
+UI["62"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
+UI["62"]["BorderSizePixel"] = 0
+UI["62"]["TextSize"] = 14
+UI["62"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["62"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["62"]["Size"] = UDim2.new(0, 86, 0, 11)
+UI["62"]["Position"] = UDim2.new(-2.94138, 0, 1, 0)
+UI["62"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["62"]["Text"] = [[Keybind Box]]
+UI["62"]["BackgroundTransparency"] = 0.5
+
+-- // StarterGui.prof.profile_panel.frame.scroll.direct_actions.ınfıyel.noclip.TextBox.LocalScript \\ --
+UI["63"] = Instance.new("LocalScript", UI["62"])
+
+
+-- // StarterGui.prof.profile_panel.frame.scroll.direct_actions.ınfıyel.noclip.TextLabel \\ --
+UI["64"] = Instance.new("TextLabel", UI["57"])
+UI["64"]["TextWrapped"] = true
+UI["64"]["BorderSizePixel"] = 0
+UI["64"]["TextScaled"] = true
+UI["64"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["64"]["TextSize"] = 14
+UI["64"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["64"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["64"]["BackgroundTransparency"] = 1
+UI["64"]["Size"] = UDim2.new(0, 84, 0, 12)
+UI["64"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["64"]["Text"] = [[⬇ Keybind⬇]]
+UI["64"]["Position"] = UDim2.new(-2.94138, 0, 0.07, 0)
+
+-- // StarterGui.prof.profile_panel.frame.scroll.direct_actions.ınfıyel.noclip.TextLabel \\ --
+UI["65"] = Instance.new("TextLabel", UI["57"])
+UI["65"]["BorderSizePixel"] = 0
+UI["65"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["65"]["TextSize"] = 14
+UI["65"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["65"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
+UI["65"]["Size"] = UDim2.new(0, 60, 0, 18)
+UI["65"]["Visible"] = false
+UI["65"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["65"]["Position"] = UDim2.new(-2.66667, 0, -0.77778, 0)
+
+-- // StarterGui.prof.profile_panel.frame.scroll.direct_actions.ınfıyel.noclip.TextLabel.alıcı \\ --
+UI["66"] = Instance.new("LocalScript", UI["65"])
+UI["66"]["Name"] = [[alıcı]]
+
+-- // StarterGui.prof.profile_panel.frame.scroll.direct_actions.ınfıyel.noclip.TextLabel.maincode \\ --
+UI["67"] = Instance.new("LocalScript", UI["65"])
+UI["67"]["Name"] = [[maincode]]
+
+-- // StarterGui.prof.profile_panel.frame.scroll.direct_actions.ınfıyel.İnfyield \\ --
+UI["68"] = Instance.new("Frame", UI["54"])
+UI["68"]["BorderSizePixel"] = 0
+UI["68"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0)
+UI["68"]["Size"] = UDim2.new(0, 42, 0, 18)
+UI["68"]["Position"] = UDim2.new(0.85, 0, 0.29207, 0)
+UI["68"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["68"]["Name"] = [[İnfyield]]
+
+-- // StarterGui.prof.profile_panel.frame.scroll.direct_actions.ınfıyel.İnfyield.TextButton \\ --
+UI["69"] = Instance.new("TextButton", UI["68"])
+UI["69"]["BorderSizePixel"] = 0
+UI["69"]["TextSize"] = 14
+UI["69"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
+UI["69"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["69"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["69"]["ZIndex"] = 3
+UI["69"]["Size"] = UDim2.new(0, 41, 0, 15)
+UI["69"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["69"]["Text"] = [[]]
+UI["69"]["Position"] = UDim2.new(0, 0, 0.07, 0)
+
+-- // StarterGui.prof.profile_panel.frame.scroll.direct_actions.ınfıyel.İnfyield.TextButton.UICorner \\ --
+UI["6a"] = Instance.new("UICorner", UI["69"])
+
+
+-- // StarterGui.prof.profile_panel.frame.scroll.direct_actions.ınfıyel.İnfyield.TextButton.LocalScript \\ --
+UI["6b"] = Instance.new("LocalScript", UI["69"])
+
+
+-- // StarterGui.prof.profile_panel.frame.scroll.direct_actions.ınfıyel.İnfyield.kontrakcı \\ --
+UI["6c"] = Instance.new("LocalScript", UI["68"])
+UI["6c"]["Name"] = [[kontrakcı]]
+
+-- // StarterGui.prof.profile_panel.frame.scroll.direct_actions.ınfıyel.İnfyield.UICorner \\ --
+UI["6d"] = Instance.new("UICorner", UI["68"])
+UI["6d"]["CornerRadius"] = UDim.new(0, 25)
+
+-- // StarterGui.prof.profile_panel.frame.scroll.direct_actions.ınfıyel.İnfyield.UIStroke \\ --
+UI["6e"] = Instance.new("UIStroke", UI["68"])
+UI["6e"]["Thickness"] = 1.6
+
+-- // StarterGui.prof.profile_panel.frame.scroll.direct_actions.ınfıyel.İnfyield.ImageLabel \\ --
+UI["6f"] = Instance.new("ImageLabel", UI["68"])
+UI["6f"]["BorderSizePixel"] = 0
+UI["6f"]["BackgroundColor3"] = Color3.fromRGB(86, 0, 128)
+UI["6f"]["ImageColor3"] = Color3.fromRGB(131, 131, 131)
+UI["6f"]["Image"] = [[rbxassetid://93433450915529]]
+UI["6f"]["Size"] = UDim2.new(0, 42, 0, 20)
+UI["6f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["6f"]["Position"] = UDim2.new(0, 0, -0.06722, 0)
+
+-- // StarterGui.prof.profile_panel.frame.scroll.direct_actions.ınfıyel.İnfyield.ImageLabel.UICorner \\ --
+UI["70"] = Instance.new("UICorner", UI["6f"])
+UI["70"]["CornerRadius"] = UDim.new(0, 25)
+
+-- // StarterGui.prof.profile_panel.frame.scroll.direct_actions.ınfıyel.İnfyield.renkoco \\ --
+UI["71"] = Instance.new("LocalScript", UI["68"])
+UI["71"]["Enabled"] = false
+UI["71"]["Name"] = [[renkoco]]
+UI["71"]["Disabled"] = true
+
+-- // StarterGui.prof.profile_panel.frame.scroll.direct_actions.padding \\ --
+UI["72"] = Instance.new("UIPadding", UI["10"])
+UI["72"]["PaddingRight"] = UDim.new(0, 20)
+UI["72"]["Name"] = [[padding]]
+UI["72"]["PaddingLeft"] = UDim.new(0, 20)
+
+-- // StarterGui.prof.profile_panel.frame.scroll.teleport_actions \\ --
+UI["73"] = Instance.new("Frame", UI["8"])
+UI["73"]["BorderSizePixel"] = 0
+UI["73"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["73"]["AnchorPoint"] = Vector2.new(0.5, 0)
+UI["73"]["Size"] = UDim2.new(1, 0, 0, 90)
+UI["73"]["Position"] = UDim2.new(0.5, 0, 0.17884, 0)
+UI["73"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["73"]["Name"] = [[teleport_actions]]
+UI["73"]["LayoutOrder"] = 3
+UI["73"]["BackgroundTransparency"] = 1
+
+-- // StarterGui.prof.profile_panel.frame.scroll.teleport_actions.bring \\ --
+UI["74"] = Instance.new("ImageButton", UI["73"])
+UI["74"]["BorderSizePixel"] = 0
+UI["74"]["SliceCenter"] = Rect.new(512, 0, 512, 0)
+UI["74"]["SliceScale"] = 0.12
+UI["74"]["ScaleType"] = Enum.ScaleType.Slice
+UI["74"]["ImageTransparency"] = 0.6
+UI["74"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["74"]["ImageColor3"] = Color3.fromRGB(0, 0, 0)
+UI["74"]["LayoutOrder"] = 4
+UI["74"]["Image"] = [[rbxassetid://16287194510]]
+UI["74"]["Size"] = UDim2.new(1, 0, -0.06753, 30)
+UI["74"]["BackgroundTransparency"] = 1
+UI["74"]["Name"] = [[bring]]
+UI["74"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["74"]["Position"] = UDim2.new(0, 0, 0.22426, 0)
+
+-- // StarterGui.prof.profile_panel.frame.scroll.teleport_actions.bring.padding \\ --
+UI["75"] = Instance.new("UIPadding", UI["74"])
+UI["75"]["PaddingRight"] = UDim.new(0, 20)
+UI["75"]["Name"] = [[padding]]
+UI["75"]["PaddingLeft"] = UDim.new(0, 20)
+
+-- // StarterGui.prof.profile_panel.frame.scroll.teleport_actions.padding \\ --
+UI["76"] = Instance.new("UIPadding", UI["73"])
+UI["76"]["PaddingRight"] = UDim.new(0, 20)
+UI["76"]["Name"] = [[padding]]
+UI["76"]["PaddingLeft"] = UDim.new(0, 20)
+
+-- // StarterGui.prof.profile_panel.frame.scroll.teleport_actions.follow \\ --
+UI["77"] = Instance.new("ImageButton", UI["73"])
+UI["77"]["BorderSizePixel"] = 0
+UI["77"]["SliceCenter"] = Rect.new(512, 214, 512, 214)
+UI["77"]["SliceScale"] = 0.12
+UI["77"]["ScaleType"] = Enum.ScaleType.Slice
+UI["77"]["ImageTransparency"] = 0.6
+UI["77"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["77"]["ImageColor3"] = Color3.fromRGB(0, 0, 0)
+UI["77"]["LayoutOrder"] = 1
+UI["77"]["Image"] = [[rbxassetid://16287196357]]
+UI["77"]["Size"] = UDim2.new(1, 0, -0.05352, 30)
+UI["77"]["BackgroundTransparency"] = 1
+UI["77"]["Name"] = [[follow]]
+UI["77"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["77"]["Position"] = UDim2.new(0, 0, -0.05556, 0)
+
+-- // StarterGui.prof.profile_panel.frame.scroll.teleport_actions.follow.padding \\ --
+UI["78"] = Instance.new("UIPadding", UI["77"])
+UI["78"]["PaddingRight"] = UDim.new(0, 20)
+UI["78"]["Name"] = [[padding]]
+UI["78"]["PaddingLeft"] = UDim.new(0, 20)
+
+-- // StarterGui.prof.profile_panel.frame.scroll.teleport_actions.label \\ --
+UI["79"] = Instance.new("TextLabel", UI["73"])
+UI["79"]["TextWrapped"] = true
+UI["79"]["BorderSizePixel"] = 0
+UI["79"]["TextXAlignment"] = Enum.TextXAlignment.Left
+UI["79"]["TextTransparency"] = 0.2
+UI["79"]["TextScaled"] = true
+UI["79"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["79"]["TextSize"] = 16
+UI["79"]["FontFace"] = Font.new([[rbxassetid://12187365364]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["79"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["79"]["BackgroundTransparency"] = 1
+UI["79"]["AnchorPoint"] = Vector2.new(0, 0.5)
+UI["79"]["Size"] = UDim2.new(0.44711, -50, 0.32333, 0)
+UI["79"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["79"]["Text"] = [[   ESP]]
+UI["79"]["Name"] = [[label]]
+UI["79"]["Position"] = UDim2.new(0.00179, 0, 0.21722, 0)
+
+-- // StarterGui.prof.profile_panel.frame.scroll.teleport_actions.label.UICorner \\ --
+UI["7a"] = Instance.new("UICorner", UI["79"])
+
+
+-- // StarterGui.prof.profile_panel.frame.scroll.teleport_actions.label.UIScale \\ --
+UI["7b"] = Instance.new("UIScale", UI["79"])
+
+
+-- // StarterGui.prof.profile_panel.frame.scroll.teleport_actions.icon \\ --
+UI["7c"] = Instance.new("ImageLabel", UI["73"])
+UI["7c"]["BorderSizePixel"] = 0
+UI["7c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["7c"]["ImageTransparency"] = 0.1
+UI["7c"]["AnchorPoint"] = Vector2.new(1, 0.5)
+UI["7c"]["Image"] = [[rbxassetid://11963367322]]
+UI["7c"]["Size"] = UDim2.new(0, 32, 0, 32)
+UI["7c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["7c"]["BackgroundTransparency"] = 0.99
+UI["7c"]["Name"] = [[icon]]
+UI["7c"]["Position"] = UDim2.new(0.95529, 0, 0.2117, 0)
+
+-- // StarterGui.prof.profile_panel.frame.scroll.teleport_actions.TextButton \\ --
+UI["7d"] = Instance.new("TextButton", UI["73"])
+UI["7d"]["BorderSizePixel"] = 0
+UI["7d"]["TextSize"] = 14
+UI["7d"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
+UI["7d"]["BackgroundColor3"] = Color3.fromRGB(45, 45, 45)
+UI["7d"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["7d"]["Size"] = UDim2.new(0, 32, 0, 25)
+UI["7d"]["BackgroundTransparency"] = 0.75
+UI["7d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["7d"]["Text"] = [[]]
+UI["7d"]["Position"] = UDim2.new(0.84522, 0, 0.0966, 0)
+
+-- // StarterGui.prof.profile_panel.frame.scroll.teleport_actions.TextButton.UICorner \\ --
+UI["7e"] = Instance.new("UICorner", UI["7d"])
+UI["7e"]["CornerRadius"] = UDim.new(1, 0)
+
+-- // StarterGui.prof.profile_panel.frame.scroll.teleport_actions.TextButton.LocalScript \\ --
+UI["7f"] = Instance.new("LocalScript", UI["7d"])
+
+
+-- // StarterGui.prof.profile_panel.frame.scroll.padding \\ --
+UI["80"] = Instance.new("UIPadding", UI["8"])
+UI["80"]["Name"] = [[padding]]
+UI["80"]["PaddingBottom"] = UDim.new(0, 9)
+
+-- // StarterGui.prof.profile_panel.frame.scroll.humanoid_actions \\ --
+UI["81"] = Instance.new("Frame", UI["8"])
+UI["81"]["Visible"] = false
+UI["81"]["BorderSizePixel"] = 0
+UI["81"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["81"]["AnchorPoint"] = Vector2.new(0.5, 0)
+UI["81"]["Size"] = UDim2.new(1, 0, 0, 140)
+UI["81"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["81"]["Name"] = [[humanoid_actions]]
+UI["81"]["LayoutOrder"] = 3
+UI["81"]["BackgroundTransparency"] = 1
+
+-- // StarterGui.prof.profile_panel.frame.scroll.humanoid_actions.list \\ --
+UI["82"] = Instance.new("UIListLayout", UI["81"])
+UI["82"]["Padding"] = UDim.new(0, 1)
+UI["82"]["SortOrder"] = Enum.SortOrder.LayoutOrder
+UI["82"]["Name"] = [[list]]
+
+-- // StarterGui.prof.profile_panel.frame.scroll.humanoid_actions.padding \\ --
+UI["83"] = Instance.new("UIPadding", UI["81"])
+UI["83"]["PaddingRight"] = UDim.new(0, 20)
+UI["83"]["Name"] = [[padding]]
+UI["83"]["PaddingLeft"] = UDim.new(0, 20)
+UI["83"]["PaddingBottom"] = UDim.new(1.35, 0)
+
+-- // StarterGui.prof.profile_panel.frame.scroll.humanoid_actions.cham \\ --
+UI["84"] = Instance.new("ImageButton", UI["81"])
+UI["84"]["BorderSizePixel"] = 0
+UI["84"]["SliceCenter"] = Rect.new(512, 214, 512, 214)
+UI["84"]["SliceScale"] = 0.12
+UI["84"]["ScaleType"] = Enum.ScaleType.Slice
+UI["84"]["ImageTransparency"] = 0.6
+UI["84"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["84"]["ImageColor3"] = Color3.fromRGB(0, 0, 0)
+UI["84"]["LayoutOrder"] = 1
+UI["84"]["Image"] = [[rbxassetid://16287196357]]
+UI["84"]["Size"] = UDim2.new(1, 0, 0, 45)
+UI["84"]["BackgroundTransparency"] = 1
+UI["84"]["Name"] = [[cham]]
+UI["84"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["84"]["Visible"] = false
+
+-- // StarterGui.prof.profile_panel.frame.scroll.humanoid_actions.cham.label \\ --
+UI["85"] = Instance.new("TextLabel", UI["84"])
+UI["85"]["BorderSizePixel"] = 0
+UI["85"]["TextXAlignment"] = Enum.TextXAlignment.Left
+UI["85"]["TextTransparency"] = 0.2
+UI["85"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["85"]["TextSize"] = 16
+UI["85"]["FontFace"] = Font.new([[rbxassetid://12187365364]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["85"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["85"]["BackgroundTransparency"] = 1
+UI["85"]["AnchorPoint"] = Vector2.new(0, 0.5)
+UI["85"]["Size"] = UDim2.new(1, -50, 1, 0)
+UI["85"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["85"]["Text"] = [[Chams]]
+UI["85"]["Name"] = [[label]]
+UI["85"]["Position"] = UDim2.new(0, 0, 0.5, 0)
+
+-- // StarterGui.prof.profile_panel.frame.scroll.humanoid_actions.cham.padding \\ --
+UI["86"] = Instance.new("UIPadding", UI["84"])
+UI["86"]["PaddingRight"] = UDim.new(0, 20)
+UI["86"]["Name"] = [[padding]]
+UI["86"]["PaddingLeft"] = UDim.new(0, 20)
+
+-- // StarterGui.prof.profile_panel.frame.scroll.humanoid_actions.cham.anfa \\ --
+UI["87"] = Instance.new("Frame", UI["84"])
+UI["87"]["BorderSizePixel"] = 0
+UI["87"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0)
+UI["87"]["Size"] = UDim2.new(0, 42, 0, 18)
+UI["87"]["Position"] = UDim2.new(0.85, 0, 0.29207, 0)
+UI["87"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["87"]["Name"] = [[anfa]]
+
+-- // StarterGui.prof.profile_panel.frame.scroll.humanoid_actions.cham.anfa.UICorner \\ --
+UI["88"] = Instance.new("UICorner", UI["87"])
+UI["88"]["CornerRadius"] = UDim.new(0, 25)
+
+-- // StarterGui.prof.profile_panel.frame.scroll.humanoid_actions.cham.anfa.UIStroke \\ --
+UI["89"] = Instance.new("UIStroke", UI["87"])
+UI["89"]["Thickness"] = 1.6
+
+-- // StarterGui.prof.profile_panel.frame.scroll.humanoid_actions.cham.anfa.ImageLabel \\ --
+UI["8a"] = Instance.new("ImageLabel", UI["87"])
+UI["8a"]["BorderSizePixel"] = 0
+UI["8a"]["BackgroundColor3"] = Color3.fromRGB(86, 0, 128)
+UI["8a"]["ImageColor3"] = Color3.fromRGB(131, 131, 131)
+UI["8a"]["Image"] = [[rbxassetid://93433450915529]]
+UI["8a"]["Size"] = UDim2.new(0, 42, 0, 20)
+UI["8a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["8a"]["Position"] = UDim2.new(0, 0, -0.06722, 0)
+
+-- // StarterGui.prof.profile_panel.frame.scroll.humanoid_actions.cham.anfa.ImageLabel.UICorner \\ --
+UI["8b"] = Instance.new("UICorner", UI["8a"])
+UI["8b"]["CornerRadius"] = UDim.new(0, 25)
+
+-- // StarterGui.prof.profile_panel.frame.scroll.humanoid_actions.cham.anfa.textButton \\ --
+UI["8c"] = Instance.new("TextButton", UI["87"])
+UI["8c"]["BorderSizePixel"] = 0
+UI["8c"]["TextSize"] = 14
+UI["8c"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
+UI["8c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["8c"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["8c"]["ZIndex"] = 3
+UI["8c"]["Size"] = UDim2.new(0, 24, 0, 15)
+UI["8c"]["Name"] = [[textButton]]
+UI["8c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["8c"]["Text"] = [[]]
+UI["8c"]["Position"] = UDim2.new(0, 0, 0.07, 0)
+
+-- // StarterGui.prof.profile_panel.frame.scroll.humanoid_actions.cham.anfa.textButton.UICorner \\ --
+UI["8d"] = Instance.new("UICorner", UI["8c"])
+
+
+-- // StarterGui.prof.profile_panel.frame.scroll.humanoid_actions.cham.anfa.textButton.gluolmayan \\ --
+UI["8e"] = Instance.new("LocalScript", UI["8c"])
+UI["8e"]["Name"] = [[gluolmayan]]
+
+-- // StarterGui.prof.profile_panel.frame.scroll.humanoid_actions.cham.anfa.textButton.renk \\ --
+UI["8f"] = Instance.new("LocalScript", UI["8c"])
+UI["8f"]["Name"] = [[renk]]
+
+-- // StarterGui.prof.profile_panel.frame.scroll.humanoid_actions.box \\ --
+UI["90"] = Instance.new("ImageButton", UI["81"])
+UI["90"]["BorderSizePixel"] = 0
+UI["90"]["SliceCenter"] = Rect.new(69, 6, 1022, 51)
+UI["90"]["SliceScale"] = 0.12
+UI["90"]["ScaleType"] = Enum.ScaleType.Crop
+UI["90"]["ImageTransparency"] = 0.6
+UI["90"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["90"]["ImageColor3"] = Color3.fromRGB(0, 0, 0)
+UI["90"]["LayoutOrder"] = 2
+UI["90"]["Image"] = [[rbxassetid://16286719854]]
+UI["90"]["Size"] = UDim2.new(1, 0, 0, 45)
+UI["90"]["BackgroundTransparency"] = 1
+UI["90"]["Name"] = [[box]]
+UI["90"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["90"]["Visible"] = false
+
+-- // StarterGui.prof.profile_panel.frame.scroll.humanoid_actions.box.label \\ --
+UI["91"] = Instance.new("TextLabel", UI["90"])
+UI["91"]["BorderSizePixel"] = 0
+UI["91"]["TextXAlignment"] = Enum.TextXAlignment.Left
+UI["91"]["TextTransparency"] = 0.2
+UI["91"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["91"]["TextSize"] = 16
+UI["91"]["FontFace"] = Font.new([[rbxassetid://12187365364]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["91"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["91"]["BackgroundTransparency"] = 1
+UI["91"]["AnchorPoint"] = Vector2.new(0, 0.5)
+UI["91"]["Size"] = UDim2.new(1, -50, 1, 0)
+UI["91"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["91"]["Text"] = [[Boxes]]
+UI["91"]["Name"] = [[label]]
+UI["91"]["Position"] = UDim2.new(0, 0, 0.5, 0)
+
+-- // StarterGui.prof.profile_panel.frame.scroll.humanoid_actions.box.padding \\ --
+UI["92"] = Instance.new("UIPadding", UI["90"])
+UI["92"]["PaddingRight"] = UDim.new(0, 20)
+UI["92"]["Name"] = [[padding]]
+UI["92"]["PaddingLeft"] = UDim.new(0, 20)
+
+-- // StarterGui.prof.profile_panel.frame.scroll.humanoid_actions.box.anfa \\ --
+UI["93"] = Instance.new("Frame", UI["90"])
+UI["93"]["BorderSizePixel"] = 0
+UI["93"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0)
+UI["93"]["Size"] = UDim2.new(0, 42, 0, 18)
+UI["93"]["Position"] = UDim2.new(0.85, 0, 0.29207, 0)
+UI["93"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["93"]["Name"] = [[anfa]]
+
+-- // StarterGui.prof.profile_panel.frame.scroll.humanoid_actions.box.anfa.UICorner \\ --
+UI["94"] = Instance.new("UICorner", UI["93"])
+UI["94"]["CornerRadius"] = UDim.new(0, 25)
+
+-- // StarterGui.prof.profile_panel.frame.scroll.humanoid_actions.box.anfa.UIStroke \\ --
+UI["95"] = Instance.new("UIStroke", UI["93"])
+UI["95"]["Thickness"] = 1.6
+
+-- // StarterGui.prof.profile_panel.frame.scroll.humanoid_actions.box.anfa.ImageLabel \\ --
+UI["96"] = Instance.new("ImageLabel", UI["93"])
+UI["96"]["BorderSizePixel"] = 0
+UI["96"]["BackgroundColor3"] = Color3.fromRGB(86, 0, 128)
+UI["96"]["ImageColor3"] = Color3.fromRGB(131, 131, 131)
+UI["96"]["Image"] = [[rbxassetid://93433450915529]]
+UI["96"]["Size"] = UDim2.new(0, 42, 0, 20)
+UI["96"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["96"]["Position"] = UDim2.new(0, 0, -0.06722, 0)
+
+-- // StarterGui.prof.profile_panel.frame.scroll.humanoid_actions.box.anfa.ImageLabel.UICorner \\ --
+UI["97"] = Instance.new("UICorner", UI["96"])
+UI["97"]["CornerRadius"] = UDim.new(0, 25)
+
+-- // StarterGui.prof.profile_panel.frame.scroll.humanoid_actions.box.anfa.textButton \\ --
+UI["98"] = Instance.new("TextButton", UI["93"])
+UI["98"]["BorderSizePixel"] = 0
+UI["98"]["TextSize"] = 14
+UI["98"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
+UI["98"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["98"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["98"]["ZIndex"] = 3
+UI["98"]["Size"] = UDim2.new(0, 24, 0, 15)
+UI["98"]["Name"] = [[textButton]]
+UI["98"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["98"]["Text"] = [[]]
+UI["98"]["Position"] = UDim2.new(0, 0, 0.07, 0)
+
+-- // StarterGui.prof.profile_panel.frame.scroll.humanoid_actions.box.anfa.textButton.UICorner \\ --
+UI["99"] = Instance.new("UICorner", UI["98"])
+
+
+-- // StarterGui.prof.profile_panel.frame.scroll.humanoid_actions.box.anfa.textButton.LocalScript \\ --
+UI["9a"] = Instance.new("LocalScript", UI["98"])
+
+
+-- // StarterGui.prof.profile_panel.frame.scroll.humanoid_actions.box.anfa.textButton.renk \\ --
+UI["9b"] = Instance.new("LocalScript", UI["98"])
+UI["9b"]["Name"] = [[renk]]
+
+-- // StarterGui.prof.profile_panel.frame.scroll.humanoid_actions.box.anfa.gluglu \\ --
+UI["9c"] = Instance.new("TextButton", UI["93"])
+UI["9c"]["BorderSizePixel"] = 0
+UI["9c"]["AutoButtonColor"] = false
+UI["9c"]["TextSize"] = 14
+UI["9c"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
+UI["9c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["9c"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["9c"]["ZIndex"] = 3
+UI["9c"]["Size"] = UDim2.new(0, 24, 0, 15)
+UI["9c"]["Name"] = [[gluglu]]
+UI["9c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["9c"]["Text"] = [[]]
+UI["9c"]["Visible"] = false
+UI["9c"]["Position"] = UDim2.new(0, 0, 0.07, 0)
+
+-- // StarterGui.prof.profile_panel.frame.scroll.humanoid_actions.box.anfa.gluglu.UICorner \\ --
+UI["9d"] = Instance.new("UICorner", UI["9c"])
+
+
+-- // StarterGui.prof.profile_panel.frame.scroll.humanoid_actions.box.anfa.gluglu.gluglu \\ --
+UI["9e"] = Instance.new("LocalScript", UI["9c"])
+UI["9e"]["Name"] = [[gluglu]]
+
+-- // StarterGui.prof.profile_panel.frame.scroll.humanoid_actions.box.anfa.gluglu.renk \\ --
+UI["9f"] = Instance.new("LocalScript", UI["9c"])
+UI["9f"]["Name"] = [[renk]]
+
+-- // StarterGui.prof.profile_panel.frame.scroll.humanoid_actions.box.anfa.gluglu.tıklayıcı \\ --
+UI["a0"] = Instance.new("LocalScript", UI["9c"])
+UI["a0"]["Name"] = [[tıklayıcı]]
+
+-- // StarterGui.prof.profile_panel.frame.scroll.humanoid_actions.shona \\ --
+UI["a1"] = Instance.new("ImageButton", UI["81"])
+UI["a1"]["BorderSizePixel"] = 0
+UI["a1"]["SliceCenter"] = Rect.new(69, 6, 1022, 51)
+UI["a1"]["SliceScale"] = 0.12
+UI["a1"]["ScaleType"] = Enum.ScaleType.Crop
+UI["a1"]["ImageTransparency"] = 0.6
+UI["a1"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["a1"]["ImageColor3"] = Color3.fromRGB(0, 0, 0)
+UI["a1"]["LayoutOrder"] = 2
+UI["a1"]["Image"] = [[rbxassetid://16286719854]]
+UI["a1"]["Size"] = UDim2.new(1, 0, 0, 45)
+UI["a1"]["BackgroundTransparency"] = 1
+UI["a1"]["Name"] = [[shona]]
+UI["a1"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["a1"]["Visible"] = false
+
+-- // StarterGui.prof.profile_panel.frame.scroll.humanoid_actions.shona.label \\ --
+UI["a2"] = Instance.new("TextLabel", UI["a1"])
+UI["a2"]["BorderSizePixel"] = 0
+UI["a2"]["TextXAlignment"] = Enum.TextXAlignment.Left
+UI["a2"]["TextTransparency"] = 0.2
+UI["a2"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["a2"]["TextSize"] = 16
+UI["a2"]["FontFace"] = Font.new([[rbxassetid://12187365364]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["a2"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["a2"]["BackgroundTransparency"] = 1
+UI["a2"]["AnchorPoint"] = Vector2.new(0, 0.5)
+UI["a2"]["Size"] = UDim2.new(1, -50, 1, 0)
+UI["a2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["a2"]["Text"] = [[ShowName]]
+UI["a2"]["Name"] = [[label]]
+UI["a2"]["Position"] = UDim2.new(0, 0, 0.5, 0)
+
+-- // StarterGui.prof.profile_panel.frame.scroll.humanoid_actions.shona.padding \\ --
+UI["a3"] = Instance.new("UIPadding", UI["a1"])
+UI["a3"]["PaddingRight"] = UDim.new(0, 20)
+UI["a3"]["Name"] = [[padding]]
+UI["a3"]["PaddingLeft"] = UDim.new(0, 20)
+
+-- // StarterGui.prof.profile_panel.frame.scroll.humanoid_actions.shona.naesp \\ --
+UI["a4"] = Instance.new("Frame", UI["a1"])
+UI["a4"]["BorderSizePixel"] = 0
+UI["a4"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0)
+UI["a4"]["Size"] = UDim2.new(0, 42, 0, 18)
+UI["a4"]["Position"] = UDim2.new(0.85, 0, 0.29207, 0)
+UI["a4"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["a4"]["Name"] = [[naesp]]
+
+-- // StarterGui.prof.profile_panel.frame.scroll.humanoid_actions.shona.naesp.TextButton \\ --
+UI["a5"] = Instance.new("TextButton", UI["a4"])
+UI["a5"]["BorderSizePixel"] = 0
+UI["a5"]["TextSize"] = 14
+UI["a5"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
+UI["a5"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["a5"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["a5"]["ZIndex"] = 3
+UI["a5"]["Size"] = UDim2.new(0, 24, 0, 15)
+UI["a5"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["a5"]["Text"] = [[]]
+UI["a5"]["Position"] = UDim2.new(0, 0, 0.07, 0)
+
+-- // StarterGui.prof.profile_panel.frame.scroll.humanoid_actions.shona.naesp.TextButton.UICorner \\ --
+UI["a6"] = Instance.new("UICorner", UI["a5"])
+
+
+-- // StarterGui.prof.profile_panel.frame.scroll.humanoid_actions.shona.naesp.TextButton.TextBox \\ --
+UI["a7"] = Instance.new("TextBox", UI["a5"])
+UI["a7"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
+UI["a7"]["BorderSizePixel"] = 0
+UI["a7"]["TextWrapped"] = true
+UI["a7"]["TextSize"] = 14
+UI["a7"]["TextScaled"] = true
+UI["a7"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["a7"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["a7"]["Size"] = UDim2.new(0, 44, 0, 16)
+UI["a7"]["Position"] = UDim2.new(-4.40055, 0, 0.82564, 0)
+UI["a7"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["a7"]["Text"] = [[2]]
+UI["a7"]["BackgroundTransparency"] = 0.5
+
+-- // StarterGui.prof.profile_panel.frame.scroll.humanoid_actions.shona.naesp.TextButton.TextBox.UICorner \\ --
+UI["a8"] = Instance.new("UICorner", UI["a7"])
+UI["a8"]["CornerRadius"] = UDim.new(0, 20)
+
+-- // StarterGui.prof.profile_panel.frame.scroll.humanoid_actions.shona.naesp.TextButton.TextLabel \\ --
+UI["a9"] = Instance.new("TextLabel", UI["a5"])
+UI["a9"]["TextWrapped"] = true
+UI["a9"]["BorderSizePixel"] = 0
+UI["a9"]["TextScaled"] = true
+UI["a9"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["a9"]["TextSize"] = 14
+UI["a9"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["a9"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["a9"]["BackgroundTransparency"] = 1
+UI["a9"]["Size"] = UDim2.new(0, 80, 0, 13)
+UI["a9"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["a9"]["Text"] = [[⬇ Type A Size ⬇]]
+UI["a9"]["Position"] = UDim2.new(-4.95238, 0, -0.7515, 0)
+
+-- // StarterGui.prof.profile_panel.frame.scroll.humanoid_actions.shona.naesp.TextButton.LocalScript \\ --
+UI["aa"] = Instance.new("LocalScript", UI["a5"])
+
+
+-- // StarterGui.prof.profile_panel.frame.scroll.humanoid_actions.shona.naesp.TextButton.renk \\ --
+UI["ab"] = Instance.new("LocalScript", UI["a5"])
+UI["ab"]["Name"] = [[renk]]
+
+-- // StarterGui.prof.profile_panel.frame.scroll.humanoid_actions.shona.naesp.UICorner \\ --
+UI["ac"] = Instance.new("UICorner", UI["a4"])
+UI["ac"]["CornerRadius"] = UDim.new(0, 25)
+
+-- // StarterGui.prof.profile_panel.frame.scroll.humanoid_actions.shona.naesp.UIStroke \\ --
+UI["ad"] = Instance.new("UIStroke", UI["a4"])
+UI["ad"]["Thickness"] = 1.6
+
+-- // StarterGui.prof.profile_panel.frame.scroll.humanoid_actions.shona.naesp.ImageLabel \\ --
+UI["ae"] = Instance.new("ImageLabel", UI["a4"])
+UI["ae"]["BorderSizePixel"] = 0
+UI["ae"]["BackgroundColor3"] = Color3.fromRGB(86, 0, 128)
+UI["ae"]["ImageColor3"] = Color3.fromRGB(131, 131, 131)
+UI["ae"]["Image"] = [[rbxassetid://93433450915529]]
+UI["ae"]["Size"] = UDim2.new(0, 42, 0, 20)
+UI["ae"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["ae"]["Position"] = UDim2.new(0, 0, -0.06722, 0)
+
+-- // StarterGui.prof.profile_panel.frame.scroll.humanoid_actions.shona.naesp.ImageLabel.UICorner \\ --
+UI["af"] = Instance.new("UICorner", UI["ae"])
+UI["af"]["CornerRadius"] = UDim.new(0, 25)
+
+-- // StarterGui.prof.profile_panel.frame.scroll.humanoid_actions.shohe \\ --
+UI["b0"] = Instance.new("ImageButton", UI["81"])
+UI["b0"]["BorderSizePixel"] = 0
+UI["b0"]["SliceCenter"] = Rect.new(512, 0, 512, 0)
+UI["b0"]["SliceScale"] = 0.12
+UI["b0"]["ScaleType"] = Enum.ScaleType.Slice
+UI["b0"]["ImageTransparency"] = 0.6
+UI["b0"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["b0"]["ImageColor3"] = Color3.fromRGB(0, 0, 0)
+UI["b0"]["LayoutOrder"] = 3
+UI["b0"]["Image"] = [[rbxassetid://16287194510]]
+UI["b0"]["Size"] = UDim2.new(1, 0, 0, 45)
+UI["b0"]["BackgroundTransparency"] = 1
+UI["b0"]["Name"] = [[shohe]]
+UI["b0"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["b0"]["Visible"] = false
+
+-- // StarterGui.prof.profile_panel.frame.scroll.humanoid_actions.shohe.label \\ --
+UI["b1"] = Instance.new("TextLabel", UI["b0"])
+UI["b1"]["BorderSizePixel"] = 0
+UI["b1"]["TextXAlignment"] = Enum.TextXAlignment.Left
+UI["b1"]["TextTransparency"] = 0.2
+UI["b1"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["b1"]["TextSize"] = 16
+UI["b1"]["FontFace"] = Font.new([[rbxassetid://12187365364]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["b1"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["b1"]["BackgroundTransparency"] = 1
+UI["b1"]["AnchorPoint"] = Vector2.new(0, 0.5)
+UI["b1"]["Size"] = UDim2.new(1, -50, 1, 0)
+UI["b1"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["b1"]["Text"] = [[ShowHealth]]
+UI["b1"]["Name"] = [[label]]
+UI["b1"]["Position"] = UDim2.new(0, 0, 0.5, 0)
+
+-- // StarterGui.prof.profile_panel.frame.scroll.humanoid_actions.shohe.padding \\ --
+UI["b2"] = Instance.new("UIPadding", UI["b0"])
+UI["b2"]["PaddingRight"] = UDim.new(0, 20)
+UI["b2"]["Name"] = [[padding]]
+UI["b2"]["PaddingLeft"] = UDim.new(0, 20)
+
+-- // StarterGui.prof.profile_panel.frame.scroll.humanoid_actions.shohe.anfa \\ --
+UI["b3"] = Instance.new("Frame", UI["b0"])
+UI["b3"]["BorderSizePixel"] = 0
+UI["b3"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0)
+UI["b3"]["Size"] = UDim2.new(0, 42, 0, 18)
+UI["b3"]["Position"] = UDim2.new(0.85, 0, 0.29207, 0)
+UI["b3"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["b3"]["Name"] = [[anfa]]
+
+-- // StarterGui.prof.profile_panel.frame.scroll.humanoid_actions.shohe.anfa.UICorner \\ --
+UI["b4"] = Instance.new("UICorner", UI["b3"])
+UI["b4"]["CornerRadius"] = UDim.new(0, 25)
+
+-- // StarterGui.prof.profile_panel.frame.scroll.humanoid_actions.shohe.anfa.UIStroke \\ --
+UI["b5"] = Instance.new("UIStroke", UI["b3"])
+UI["b5"]["Thickness"] = 1.6
+
+-- // StarterGui.prof.profile_panel.frame.scroll.humanoid_actions.shohe.anfa.ImageLabel \\ --
+UI["b6"] = Instance.new("ImageLabel", UI["b3"])
+UI["b6"]["BorderSizePixel"] = 0
+UI["b6"]["BackgroundColor3"] = Color3.fromRGB(86, 0, 128)
+UI["b6"]["ImageColor3"] = Color3.fromRGB(131, 131, 131)
+UI["b6"]["Image"] = [[rbxassetid://93433450915529]]
+UI["b6"]["Size"] = UDim2.new(0, 42, 0, 20)
+UI["b6"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["b6"]["Position"] = UDim2.new(0, 0, -0.06722, 0)
+
+-- // StarterGui.prof.profile_panel.frame.scroll.humanoid_actions.shohe.anfa.ImageLabel.UICorner \\ --
+UI["b7"] = Instance.new("UICorner", UI["b6"])
+UI["b7"]["CornerRadius"] = UDim.new(0, 25)
+
+-- // StarterGui.prof.profile_panel.frame.scroll.humanoid_actions.shohe.anfa.textButton \\ --
+UI["b8"] = Instance.new("TextButton", UI["b3"])
+UI["b8"]["BorderSizePixel"] = 0
+UI["b8"]["TextSize"] = 14
+UI["b8"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
+UI["b8"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["b8"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["b8"]["ZIndex"] = 3
+UI["b8"]["Size"] = UDim2.new(0, 24, 0, 15)
+UI["b8"]["Name"] = [[textButton]]
+UI["b8"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["b8"]["Text"] = [[]]
+UI["b8"]["Position"] = UDim2.new(0, 0, 0.07, 0)
+
+-- // StarterGui.prof.profile_panel.frame.scroll.humanoid_actions.shohe.anfa.textButton.UICorner \\ --
+UI["b9"] = Instance.new("UICorner", UI["b8"])
+
+
+-- // StarterGui.prof.profile_panel.frame.scroll.humanoid_actions.shohe.anfa.textButton.gluolmayan \\ --
+UI["ba"] = Instance.new("LocalScript", UI["b8"])
+UI["ba"]["Name"] = [[gluolmayan]]
+
+-- // StarterGui.prof.profile_panel.frame.scroll.humanoid_actions.shohe.anfa.textButton.renk \\ --
+UI["bb"] = Instance.new("LocalScript", UI["b8"])
+UI["bb"]["Name"] = [[renk]]
+
+-- // StarterGui.prof.profile_panel.frame.scroll.visibility_actions \\ --
+UI["bc"] = Instance.new("Frame", UI["8"])
+UI["bc"]["BorderSizePixel"] = 0
+UI["bc"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["bc"]["AnchorPoint"] = Vector2.new(0.5, 0)
+UI["bc"]["Size"] = UDim2.new(1, 0, 0, 90)
+UI["bc"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["bc"]["Name"] = [[visibility_actions]]
+UI["bc"]["LayoutOrder"] = 3
+UI["bc"]["BackgroundTransparency"] = 1
+
+-- // StarterGui.prof.profile_panel.frame.scroll.visibility_actions.list \\ --
+UI["bd"] = Instance.new("UIListLayout", UI["bc"])
+UI["bd"]["Padding"] = UDim.new(0, 2)
+UI["bd"]["SortOrder"] = Enum.SortOrder.LayoutOrder
+UI["bd"]["Name"] = [[list]]
+
+-- // StarterGui.prof.profile_panel.frame.scroll.visibility_actions.invisi \\ --
+UI["be"] = Instance.new("ImageButton", UI["bc"])
+UI["be"]["BorderSizePixel"] = 0
+UI["be"]["SliceCenter"] = Rect.new(512, 0, 512, 0)
+UI["be"]["SliceScale"] = 0.12
+UI["be"]["ScaleType"] = Enum.ScaleType.Slice
+UI["be"]["ImageTransparency"] = 0.6
+UI["be"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["be"]["ImageColor3"] = Color3.fromRGB(0, 0, 0)
+UI["be"]["LayoutOrder"] = 4
+UI["be"]["Image"] = [[rbxassetid://16287194510]]
+UI["be"]["Size"] = UDim2.new(1, 0, 0, 45)
+UI["be"]["BackgroundTransparency"] = 1
+UI["be"]["Name"] = [[invisi]]
+UI["be"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["be"]["Position"] = UDim2.new(0, 0, -0.22222, 0)
+
+-- // StarterGui.prof.profile_panel.frame.scroll.visibility_actions.invisi.label \\ --
+UI["bf"] = Instance.new("TextLabel", UI["be"])
+UI["bf"]["BorderSizePixel"] = 0
+UI["bf"]["TextXAlignment"] = Enum.TextXAlignment.Left
+UI["bf"]["TextTransparency"] = 0.2
+UI["bf"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["bf"]["TextSize"] = 16
+UI["bf"]["FontFace"] = Font.new([[rbxassetid://12187365364]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["bf"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["bf"]["BackgroundTransparency"] = 1
+UI["bf"]["AnchorPoint"] = Vector2.new(0, 0.5)
+UI["bf"]["Size"] = UDim2.new(1, -50, 1, 0)
+UI["bf"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["bf"]["Text"] = [[BodyColor]]
+UI["bf"]["Name"] = [[label]]
+UI["bf"]["Position"] = UDim2.new(0, 0, 0.5, 0)
+
+-- // StarterGui.prof.profile_panel.frame.scroll.visibility_actions.invisi.padding \\ --
+UI["c0"] = Instance.new("UIPadding", UI["be"])
+UI["c0"]["PaddingRight"] = UDim.new(0, 20)
+UI["c0"]["Name"] = [[padding]]
+UI["c0"]["PaddingLeft"] = UDim.new(0, 20)
+
+-- // StarterGui.prof.profile_panel.frame.scroll.visibility_actions.invisi.anfa \\ --
+UI["c1"] = Instance.new("Frame", UI["be"])
+UI["c1"]["BorderSizePixel"] = 0
+UI["c1"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0)
+UI["c1"]["Size"] = UDim2.new(0, 42, 0, 18)
+UI["c1"]["Position"] = UDim2.new(0.47, 0, 0.5, 0)
+UI["c1"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["c1"]["Name"] = [[anfa]]
+
+-- // StarterGui.prof.profile_panel.frame.scroll.visibility_actions.invisi.anfa.UICorner \\ --
+UI["c2"] = Instance.new("UICorner", UI["c1"])
+UI["c2"]["CornerRadius"] = UDim.new(0, 25)
+
+-- // StarterGui.prof.profile_panel.frame.scroll.visibility_actions.invisi.anfa.UIStroke \\ --
+UI["c3"] = Instance.new("UIStroke", UI["c1"])
+UI["c3"]["Thickness"] = 1.6
+
+-- // StarterGui.prof.profile_panel.frame.scroll.visibility_actions.invisi.anfa.ImageLabel \\ --
+UI["c4"] = Instance.new("ImageLabel", UI["c1"])
+UI["c4"]["BorderSizePixel"] = 0
+UI["c4"]["BackgroundColor3"] = Color3.fromRGB(86, 0, 128)
+UI["c4"]["ImageColor3"] = Color3.fromRGB(131, 131, 131)
+UI["c4"]["Image"] = [[rbxassetid://93433450915529]]
+UI["c4"]["Size"] = UDim2.new(0, 42, 0, 20)
+UI["c4"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["c4"]["Position"] = UDim2.new(0, 0, -0.06722, 0)
+
+-- // StarterGui.prof.profile_panel.frame.scroll.visibility_actions.invisi.anfa.ImageLabel.UICorner \\ --
+UI["c5"] = Instance.new("UICorner", UI["c4"])
+UI["c5"]["CornerRadius"] = UDim.new(0, 25)
+
+-- // StarterGui.prof.profile_panel.frame.scroll.visibility_actions.invisi.anfa.textButton \\ --
+UI["c6"] = Instance.new("TextButton", UI["c1"])
+UI["c6"]["BorderSizePixel"] = 0
+UI["c6"]["TextSize"] = 14
+UI["c6"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
+UI["c6"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["c6"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["c6"]["ZIndex"] = 3
+UI["c6"]["Size"] = UDim2.new(0, 40, 0, 15)
+UI["c6"]["Name"] = [[textButton]]
+UI["c6"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["c6"]["Text"] = [[]]
+UI["c6"]["Position"] = UDim2.new(0, 0, 0.07, 0)
+
+-- // StarterGui.prof.profile_panel.frame.scroll.visibility_actions.invisi.anfa.textButton.UICorner \\ --
+UI["c7"] = Instance.new("UICorner", UI["c6"])
+
+
+-- // StarterGui.prof.profile_panel.frame.scroll.visibility_actions.invisi.anfa.textButton.gluolmayan \\ --
+UI["c8"] = Instance.new("LocalScript", UI["c6"])
+UI["c8"]["Name"] = [[gluolmayan]]
+
+-- // StarterGui.prof.profile_panel.frame.scroll.visibility_actions.invisi.anfa \\ --
+UI["c9"] = Instance.new("Frame", UI["be"])
+UI["c9"]["BorderSizePixel"] = 0
+UI["c9"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0)
+UI["c9"]["Size"] = UDim2.new(0, 42, 0, 18)
+UI["c9"]["Position"] = UDim2.new(0.85, 0, 0.5, 0)
+UI["c9"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["c9"]["Name"] = [[anfa]]
+
+-- // StarterGui.prof.profile_panel.frame.scroll.visibility_actions.invisi.anfa.UICorner \\ --
+UI["ca"] = Instance.new("UICorner", UI["c9"])
+UI["ca"]["CornerRadius"] = UDim.new(0, 25)
+
+-- // StarterGui.prof.profile_panel.frame.scroll.visibility_actions.invisi.anfa.UIStroke \\ --
+UI["cb"] = Instance.new("UIStroke", UI["c9"])
+UI["cb"]["Thickness"] = 1.6
+
+-- // StarterGui.prof.profile_panel.frame.scroll.visibility_actions.invisi.anfa.ImageLabel \\ --
+UI["cc"] = Instance.new("ImageLabel", UI["c9"])
+UI["cc"]["BorderSizePixel"] = 0
+UI["cc"]["BackgroundColor3"] = Color3.fromRGB(86, 0, 128)
+UI["cc"]["ImageColor3"] = Color3.fromRGB(131, 131, 131)
+UI["cc"]["Image"] = [[rbxassetid://93433450915529]]
+UI["cc"]["Size"] = UDim2.new(0, 42, 0, 20)
+UI["cc"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["cc"]["Position"] = UDim2.new(0, 0, -0.06722, 0)
+
+-- // StarterGui.prof.profile_panel.frame.scroll.visibility_actions.invisi.anfa.ImageLabel.UICorner \\ --
+UI["cd"] = Instance.new("UICorner", UI["cc"])
+UI["cd"]["CornerRadius"] = UDim.new(0, 25)
+
+-- // StarterGui.prof.profile_panel.frame.scroll.visibility_actions.invisi.anfa.textButton \\ --
+UI["ce"] = Instance.new("TextButton", UI["c9"])
+UI["ce"]["BorderSizePixel"] = 0
+UI["ce"]["TextSize"] = 14
+UI["ce"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
+UI["ce"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["ce"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["ce"]["ZIndex"] = 3
+UI["ce"]["Size"] = UDim2.new(0, 24, 0, 15)
+UI["ce"]["Name"] = [[textButton]]
+UI["ce"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["ce"]["Text"] = [[]]
+UI["ce"]["Position"] = UDim2.new(0, 0, 0.07, 0)
+
+-- // StarterGui.prof.profile_panel.frame.scroll.visibility_actions.invisi.anfa.textButton.UICorner \\ --
+UI["cf"] = Instance.new("UICorner", UI["ce"])
+
+
+-- // StarterGui.prof.profile_panel.frame.scroll.visibility_actions.invisi.anfa.textButton.gluolmayan \\ --
+UI["d0"] = Instance.new("LocalScript", UI["ce"])
+UI["d0"]["Name"] = [[gluolmayan]]
+
+-- // StarterGui.prof.profile_panel.frame.scroll.visibility_actions.invisi.anfa.textButton.renk \\ --
+UI["d1"] = Instance.new("LocalScript", UI["ce"])
+UI["d1"]["Name"] = [[renk]]
+
+-- // StarterGui.prof.profile_panel.frame.scroll.visibility_actions.invisi.TextLabel \\ --
+UI["d2"] = Instance.new("TextLabel", UI["be"])
+UI["d2"]["BorderSizePixel"] = 0
+UI["d2"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["d2"]["TextSize"] = 14
+UI["d2"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["d2"]["TextColor3"] = Color3.fromRGB(176, 156, 255)
+UI["d2"]["BackgroundTransparency"] = 1
+UI["d2"]["Size"] = UDim2.new(0, 69, 0, 17)
+UI["d2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["d2"]["Text"] = [[Color Changer]]
+UI["d2"]["Position"] = UDim2.new(0.4223, 0, 0, 0)
+
+-- // StarterGui.prof.profile_panel.frame.scroll.visibility_actions.invisi.TextLabel.UICorner \\ --
+UI["d3"] = Instance.new("UICorner", UI["d2"])
+
+
+-- // StarterGui.prof.profile_panel.frame.scroll.visibility_actions.invisi.TextLabel \\ --
+UI["d4"] = Instance.new("TextLabel", UI["be"])
+UI["d4"]["BorderSizePixel"] = 0
+UI["d4"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["d4"]["TextSize"] = 14
+UI["d4"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["d4"]["TextColor3"] = Color3.fromRGB(176, 156, 255)
+UI["d4"]["BackgroundTransparency"] = 1
+UI["d4"]["Size"] = UDim2.new(0, 69, 0, 17)
+UI["d4"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["d4"]["Text"] = [[Rainbow]]
+UI["d4"]["Position"] = UDim2.new(0.7897, 0, 0, 0)
+
+-- // StarterGui.prof.profile_panel.frame.scroll.visibility_actions.invisi.TextLabel.UICorner \\ --
+UI["d5"] = Instance.new("UICorner", UI["d4"])
+
+
+-- // StarterGui.prof.profile_panel.frame.scroll.visibility_actions.padding \\ --
+UI["d6"] = Instance.new("UIPadding", UI["bc"])
+UI["d6"]["PaddingRight"] = UDim.new(0, 20)
+UI["d6"]["Name"] = [[padding]]
+UI["d6"]["PaddingLeft"] = UDim.new(0, 20)
+
+-- // StarterGui.prof.profile_panel.frame.scroll.visibility_actions.ForceFeild \\ --
+UI["d7"] = Instance.new("ImageButton", UI["bc"])
+UI["d7"]["BorderSizePixel"] = 0
+UI["d7"]["SliceCenter"] = Rect.new(512, 214, 512, 214)
+UI["d7"]["SliceScale"] = 0.12
+UI["d7"]["ScaleType"] = Enum.ScaleType.Slice
+UI["d7"]["ImageTransparency"] = 0.6
+UI["d7"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["d7"]["ImageColor3"] = Color3.fromRGB(0, 0, 0)
+UI["d7"]["LayoutOrder"] = 1
+UI["d7"]["Image"] = [[rbxassetid://16287196357]]
+UI["d7"]["Size"] = UDim2.new(1, 0, 0, 45)
+UI["d7"]["BackgroundTransparency"] = 1
+UI["d7"]["Name"] = [[ForceFeild]]
+UI["d7"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["d7"]["Position"] = UDim2.new(0, 0, -0.34444, 0)
+
+-- // StarterGui.prof.profile_panel.frame.scroll.visibility_actions.ForceFeild.label \\ --
+UI["d8"] = Instance.new("TextLabel", UI["d7"])
+UI["d8"]["BorderSizePixel"] = 0
+UI["d8"]["TextXAlignment"] = Enum.TextXAlignment.Left
+UI["d8"]["TextTransparency"] = 0.2
+UI["d8"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["d8"]["TextSize"] = 16
+UI["d8"]["FontFace"] = Font.new([[rbxassetid://12187365364]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["d8"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["d8"]["BackgroundTransparency"] = 1
+UI["d8"]["AnchorPoint"] = Vector2.new(0, 0.5)
+UI["d8"]["Size"] = UDim2.new(0.54438, -50, 1, 0)
+UI["d8"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["d8"]["Text"] = [[GhostBody]]
+UI["d8"]["Name"] = [[label]]
+UI["d8"]["Position"] = UDim2.new(0, 0, 0.5, 0)
+
+-- // StarterGui.prof.profile_panel.frame.scroll.visibility_actions.ForceFeild.padding \\ --
+UI["d9"] = Instance.new("UIPadding", UI["d7"])
+UI["d9"]["PaddingRight"] = UDim.new(0, 20)
+UI["d9"]["Name"] = [[padding]]
+UI["d9"]["PaddingLeft"] = UDim.new(0, 20)
+
+-- // StarterGui.prof.profile_panel.frame.scroll.visibility_actions.ForceFeild.anfa \\ --
+UI["da"] = Instance.new("Frame", UI["d7"])
+UI["da"]["BorderSizePixel"] = 0
+UI["da"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0)
+UI["da"]["Size"] = UDim2.new(0, 42, 0, 18)
+UI["da"]["Position"] = UDim2.new(0.85, 0, 0.29207, 0)
+UI["da"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["da"]["Name"] = [[anfa]]
+
+-- // StarterGui.prof.profile_panel.frame.scroll.visibility_actions.ForceFeild.anfa.UICorner \\ --
+UI["db"] = Instance.new("UICorner", UI["da"])
+UI["db"]["CornerRadius"] = UDim.new(0, 25)
+
+-- // StarterGui.prof.profile_panel.frame.scroll.visibility_actions.ForceFeild.anfa.UIStroke \\ --
+UI["dc"] = Instance.new("UIStroke", UI["da"])
+UI["dc"]["Thickness"] = 1.6
+
+-- // StarterGui.prof.profile_panel.frame.scroll.visibility_actions.ForceFeild.anfa.ImageLabel \\ --
+UI["dd"] = Instance.new("ImageLabel", UI["da"])
+UI["dd"]["BorderSizePixel"] = 0
+UI["dd"]["BackgroundColor3"] = Color3.fromRGB(86, 0, 128)
+UI["dd"]["ImageColor3"] = Color3.fromRGB(131, 131, 131)
+UI["dd"]["Image"] = [[rbxassetid://93433450915529]]
+UI["dd"]["Size"] = UDim2.new(0, 42, 0, 20)
+UI["dd"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["dd"]["Position"] = UDim2.new(0, 0, -0.06722, 0)
+
+-- // StarterGui.prof.profile_panel.frame.scroll.visibility_actions.ForceFeild.anfa.ImageLabel.UICorner \\ --
+UI["de"] = Instance.new("UICorner", UI["dd"])
+UI["de"]["CornerRadius"] = UDim.new(0, 25)
+
+-- // StarterGui.prof.profile_panel.frame.scroll.visibility_actions.ForceFeild.anfa.textButton \\ --
+UI["df"] = Instance.new("TextButton", UI["da"])
+UI["df"]["BorderSizePixel"] = 0
+UI["df"]["TextSize"] = 14
+UI["df"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
+UI["df"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["df"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["df"]["ZIndex"] = 3
+UI["df"]["Size"] = UDim2.new(0, 24, 0, 15)
+UI["df"]["Name"] = [[textButton]]
+UI["df"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["df"]["Text"] = [[]]
+UI["df"]["Position"] = UDim2.new(0, 0, 0.07, 0)
+
+-- // StarterGui.prof.profile_panel.frame.scroll.visibility_actions.ForceFeild.anfa.textButton.UICorner \\ --
+UI["e0"] = Instance.new("UICorner", UI["df"])
+
+
+-- // StarterGui.prof.profile_panel.frame.scroll.visibility_actions.ForceFeild.anfa.textButton.gluolmayan \\ --
+UI["e1"] = Instance.new("LocalScript", UI["df"])
+UI["e1"]["Name"] = [[gluolmayan]]
+
+-- // StarterGui.prof.profile_panel.frame.scroll.visibility_actions.ForceFeild.anfa.textButton.renk \\ --
+UI["e2"] = Instance.new("LocalScript", UI["df"])
+UI["e2"]["Name"] = [[renk]]
+
+-- // StarterGui.prof.profile_panel.frame.scroll.teams_action \\ --
+UI["e3"] = Instance.new("Frame", UI["8"])
+UI["e3"]["BorderSizePixel"] = 0
+UI["e3"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["e3"]["AnchorPoint"] = Vector2.new(0.5, 0)
+UI["e3"]["Size"] = UDim2.new(1, 0, 0, 45)
+UI["e3"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["e3"]["Name"] = [[teams_action]]
+UI["e3"]["LayoutOrder"] = 3
+UI["e3"]["BackgroundTransparency"] = 1
+
+-- // StarterGui.prof.profile_panel.frame.scroll.teams_action.list \\ --
+UI["e4"] = Instance.new("UIListLayout", UI["e3"])
+UI["e4"]["Padding"] = UDim.new(0, 1)
+UI["e4"]["SortOrder"] = Enum.SortOrder.LayoutOrder
+UI["e4"]["Name"] = [[list]]
+
+-- // StarterGui.prof.profile_panel.frame.scroll.teams_action.padding \\ --
+UI["e5"] = Instance.new("UIPadding", UI["e3"])
+UI["e5"]["PaddingRight"] = UDim.new(0, 20)
+UI["e5"]["Name"] = [[padding]]
+UI["e5"]["PaddingLeft"] = UDim.new(0, 20)
+
+-- // StarterGui.prof.profile_panel.frame.scroll.teams_action.team \\ --
+UI["e6"] = Instance.new("ImageButton", UI["e3"])
+UI["e6"]["BorderSizePixel"] = 0
+UI["e6"]["SliceCenter"] = Rect.new(512, 512, 512, 512)
+UI["e6"]["SliceScale"] = 0.05
+UI["e6"]["ScaleType"] = Enum.ScaleType.Slice
+UI["e6"]["ImageTransparency"] = 0.6
+UI["e6"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["e6"]["ImageColor3"] = Color3.fromRGB(0, 0, 0)
+UI["e6"]["LayoutOrder"] = 3
+UI["e6"]["Image"] = [[rbxassetid://16286719854]]
+UI["e6"]["Size"] = UDim2.new(1, 0, 0, 45)
+UI["e6"]["BackgroundTransparency"] = 1
+UI["e6"]["Name"] = [[team]]
+UI["e6"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["e6"]["Position"] = UDim2.new(0.01445, 0, 0, 0)
+
+-- // StarterGui.prof.profile_panel.frame.scroll.teams_action.team.label \\ --
+UI["e7"] = Instance.new("TextLabel", UI["e6"])
+UI["e7"]["BorderSizePixel"] = 0
+UI["e7"]["TextXAlignment"] = Enum.TextXAlignment.Left
+UI["e7"]["TextTransparency"] = 0.2
+UI["e7"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["e7"]["TextSize"] = 16
+UI["e7"]["FontFace"] = Font.new([[rbxassetid://12187365364]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["e7"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["e7"]["BackgroundTransparency"] = 1
+UI["e7"]["AnchorPoint"] = Vector2.new(0, 0.5)
+UI["e7"]["Size"] = UDim2.new(0, 100, 1, 0)
+UI["e7"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["e7"]["Text"] = [[Trail]]
+UI["e7"]["Name"] = [[label]]
+UI["e7"]["Position"] = UDim2.new(0, 0, 0.5, 0)
+
+-- // StarterGui.prof.profile_panel.frame.scroll.teams_action.team.padding \\ --
+UI["e8"] = Instance.new("UIPadding", UI["e6"])
+UI["e8"]["PaddingRight"] = UDim.new(0, 20)
+UI["e8"]["Name"] = [[padding]]
+UI["e8"]["PaddingLeft"] = UDim.new(0, 20)
+
+-- // StarterGui.prof.profile_panel.frame.scroll.teams_action.team.anfa \\ --
+UI["e9"] = Instance.new("Frame", UI["e6"])
+UI["e9"]["BorderSizePixel"] = 0
+UI["e9"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0)
+UI["e9"]["Size"] = UDim2.new(0, 42, 0, 18)
+UI["e9"]["Position"] = UDim2.new(0.85, 0, 0.27, 0)
+UI["e9"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["e9"]["Name"] = [[anfa]]
+
+-- // StarterGui.prof.profile_panel.frame.scroll.teams_action.team.anfa.UICorner \\ --
+UI["ea"] = Instance.new("UICorner", UI["e9"])
+UI["ea"]["CornerRadius"] = UDim.new(0, 25)
+
+-- // StarterGui.prof.profile_panel.frame.scroll.teams_action.team.anfa.UIStroke \\ --
+UI["eb"] = Instance.new("UIStroke", UI["e9"])
+UI["eb"]["Thickness"] = 1.6
+
+-- // StarterGui.prof.profile_panel.frame.scroll.teams_action.team.anfa.ImageLabel \\ --
+UI["ec"] = Instance.new("ImageLabel", UI["e9"])
+UI["ec"]["BorderSizePixel"] = 0
+UI["ec"]["BackgroundColor3"] = Color3.fromRGB(86, 0, 128)
+UI["ec"]["ImageColor3"] = Color3.fromRGB(131, 131, 131)
+UI["ec"]["Image"] = [[rbxassetid://93433450915529]]
+UI["ec"]["Size"] = UDim2.new(0, 42, 0, 20)
+UI["ec"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["ec"]["Position"] = UDim2.new(0, 0, -0.06722, 0)
+
+-- // StarterGui.prof.profile_panel.frame.scroll.teams_action.team.anfa.ImageLabel.UICorner \\ --
+UI["ed"] = Instance.new("UICorner", UI["ec"])
+UI["ed"]["CornerRadius"] = UDim.new(0, 25)
+
+-- // StarterGui.prof.profile_panel.frame.scroll.teams_action.team.anfa.textButton \\ --
+UI["ee"] = Instance.new("TextButton", UI["e9"])
+UI["ee"]["BorderSizePixel"] = 0
+UI["ee"]["TextSize"] = 14
+UI["ee"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
+UI["ee"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["ee"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["ee"]["ZIndex"] = 3
+UI["ee"]["Size"] = UDim2.new(0, 24, 0, 15)
+UI["ee"]["Name"] = [[textButton]]
+UI["ee"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["ee"]["Text"] = [[]]
+UI["ee"]["Position"] = UDim2.new(0, 0, 0.07, 0)
+
+-- // StarterGui.prof.profile_panel.frame.scroll.teams_action.team.anfa.textButton.UICorner \\ --
+UI["ef"] = Instance.new("UICorner", UI["ee"])
+
+
+-- // StarterGui.prof.profile_panel.frame.scroll.teams_action.team.anfa.textButton.gluolmayan \\ --
+UI["f0"] = Instance.new("LocalScript", UI["ee"])
+UI["f0"]["Name"] = [[gluolmayan]]
+
+-- // StarterGui.prof.profile_panel.frame.scroll.teams_action.team.anfa.textButton.renk \\ --
+UI["f1"] = Instance.new("LocalScript", UI["ee"])
+UI["f1"]["Name"] = [[renk]]
+
+-- // StarterGui.prof.profile_panel.frame.header \\ --
+UI["f2"] = Instance.new("TextLabel", UI["3"])
+UI["f2"]["ZIndex"] = 2
+UI["f2"]["BorderSizePixel"] = 0
+UI["f2"]["TextTransparency"] = 0.1
+UI["f2"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["f2"]["TextSize"] = 22
+UI["f2"]["FontFace"] = Font.new([[rbxassetid://12187365364]], Enum.FontWeight.SemiBold, Enum.FontStyle.Normal)
+UI["f2"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["f2"]["BackgroundTransparency"] = 1
+UI["f2"]["AnchorPoint"] = Vector2.new(0.5, 0)
+UI["f2"]["Size"] = UDim2.new(1, 0, 0, 40)
+UI["f2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["f2"]["Text"] = [[Fast-Menu]]
+UI["f2"]["Name"] = [[header]]
+UI["f2"]["Position"] = UDim2.new(0.5, 0, 0, 0)
+
+-- // StarterGui.prof.profile_panel.frame.close \\ --
+UI["f3"] = Instance.new("ImageButton", UI["3"])
+UI["f3"]["BorderSizePixel"] = 0
+UI["f3"]["AutoButtonColor"] = false
+UI["f3"]["BackgroundColor3"] = Color3.fromRGB(95, 99, 100)
+UI["f3"]["ZIndex"] = 2
+UI["f3"]["AnchorPoint"] = Vector2.new(1, 0)
+UI["f3"]["Size"] = UDim2.new(0, 30, 0, 30)
+UI["f3"]["Name"] = [[close]]
+UI["f3"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["f3"]["Position"] = UDim2.new(1, -5, 0, 5)
+
+-- // StarterGui.prof.profile_panel.frame.close.corner \\ --
+UI["f4"] = Instance.new("UICorner", UI["f3"])
+UI["f4"]["Name"] = [[corner]]
+UI["f4"]["CornerRadius"] = UDim.new(1, 0)
+
+-- // StarterGui.prof.profile_panel.frame.close.gradient \\ --
+UI["f5"] = Instance.new("UIGradient", UI["f3"])
+UI["f5"]["Enabled"] = false
+UI["f5"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 0),NumberSequenceKeypoint.new(1.000, 0.46875)}
+UI["f5"]["Name"] = [[gradient]]
+
+-- // StarterGui.prof.profile_panel.frame.close.icon \\ --
+UI["f6"] = Instance.new("ImageLabel", UI["f3"])
+UI["f6"]["ZIndex"] = 2
+UI["f6"]["BorderSizePixel"] = 0
+UI["f6"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["f6"]["ScaleType"] = Enum.ScaleType.Fit
+UI["f6"]["ImageTransparency"] = 0.2
+UI["f6"]["AnchorPoint"] = Vector2.new(0.5, 0.5)
+UI["f6"]["Image"] = [[rbxassetid://11293981586]]
+UI["f6"]["Size"] = UDim2.new(0, 16, 0, 16)
+UI["f6"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["f6"]["BackgroundTransparency"] = 1
+UI["f6"]["Name"] = [[icon]]
+UI["f6"]["Position"] = UDim2.new(0.5, 0, 0.5, 0)
+
+-- // StarterGui.prof.profile_panel.frame.close.icon.scale \\ --
+UI["f7"] = Instance.new("UIScale", UI["f6"])
+UI["f7"]["Name"] = [[scale]]
+
+-- // StarterGui.prof.profile_panel.frame.close.ArcHandles \\ --
+UI["f8"] = Instance.new("ArcHandles", UI["f3"])
+
+
+-- // StarterGui.prof.profile_panel.frame.close.LocalScript \\ --
+UI["f9"] = Instance.new("LocalScript", UI["f3"])
+
+
+-- // StarterGui.prof.profile_panel.frame.fade \\ --
+UI["fa"] = Instance.new("ImageLabel", UI["3"])
+UI["fa"]["BorderSizePixel"] = 0
+UI["fa"]["SliceCenter"] = Rect.new(512, 669, 576, 1024)
+UI["fa"]["BackgroundColor3"] = Color3.fromRGB(71, 71, 71)
+UI["fa"]["ScaleType"] = Enum.ScaleType.Slice
+UI["fa"]["ImageColor3"] = Color3.fromRGB(65, 67, 69)
+UI["fa"]["AnchorPoint"] = Vector2.new(0.5, 0)
+UI["fa"]["Image"] = [[rbxassetid://16286719854]]
+UI["fa"]["Size"] = UDim2.new(1, 20, 0, 60)
+UI["fa"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["fa"]["BackgroundTransparency"] = 1
+UI["fa"]["Name"] = [[fade]]
+UI["fa"]["Position"] = UDim2.new(0.5, 0, 0, -10)
+
+-- // StarterGui.prof.profile_panel.frame.fade.gradient \\ --
+UI["fb"] = Instance.new("UIGradient", UI["fa"])
+UI["fb"]["Rotation"] = 90
+UI["fb"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 0),NumberSequenceKeypoint.new(1.000, 1)}
+UI["fb"]["Name"] = [[gradient]]
+
+-- // StarterGui.prof.profile_panel.frame.scale \\ --
+UI["fc"] = Instance.new("UIScale", UI["3"])
+UI["fc"]["Name"] = [[scale]]
+
+-- // StarterGui.prof.profile_panel.frame.padding \\ --
+UI["fd"] = Instance.new("UIPadding", UI["3"])
+UI["fd"]["PaddingTop"] = UDim.new(0, 10)
+UI["fd"]["PaddingRight"] = UDim.new(0, 10)
+UI["fd"]["Name"] = [[padding]]
+UI["fd"]["PaddingLeft"] = UDim.new(0, 10)
+UI["fd"]["PaddingBottom"] = UDim.new(0, 10)
+
+-- // StarterGui.prof.profile_panel.corner \\ --
+UI["fe"] = Instance.new("UICorner", UI["2"])
+UI["fe"]["Name"] = [[corner]]
+UI["fe"]["CornerRadius"] = UDim.new(0, 40)
+
+-- // StarterGui.prof.profile_panel.LocalScript \\ --
+UI["ff"] = Instance.new("LocalScript", UI["2"])
+
+
+-- // StarterGui.prof.LocalScript \\ --
+UI["100"] = Instance.new("LocalScript", UI["1"])
+
+
+-- // StarterGui.prof.LocalScript \\ --
+UI["101"] = Instance.new("LocalScript", UI["1"])
+
+
+-- // StarterGui.prof.profile_panel.frame.scroll.direct_actions.wespe.buwa.TextButton.renk \\ --
+local function SCRIPT_16()
+local script = UI["16"]
+	local button = script.Parent -- LocalScript'in içinde bulunduğu TextButton
+	local toggled = false -- Durum takibi için bir değişken
+	
+	button.Activated:Connect(function()
+		if toggled then
+			-- Eğer önceki duruma basılmışsa, eski renk ve pozisyonu geri al
+			button.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+			button.Position = UDim2.new(0, 0,0.07, 0)
+		else
+			-- Eğer basılmamışsa, yeni renk ve pozisyonu uygula
+			button.BackgroundColor3 = Color3.fromRGB(55, 255, 0)
+			button.Position = UDim2.new(0.35, 0,0.07, 0)
+		end
+		toggled = not toggled -- Durumu ters çevir
+	end)
+	
+end
+task.spawn(SCRIPT_16)
+-- // StarterGui.prof.profile_panel.frame.scroll.direct_actions.wespe.buwa.TextButton.TextBox.LocalScript \\ --
+local function SCRIPT_18()
+local script = UI["18"]
+	-- TextBox ve TextButton referanslarını alın
+	local textButton = script.Parent
+	local textBox = textButton.Parent:FindFirstChild("TextBox")
+	
+	-- Fonksiyon: TextBox'daki değeri kontrol et ve düzenle
+	local function updateValue()
+		local value = tonumber(textBox.Text) -- TextBox içindeki değeri al
+	
+		if value and value > 82 then
+			textBox.Text = "82" -- Eğer değer 83'ten büyükse, değeri 83 yap
+		end
+	end
+	
+	-- TextBox'daki değeri her değiştiğinde updateValue fonksiyonunu çağır
+	textBox:GetPropertyChangedSignal("Text"):Connect(updateValue)
+	
+	
+	--normali ikiside 83
+end
+task.spawn(SCRIPT_18)
+-- // StarterGui.prof.profile_panel.frame.scroll.direct_actions.wespe.buwa.TextButton.LocalScript \\ --
+local function SCRIPT_1a()
+local script = UI["1a"]
+	local textButton = script.Parent
+	local textBox = textButton:FindFirstChild("TextBox")
+	
+	-- WalkSpeed güncelleme fonksiyonu
+	local function updateWalkSpeed()
+		local buttonColor = textButton.BackgroundColor3
+		local character = game.Players.LocalPlayer.Character
+		local humanoid = character and character:FindFirstChildOfClass("Humanoid")
+	
+		if humanoid then
+			-- Eğer buton yeşilse, TextBox değerini kullan
+			if buttonColor == Color3.fromRGB(55, 255, 0) then
+				-- TextBox içeriği geçerli bir sayıysa WalkSpeed'i ayarla
+				if textBox and tonumber(textBox.Text) then
+					local walkSpeedValue = tonumber(textBox.Text)
+					humanoid.WalkSpeed = walkSpeedValue
+				end
+			else
+				-- Buton yeşil değilse, dış etkenler WalkSpeed'i değiştirebilir, sabitleme yapma
+				-- Bu durumda WalkSpeed değişebilir, bu yüzden herhangi bir sabitleme işlemi yapılmaz
+				-- Varsayılan hız (20) ile bir ayarlama yapılabilir
+				humanoid.WalkSpeed = 20
+			end
+		end
+	end
+	
+	-- `TextBox.Text` değiştiğinde WalkSpeed'i güncelle
+	textBox:GetPropertyChangedSignal("Text"):Connect(function()
+		-- TextBox'daki değeri değiştirmek sadece yeşil renk olduğunda yapılacak
+		if textButton.BackgroundColor3 == Color3.fromRGB(55, 255, 0) then
+			updateWalkSpeed()
+		end
+	end)
+	
+	-- `BackgroundColor3` değiştiğinde WalkSpeed'i güncelle
+	textButton:GetPropertyChangedSignal("BackgroundColor3"):Connect(function()
+		-- Eğer buton yeşilse, TextBox değeri ile WalkSpeed'i güncelle
+		if textButton.BackgroundColor3 == Color3.fromRGB(55, 255, 0) then
+			updateWalkSpeed()
+		else
+			-- Eğer buton yeşil değilse, WalkSpeed'i sabitleme, dış etkenler geçerli olur
+			local character = game.Players.LocalPlayer.Character
+			local humanoid = character and character:FindFirstChildOfClass("Humanoid")
+			if humanoid then
+				humanoid.WalkSpeed = 20
+			end
+		end
+	end)
+	
+	-- Başlangıçta `updateWalkSpeed()` fonksiyonunu bir kez çağırın
+	updateWalkSpeed()
+	
+end
+task.spawn(SCRIPT_1a)
+-- // StarterGui.prof.profile_panel.frame.scroll.direct_actions.jupo.bujum.TextButton.LocalScript \\ --
+local function SCRIPT_2b()
+local script = UI["2b"]
+	local textButton = script.Parent
+	local textBox = textButton:FindFirstChild("TextBox")
+	
+	-- JumpHeight güncelleme fonksiyonu
+	local function updateJumpHeight()
+		local character = game.Players.LocalPlayer.Character
+		local humanoid = character and character:FindFirstChildOfClass("Humanoid")
+	
+		-- Eğer buton yeşilse JumpHeight'ı güncelle
+		if humanoid then
+			if textButton.BackgroundColor3 == Color3.fromRGB(55, 255, 0) then
+				-- TextBox içeriği geçerli bir sayıysa JumpHeight'ı güncelle
+				if textBox and tonumber(textBox.Text) then
+					local jumpHeightValue = tonumber(textBox.Text)
+					humanoid.JumpHeight = jumpHeightValue
+				end
+			else
+				-- Buton yeşil değilse dış etkenlere izin ver, sabitlemeye gerek yok
+				-- Varsayılan JumpHeight değerini ayarlayabiliriz
+				humanoid.JumpHeight = 4 -- Varsayılan JumpHeight
+			end
+		end
+	end
+	
+	-- `TextBox.Text` değiştiğinde JumpHeight'ı güncelle
+	textBox:GetPropertyChangedSignal("Text"):Connect(function()
+		-- TextBox'daki değeri değiştirmek sadece yeşil renk olduğunda yapılacak
+		if textButton.BackgroundColor3 == Color3.fromRGB(55, 255, 0) then
+			updateJumpHeight()
+		end
+	end)
+	
+	-- `BackgroundColor3` değiştiğinde JumpHeight'ı güncelle
+	textButton:GetPropertyChangedSignal("BackgroundColor3"):Connect(function()
+		-- Eğer buton yeşilse, TextBox değeri ile JumpHeight'ı güncelle
+		if textButton.BackgroundColor3 == Color3.fromRGB(55, 255, 0) then
+			updateJumpHeight()
+		else
+			-- Eğer buton yeşil değilse, JumpHeight'ı sabitleme, dış etkenler geçerli olur
+			local character = game.Players.LocalPlayer.Character
+			local humanoid = character and character:FindFirstChildOfClass("Humanoid")
+			if humanoid then
+				humanoid.JumpHeight = 4
+			end
+		end
+	end)
+	
+	-- Başlangıçta `updateJumpHeight()` fonksiyonunu bir kez çağırın
+	updateJumpHeight()
+	
+end
+task.spawn(SCRIPT_2b)
+-- // StarterGui.prof.profile_panel.frame.scroll.direct_actions.jupo.bujum.TextButton.renk \\ --
+local function SCRIPT_2c()
+local script = UI["2c"]
+	local button = script.Parent -- LocalScript'in içinde bulunduğu TextButton
+	local toggled = false -- Durum takibi için bir değişken
+	
+	button.Activated:Connect(function()
+		if toggled then
+			-- Eğer önceki duruma basılmışsa, eski renk ve pozisyonu geri al
+			button.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+			button.Position = UDim2.new(0, 0,0.07, 0)
+		else
+			-- Eğer basılmamışsa, yeni renk ve pozisyonu uygula
+			button.BackgroundColor3 = Color3.fromRGB(55, 255, 0)
+			button.Position = UDim2.new(0.35, 0,0.07, 0)
+		end
+		toggled = not toggled -- Durumu ters çevir
+	end)
+	
+end
+task.spawn(SCRIPT_2c)
+-- // StarterGui.prof.profile_panel.frame.scroll.direct_actions.anfal.swaf.TextButton.renk \\ --
+local function SCRIPT_3a()
+local script = UI["3a"]
+	local button = script.Parent -- LocalScript'in içinde bulunduğu TextButton
+	local toggled = false -- Durum takibi için bir değişken
+	
+	button.Activated:Connect(function()
+		if toggled then
+			-- Eğer önceki duruma basılmışsa, eski renk ve pozisyonu geri al
+			button.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+			button.Position = UDim2.new(0, 0,0.07, 0)
+		else
+			-- Eğer basılmamışsa, yeni renk ve pozisyonu uygula
+			button.BackgroundColor3 = Color3.fromRGB(55, 255, 0)
+			button.Position = UDim2.new(0.35, 0,0.07, 0)
+		end
+		toggled = not toggled -- Durumu ters çevir
+	end)
+	
+end
+task.spawn(SCRIPT_3a)
+-- // StarterGui.prof.profile_panel.frame.scroll.direct_actions.anfal.swaf.TextButton.LocalScript \\ --
+local function SCRIPT_3b()
+local script = UI["3b"]
+	local button = script.Parent -- TextButton'u al
+	local toggled = false -- Başlangıç durumu
+	
+	local function activateScript()
+		-- Kodun aktif hale geldiği fonksiyon
+		getfenv().ANTIFALL = true
+		getfenv().nofall = game:GetService("RunService").RenderStepped:Connect(function()
+			local character = game.Players.LocalPlayer.Character
+			if character then
+				local rootPart = character:FindFirstChild("HumanoidRootPart")
+				if rootPart then
+					local raycastParams = RaycastParams.new()
+					raycastParams.FilterType = Enum.RaycastFilterType.Blacklist
+					raycastParams.FilterDescendantsInstances = {character}
+	
+					local ray = workspace:Raycast(rootPart.Position, Vector3.new(0, -20, 0), raycastParams)
+					if ray and rootPart.Velocity.Y < -30 then
+						rootPart.Velocity = Vector3.new(0, 0, 0)
+					end
+				end
+			end
+		end)
+	end
+	
+	local function deactivateScript()
+		-- Kodun devre dışı kaldığı fonksiyon
+		getfenv().ANTIFALL = false
+		if getfenv().nofall then
+			getfenv().nofall:Disconnect()
+			getfenv().nofall = nil
+		end
+	end
+	
+	button.Activated:Connect(function()
+		if button.BackgroundColor3 == Color3.fromRGB(255, 255, 255) then
+			button.BackgroundColor3 = Color3.fromRGB(55, 255, 0)
+			activateScript() -- Eğer renk (55, 255, 0) olursa script aktif
+		else
+			button.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+			deactivateScript() -- Eğer renk (255, 255, 255) olursa script durur
+		end
+	end)
+	
+end
+task.spawn(SCRIPT_3b)
+-- // StarterGui.prof.profile_panel.frame.scroll.direct_actions.anfal.swaf.kontrakcı \\ --
+local function SCRIPT_3c()
+local script = UI["3c"]
+	local frame = script.Parent
+	local yazici = frame:FindFirstChild("yazici") -- Yazici adlı TextLabel'ı bul
+	local textButton = frame:FindFirstChild("TextButton") -- TextButton'ı bul
+	
+	if yazici and textButton then
+		local function updateButtonVisibility()
+			local text = yazici.Text
+	
+			if string.find(text, "burcu") or string.find(text, "kurcu") then
+				textButton.Visible = true
+			elseif string.find(text, "fıtık") then
+				textButton.Visible = false
+			end
+		end
+	
+		-- Metin değiştiğinde buton görünürlüğünü güncelle
+		yazici:GetPropertyChangedSignal("Text"):Connect(updateButtonVisibility)
+	
+		-- Başlangıçta görünürlüğü ayarla
+		updateButtonVisibility()
+	end
+	
+end
+task.spawn(SCRIPT_3c)
+-- // StarterGui.prof.profile_panel.frame.scroll.direct_actions.anfal.swaf.TextBox.LocalScript \\ --
+local function SCRIPT_43()
+local script = UI["43"]
+	local textBox = script.Parent -- TextBox
+	local player = game.Players.LocalPlayer
+	local character = player.Character or player.CharacterAdded:Wait()
+	local swimming = false
+	local oldgrav = workspace.Gravity
+	local swimbeat = nil
+	local RunService = game:GetService("RunService")
+	local gravReset = nil
+	local waitTime = 3 -- Bekleme süresi (3 saniye)
+	local inputCharacter = nil -- Girilen karakter
+	
+	-- Yüzme hızını ayarlamak için bir hız değeri belirliyoruz
+	local swimSpeedMultiplier = 1.7 -- Burayı artırarak yüzme hızını arttırabilirsin
+	
+	local function startSwim()
+		if not swimming and character and character:FindFirstChildWhichIsA("Humanoid") then
+			oldgrav = workspace.Gravity
+			workspace.Gravity = 0
+			local swimDied = function()
+				workspace.Gravity = oldgrav
+				swimming = false
+			end
+			local Humanoid = character:FindFirstChildWhichIsA("Humanoid")
+			gravReset = Humanoid.Died:Connect(swimDied)
+			local enums = Enum.HumanoidStateType:GetEnumItems()
+			table.remove(enums, table.find(enums, Enum.HumanoidStateType.None))
+			for _, v in pairs(enums) do
+				Humanoid:SetStateEnabled(v, false)
+			end
+			Humanoid:ChangeState(Enum.HumanoidStateType.Swimming)
+			swimbeat = RunService.Heartbeat:Connect(function()
+				pcall(function()
+					local moveDirection = Humanoid.MoveDirection
+	
+					-- Hız çarpanı uyguluyoruz
+					if moveDirection ~= Vector3.new() then
+						character.HumanoidRootPart.Velocity = moveDirection * swimSpeedMultiplier * 16 -- 16 normal yürüyüş hızıdır
+					else
+						character.HumanoidRootPart.Velocity = Vector3.new()
+					end
+				end)
+			end)
+			swimming = true
+		end
+	end
+	
+	local function stopSwim()
+		if swimming and character and character:FindFirstChildWhichIsA("Humanoid") then
+			workspace.Gravity = oldgrav
+			swimming = false
+			if gravReset then
+				gravReset:Disconnect()
+			end
+			if swimbeat then
+				swimbeat:Disconnect()
+				swimbeat = nil
+			end
+			local Humanoid = character:FindFirstChildWhichIsA("Humanoid")
+			local enums = Enum.HumanoidStateType:GetEnumItems()
+			table.remove(enums, table.find(enums, Enum.HumanoidStateType.None))
+			for _, v in pairs(enums) do
+				Humanoid:SetStateEnabled(v, true)
+			end
+		end
+	end
+	
+	-- TextBox içeriği değiştiğinde tetiklenecek fonksiyon
+	textBox:GetPropertyChangedSignal("Text"):Connect(function()
+		-- 3 saniye bekle ve ardından kontrol et
+		wait(waitTime)
+		inputCharacter = textBox.Text -- Kullanıcının girdiği metin
+	
+		-- Eğer girilen metin yalnızca bir karakterse
+		if #inputCharacter == 1 then
+			-- Oyun içinde karakter tıklanması için Mouse'u alalım
+			local playerMouse = player:GetMouse()
+			playerMouse.Button1Down:Connect(function()
+				-- Mouse tıklanırsa ve tıklanan nesne karakterin kendisiyse
+				if playerMouse.Target and playerMouse.Target.Parent == character then
+					if not swimming then
+						startSwim() -- Yüzmeyi başlat
+					else
+						stopSwim() -- Yüzmeyi durdur
+					end
+				end
+			end)
+		end
+	end)
+	
+end
+task.spawn(SCRIPT_43)
+-- // StarterGui.prof.profile_panel.frame.scroll.direct_actions.anfal.swaf.TextBox.LocalScript \\ --
+local function SCRIPT_44()
+local script = UI["44"]
+	local textBox = script.Parent:WaitForChild("TextBox")
+	
+	-- Kullanıcı TextBox'a yazdıkça bu fonksiyon çalışacak
+	textBox:GetPropertyChangedSignal("Text"):Connect(function()
+		-- Eğer TextBox'taki karakter sayısı 1'den fazlaysa
+		if #textBox.Text > 1 then
+			-- Sadece ilk karakteri bırak
+			textBox.Text = textBox.Text:sub(1, 1)
+		end
+	end)
+	
+	-- TextBox'a yazı yazmaya başlandığında maksimum karakter sayısını kontrol et
+	textBox.Focused:Connect(function()
+		-- TextBox içindeki karakter sayısı 1'den büyükse, sadece ilk karakteri bırak
+		if #textBox.Text > 1 then
+			textBox.Text = textBox.Text:sub(1, 1)
+		end
+	end)
+	
+end
+task.spawn(SCRIPT_44)
+-- // StarterGui.prof.profile_panel.frame.scroll.direct_actions.anfal.swaf.TextLabel.alıcı \\ --
+local function SCRIPT_47()
+local script = UI["47"]
+	-- TextLabel'in içindeki LocalScript
+	
+	-- Frame'in içinde yer alan TextBox'u bul
+	local frame = script.Parent.Parent  -- TextLabel'in parent'i Frame
+	local textBox = frame:FindFirstChild("TextBox")  -- TextBox'u bul
+	
+	-- TextBox'un Text property'si değiştiğinde TextLabel'i güncelle
+	textBox:GetPropertyChangedSignal("Text"):Connect(function()
+		script.Parent.Text = textBox.Text  -- TextBox'taki texti TextLabel'a yazdır
+	end)
+	
+end
+task.spawn(SCRIPT_47)
+-- // StarterGui.prof.profile_panel.frame.scroll.direct_actions.anfal.swaf.TextLabel.LocalScript \\ --
+local function SCRIPT_48()
+local script = UI["48"]
+	-- TextLabel içindeki LocalScript
+	local swimming = false
+	local oldgrav = workspace.Gravity
+	local swimbeat = nil
+	local RunService = game:GetService("RunService")
+	local player = game.Players.LocalPlayer
+	local character = player.Character or player.CharacterAdded:Wait()
+	local gravReset = nil
+	
+	-- Yüzme hızını ayarlamak için bir hız değeri belirliyoruz
+	local swimSpeedMultiplier = 1.7 -- Burayı artırarak yüzme hızını arttırabilirsin
+	
+	local function startSwim()
+		if not swimming and character and character:FindFirstChildWhichIsA("Humanoid") then
+			oldgrav = workspace.Gravity
+			workspace.Gravity = 0
+			local swimDied = function()
+				workspace.Gravity = oldgrav
+				swimming = false
+			end
+			local Humanoid = character:FindFirstChildWhichIsA("Humanoid")
+			gravReset = Humanoid.Died:Connect(swimDied)
+			local enums = Enum.HumanoidStateType:GetEnumItems()
+			table.remove(enums, table.find(enums, Enum.HumanoidStateType.None))
+			for _, v in pairs(enums) do
+				Humanoid:SetStateEnabled(v, false)
+			end
+			Humanoid:ChangeState(Enum.HumanoidStateType.Swimming)
+			swimbeat = RunService.Heartbeat:Connect(function()
+				pcall(function()
+					local moveDirection = Humanoid.MoveDirection
+	
+					-- Hız çarpanı uyguluyoruz
+					if moveDirection ~= Vector3.new() then
+						character.HumanoidRootPart.Velocity = moveDirection * swimSpeedMultiplier * 16 -- 16 normal yürüyüş hızıdır
+					else
+						character.HumanoidRootPart.Velocity = Vector3.new()
+					end
+				end)
+			end)
+			swimming = true
+		end
+	end
+	
+	local function stopSwim()
+		if swimming and character and character:FindFirstChildWhichIsA("Humanoid") then
+			workspace.Gravity = oldgrav
+			swimming = false
+			if gravReset then
+				gravReset:Disconnect()
+			end
+			if swimbeat then
+				swimbeat:Disconnect()
+				swimbeat = nil
+			end
+			local Humanoid = character:FindFirstChildWhichIsA("Humanoid")
+			local enums = Enum.HumanoidStateType:GetEnumItems()
+			table.remove(enums, table.find(enums, Enum.HumanoidStateType.None))
+			for _, v in pairs(enums) do
+				Humanoid:SetStateEnabled(v, true)
+			end
+		end
+	end
+	
+	-- Kullanıcının klavyeden tuş bastığını dinliyoruz
+	game:GetService("UserInputService").InputBegan:Connect(function(input, gameProcessedEvent)
+		-- Eğer TextLabel içindeki karaktere basıldıysa yüzme başlat ya da durdur
+		if input.KeyCode == Enum.KeyCode[string.upper(script.Parent.Text)] and not gameProcessedEvent then
+			if swimming then
+				stopSwim()
+			else
+				startSwim()
+			end
+		end
+	end)
+	
+end
+task.spawn(SCRIPT_48)
+-- // StarterGui.prof.profile_panel.frame.scroll.direct_actions.anfal.anfa.TextButton.LocalScript \\ --
+local function SCRIPT_4c()
+local script = UI["4c"]
+	local button = script.Parent -- TextButton'u al
+	local toggled = false -- Başlangıç durumu
+	
+	local function activateScript()
+		-- Kodun aktif hale geldiği fonksiyon
+		getfenv().ANTIFALL = true
+		getfenv().nofall = game:GetService("RunService").RenderStepped:Connect(function()
+			local character = game.Players.LocalPlayer.Character
+			if character then
+				local rootPart = character:FindFirstChild("HumanoidRootPart")
+				if rootPart then
+					local raycastParams = RaycastParams.new()
+					raycastParams.FilterType = Enum.RaycastFilterType.Blacklist
+					raycastParams.FilterDescendantsInstances = {character}
+	
+					local ray = workspace:Raycast(rootPart.Position, Vector3.new(0, -20, 0), raycastParams)
+					if ray and rootPart.Velocity.Y < -30 then
+						rootPart.Velocity = Vector3.new(0, 0, 0)
+					end
+				end
+			end
+		end)
+	end
+	
+	local function deactivateScript()
+		-- Kodun devre dışı kaldığı fonksiyon
+		getfenv().ANTIFALL = false
+		if getfenv().nofall then
+			getfenv().nofall:Disconnect()
+			getfenv().nofall = nil
+		end
+	end
+	
+	button.Activated:Connect(function()
+		if button.BackgroundColor3 == Color3.fromRGB(255, 255, 255) then
+			button.BackgroundColor3 = Color3.fromRGB(55, 255, 0)
+			activateScript() -- Eğer renk (55, 255, 0) olursa script aktif
+		else
+			button.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+			deactivateScript() -- Eğer renk (255, 255, 255) olursa script durur
+		end
+	end)
+	
+end
+task.spawn(SCRIPT_4c)
+-- // StarterGui.prof.profile_panel.frame.scroll.direct_actions.anfal.anfa.TextButton.renk \\ --
+local function SCRIPT_4d()
+local script = UI["4d"]
+	local button = script.Parent -- LocalScript'in içinde bulunduğu TextButton
+	local toggled = false -- Durum takibi için bir değişken
+	
+	button.Activated:Connect(function()
+		if toggled then
+			-- Eğer önceki duruma basılmışsa, eski renk ve pozisyonu geri al
+			button.BackgroundColor3 = Color3.fromRGB(55, 255, 0)
+			button.Position = UDim2.new(0, 0,0.07, 0)
+		else
+			-- Eğer basılmamışsa, yeni renk ve pozisyonu uygula
+			button.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+			button.Position = UDim2.new(0.35, 0,0.07, 0)
+		end
+		toggled = not toggled -- Durumu ters çevir
+	end)
+	
+end
+task.spawn(SCRIPT_4d)
+-- // StarterGui.prof.profile_panel.frame.scroll.direct_actions.anfal.anfa.kontrakcı \\ --
+local function SCRIPT_4e()
+local script = UI["4e"]
+	local frame = script.Parent
+	local yazici = frame:FindFirstChild("yazici") -- Yazici adlı TextLabel'ı bul
+	local textButton = frame:FindFirstChild("TextButton") -- TextButton'ı bul
+	
+	if yazici and textButton then
+		local function updateButtonVisibility()
+			local text = yazici.Text
+	
+			if string.find(text, "burcu") or string.find(text, "kurcu") then
+				textButton.Visible = true
+			elseif string.find(text, "fıtık") then
+				textButton.Visible = false
+			end
+		end
+	
+		-- Metin değiştiğinde buton görünürlüğünü güncelle
+		yazici:GetPropertyChangedSignal("Text"):Connect(updateButtonVisibility)
+	
+		-- Başlangıçta görünürlüğü ayarla
+		updateButtonVisibility()
+	end
+	
+end
+task.spawn(SCRIPT_4e)
+-- // StarterGui.prof.profile_panel.frame.scroll.direct_actions.ınfıyel.noclip.TextButton.renk \\ --
+local function SCRIPT_5a()
+local script = UI["5a"]
+	local button = script.Parent -- LocalScript'in içinde bulunduğu TextButton
+	local toggled = false -- Durum takibi için bir değişken
+	
+	button.Activated:Connect(function()
+		if toggled then
+			-- Eğer önceki duruma basılmışsa, eski renk ve pozisyonu geri al
+			button.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+			button.Position = UDim2.new(0, 0,0.07, 0)
+		else
+			-- Eğer basılmamışsa, yeni renk ve pozisyonu uygula
+			button.BackgroundColor3 = Color3.fromRGB(55, 255, 0)
+			button.Position = UDim2.new(0.35, 0,0.07, 0)
+		end
+		toggled = not toggled -- Durumu ters çevir
+	end)
+	
+end
+task.spawn(SCRIPT_5a)
+-- // StarterGui.prof.profile_panel.frame.scroll.direct_actions.ınfıyel.noclip.TextButton.LocalScript \\ --
+local function SCRIPT_5b()
+local script = UI["5b"]
+	local TextButton = script.Parent -- LocalScript'in bulunduğu TextButton
+	local RunService = game:GetService("RunService")
+	
+	local Noclipping = nil
+	local Clip = true
+	
+	-- Noclip fonksiyonu
+	local function NoclipLoop(character)
+		if Clip == false and character then
+			for _, child in pairs(character:GetDescendants()) do
+				if child:IsA("BasePart") and child.CanCollide == true then
+					child.CanCollide = false
+				end
+			end
+		end
+	end
+	
+	-- Butonun rengini kontrol et ve noclip modunu yönet
+	local function updateNoclip()
+		while true do
+			local buttonColor = TextButton.BackgroundColor3
+	
+			if buttonColor == Color3.new(55/255, 255/255, 0) then
+				if Clip then
+					Clip = false -- Noclip aktif
+					Noclipping = RunService.Stepped:Connect(function()
+						NoclipLoop(game.Players.LocalPlayer.Character)
+					end)
+				end
+			elseif buttonColor == Color3.new(255/255, 255/255, 255/255) then
+				if Noclipping then
+					Noclipping:Disconnect() -- Noclip'i kapat
+					Noclipping = nil
+				end
+				Clip = true -- Noclip kapalı
+			end
+	
+			wait(0.1) -- Kontrol sıklığını ayarla
+		end
+	end
+	
+	-- Başlangıçta butonun durumunu kontrol et
+	updateNoclip()
+	
+end
+task.spawn(SCRIPT_5b)
+-- // StarterGui.prof.profile_panel.frame.scroll.direct_actions.ınfıyel.noclip.kontrakcı \\ --
+local function SCRIPT_5c()
+local script = UI["5c"]
+	local frame = script.Parent
+	local yazici = frame:FindFirstChild("yazici") -- Yazici adlı TextLabel'ı bul
+	local textButton = frame:FindFirstChild("TextButton") -- TextButton'ı bul
+	
+	if yazici and textButton then
+		local function updateButtonVisibility()
+			local text = yazici.Text
+	
+			if string.find(text, "burcu") or string.find(text, "kurcu") then
+				textButton.Visible = true
+			elseif string.find(text, "fıtık") then
+				textButton.Visible = false
+			end
+		end
+	
+		-- Metin değiştiğinde buton görünürlüğünü güncelle
+		yazici:GetPropertyChangedSignal("Text"):Connect(updateButtonVisibility)
+	
+		-- Başlangıçta görünürlüğü ayarla
+		updateButtonVisibility()
+	end
+	
+end
+task.spawn(SCRIPT_5c)
+-- // StarterGui.prof.profile_panel.frame.scroll.direct_actions.ınfıyel.noclip.TextBox.LocalScript \\ --
+local function SCRIPT_63()
+local script = UI["63"]
+	local textBox = script.Parent -- TextBox
+	local player = game.Players.LocalPlayer
+	local character = player.Character or player.CharacterAdded:Wait()
+	local swimming = false
+	local oldgrav = workspace.Gravity
+	local swimbeat = nil
+	local RunService = game:GetService("RunService")
+	local gravReset = nil
+	local waitTime = 3 -- Bekleme süresi (3 saniye)
+	local inputCharacter = nil -- Girilen karakter
+	
+	-- Yüzme hızını ayarlamak için bir hız değeri belirliyoruz
+	local swimSpeedMultiplier = 1.7 -- Burayı artırarak yüzme hızını arttırabilirsin
+	
+	local function startSwim()
+		if not swimming and character and character:FindFirstChildWhichIsA("Humanoid") then
+			oldgrav = workspace.Gravity
+			workspace.Gravity = 0
+			local swimDied = function()
+				workspace.Gravity = oldgrav
+				swimming = false
+			end
+			local Humanoid = character:FindFirstChildWhichIsA("Humanoid")
+			gravReset = Humanoid.Died:Connect(swimDied)
+			local enums = Enum.HumanoidStateType:GetEnumItems()
+			table.remove(enums, table.find(enums, Enum.HumanoidStateType.None))
+			for _, v in pairs(enums) do
+				Humanoid:SetStateEnabled(v, false)
+			end
+			Humanoid:ChangeState(Enum.HumanoidStateType.Swimming)
+			swimbeat = RunService.Heartbeat:Connect(function()
+				pcall(function()
+					local moveDirection = Humanoid.MoveDirection
+	
+					-- Hız çarpanı uyguluyoruz
+					if moveDirection ~= Vector3.new() then
+						character.HumanoidRootPart.Velocity = moveDirection * swimSpeedMultiplier * 16 -- 16 normal yürüyüş hızıdır
+					else
+						character.HumanoidRootPart.Velocity = Vector3.new()
+					end
+				end)
+			end)
+			swimming = true
+		end
+	end
+	
+	local function stopSwim()
+		if swimming and character and character:FindFirstChildWhichIsA("Humanoid") then
+			workspace.Gravity = oldgrav
+			swimming = false
+			if gravReset then
+				gravReset:Disconnect()
+			end
+			if swimbeat then
+				swimbeat:Disconnect()
+				swimbeat = nil
+			end
+			local Humanoid = character:FindFirstChildWhichIsA("Humanoid")
+			local enums = Enum.HumanoidStateType:GetEnumItems()
+			table.remove(enums, table.find(enums, Enum.HumanoidStateType.None))
+			for _, v in pairs(enums) do
+				Humanoid:SetStateEnabled(v, true)
+			end
+		end
+	end
+	
+	-- TextBox içeriği değiştiğinde tetiklenecek fonksiyon
+	textBox:GetPropertyChangedSignal("Text"):Connect(function()
+		-- 3 saniye bekle ve ardından kontrol et
+		wait(waitTime)
+		inputCharacter = textBox.Text -- Kullanıcının girdiği metin
+	
+		-- Eğer girilen metin yalnızca bir karakterse
+		if #inputCharacter == 1 then
+			-- Oyun içinde karakter tıklanması için Mouse'u alalım
+			local playerMouse = player:GetMouse()
+			playerMouse.Button1Down:Connect(function()
+				-- Mouse tıklanırsa ve tıklanan nesne karakterin kendisiyse
+				if playerMouse.Target and playerMouse.Target.Parent == character then
+					if not swimming then
+						startSwim() -- Yüzmeyi başlat
+					else
+						stopSwim() -- Yüzmeyi durdur
+					end
+				end
+			end)
+		end
+	end)
+	
+end
+task.spawn(SCRIPT_63)
+-- // StarterGui.prof.profile_panel.frame.scroll.direct_actions.ınfıyel.noclip.TextLabel.alıcı \\ --
+local function SCRIPT_66()
+local script = UI["66"]
+	-- TextLabel'in içindeki LocalScript
+	
+	-- Frame'in içinde yer alan TextBox'u bul
+	local frame = script.Parent.Parent  -- TextLabel'in parent'i Frame
+	local textBox = frame:FindFirstChild("TextBox")  -- TextBox'u bul
+	
+	-- TextBox'un Text property'si değiştiğinde TextLabel'i güncelle
+	textBox:GetPropertyChangedSignal("Text"):Connect(function()
+		script.Parent.Text = textBox.Text  -- TextBox'taki texti TextLabel'a yazdır
+	end)
+	
+end
+task.spawn(SCRIPT_66)
+-- // StarterGui.prof.profile_panel.frame.scroll.direct_actions.ınfıyel.noclip.TextLabel.maincode \\ --
+local function SCRIPT_67()
+local script = UI["67"]
+	-- TextBox içindeki LocalScript
+	local RunService = game:GetService("RunService")
+	local player = game.Players.LocalPlayer
+	local character = player.Character or player.CharacterAdded:Wait()
+	local Noclipping = nil
+	local Clip = true
+	
+	-- Noclip fonksiyonu
+	local function NoclipLoop(character)
+		if Clip == false and character then
+			for _, child in pairs(character:GetDescendants()) do
+				if child:IsA("BasePart") and child.CanCollide == true then
+					child.CanCollide = false
+				end
+			end
+		end
+	end
+	
+	-- Kullanıcının klavyeden tuş bastığını dinliyoruz
+	game:GetService("UserInputService").InputBegan:Connect(function(input, gameProcessedEvent)
+		-- Eğer TextBox içindeki karaktere basıldıysa noclip başlat ya da durdur
+		if input.KeyCode == Enum.KeyCode[string.upper(script.Parent.Text)] and not gameProcessedEvent then
+			if Clip then
+				Clip = false -- Noclip aktif
+				Noclipping = RunService.Stepped:Connect(function()
+					NoclipLoop(character)
+				end)
+			else
+				if Noclipping then
+					Noclipping:Disconnect() -- Noclip'i kapat
+					Noclipping = nil
+				end
+				Clip = true -- Noclip kapalı
+			end
+		end
+	end)
+	
+end
+task.spawn(SCRIPT_67)
+-- // StarterGui.prof.profile_panel.frame.scroll.direct_actions.ınfıyel.İnfyield.TextButton.LocalScript \\ --
+local function SCRIPT_6b()
+local script = UI["6b"]
+	local button = script.Parent -- TextButton
+	
+	button.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+	end)
+	
+end
+task.spawn(SCRIPT_6b)
+-- // StarterGui.prof.profile_panel.frame.scroll.direct_actions.ınfıyel.İnfyield.kontrakcı \\ --
+local function SCRIPT_6c()
+local script = UI["6c"]
+	local frame = script.Parent
+	local yazici = frame:FindFirstChild("yazici") -- Yazici adlı TextLabel'ı bul
+	local textButton = frame:FindFirstChild("TextButton") -- TextButton'ı bul
+	
+	if yazici and textButton then
+		local function updateButtonVisibility()
+			local text = yazici.Text
+	
+			if string.find(text, "burcu") or string.find(text, "kurcu") then
+				textButton.Visible = true
+			elseif string.find(text, "fıtık") then
+				textButton.Visible = false
+			end
+		end
+	
+		-- Metin değiştiğinde buton görünürlüğünü güncelle
+		yazici:GetPropertyChangedSignal("Text"):Connect(updateButtonVisibility)
+	
+		-- Başlangıçta görünürlüğü ayarla
+		updateButtonVisibility()
+	end
+	
+end
+task.spawn(SCRIPT_6c)
+-- // StarterGui.prof.profile_panel.frame.scroll.teleport_actions.TextButton.LocalScript \\ --
+local function SCRIPT_7f()
+local script = UI["7f"]
+	local textButton = script.Parent -- TextButton'un parenti
+	local frame = textButton.Parent -- TextButton'un parenti olan Frame
+	local scrollFrame = frame.Parent -- Frame'in parenti olan ScrollFrame
+	local humanoidActions = scrollFrame:FindFirstChild("humanoid_actions") -- ScrollFrame'in çocukları olan humanoid_actions
+	
+	-- İlgili ImageButton'ları bul
+	local imageButtons = {
+		humanoidActions:FindFirstChild("cham"),
+		humanoidActions:FindFirstChild("box"),
+		humanoidActions:FindFirstChild("shona"),
+		humanoidActions:FindFirstChild("shohe")
+	}
+	
+	-- TextButton'a tıklama olayı
+	textButton.MouseButton1Click:Connect(function()
+		if humanoidActions.Visible then
+			-- Eğer humanoid_actions görünürse, sırayla shohe, shona, box ve humanoid_actions'u görünmez yap
+			local order = {imageButtons[4], imageButtons[3], imageButtons[2], imageButtons[1]}
+			for _, button in ipairs(order) do
+				if button then
+					button.Visible = false -- Butonu görünmez yap
+					wait(0.5) -- Her değişim arasında 0.5 saniye bekle
+				end
+			end
+			humanoidActions.Visible = false -- humanoid_actions görünmez olsun
+		else
+			-- Eğer humanoid_actions görünmezse, önce onu görünür yap, ardından sırayla teco, box, shona ve shohe görünür yap
+			humanoidActions.Visible = true -- humanoid_actions görünür yap
+			local order = {imageButtons[1], imageButtons[2], imageButtons[3], imageButtons[4]}
+			for _, button in ipairs(order) do
+				if button then
+					button.Visible = true -- Butonu görünür yap
+					wait(0.5) -- Her değişim arasında 0.5 saniye bekle
+				end
+			end
+		end
+	end)
+	
+end
+task.spawn(SCRIPT_7f)
+-- // StarterGui.prof.profile_panel.frame.scroll.humanoid_actions.cham.anfa.textButton.gluolmayan \\ --
+local function SCRIPT_8e()
+local script = UI["8e"]
+	local Players = game:GetService("Players")
+	local textButton = script.Parent  -- TextButton
+	local playerBoxes = {}
+	
+	-- Kılıf oluşturan fonksiyon
+	local function createBoxes(player)
+		-- Zaten kutular oluşturulmuşsa çık
+		if playerBoxes[player] then return end
+	
+		if player.Character then
+			local character = player.Character
+			local boxes = {}
+	
+			-- Her MeshPart için kutu oluştur
+			for _, part in ipairs(character:GetChildren()) do
+				if part:IsA("MeshPart") or part:IsA("Part") then
+					local box = Instance.new("BillboardGui")
+					box.Name = part.Name .. "_Box"
+					box.Adornee = part
+					box.Size = UDim2.new(1, 0, 1, 0)  -- Box boyutu
+					box.AlwaysOnTop = true
+					box.Parent = part
+	
+					local frame = Instance.new("Frame")
+					frame.Size = UDim2.new(1.1, 0, 1.1, 0)  -- Çerçeve boyutu
+					frame.BackgroundColor3 = Color3.new(1, 0, 0)  -- Kırmızı renk
+					frame.BackgroundTransparency = 0.75  -- Yarı saydam
+					frame.Parent = box
+	
+					boxes[part] = box
+				end
+			end
+	
+			playerBoxes[player] = boxes
+		end
+	end
+	
+	-- Kılıfları gizleyen veya yok eden fonksiyon
+	local function setBoxesVisibility(isVisible)
+		for player, boxes in pairs(playerBoxes) do
+			for _, box in pairs(boxes) do
+				if isVisible then
+					box.Enabled = true
+				else
+					box.Enabled = false
+				end
+			end
+		end
+	end
+	
+	-- Kılıfı kaldıran fonksiyon
+	local function removeBoxes(player)
+		if playerBoxes[player] then
+			for _, box in pairs(playerBoxes[player]) do
+				box:Destroy()
+			end
+			playerBoxes[player] = nil
+		end
+	end
+	
+	-- Tüm oyuncular için kılıf ekleme veya kaldırma
+	local function updateBoxes(isEnabled)
+		for _, player in pairs(Players:GetPlayers()) do
+			if player ~= Players.LocalPlayer then
+				if isEnabled then
+					createBoxes(player)
+					player.CharacterAdded:Connect(function()
+						createBoxes(player)
+					end)
+				else
+					removeBoxes(player)
+				end
+			end
+		end
+	end
+	
+	-- TextButton rengi değiştiğinde kontrol
+	textButton.Changed:Connect(function(property)
+		if property == "BackgroundColor3" then
+			local color = textButton.BackgroundColor3
+			if color == Color3.fromRGB(55, 255, 0) then
+				updateBoxes(true)  -- Kılıfları göster
+				setBoxesVisibility(true)
+			elseif color == Color3.fromRGB(255, 255, 255) then
+				setBoxesVisibility(false)  -- Kılıfları gizle
+			end
+		end
+	end)
+	
+	-- Oyuncu eklenip çıkarıldığında kutuları güncelle
+	Players.PlayerAdded:Connect(function(player)
+		player.CharacterAdded:Connect(function()
+			if textButton.BackgroundColor3 == Color3.fromRGB(55, 255, 0) then
+				createBoxes(player)
+			end
+		end)
+	end)
+	
+	Players.PlayerRemoving:Connect(removeBoxes)
+	
+end
+task.spawn(SCRIPT_8e)
+-- // StarterGui.prof.profile_panel.frame.scroll.humanoid_actions.cham.anfa.textButton.renk \\ --
+local function SCRIPT_8f()
+local script = UI["8f"]
+	local button = script.Parent -- LocalScript'in içinde bulunduğu TextButton
+	local toggled = false -- Durum takibi için bir değişken
+	
+	button.Activated:Connect(function()
+		if toggled then
+			-- Eğer önceki duruma basılmışsa, eski renk ve pozisyonu geri al
+			button.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+			button.Position = UDim2.new(0, 0,0.07, 0)
+		else
+			-- Eğer basılmamışsa, yeni renk ve pozisyonu uygula
+			button.BackgroundColor3 = Color3.fromRGB(55, 255, 0)
+			button.Position = UDim2.new(0.35, 0,0.07, 0)
+		end
+		toggled = not toggled -- Durumu ters çevir
+	end)
+	
+end
+task.spawn(SCRIPT_8f)
+-- // StarterGui.prof.profile_panel.frame.scroll.humanoid_actions.box.anfa.textButton.LocalScript \\ --
+local function SCRIPT_9a()
+local script = UI["9a"]
+	local textButton = script.Parent -- Bu scriptin içinde olduğu TextButton
+	local frame = textButton.Parent -- TextButton'un parent'i olan Frame
+	local glugluButton = frame:FindFirstChild("gluglu") -- Frame içinde gluglu adındaki TextButton
+	
+	-- TextButton tıklandığında çalışacak bir fonksiyon tanımlıyoruz
+	local function toggleGlugluColor()
+		if glugluButton.BackgroundColor3 == Color3.fromRGB(55, 255, 0) then
+			-- Eğer glugluButton rengi (55, 255, 0) ise, (255, 255, 255) yap
+			glugluButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		else
+			-- Aksi halde (55, 255, 0) yap
+			glugluButton.BackgroundColor3 = Color3.fromRGB(55, 255, 0)
+		end
+	end
+	
+	-- TextButton tıklandığında fonksiyonu çağırıyoruz
+	textButton.MouseButton1Click:Connect(toggleGlugluColor)
+end
+task.spawn(SCRIPT_9a)
+-- // StarterGui.prof.profile_panel.frame.scroll.humanoid_actions.box.anfa.textButton.renk \\ --
+local function SCRIPT_9b()
+local script = UI["9b"]
+	local button = script.Parent -- LocalScript'in içinde bulunduğu TextButton
+	local toggled = false -- Durum takibi için bir değişken
+	
+	button.Activated:Connect(function()
+		if toggled then
+			-- Eğer önceki duruma basılmışsa, eski renk ve pozisyonu geri al
+			button.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+			button.Position = UDim2.new(0, 0,0.07, 0)
+		else
+			-- Eğer basılmamışsa, yeni renk ve pozisyonu uygula
+			button.BackgroundColor3 = Color3.fromRGB(55, 255, 0)
+			button.Position = UDim2.new(0.35, 0,0.07, 0)
+		end
+		toggled = not toggled -- Durumu ters çevir
+	end)
+	
+end
+task.spawn(SCRIPT_9b)
+-- // StarterGui.prof.profile_panel.frame.scroll.humanoid_actions.box.anfa.gluglu.gluglu \\ --
+local function SCRIPT_9e()
+local script = UI["9e"]
+	-- Bildirim Gönder
+	game:GetService("StarterGui"):SetCore("SendNotification", {
+		Title = "Box ESP",
+		Text = "By Youtube:Kanistay"
+	})
+	
+	-- Box ESP GUI Oluştur
+	local HEBOXESP = Instance.new("ScreenGui")
+	HEBOXESP.Name = "HEBOXESP"
+	HEBOXESP.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+	HEBOXESP.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+	HEBOXESP.ResetOnSpawn = false
+	
+	-- Oyuncu ESP Kutusu
+	local espFolder = Instance.new("Folder", game.Workspace)
+	espFolder.Name = "ESP"
+	
+	local localPlayer = game.Players.LocalPlayer
+	local boundingBoxes = {} -- Oyuncuların kutularını saklamak için bir tablo
+	local RunService = game:GetService("RunService")
+	
+	-- Renk kontrolü için kullanılan TextButton
+	local colorButton = script.Parent -- Script'in parent'ı olan TextButton
+	
+	-- Kutuları oluştur ve takım renklerine göre ayarla
+	local function createBoundingBox(player)
+		local bbg = Instance.new("BillboardGui", espFolder)
+		bbg.Name = player.Name
+		bbg.AlwaysOnTop = true
+		bbg.Size = UDim2.new(4, 0, 5.4, 0)
+		bbg.ClipsDescendants = false
+	
+		local boxFrame = Instance.new("Frame", bbg)
+		boxFrame.Size = UDim2.new(1, 0, 1, 0)
+		boxFrame.BackgroundTransparency = 1
+		boxFrame.BorderSizePixel = 0
+	
+		local teamColor = player.Team and player.Team.TeamColor.Color or Color3.fromRGB(255, 0, 0) -- Varsayılan kırmızı
+	
+		local function createOutline(position, size, color)
+			local outline = Instance.new("Frame", boxFrame)
+			outline.Size = size
+			outline.Position = position
+			outline.BackgroundColor3 = color -- Kutu rengi
+			outline.BorderSizePixel = 0
+			return outline
+		end
+	
+		createOutline(UDim2.new(0, 0, 0, 0), UDim2.new(0, 1, 1, 0), teamColor) -- Sol
+		createOutline(UDim2.new(1, -1, 0, 0), UDim2.new(0, 1, 1, 0), teamColor) -- Sağ
+		createOutline(UDim2.new(0, 0, 0, 0), UDim2.new(1, 0, 0, 1), teamColor) -- Üst
+		createOutline(UDim2.new(0, 0, 1, -1), UDim2.new(1, 0, 0, 1), teamColor) -- Alt
+	
+		boundingBoxes[player.UserId] = bbg
+		return bbg
+	end
+	
+	-- Tüm oyuncular için kutuları oluştur
+	for _, player in ipairs(game.Players:GetPlayers()) do
+		if player ~= localPlayer then
+			createBoundingBox(player)
+		end
+	end
+	
+	-- Yeni oyuncu eklendiğinde kutu oluştur
+	game.Players.PlayerAdded:Connect(function(player)
+		if player ~= localPlayer then
+			createBoundingBox(player)
+		end
+	end)
+	
+	-- Oyuncu oyundan çıktığında kutuyu kaldır
+	game.Players.PlayerRemoving:Connect(function(player)
+		local bbg = boundingBoxes[player.UserId]
+		if bbg then
+			bbg:Destroy()
+			boundingBoxes[player.UserId] = nil
+		end
+	end)
+	
+	-- colorButton rengini dinle ve kutuları güncelle
+	local function updateBoxVisibility()
+		local isEnabled = colorButton.BackgroundColor3 ~= Color3.fromRGB(255, 255, 255)
+	
+		for _, bbg in pairs(boundingBoxes) do
+			bbg.Enabled = isEnabled
+		end
+	end
+	
+	colorButton:GetPropertyChangedSignal("BackgroundColor3"):Connect(updateBoxVisibility)
+	updateBoxVisibility() -- İlk durumu kontrol et
+	
+	-- RenderStepped içinde tüm kutuları tek seferde güncelle
+	RunService.RenderStepped:Connect(function()
+		for playerId, bbg in pairs(boundingBoxes) do
+			local player = game.Players:GetPlayerByUserId(playerId)
+			if player and player.Character and player.Character:FindFirstChild("HumanoidRootPart") then
+				bbg.Adornee = player.Character.HumanoidRootPart
+				bbg.Enabled = colorButton.BackgroundColor3 ~= Color3.fromRGB(255, 255, 255)
+			else
+				bbg.Enabled = false
+			end
+		end
+	end)
+	
+end
+task.spawn(SCRIPT_9e)
+-- // StarterGui.prof.profile_panel.frame.scroll.humanoid_actions.box.anfa.gluglu.renk \\ --
+local function SCRIPT_9f()
+local script = UI["9f"]
+	local button = script.Parent -- LocalScript'in içinde bulunduğu TextButton
+	local toggled = false -- Durum takibi için bir değişken
+	
+	button.Activated:Connect(function()
+		if toggled then
+			-- Eğer önceki duruma basılmışsa, eski renk ve pozisyonu geri al
+			button.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+			button.Position = UDim2.new(0, 0,0.07, 0)
+		else
+			-- Eğer basılmamışsa, yeni renk ve pozisyonu uygula
+			button.BackgroundColor3 = Color3.fromRGB(55, 255, 0)
+			button.Position = UDim2.new(0.35, 0,0.07, 0)
+		end
+		toggled = not toggled -- Durumu ters çevir
+	end)
+	
+end
+task.spawn(SCRIPT_9f)
+-- // StarterGui.prof.profile_panel.frame.scroll.humanoid_actions.box.anfa.gluglu.tıklayıcı \\ --
+local function SCRIPT_a0()
+local script = UI["a0"]
+	local textButton = script.Parent -- Scriptin ebeveynini al (TextButton)
+	
+	wait(0.5) -- 1 saniye bekle
+	
+	textButton.BackgroundColor3 = Color3.fromRGB(55, 255, 0) -- Rengi (55, 255, 0) yap
+	
+	wait(0.5) -- 1 saniye bekle
+	
+	textButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255) -- Rengi (255, 255, 255) yap
+	
+end
+task.spawn(SCRIPT_a0)
+-- // StarterGui.prof.profile_panel.frame.scroll.humanoid_actions.shona.naesp.TextButton.LocalScript \\ --
+local function SCRIPT_aa()
+local script = UI["aa"]
+	-- Bildirim Gönder
+	game:GetService("StarterGui"):SetCore("SendNotification", {
+		Title = "Box ESP",
+		Text = "By Youtube:Kanistay"
+	})
+	
+	-- Box ESP GUI Oluştur
+	local HEBOXESP = Instance.new("ScreenGui")
+	HEBOXESP.Name = "HEBOXESP"
+	HEBOXESP.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+	HEBOXESP.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+	HEBOXESP.ResetOnSpawn = false
+	
+	-- Oyuncu ESP Label'ları
+	local espFolder = Instance.new("Folder", game.Workspace)
+	espFolder.Name = "ESP"
+	
+	local localPlayer = game.Players.LocalPlayer
+	local boundingLabels = {} -- Oyuncuların etiketlerini saklamak için bir tablo
+	local RunService = game:GetService("RunService")
+	
+	-- Renk kontrolü için kullanılan TextButton ve boyutlandırma için kullanılan TextBox
+	local colorButton = script.Parent
+	local sizeTextBox = script.Parent:FindFirstChild("TextBox") -- Parent içindeki TextBox'u bul
+	
+	-- Etiketleri oluştur ve takım renklerine göre ayarla
+	local function createLabel(player)
+		local bbg = Instance.new("BillboardGui", espFolder)
+		bbg.Name = player.Name
+		bbg.AlwaysOnTop = true
+		bbg.Size = UDim2.new(4, 0, 2, 0) -- Varsayılan boyut
+		bbg.ClipsDescendants = false
+	
+		local nameLabel = Instance.new("TextLabel", bbg)
+		nameLabel.Size = UDim2.new(1, 0, 1, 0)
+		nameLabel.BackgroundTransparency = 1
+		nameLabel.Text = player.Name
+		nameLabel.TextColor3 = player.Team and player.Team.TeamColor.Color or Color3.fromRGB(255, 0, 0) -- Varsayılan kırmızı
+		nameLabel.TextScaled = true
+		nameLabel.Font = Enum.Font.SourceSansBold
+	
+		-- Stroke ayarları
+		nameLabel.TextStrokeTransparency = 0 -- Stroke şeffaflığı (0 tam opak, 1 tamamen şeffaf)
+		nameLabel.TextStrokeColor3 = Color3.fromRGB(0, 0, 0) -- Stroke rengi (siyah)
+	
+		boundingLabels[player.UserId] = bbg
+	
+		-- colorButton rengini kontrol et ve başlangıç durumunu ayarla
+		bbg.Enabled = colorButton.BackgroundColor3 == Color3.fromRGB(55, 255, 0)
+	
+		-- Adornee'yi ayarla
+		if player.Character and player.Character:FindFirstChild("Head") then
+			bbg.Adornee = player.Character.Head
+		end
+	
+		return bbg
+	end
+	
+	
+	-- TextBox'taki değere göre boyutu güncelle
+	local function updateLabelSize()
+		local sizeMultiplier = tonumber(sizeTextBox.Text) or 1 -- TextBox değeri sayı değilse 1 olarak kabul et
+		for _, bbg in pairs(boundingLabels) do
+			bbg.Size = UDim2.new(4 * sizeMultiplier, 0, 2 * sizeMultiplier, 0) -- Yüksekliği ayarla
+		end
+	end
+	
+	-- Tüm oyuncular için etiketleri oluştur
+	local function updateAllLabels()
+		for _, player in ipairs(game.Players:GetPlayers()) do
+			if player ~= localPlayer and not boundingLabels[player.UserId] then
+				createLabel(player)
+			end
+		end
+	end
+	
+	-- Yeni oyuncu eklendiğinde etiket oluştur
+	game.Players.PlayerAdded:Connect(function(player)
+		player.CharacterAdded:Connect(function(character)
+			wait(0.1) -- Karakterin oluşturulması için kısa bir bekleme
+			local bbg = createLabel(player)
+			bbg.Adornee = character:WaitForChild("Head") -- Adornee'yi ayarlayın
+		end)
+	end)
+	
+	-- Oyuncu oyundan çıktığında etiketi kaldır
+	game.Players.PlayerRemoving:Connect(function(player)
+		local bbg = boundingLabels[player.UserId]
+		if bbg then
+			bbg:Destroy()
+			boundingLabels[player.UserId] = nil
+		end
+	end)
+	
+	-- colorButton rengini dinle ve etiketleri güncelle
+	local function updateLabelVisibility()
+		local isEnabled = colorButton.BackgroundColor3 == Color3.fromRGB(55, 255, 0)
+	
+		for _, bbg in pairs(boundingLabels) do
+			bbg.Enabled = isEnabled
+		end
+	end
+	
+	colorButton:GetPropertyChangedSignal("BackgroundColor3"):Connect(updateLabelVisibility)
+	updateLabelVisibility() -- İlk durumu kontrol et
+	
+	-- TextBox değeri değiştiğinde boyutu güncelle
+	sizeTextBox:GetPropertyChangedSignal("Text"):Connect(updateLabelSize)
+	updateLabelSize() -- Başlangıç boyutunu kontrol et
+	
+	-- RenderStepped içinde tüm etiketleri güncelle
+	RunService.RenderStepped:Connect(function()
+		for playerId, bbg in pairs(boundingLabels) do
+			local player = game.Players:GetPlayerByUserId(playerId)
+			if player and player.Character and player.Character:FindFirstChild("Head") then
+				bbg.Adornee = player.Character.Head
+				bbg.Position = UDim2.new(0, 0, 3, 0) -- 1.5 tık kadar yukarı
+				bbg.Enabled = colorButton.BackgroundColor3 == Color3.fromRGB(55, 255, 0)
+			else
+				bbg.Enabled = false
+			end
+		end
+	end)
+	
+	-- Başlangıçta tüm mevcut oyuncular için etiketleri oluştur
+	updateAllLabels()
+	
+end
+task.spawn(SCRIPT_aa)
+-- // StarterGui.prof.profile_panel.frame.scroll.humanoid_actions.shona.naesp.TextButton.renk \\ --
+local function SCRIPT_ab()
+local script = UI["ab"]
+	local button = script.Parent -- LocalScript'in içinde bulunduğu TextButton
+	local toggled = false -- Durum takibi için bir değişken
+	
+	button.Activated:Connect(function()
+		if toggled then
+			-- Eğer önceki duruma basılmışsa, eski renk ve pozisyonu geri al
+			button.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+			button.Position = UDim2.new(0, 0,0.07, 0)
+		else
+			-- Eğer basılmamışsa, yeni renk ve pozisyonu uygula
+			button.BackgroundColor3 = Color3.fromRGB(55, 255, 0)
+			button.Position = UDim2.new(0.35, 0,0.07, 0)
+		end
+		toggled = not toggled -- Durumu ters çevir
+	end)
+	
+end
+task.spawn(SCRIPT_ab)
+-- // StarterGui.prof.profile_panel.frame.scroll.humanoid_actions.shohe.anfa.textButton.gluolmayan \\ --
+local function SCRIPT_ba()
+local script = UI["ba"]
+	local Players = game:GetService("Players")
+	local localPlayer = Players.LocalPlayer
+	local button = script.Parent -- TextButton
+	local espFolder = Instance.new("Folder")
+	espFolder.Name = "HealthESP"
+	espFolder.Parent = game.Workspace
+	
+	local function createHealthBar(player)
+		-- Sağlık çubuğu oluşturuluyor
+		local healthGui = Instance.new("BillboardGui", espFolder)
+		healthGui.Name = player.Name
+		healthGui.AlwaysOnTop = true
+		healthGui.Size = UDim2.new(2, 0, 4, 0)
+	
+		-- Karakterin HumanoidRootPart'ını bekleyin
+		local humanoidRootPart = player.Character:WaitForChild("HumanoidRootPart")
+		healthGui.Adornee = humanoidRootPart
+	
+		-- Çubuğun arka planı
+		local healthBack = Instance.new("Frame", healthGui)
+		healthBack.Size = UDim2.new(0.1, 0, 1, 0)
+		healthBack.Position = UDim2.new(0, 0, 0, 0)
+		healthBack.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+		healthBack.BorderSizePixel = 0
+	
+		-- Sağlık çubuğu (yeşil renk)
+		local healthBar = Instance.new("Frame", healthBack)
+		healthBar.Name = "Bar"
+		healthBar.AnchorPoint = Vector2.new(0, 1)
+		healthBar.Position = UDim2.new(0, 0, 1, 0)
+		healthBar.Size = UDim2.new(1, 0, 1, 0)
+		healthBar.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+		healthBar.BorderSizePixel = 0
+	
+		-- Sağlık güncellemeleri
+		local humanoid = player.Character:WaitForChild("Humanoid")
+		local function updateHealth()
+			local healthRatio = humanoid.Health / humanoid.MaxHealth
+			healthBar.Size = UDim2.new(1, 0, healthRatio, 0)
+		end
+	
+		humanoid:GetPropertyChangedSignal("Health"):Connect(updateHealth)
+		updateHealth()
+	
+		-- Renk kontrolü ve görünürlük
+		local function updateVisibility()
+			if button.BackgroundColor3 == Color3.fromRGB(55, 255, 0) then
+				healthGui.Enabled = true
+			else
+				healthGui.Enabled = false
+			end
+		end
+	
+		updateVisibility() -- Başlangıçta görünürlüğü kontrol et
+	
+		-- Renk değişikliklerini dinle
+		button:GetPropertyChangedSignal("BackgroundColor3"):Connect(updateVisibility)
+	end
+	
+	-- Oyuncular eklendiğinde sağlık çubuğu oluşturma
+	Players.PlayerAdded:Connect(function(player)
+		player.CharacterAdded:Connect(function(character)
+			wait(0.1) -- Karakterin HumanoidRootPart'ının oluşmasını bekleyin
+			if button.BackgroundColor3 == Color3.fromRGB(55, 255, 0) then
+				createHealthBar(player)
+			end
+		end)
+	end)
+	
+	-- Mevcut oyuncular için sağlık çubuğu oluşturma
+	for _, player in pairs(Players:GetPlayers()) do
+		if player ~= localPlayer then
+			if player.Character then
+				if button.BackgroundColor3 == Color3.fromRGB(55, 255, 0) then
+					createHealthBar(player)
+				end
+			else
+				player.CharacterAdded:Connect(function()
+					wait(0.1) -- Karakter oluşturulduğunda sağlık çubuğu oluştur
+					if button.BackgroundColor3 == Color3.fromRGB(55, 255, 0) then
+						createHealthBar(player)
+					end
+				end)
+			end
+		end
+	end
+	
+	-- Renk değişimlerini kontrol et ve sağlık çubuklarını güncelle
+	button:GetPropertyChangedSignal("BackgroundColor3"):Connect(function()
+		for _, player in pairs(Players:GetPlayers()) do
+			if player ~= localPlayer and player.Character then
+				createHealthBar(player)
+			end
+		end
+	end)
+	
+end
+task.spawn(SCRIPT_ba)
+-- // StarterGui.prof.profile_panel.frame.scroll.humanoid_actions.shohe.anfa.textButton.renk \\ --
+local function SCRIPT_bb()
+local script = UI["bb"]
+	local button = script.Parent -- LocalScript'in içinde bulunduğu TextButton
+	local toggled = false -- Durum takibi için bir değişken
+	
+	button.Activated:Connect(function()
+		if toggled then
+			-- Eğer önceki duruma basılmışsa, eski renk ve pozisyonu geri al
+			button.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+			button.Position = UDim2.new(0, 0,0.07, 0)
+		else
+			-- Eğer basılmamışsa, yeni renk ve pozisyonu uygula
+			button.BackgroundColor3 = Color3.fromRGB(55, 255, 0)
+			button.Position = UDim2.new(0.35, 0,0.07, 0)
+		end
+		toggled = not toggled -- Durumu ters çevir
+	end)
+	
+end
+task.spawn(SCRIPT_bb)
+-- // StarterGui.prof.profile_panel.frame.scroll.visibility_actions.invisi.anfa.textButton.gluolmayan \\ --
+local function SCRIPT_c8()
+local script = UI["c8"]
+	local textButton = script.Parent
+	local player = game.Players.LocalPlayer
+	local characterModel = workspace:FindFirstChild(player.Name)
+	local colors = {
+		Color3.fromRGB(255, 0, 0),     -- Kırmızı
+		Color3.fromRGB(0, 255, 0),     -- Yeşil
+		Color3.fromRGB(0, 0, 255),     -- Mavi
+		Color3.fromRGB(255, 255, 0),   -- Sarı
+		Color3.fromRGB(255, 165, 0),   -- Turuncu
+		Color3.fromRGB(128, 0, 128),   -- Mor
+		Color3.fromRGB(0, 255, 255),
+		Color3.fromRGB(255, 255, 255),-- Cam Göbeği
+		Color3.fromRGB(255, 20, 147)    -- Derin Pembe
+	}
+	
+	local currentColorIndex = 1  -- Mevcut renk indeksi
+	
+	-- Renk değiştirme fonksiyonu
+	local function changeColor()
+		if characterModel then
+			local newColor = colors[currentColorIndex]
+	
+			-- MeshPart'ların rengini değiştir
+			for _, part in pairs(characterModel:GetDescendants()) do
+				if part:IsA("MeshPart") then
+					part.Color = newColor
+				end
+			end
+	
+			-- TextButton'ın rengini değiştir
+			textButton.BackgroundColor3 = newColor
+	
+			-- Sonraki renk indeksini güncelle
+			currentColorIndex = currentColorIndex % #colors + 1
+		else
+			warn("Karakter modeli bulunamadı!")
+		end
+	end
+	
+	-- Butona tıklama olayı
+	textButton.MouseButton1Click:Connect(changeColor)
+	
+end
+task.spawn(SCRIPT_c8)
+-- // StarterGui.prof.profile_panel.frame.scroll.visibility_actions.invisi.anfa.textButton.gluolmayan \\ --
+local function SCRIPT_d0()
+local script = UI["d0"]
+	local textButton = script.Parent
+	local player = game.Players.LocalPlayer
+	local characterModel = workspace:FindFirstChild(player.Name)
+	
+	-- Gökkuşağı renkleri
+	local rainbowColors = {
+		Color3.fromRGB(255, 0, 0),      -- Kırmızı
+		Color3.fromRGB(255, 127, 0),    -- Turuncu
+		Color3.fromRGB(255, 255, 0),    -- Sarı
+		Color3.fromRGB(0, 255, 0),      -- Yeşil
+		Color3.fromRGB(0, 0, 255),      -- Mavi
+		Color3.fromRGB(75, 0, 130),     -- Çivit Mavisi
+		Color3.fromRGB(148, 0, 211),     -- Mor
+		Color3.fromRGB(255, 255, 255)
+	}
+	
+	local currentColorIndex = 1  -- Mevcut renk indeksi
+	local changingColors = false  -- Renk değişiminin durumu
+	
+	-- Renk değiştirme fonksiyonu
+	local function changeColor()
+		if characterModel then
+			local newColor = rainbowColors[currentColorIndex]
+	
+			-- MeshPart'ların rengini değiştir
+			for _, part in pairs(characterModel:GetDescendants()) do
+				if part:IsA("MeshPart") then
+					part.Color = newColor
+				end
+			end
+	
+			-- Sonraki renk indeksini güncelle
+			currentColorIndex = (currentColorIndex % #rainbowColors) + 1
+		else
+			warn("Karakter modeli bulunamadı!")
+		end
+	end
+	
+	-- Renk değişimi için bir döngü başlat veya durdur
+	local function toggleColorChange()
+		changingColors = not changingColors
+	
+		if changingColors then
+			while changingColors do
+				changeColor()
+				wait(0.60)  -- Her bir saniye bekle
+			end
+		end
+	end
+	
+	-- Butona tıklama olayı
+	textButton.MouseButton1Click:Connect(toggleColorChange)
+	
+end
+task.spawn(SCRIPT_d0)
+-- // StarterGui.prof.profile_panel.frame.scroll.visibility_actions.invisi.anfa.textButton.renk \\ --
+local function SCRIPT_d1()
+local script = UI["d1"]
+	local button = script.Parent -- LocalScript'in içinde bulunduğu TextButton
+	local toggled = false -- Durum takibi için bir değişken
+	
+	button.Activated:Connect(function()
+		if toggled then
+			-- Eğer önceki duruma basılmışsa, eski renk ve pozisyonu geri al
+			button.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+			button.Position = UDim2.new(0, 0,0.07, 0)
+		else
+			-- Eğer basılmamışsa, yeni renk ve pozisyonu uygula
+			button.BackgroundColor3 = Color3.fromRGB(55, 255, 0)
+			button.Position = UDim2.new(0.35, 0,0.07, 0)
+		end
+		toggled = not toggled -- Durumu ters çevir
+	end)
+	
+end
+task.spawn(SCRIPT_d1)
+-- // StarterGui.prof.profile_panel.frame.scroll.visibility_actions.ForceFeild.anfa.textButton.gluolmayan \\ --
+local function SCRIPT_e1()
+local script = UI["e1"]
+	local textButton = script.Parent
+	local player = game.Players.LocalPlayer
+	local characterModel = workspace:FindFirstChild(player.Name)
+	local isForceField = false  -- Başlangıç durumu
+	
+	-- Material değiştirme fonksiyonu
+	local function toggleMaterial()
+		if characterModel then
+			for _, part in pairs(characterModel:GetDescendants()) do
+				if part:IsA("MeshPart") then
+					if isForceField then
+						part.Material = Enum.Material.Plastic
+					else
+						part.Material = Enum.Material.ForceField
+					end
+				end
+			end
+			isForceField = not isForceField  -- Durumu tersine çevir
+		else
+			warn("Karakter modeli bulunamadı!")
+		end
+	end
+	
+	-- Butona tıklama olayı
+	textButton.MouseButton1Click:Connect(toggleMaterial)
+	
+end
+task.spawn(SCRIPT_e1)
+-- // StarterGui.prof.profile_panel.frame.scroll.visibility_actions.ForceFeild.anfa.textButton.renk \\ --
+local function SCRIPT_e2()
+local script = UI["e2"]
+	local button = script.Parent -- LocalScript'in içinde bulunduğu TextButton
+	local toggled = false -- Durum takibi için bir değişken
+	
+	button.Activated:Connect(function()
+		if toggled then
+			-- Eğer önceki duruma basılmışsa, eski renk ve pozisyonu geri al
+			button.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+			button.Position = UDim2.new(0, 0,0.07, 0)
+		else
+			-- Eğer basılmamışsa, yeni renk ve pozisyonu uygula
+			button.BackgroundColor3 = Color3.fromRGB(55, 255, 0)
+			button.Position = UDim2.new(0.35, 0,0.07, 0)
+		end
+		toggled = not toggled -- Durumu ters çevir
+	end)
+	
+end
+task.spawn(SCRIPT_e2)
+-- // StarterGui.prof.profile_panel.frame.scroll.teams_action.team.anfa.textButton.gluolmayan \\ --
+local function SCRIPT_f0()
+local script = UI["f0"]
+	local textButton = script.Parent
+	local player = game.Players.LocalPlayer
+	local character = player.Character or player.CharacterAdded:Wait()
+	local rootPart = character:WaitForChild("HumanoidRootPart")
+	local trailEnabled = false  -- Şerit efektinin durumu
+	
+	local trailDebrisTime = 2  -- Parçaların kaybolma süresi (2 saniye)
+	
+	-- Şerit parçası oluşturma fonksiyonu
+	local function createTrailSegment()
+		if trailEnabled then
+			local segment = Instance.new("Part")
+			segment.Size = Vector3.new(0.1, 1, 2)  -- Yüksekliği 1 birim, uzunluğu 2 birim olarak ayarlandı
+			segment.Color = Color3.fromRGB(55, 1, 200)
+			segment.Transparency = 0  -- Başlangıçta tam görünür
+			segment.Anchored = true
+			segment.CanCollide = false
+	
+			-- Karakterin hemen arkasında olacak şekilde segment'i yerleştir
+			segment.CFrame = rootPart.CFrame * CFrame.new(0, 0, -0.5)  -- Karakterin hemen arkasında oluşturulur
+			segment.Parent = workspace
+	
+			-- Şerit parçalarının kademeli olarak şeffaflaşması ve kaybolması
+			game:GetService("TweenService"):Create(
+				segment,
+				TweenInfo.new(trailDebrisTime, Enum.EasingStyle.Linear),
+				{Transparency = 1}
+			):Play()
+	
+			-- Parçayı belirli bir süre sonra sil
+			game.Debris:AddItem(segment, trailDebrisTime)
+		end
+	end
+	
+	-- Şerit aç/kapa fonksiyonu
+	local function toggleTrail()
+		trailEnabled = not trailEnabled
+	
+		-- Şerit açıldığında döngü başlat
+		if trailEnabled then
+			while trailEnabled do
+				createTrailSegment()
+				wait(0.1)  -- Parça oluşturma aralığı
+			end
+		end
+	end
+	
+	-- Butona tıklama olayı
+	textButton.MouseButton1Click:Connect(toggleTrail)
+	
+end
+task.spawn(SCRIPT_f0)
+-- // StarterGui.prof.profile_panel.frame.scroll.teams_action.team.anfa.textButton.renk \\ --
+local function SCRIPT_f1()
+local script = UI["f1"]
+	local button = script.Parent -- LocalScript'in içinde bulunduğu TextButton
+	local toggled = false -- Durum takibi için bir değişken
+	
+	button.Activated:Connect(function()
+		if toggled then
+			-- Eğer önceki duruma basılmışsa, eski renk ve pozisyonu geri al
+			button.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+			button.Position = UDim2.new(0, 0,0.07, 0)
+		else
+			-- Eğer basılmamışsa, yeni renk ve pozisyonu uygula
+			button.BackgroundColor3 = Color3.fromRGB(55, 255, 0)
+			button.Position = UDim2.new(0.35, 0,0.07, 0)
+		end
+		toggled = not toggled -- Durumu ters çevir
+	end)
+	
+end
+task.spawn(SCRIPT_f1)
+-- // StarterGui.prof.profile_panel.frame.close.LocalScript \\ --
+local function SCRIPT_f9()
+local script = UI["f9"]
+	-- Bu script ImageButton'a yerleştirilecek
+	local button = script.Parent
+	
+	-- Button'a tıklandığında çalışacak
+	button.MouseButton1Click:Connect(function()
+		-- Üçüncü parent'a kadar gidip Visible'ı false yapıyoruz
+		local targetButton = button.Parent.Parent
+		targetButton.Visible = false
+	end)
+	
+end
+task.spawn(SCRIPT_f9)
+-- // StarterGui.prof.profile_panel.LocalScript \\ --
+local function SCRIPT_ff()
+local script = UI["ff"]
+	-- LocalScript (bu scripti UI öğesinin içine koyabilirsin)
+	
+	local guiObject = script.Parent -- Bu scriptin yerleştirildiği UI öğesi
+	
+	local UserInputService = game:GetService("UserInputService") -- Kullanıcı girdi servisi
+	local dragging = false -- Sürükleme kontrolü
+	local dragStart = nil -- Sürüklemeye başlama noktası
+	local startPos = nil -- UI öğesinin başlangıçtaki pozisyonu
+	
+	-- Sürükleme başladığında çalışacak fonksiyon
+	local function onInputBegan(input)
+		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then
+			dragging = true
+			dragStart = input.Position -- Fare veya dokunma pozisyonunu al
+			startPos = guiObject.Position -- UI öğesinin başlangıç pozisyonunu al
+	
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false -- Fare tuşu veya dokunmatik ekran bırakıldığında sürüklemeyi durdur
+				end
+			end)
+		end
+	end
+	
+	-- Sürükleme hareketi sırasında çalışacak fonksiyon
+	local function onInputChanged(input)
+		if dragging and (input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch) then
+			local delta = input.Position - dragStart -- Farklılığı bul (yeni pozisyon - başlangıç pozisyonu)
+			local newPos = UDim2.new(
+				startPos.X.Scale, startPos.X.Offset + delta.X, -- X ekseni
+				startPos.Y.Scale, startPos.Y.Offset + delta.Y -- Y ekseni
+			)
+			guiObject.Position = newPos -- Yeni pozisyonu ayarla
+		end
+	end
+	
+	-- Kullanıcı inputlarını dinle
+	guiObject.InputBegan:Connect(onInputBegan)
+	UserInputService.InputChanged:Connect(onInputChanged)
+	
+	-- Klavye ve joystick girişlerini dinlemek için
+	UserInputService.InputBegan:Connect(function(input)
+		-- Burada klavye veya joystick girdileri için istediğin kodları ekleyebilirsin.
+		-- Örneğin, bir menüyü açma veya diğer işlevler.
+	end)
+	
+end
+task.spawn(SCRIPT_ff)
+-- // StarterGui.prof.LocalScript \\ --
+local function SCRIPT_100()
+local script = UI["100"]
+	local frame = script.Parent
+	local textButton = frame:FindFirstChild("TextButton")
+	local replicatedStorage = game:GetService("ReplicatedStorage")
+	
+	local remoteNames = {
+		"7b560833-6f0a-4316-92b5-a6639444bdd2",
+		"fc985a5b-0f9a-4948-95a6-7c3c8c84710c",
+		"185f96b7-cd86-45ed-8e9a-d04c30fffd45",
+		"122c9dc5-0044-4d45-93f7-04127c2e84f1",
+		"6cb89c95-8809-46f6-afe4-d205109c84f6",
+		"e761bbf2-2a78-4bef-a611-91bcf1a666a9",
+		"16be7a61-1f57-41ee-8111-bbca08af26a0",
+		"7bfc43ca-511b-4ba6-8b14-b010b2cad992",
+		"31f51de5-564f-42fd-bbd7-e6e82da4bdc1",
+		"2c64bd75-49dd-428a-89c6-bf7d9c1c7ccf"
+	}
+	
+	-- RemoteEvent'leri kontrol et ve sil
+	local function removeRemotesOnce()
+		for _, remoteName in pairs(remoteNames) do
+			-- Farklı yerlerdeki RemoteEvent'leri kontrol et
+			local remote = replicatedStorage:FindFirstChild(remoteName, true)  -- Tüm alt öğelerde arar
+			if remote then
+				remote:Destroy()  -- RemoteEvent varsa sil
+			end
+		end
+	end
+	
+	-- RemoteEvent eklendiğinde onu hemen sil
+	local function onRemoteAdded(child)
+		if table.find(remoteNames, child.Name) then
+			child:Destroy()  -- RemoteEvent eklendiğinde sil
+		end
+	end
+	
+	-- Başlangıçta RemoteEvent'leri bir kez kontrol et
+	removeRemotesOnce()
+	
+	-- ReplicatedStorage'deki qqv, NXe, gYq ve diğer yerlerdeki RemoteEvent'ler için ChildAdded sinyali
+	for _, parentFolder in pairs({replicatedStorage.qqv, replicatedStorage["5g3"], replicatedStorage.NXe, replicatedStorage.gYq}) do
+		parentFolder.ChildAdded:Connect(onRemoteAdded)  -- RemoteEvent eklendiğinde tetiklenecek
+	end
+	
+end
+task.spawn(SCRIPT_100)
+-- // StarterGui.prof.LocalScript \\ --
+local function SCRIPT_101()
+local script = UI["101"]
+	local screenGui = script.Parent
+	local profilePanel = screenGui:FindFirstChild("profile_panel")
+	local parentImageLabel = screenGui.Parent
+	
+	-- Profil panelinin yeni parent'ini ayarlama fonksiyonu
+	local function setParent()
+		if profilePanel and parentImageLabel then
+			profilePanel.Parent = parentImageLabel
+			return true
+		else
+			return false
+		end
+	end
+	
+	-- Profil panelini taşıma işlemi
+	local success = setParent()
+	
+	-- Eğer taşıma başarısız olursa 15 saniye bekleyip ScreenGui'yi sil
+	if not success then
+		task.delay(15, function()
+			if not setParent() then
+				screenGui:Destroy()
+			end
+		end)
+	end
+	
+end
+task.spawn(SCRIPT_101)
+
+return UI["1"], require;
