@@ -1,1 +1,1363 @@
-return ""
+-- // GUI TO LUA \\ --
+
+-- // INSTANCES: 91 | SCRIPTS: 17 | MODULES: 0 \\ --
+
+local UI = {}
+
+-- // StarterGui.trixo \\ --
+UI["1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"))
+UI["1"]["Name"] = [[trixo]]
+UI["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling
+
+-- // StarterGui.trixo.mayn \\ --
+UI["2"] = Instance.new("ImageLabel", UI["1"])
+UI["2"]["BorderSizePixel"] = 0
+UI["2"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["2"]["ImageTransparency"] = 0.15
+UI["2"]["ImageColor3"] = Color3.fromRGB(60, 60, 60)
+UI["2"]["Image"] = [[rbxassetid://122207172048928]]
+UI["2"]["Size"] = UDim2.new(0, 497, 0, 295)
+UI["2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["2"]["BackgroundTransparency"] = 0.9
+UI["2"]["Name"] = [[mayn]]
+UI["2"]["Position"] = UDim2.new(0.28085, 0, 0.23732, 0)
+
+-- // StarterGui.trixo.mayn.UICorner \\ --
+UI["3"] = Instance.new("UICorner", UI["2"])
+UI["3"]["CornerRadius"] = UDim.new(0, 20)
+
+-- // StarterGui.trixo.mayn.ImageLabel \\ --
+UI["4"] = Instance.new("ImageLabel", UI["2"])
+UI["4"]["BorderSizePixel"] = 0
+UI["4"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["4"]["Image"] = [[rbxassetid://106210868319416]]
+UI["4"]["Size"] = UDim2.new(0, 55, 0, 50)
+UI["4"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["4"]["BackgroundTransparency"] = 1
+UI["4"]["Position"] = UDim2.new(0.02616, 0, 0, 0)
+
+-- // StarterGui.trixo.mayn.ImageLabel.UICorner \\ --
+UI["5"] = Instance.new("UICorner", UI["4"])
+UI["5"]["CornerRadius"] = UDim.new(0, 9999)
+
+-- // StarterGui.trixo.mayn.ImageLabel.TextLabel \\ --
+UI["6"] = Instance.new("TextLabel", UI["4"])
+UI["6"]["TextWrapped"] = true
+UI["6"]["BorderSizePixel"] = 0
+UI["6"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255)
+UI["6"]["TextScaled"] = true
+UI["6"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["6"]["TextSize"] = 14
+UI["6"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["6"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["6"]["BackgroundTransparency"] = 1
+UI["6"]["Size"] = UDim2.new(0, 67, 0, 39)
+UI["6"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["6"]["Text"] = [[Trixo]]
+UI["6"]["Position"] = UDim2.new(1.18033, 0, 0.1, 0)
+
+-- // StarterGui.trixo.mayn.ImageLabel.TextLabel \\ --
+UI["7"] = Instance.new("TextLabel", UI["4"])
+UI["7"]["TextWrapped"] = true
+UI["7"]["TextStrokeTransparency"] = 0
+UI["7"]["BorderSizePixel"] = 0
+UI["7"]["TextStrokeColor3"] = Color3.fromRGB(79, 0, 189)
+UI["7"]["TextScaled"] = true
+UI["7"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["7"]["TextSize"] = 14
+UI["7"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["7"]["TextColor3"] = Color3.fromRGB(116, 0, 255)
+UI["7"]["BackgroundTransparency"] = 1
+UI["7"]["Size"] = UDim2.new(0, 46, 0, 21)
+UI["7"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["7"]["Text"] = [[PRO]]
+UI["7"]["Position"] = UDim2.new(2.16393, 0, 0.58, 0)
+
+-- // StarterGui.trixo.mayn.ImageLabel.TextLabel \\ --
+UI["8"] = Instance.new("TextLabel", UI["4"])
+UI["8"]["TextWrapped"] = true
+UI["8"]["TextStrokeTransparency"] = 0.5
+UI["8"]["BorderSizePixel"] = 0
+UI["8"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255)
+UI["8"]["TextScaled"] = true
+UI["8"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["8"]["TextSize"] = 14
+UI["8"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["8"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["8"]["BackgroundTransparency"] = 1
+UI["8"]["Size"] = UDim2.new(0, 249, 0, 55)
+UI["8"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["8"]["Text"] = [[Emergency Hamburg HUB]]
+UI["8"]["Position"] = UDim2.new(3.95082, 0, 0, 0)
+
+-- // StarterGui.trixo.mayn.TextLabel \\ --
+UI["9"] = Instance.new("TextLabel", UI["2"])
+UI["9"]["TextWrapped"] = true
+UI["9"]["BorderSizePixel"] = 0
+UI["9"]["TextScaled"] = true
+UI["9"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0)
+UI["9"]["TextSize"] = 14
+UI["9"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["9"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["9"]["BackgroundTransparency"] = 0.95
+UI["9"]["Size"] = UDim2.new(0, 80, 0, 26)
+UI["9"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["9"]["Text"] = [[Fast Swim]]
+UI["9"]["Position"] = UDim2.new(0.01408, 0, 0.3, 0)
+
+-- // StarterGui.trixo.mayn.TextLabel.anfa \\ --
+UI["a"] = Instance.new("Frame", UI["9"])
+UI["a"]["BorderSizePixel"] = 0
+UI["a"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0)
+UI["a"]["Size"] = UDim2.new(0, 42, 0, 18)
+UI["a"]["Position"] = UDim2.new(1.20995, 0, 0.11635, 0)
+UI["a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["a"]["Name"] = [[anfa]]
+
+-- // StarterGui.trixo.mayn.TextLabel.anfa.TextButton \\ --
+UI["b"] = Instance.new("TextButton", UI["a"])
+UI["b"]["BorderSizePixel"] = 0
+UI["b"]["TextSize"] = 14
+UI["b"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
+UI["b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["b"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["b"]["ZIndex"] = 3
+UI["b"]["Size"] = UDim2.new(0, 24, 0, 15)
+UI["b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["b"]["Text"] = [[]]
+UI["b"]["Position"] = UDim2.new(0, 0, 0.07, 0)
+
+-- // StarterGui.trixo.mayn.TextLabel.anfa.TextButton.UICorner \\ --
+UI["c"] = Instance.new("UICorner", UI["b"])
+
+
+-- // StarterGui.trixo.mayn.TextLabel.anfa.TextButton.LocalScript \\ --
+UI["d"] = Instance.new("LocalScript", UI["b"])
+
+
+-- // StarterGui.trixo.mayn.TextLabel.anfa.TextButton.renk \\ --
+UI["e"] = Instance.new("LocalScript", UI["b"])
+UI["e"]["Name"] = [[renk]]
+
+-- // StarterGui.trixo.mayn.TextLabel.anfa.UICorner \\ --
+UI["f"] = Instance.new("UICorner", UI["a"])
+UI["f"]["CornerRadius"] = UDim.new(0, 25)
+
+-- // StarterGui.trixo.mayn.TextLabel.anfa.UIStroke \\ --
+UI["10"] = Instance.new("UIStroke", UI["a"])
+UI["10"]["Thickness"] = 1.6
+
+-- // StarterGui.trixo.mayn.TextLabel.anfa.ImageLabel \\ --
+UI["11"] = Instance.new("ImageLabel", UI["a"])
+UI["11"]["BorderSizePixel"] = 0
+UI["11"]["BackgroundColor3"] = Color3.fromRGB(86, 0, 128)
+UI["11"]["ImageColor3"] = Color3.fromRGB(255, 0, 0)
+UI["11"]["Image"] = [[rbxassetid://93433450915529]]
+UI["11"]["Size"] = UDim2.new(0, 42, 0, 16)
+UI["11"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["11"]["Position"] = UDim2.new(0, 0, 0.07, 0)
+
+-- // StarterGui.trixo.mayn.TextLabel.anfa.ImageLabel.UICorner \\ --
+UI["12"] = Instance.new("UICorner", UI["11"])
+UI["12"]["CornerRadius"] = UDim.new(0, 25)
+
+-- // StarterGui.trixo.mayn.TextLabel \\ --
+UI["13"] = Instance.new("TextLabel", UI["2"])
+UI["13"]["TextWrapped"] = true
+UI["13"]["BorderSizePixel"] = 0
+UI["13"]["TextScaled"] = true
+UI["13"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0)
+UI["13"]["TextSize"] = 14
+UI["13"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["13"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["13"]["BackgroundTransparency"] = 0.95
+UI["13"]["Size"] = UDim2.new(0, 120, 0, 26)
+UI["13"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["13"]["Text"] = [[No-Fall Damage]]
+UI["13"]["Position"] = UDim2.new(0.01408, 0, 0.45, 0)
+
+-- // StarterGui.trixo.mayn.TextLabel.anfa \\ --
+UI["14"] = Instance.new("Frame", UI["13"])
+UI["14"]["BorderSizePixel"] = 0
+UI["14"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0)
+UI["14"]["Size"] = UDim2.new(0, 42, 0, 18)
+UI["14"]["Position"] = UDim2.new(1.14329, 0, 0.11635, 0)
+UI["14"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["14"]["Name"] = [[anfa]]
+
+-- // StarterGui.trixo.mayn.TextLabel.anfa.TextButton \\ --
+UI["15"] = Instance.new("TextButton", UI["14"])
+UI["15"]["BorderSizePixel"] = 0
+UI["15"]["TextSize"] = 14
+UI["15"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
+UI["15"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["15"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["15"]["ZIndex"] = 3
+UI["15"]["Size"] = UDim2.new(0, 24, 0, 15)
+UI["15"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["15"]["Text"] = [[]]
+UI["15"]["Position"] = UDim2.new(0, 0, 0.07, 0)
+
+-- // StarterGui.trixo.mayn.TextLabel.anfa.TextButton.UICorner \\ --
+UI["16"] = Instance.new("UICorner", UI["15"])
+
+
+-- // StarterGui.trixo.mayn.TextLabel.anfa.TextButton.LocalScript \\ --
+UI["17"] = Instance.new("LocalScript", UI["15"])
+
+
+-- // StarterGui.trixo.mayn.TextLabel.anfa.TextButton.renk \\ --
+UI["18"] = Instance.new("LocalScript", UI["15"])
+UI["18"]["Name"] = [[renk]]
+
+-- // StarterGui.trixo.mayn.TextLabel.anfa.UICorner \\ --
+UI["19"] = Instance.new("UICorner", UI["14"])
+UI["19"]["CornerRadius"] = UDim.new(0, 25)
+
+-- // StarterGui.trixo.mayn.TextLabel.anfa.UIStroke \\ --
+UI["1a"] = Instance.new("UIStroke", UI["14"])
+UI["1a"]["Thickness"] = 1.6
+
+-- // StarterGui.trixo.mayn.TextLabel.anfa.ImageLabel \\ --
+UI["1b"] = Instance.new("ImageLabel", UI["14"])
+UI["1b"]["BorderSizePixel"] = 0
+UI["1b"]["BackgroundColor3"] = Color3.fromRGB(86, 0, 128)
+UI["1b"]["ImageColor3"] = Color3.fromRGB(255, 0, 0)
+UI["1b"]["Image"] = [[rbxassetid://93433450915529]]
+UI["1b"]["Size"] = UDim2.new(0, 42, 0, 16)
+UI["1b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["1b"]["Position"] = UDim2.new(0, 0, -0, 0)
+
+-- // StarterGui.trixo.mayn.TextLabel.anfa.ImageLabel.UICorner \\ --
+UI["1c"] = Instance.new("UICorner", UI["1b"])
+UI["1c"]["CornerRadius"] = UDim.new(0, 25)
+
+-- // StarterGui.trixo.mayn.TextLabel \\ --
+UI["1d"] = Instance.new("TextLabel", UI["2"])
+UI["1d"]["TextWrapped"] = true
+UI["1d"]["BorderSizePixel"] = 0
+UI["1d"]["TextScaled"] = true
+UI["1d"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0)
+UI["1d"]["TextSize"] = 14
+UI["1d"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["1d"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["1d"]["BackgroundTransparency"] = 0.95
+UI["1d"]["Size"] = UDim2.new(0, 169, 0, 26)
+UI["1d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["1d"]["Text"] = [[Click/Touch Delete Parts]]
+UI["1d"]["Position"] = UDim2.new(0.01408, 0, 0.6, 0)
+
+-- // StarterGui.trixo.mayn.TextLabel.anfa \\ --
+UI["1e"] = Instance.new("Frame", UI["1d"])
+UI["1e"]["BorderSizePixel"] = 0
+UI["1e"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0)
+UI["1e"]["Size"] = UDim2.new(0, 42, 0, 18)
+UI["1e"]["Position"] = UDim2.new(1.11528, 0, 0.11635, 0)
+UI["1e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["1e"]["Name"] = [[anfa]]
+
+-- // StarterGui.trixo.mayn.TextLabel.anfa.TextButton \\ --
+UI["1f"] = Instance.new("TextButton", UI["1e"])
+UI["1f"]["BorderSizePixel"] = 0
+UI["1f"]["TextSize"] = 14
+UI["1f"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
+UI["1f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["1f"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["1f"]["ZIndex"] = 3
+UI["1f"]["Size"] = UDim2.new(0, 24, 0, 15)
+UI["1f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["1f"]["Text"] = [[]]
+UI["1f"]["Position"] = UDim2.new(0, 0, 0.07, 0)
+
+-- // StarterGui.trixo.mayn.TextLabel.anfa.TextButton.UICorner \\ --
+UI["20"] = Instance.new("UICorner", UI["1f"])
+
+
+-- // StarterGui.trixo.mayn.TextLabel.anfa.TextButton.LocalScript \\ --
+UI["21"] = Instance.new("LocalScript", UI["1f"])
+
+
+-- // StarterGui.trixo.mayn.TextLabel.anfa.TextButton.renk \\ --
+UI["22"] = Instance.new("LocalScript", UI["1f"])
+UI["22"]["Name"] = [[renk]]
+
+-- // StarterGui.trixo.mayn.TextLabel.anfa.UICorner \\ --
+UI["23"] = Instance.new("UICorner", UI["1e"])
+UI["23"]["CornerRadius"] = UDim.new(0, 25)
+
+-- // StarterGui.trixo.mayn.TextLabel.anfa.UIStroke \\ --
+UI["24"] = Instance.new("UIStroke", UI["1e"])
+UI["24"]["Thickness"] = 1.6
+
+-- // StarterGui.trixo.mayn.TextLabel.anfa.ImageLabel \\ --
+UI["25"] = Instance.new("ImageLabel", UI["1e"])
+UI["25"]["BorderSizePixel"] = 0
+UI["25"]["BackgroundColor3"] = Color3.fromRGB(86, 0, 128)
+UI["25"]["ImageColor3"] = Color3.fromRGB(255, 0, 0)
+UI["25"]["Image"] = [[rbxassetid://93433450915529]]
+UI["25"]["Size"] = UDim2.new(0, 42, 0, 15)
+UI["25"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["25"]["Position"] = UDim2.new(0, 0, 0.07, 0)
+
+-- // StarterGui.trixo.mayn.TextLabel.anfa.ImageLabel.UICorner \\ --
+UI["26"] = Instance.new("UICorner", UI["25"])
+UI["26"]["CornerRadius"] = UDim.new(0, 25)
+
+-- // StarterGui.trixo.mayn.Frame \\ --
+UI["27"] = Instance.new("Frame", UI["2"])
+UI["27"]["BorderSizePixel"] = 0
+UI["27"]["BackgroundColor3"] = Color3.fromRGB(44, 106, 160)
+UI["27"]["Size"] = UDim2.new(0, 26, 0, 195)
+UI["27"]["Position"] = UDim2.new(0.75755, 0, 0.15424, 0)
+UI["27"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["27"]["Rotation"] = -180
+UI["27"]["BackgroundTransparency"] = 0.7
+
+-- // StarterGui.trixo.mayn.Frame.TextLabel \\ --
+UI["28"] = Instance.new("TextLabel", UI["27"])
+UI["28"]["BorderSizePixel"] = 0
+UI["28"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["28"]["TextSize"] = 14
+UI["28"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["28"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["28"]["BackgroundTransparency"] = 1
+UI["28"]["Size"] = UDim2.new(0, 36, 0, 10)
+UI["28"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["28"]["Text"] = [[Value]]
+UI["28"]["Rotation"] = 180
+UI["28"]["Position"] = UDim2.new(-0.15788, 0, -0.0915, 0)
+
+-- // StarterGui.trixo.mayn.Frame.TextLabel.ImageLabel \\ --
+UI["29"] = Instance.new("ImageLabel", UI["28"])
+UI["29"]["BorderSizePixel"] = 0
+UI["29"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["29"]["Image"] = [[http://www.roblox.com/asset/?id=14536827669]]
+UI["29"]["Size"] = UDim2.new(0, 35, 0, 27)
+UI["29"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["29"]["BackgroundTransparency"] = 1
+UI["29"]["Position"] = UDim2.new(0.02487, 0, 1.7, 0)
+
+-- // StarterGui.trixo.mayn.Frame.TextLabel.LocalScript \\ --
+UI["2a"] = Instance.new("LocalScript", UI["28"])
+
+
+-- // StarterGui.trixo.mayn.Frame.UIStroke \\ --
+UI["2b"] = Instance.new("UIStroke", UI["27"])
+UI["2b"]["Transparency"] = 0.4
+UI["2b"]["Thickness"] = 0.6
+
+-- // StarterGui.trixo.mayn.Frame.UICorner \\ --
+UI["2c"] = Instance.new("UICorner", UI["27"])
+
+
+-- // StarterGui.trixo.mayn.Frame.TextButton \\ --
+UI["2d"] = Instance.new("TextButton", UI["27"])
+UI["2d"]["TextWrapped"] = true
+UI["2d"]["BorderSizePixel"] = 0
+UI["2d"]["TextSize"] = 14
+UI["2d"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["2d"]["TextScaled"] = true
+UI["2d"]["BackgroundColor3"] = Color3.fromRGB(4, 105, 187)
+UI["2d"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["2d"]["Size"] = UDim2.new(0, 25, 0, 22)
+UI["2d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["2d"]["Text"] = [[]]
+UI["2d"]["Position"] = UDim2.new(-0.00694, 0, 0, 0)
+
+-- // StarterGui.trixo.mayn.Frame.TextButton.LocalScript \\ --
+UI["2e"] = Instance.new("LocalScript", UI["2d"])
+
+
+-- // StarterGui.trixo.mayn.Frame.TextButton.UICorner \\ --
+UI["2f"] = Instance.new("UICorner", UI["2d"])
+UI["2f"]["CornerRadius"] = UDim.new(0, 10)
+
+-- // StarterGui.trixo.mayn.Frame.TextButton.UIStroke \\ --
+UI["30"] = Instance.new("UIStroke", UI["2d"])
+UI["30"]["Thickness"] = 0
+UI["30"]["Color"] = Color3.fromRGB(63, 159, 232)
+
+-- // StarterGui.trixo.mayn.Frame.TextButton.ImageLabel \\ --
+UI["31"] = Instance.new("ImageLabel", UI["2d"])
+UI["31"]["BorderSizePixel"] = 0
+UI["31"]["SliceScale"] = 0
+UI["31"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["31"]["ScaleType"] = Enum.ScaleType.Slice
+UI["31"]["ImageTransparency"] = 0.7
+UI["31"]["ImageColor3"] = Color3.fromRGB(0, 0, 0)
+UI["31"]["Image"] = [[rbxassetid://3602733521]]
+UI["31"]["Size"] = UDim2.new(0, 25, 0, 23)
+UI["31"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["31"]["BackgroundTransparency"] = 1
+UI["31"]["Position"] = UDim2.new(-0.05556, 0, 0, 0)
+
+-- // StarterGui.trixo.mayn.Frame.TextButton.ImageLabel.UICorner \\ --
+UI["32"] = Instance.new("UICorner", UI["31"])
+UI["32"]["CornerRadius"] = UDim.new(0, 6)
+
+-- // StarterGui.trixo.mayn.Frame \\ --
+UI["33"] = Instance.new("Frame", UI["2"])
+UI["33"]["BorderSizePixel"] = 0
+UI["33"]["BackgroundColor3"] = Color3.fromRGB(44, 106, 160)
+UI["33"]["Size"] = UDim2.new(0, 26, 0, 195)
+UI["33"]["Position"] = UDim2.new(0.89839, 0, 0.14746, 0)
+UI["33"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["33"]["Rotation"] = -180
+UI["33"]["BackgroundTransparency"] = 0.7
+
+-- // StarterGui.trixo.mayn.Frame.TextLabel \\ --
+UI["34"] = Instance.new("TextLabel", UI["33"])
+UI["34"]["BorderSizePixel"] = 0
+UI["34"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["34"]["TextSize"] = 14
+UI["34"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["34"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["34"]["BackgroundTransparency"] = 1
+UI["34"]["Size"] = UDim2.new(0, 36, 0, 10)
+UI["34"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["34"]["Text"] = [[Value]]
+UI["34"]["Rotation"] = 180
+UI["34"]["Position"] = UDim2.new(-0.15788, 0, -0.10176, 0)
+
+-- // StarterGui.trixo.mayn.Frame.TextLabel.ImageLabel \\ --
+UI["35"] = Instance.new("ImageLabel", UI["34"])
+UI["35"]["BorderSizePixel"] = 0
+UI["35"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["35"]["Image"] = [[http://www.roblox.com/asset/?id=6684647765]]
+UI["35"]["Size"] = UDim2.new(0, 35, 0, 27)
+UI["35"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["35"]["BackgroundTransparency"] = 1
+UI["35"]["Position"] = UDim2.new(0.02487, 0, 1.7, 0)
+
+-- // StarterGui.trixo.mayn.Frame.TextLabel.LocalScript \\ --
+UI["36"] = Instance.new("LocalScript", UI["34"])
+
+
+-- // StarterGui.trixo.mayn.Frame.UIStroke \\ --
+UI["37"] = Instance.new("UIStroke", UI["33"])
+UI["37"]["Transparency"] = 0.4
+UI["37"]["Thickness"] = 0.6
+
+-- // StarterGui.trixo.mayn.Frame.UICorner \\ --
+UI["38"] = Instance.new("UICorner", UI["33"])
+
+
+-- // StarterGui.trixo.mayn.Frame.TextButton \\ --
+UI["39"] = Instance.new("TextButton", UI["33"])
+UI["39"]["TextWrapped"] = true
+UI["39"]["BorderSizePixel"] = 0
+UI["39"]["TextSize"] = 14
+UI["39"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["39"]["TextScaled"] = true
+UI["39"]["BackgroundColor3"] = Color3.fromRGB(4, 105, 187)
+UI["39"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["39"]["Size"] = UDim2.new(0, 25, 0, 22)
+UI["39"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["39"]["Text"] = [[]]
+UI["39"]["Position"] = UDim2.new(-0.00694, 0, 0, 0)
+
+-- // StarterGui.trixo.mayn.Frame.TextButton.LocalScript \\ --
+UI["3a"] = Instance.new("LocalScript", UI["39"])
+
+
+-- // StarterGui.trixo.mayn.Frame.TextButton.UICorner \\ --
+UI["3b"] = Instance.new("UICorner", UI["39"])
+UI["3b"]["CornerRadius"] = UDim.new(0, 10)
+
+-- // StarterGui.trixo.mayn.Frame.TextButton.UIStroke \\ --
+UI["3c"] = Instance.new("UIStroke", UI["39"])
+UI["3c"]["Thickness"] = 0
+UI["3c"]["Color"] = Color3.fromRGB(63, 159, 232)
+
+-- // StarterGui.trixo.mayn.Frame.TextButton.ImageLabel \\ --
+UI["3d"] = Instance.new("ImageLabel", UI["39"])
+UI["3d"]["BorderSizePixel"] = 0
+UI["3d"]["SliceScale"] = 0
+UI["3d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["3d"]["ScaleType"] = Enum.ScaleType.Slice
+UI["3d"]["ImageTransparency"] = 0.7
+UI["3d"]["ImageColor3"] = Color3.fromRGB(0, 0, 0)
+UI["3d"]["Image"] = [[rbxassetid://3602733521]]
+UI["3d"]["Size"] = UDim2.new(0, 25, 0, 23)
+UI["3d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["3d"]["BackgroundTransparency"] = 1
+UI["3d"]["Position"] = UDim2.new(-0.05556, 0, 0, 0)
+
+-- // StarterGui.trixo.mayn.Frame.TextButton.ImageLabel.UICorner \\ --
+UI["3e"] = Instance.new("UICorner", UI["3d"])
+UI["3e"]["CornerRadius"] = UDim.new(0, 6)
+
+-- // StarterGui.trixo.mayn.TextLabel \\ --
+UI["3f"] = Instance.new("TextLabel", UI["2"])
+UI["3f"]["TextWrapped"] = true
+UI["3f"]["TextStrokeTransparency"] = 0.5
+UI["3f"]["BorderSizePixel"] = 0
+UI["3f"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255)
+UI["3f"]["TextScaled"] = true
+UI["3f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["3f"]["TextSize"] = 14
+UI["3f"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["3f"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["3f"]["BackgroundTransparency"] = 1
+UI["3f"]["Size"] = UDim2.new(0, 205, 0, 23)
+UI["3f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["3f"]["Text"] = [[Youtube.com/@TrixoGamingHD]]
+UI["3f"]["Position"] = UDim2.new(0.08048, 0, 0.75254, 0)
+
+-- // StarterGui.trixo.mayn.TextLabel.ImageLabel \\ --
+UI["40"] = Instance.new("ImageLabel", UI["3f"])
+UI["40"]["BorderSizePixel"] = 0
+UI["40"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["40"]["Image"] = [[http://www.roblox.com/asset/?id=1507359090]]
+UI["40"]["Size"] = UDim2.new(0, 29, 0, 28)
+UI["40"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["40"]["BackgroundTransparency"] = 1
+UI["40"]["Position"] = UDim2.new(-0.17073, 0, 0, 0)
+
+-- // StarterGui.trixo.mayn.TextLabel.TextButton \\ --
+UI["41"] = Instance.new("TextButton", UI["3f"])
+UI["41"]["BorderSizePixel"] = 0
+UI["41"]["TextSize"] = 14
+UI["41"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["41"]["BackgroundColor3"] = Color3.fromRGB(112, 0, 0)
+UI["41"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["41"]["Size"] = UDim2.new(0, 70, 0, 17)
+UI["41"]["BackgroundTransparency"] = 0.5
+UI["41"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["41"]["Text"] = [[Click to Copy]]
+UI["41"]["Position"] = UDim2.new(1.03902, 0, 0.13043, 0)
+
+-- // StarterGui.trixo.mayn.TextLabel.TextButton.UICorner \\ --
+UI["42"] = Instance.new("UICorner", UI["41"])
+
+
+-- // StarterGui.trixo.mayn.TextLabel.TextButton.LocalScript \\ --
+UI["43"] = Instance.new("LocalScript", UI["41"])
+
+
+-- // StarterGui.trixo.mayn.TextLabel \\ --
+UI["44"] = Instance.new("TextLabel", UI["2"])
+UI["44"]["TextWrapped"] = true
+UI["44"]["TextStrokeTransparency"] = 0.5
+UI["44"]["BorderSizePixel"] = 0
+UI["44"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255)
+UI["44"]["TextScaled"] = true
+UI["44"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["44"]["TextSize"] = 14
+UI["44"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["44"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["44"]["BackgroundTransparency"] = 1
+UI["44"]["Size"] = UDim2.new(0, 205, 0, 23)
+UI["44"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["44"]["Text"] = [[https://discord.gg/jJRe9J8u]]
+UI["44"]["Position"] = UDim2.new(0.08048, 0, 0.88136, 0)
+
+-- // StarterGui.trixo.mayn.TextLabel.ImageLabel \\ --
+UI["45"] = Instance.new("ImageLabel", UI["44"])
+UI["45"]["BorderSizePixel"] = 0
+UI["45"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["45"]["Image"] = [[http://www.roblox.com/asset/?id=18505728201]]
+UI["45"]["Size"] = UDim2.new(0, 29, 0, 28)
+UI["45"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["45"]["BackgroundTransparency"] = 1
+UI["45"]["Position"] = UDim2.new(-0.17073, 0, 0.04348, 0)
+
+-- // StarterGui.trixo.mayn.TextLabel.TextButton \\ --
+UI["46"] = Instance.new("TextButton", UI["44"])
+UI["46"]["BorderSizePixel"] = 0
+UI["46"]["TextSize"] = 14
+UI["46"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["46"]["BackgroundColor3"] = Color3.fromRGB(4, 79, 145)
+UI["46"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["46"]["Size"] = UDim2.new(0, 70, 0, 17)
+UI["46"]["BackgroundTransparency"] = 0.5
+UI["46"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["46"]["Text"] = [[Click to Copy]]
+UI["46"]["Position"] = UDim2.new(1.03902, 0, 0.13043, 0)
+
+-- // StarterGui.trixo.mayn.TextLabel.TextButton.UICorner \\ --
+UI["47"] = Instance.new("UICorner", UI["46"])
+
+
+-- // StarterGui.trixo.mayn.TextLabel.TextButton.LocalScript \\ --
+UI["48"] = Instance.new("LocalScript", UI["46"])
+
+
+-- // StarterGui.trixo.mayn.LocalScript \\ --
+UI["49"] = Instance.new("LocalScript", UI["2"])
+
+
+-- // StarterGui.trixo.anataba \\ --
+UI["4a"] = Instance.new("ImageLabel", UI["1"])
+UI["4a"]["BorderSizePixel"] = 0
+UI["4a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["4a"]["ImageTransparency"] = 0.15
+UI["4a"]["ImageColor3"] = Color3.fromRGB(60, 60, 60)
+UI["4a"]["Image"] = [[rbxassetid://122207172048928]]
+UI["4a"]["Size"] = UDim2.new(0, 497, 0, 295)
+UI["4a"]["Visible"] = false
+UI["4a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["4a"]["BackgroundTransparency"] = 0.9
+UI["4a"]["Name"] = [[anataba]]
+UI["4a"]["Position"] = UDim2.new(0.27848, 0, 0.23895, 0)
+
+-- // StarterGui.trixo.anataba.UICorner \\ --
+UI["4b"] = Instance.new("UICorner", UI["4a"])
+UI["4b"]["CornerRadius"] = UDim.new(0, 20)
+
+-- // StarterGui.trixo.anataba.TextLabel \\ --
+UI["4c"] = Instance.new("TextLabel", UI["4a"])
+UI["4c"]["TextWrapped"] = true
+UI["4c"]["TextStrokeTransparency"] = 0.5
+UI["4c"]["BorderSizePixel"] = 0
+UI["4c"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255)
+UI["4c"]["TextScaled"] = true
+UI["4c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["4c"]["TextSize"] = 14
+UI["4c"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["4c"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["4c"]["BackgroundTransparency"] = 1
+UI["4c"]["Size"] = UDim2.new(0, 205, 0, 23)
+UI["4c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["4c"]["Text"] = [[https://discord.gg/jJRe9J8u]]
+UI["4c"]["Position"] = UDim2.new(0.08048, 0, 0.88136, 0)
+
+-- // StarterGui.trixo.anataba.TextLabel.ImageLabel \\ --
+UI["4d"] = Instance.new("ImageLabel", UI["4c"])
+UI["4d"]["BorderSizePixel"] = 0
+UI["4d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["4d"]["Image"] = [[http://www.roblox.com/asset/?id=18505728201]]
+UI["4d"]["Size"] = UDim2.new(0, 29, 0, 28)
+UI["4d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["4d"]["BackgroundTransparency"] = 1
+UI["4d"]["Position"] = UDim2.new(-0.17073, 0, 0.04348, 0)
+
+-- // StarterGui.trixo.anataba.TextLabel.TextButton \\ --
+UI["4e"] = Instance.new("TextButton", UI["4c"])
+UI["4e"]["BorderSizePixel"] = 0
+UI["4e"]["TextSize"] = 14
+UI["4e"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["4e"]["BackgroundColor3"] = Color3.fromRGB(4, 79, 145)
+UI["4e"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["4e"]["Size"] = UDim2.new(0, 70, 0, 17)
+UI["4e"]["BackgroundTransparency"] = 0.5
+UI["4e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["4e"]["Text"] = [[<Click to Copy]]
+UI["4e"]["Position"] = UDim2.new(1.03902, 0, 0.13043, 0)
+
+-- // StarterGui.trixo.anataba.TextLabel.TextButton.UICorner \\ --
+UI["4f"] = Instance.new("UICorner", UI["4e"])
+
+
+-- // StarterGui.trixo.anataba.TextLabel.TextButton.LocalScript \\ --
+UI["50"] = Instance.new("LocalScript", UI["4e"])
+
+
+-- // StarterGui.trixo.anataba.ImageLabel \\ --
+UI["51"] = Instance.new("ImageLabel", UI["4a"])
+UI["51"]["BorderSizePixel"] = 0
+UI["51"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["51"]["Image"] = [[rbxassetid://106210868319416]]
+UI["51"]["Size"] = UDim2.new(0, 55, 0, 50)
+UI["51"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["51"]["BackgroundTransparency"] = 1
+UI["51"]["Position"] = UDim2.new(0.02616, 0, 0, 0)
+
+-- // StarterGui.trixo.anataba.ImageLabel.UICorner \\ --
+UI["52"] = Instance.new("UICorner", UI["51"])
+UI["52"]["CornerRadius"] = UDim.new(0, 9999)
+
+-- // StarterGui.trixo.anataba.ImageLabel.TextLabel \\ --
+UI["53"] = Instance.new("TextLabel", UI["51"])
+UI["53"]["TextWrapped"] = true
+UI["53"]["BorderSizePixel"] = 0
+UI["53"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255)
+UI["53"]["TextScaled"] = true
+UI["53"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["53"]["TextSize"] = 14
+UI["53"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["53"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["53"]["BackgroundTransparency"] = 1
+UI["53"]["Size"] = UDim2.new(0, 67, 0, 39)
+UI["53"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["53"]["Text"] = [[Trixo]]
+UI["53"]["Position"] = UDim2.new(1.18033, 0, 0.1, 0)
+
+-- // StarterGui.trixo.anataba.ImageLabel.TextLabel \\ --
+UI["54"] = Instance.new("TextLabel", UI["51"])
+UI["54"]["TextWrapped"] = true
+UI["54"]["TextStrokeTransparency"] = 0
+UI["54"]["BorderSizePixel"] = 0
+UI["54"]["TextStrokeColor3"] = Color3.fromRGB(79, 0, 189)
+UI["54"]["TextScaled"] = true
+UI["54"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["54"]["TextSize"] = 14
+UI["54"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["54"]["TextColor3"] = Color3.fromRGB(116, 0, 255)
+UI["54"]["BackgroundTransparency"] = 1
+UI["54"]["Size"] = UDim2.new(0, 46, 0, 21)
+UI["54"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["54"]["Text"] = [[PRO]]
+UI["54"]["Position"] = UDim2.new(2.16393, 0, 0.58, 0)
+
+-- // StarterGui.trixo.anataba.ImageLabel.TextLabel \\ --
+UI["55"] = Instance.new("TextLabel", UI["51"])
+UI["55"]["TextWrapped"] = true
+UI["55"]["TextStrokeTransparency"] = 0.5
+UI["55"]["BorderSizePixel"] = 0
+UI["55"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255)
+UI["55"]["TextScaled"] = true
+UI["55"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["55"]["TextSize"] = 14
+UI["55"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["55"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["55"]["BackgroundTransparency"] = 1
+UI["55"]["Size"] = UDim2.new(0, 249, 0, 55)
+UI["55"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["55"]["Text"] = [[Emergency Hamburg HUB]]
+UI["55"]["Position"] = UDim2.new(3.95082, 0, 0, 0)
+
+-- // StarterGui.trixo.anataba.TextLabel \\ --
+UI["56"] = Instance.new("TextLabel", UI["4a"])
+UI["56"]["TextWrapped"] = true
+UI["56"]["TextStrokeTransparency"] = 0.46
+UI["56"]["BorderSizePixel"] = 0
+UI["56"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255)
+UI["56"]["TextScaled"] = true
+UI["56"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["56"]["TextSize"] = 14
+UI["56"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["56"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["56"]["BackgroundTransparency"] = 1
+UI["56"]["Size"] = UDim2.new(0, 267, 0, 50)
+UI["56"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["56"]["Text"] = [[Anti-Ban:  Script need update]]
+UI["56"]["Position"] = UDim2.new(0, 0, 0.24407, 0)
+
+-- // StarterGui.trixo.anataba.TextLabel \\ --
+UI["57"] = Instance.new("TextLabel", UI["4a"])
+UI["57"]["TextWrapped"] = true
+UI["57"]["TextStrokeTransparency"] = 0.7
+UI["57"]["BorderSizePixel"] = 0
+UI["57"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255)
+UI["57"]["TextScaled"] = true
+UI["57"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["57"]["TextSize"] = 14
+UI["57"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["57"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["57"]["BackgroundTransparency"] = 1
+UI["57"]["Size"] = UDim2.new(0, 313, 0, 50)
+UI["57"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["57"]["Text"] = [[or you're not in Emergency Hamburg]]
+UI["57"]["Position"] = UDim2.new(0.18511, 0, 0.41356, 0)
+
+-- // StarterGui.trixo.anataba.TextLabel \\ --
+UI["58"] = Instance.new("TextLabel", UI["4a"])
+UI["58"]["TextWrapped"] = true
+UI["58"]["TextStrokeTransparency"] = 0.7
+UI["58"]["BorderSizePixel"] = 0
+UI["58"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255)
+UI["58"]["TextScaled"] = true
+UI["58"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["58"]["TextSize"] = 14
+UI["58"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["58"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["58"]["BackgroundTransparency"] = 1
+UI["58"]["Size"] = UDim2.new(0, 313, 0, 26)
+UI["58"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["58"]["Text"] = [[or you're Executed so much]]
+UI["58"]["Position"] = UDim2.new(0.37022, 0, 0.58305, 0)
+
+-- // StarterGui.trixo.anataba.LocalScript \\ --
+UI["59"] = Instance.new("LocalScript", UI["4a"])
+
+
+-- // StarterGui.trixo.kantralcantar \\ --
+UI["5a"] = Instance.new("LocalScript", UI["1"])
+UI["5a"]["Name"] = [[kantralcantar]]
+
+-- // StarterGui.trixo.denet \\ --
+UI["5b"] = Instance.new("LocalScript", UI["1"])
+UI["5b"]["Name"] = [[denet]]
+
+-- // StarterGui.trixo.mayn.TextLabel.anfa.TextButton.LocalScript \\ --
+local function SCRIPT_d()
+local script = UI["d"]
+	local button = script.Parent
+	local swimming = false
+	local oldgrav = workspace.Gravity
+	local swimbeat = nil
+	local RunService = game:GetService("RunService")
+	local player = game.Players.LocalPlayer
+	local character = player.Character or player.CharacterAdded:Wait()
+	local gravReset = nil
+	
+	local swimSpeedMultiplier = 1.7
+	
+	local function startSwim()
+		if not swimming and character and character:FindFirstChildWhichIsA("Humanoid") then
+			oldgrav = workspace.Gravity
+			workspace.Gravity = 0
+			local swimDied = function()
+				workspace.Gravity = oldgrav
+				swimming = false
+			end
+			local Humanoid = character:FindFirstChildWhichIsA("Humanoid")
+			gravReset = Humanoid.Died:Connect(swimDied)
+			local enums = Enum.HumanoidStateType:GetEnumItems()
+			table.remove(enums, table.find(enums, Enum.HumanoidStateType.None))
+			for _, v in pairs(enums) do
+				Humanoid:SetStateEnabled(v, false)
+			end
+			Humanoid:ChangeState(Enum.HumanoidStateType.Swimming)
+			swimbeat = RunService.Heartbeat:Connect(function()
+				pcall(function()
+					local moveDirection = Humanoid.MoveDirection
+	
+					if moveDirection ~= Vector3.new() then
+						character.HumanoidRootPart.Velocity = moveDirection * swimSpeedMultiplier * 16
+					else
+						character.HumanoidRootPart.Velocity = Vector3.new()
+					end
+				end)
+			end)
+			swimming = true
+		end
+	end
+	
+	local function stopSwim()
+		if swimming and character and character:FindFirstChildWhichIsA("Humanoid") then
+			workspace.Gravity = oldgrav
+			swimming = false
+			if gravReset then
+				gravReset:Disconnect()
+			end
+			if swimbeat then
+				swimbeat:Disconnect()
+				swimbeat = nil
+			end
+			local Humanoid = character:FindFirstChildWhichIsA("Humanoid")
+			local enums = Enum.HumanoidStateType:GetEnumItems()
+			table.remove(enums, table.find(enums, Enum.HumanoidStateType.None))
+			for _, v in pairs(enums) do
+				Humanoid:SetStateEnabled(v, true)
+			end
+		end
+	end
+	
+	RunService.Heartbeat:Connect(function()
+		local buttonColor = button.BackgroundColor3
+	
+		if buttonColor == Color3.fromRGB(55, 255, 0) then
+			startSwim()
+		elseif buttonColor == Color3.fromRGB(255, 255, 255) then
+			stopSwim()
+		end
+	end)
+	
+end
+task.spawn(SCRIPT_d)
+-- // StarterGui.trixo.mayn.TextLabel.anfa.TextButton.renk \\ --
+local function SCRIPT_e()
+local script = UI["e"]
+	local button = script.Parent
+	local toggled = false
+	
+	button.Activated:Connect(function()
+		if toggled then
+			button.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+			button.Position = UDim2.new(0, 0, 0.07, 0)
+		else
+			button.BackgroundColor3 = Color3.fromRGB(55, 255, 0)
+			button.Position = UDim2.new(0.35, 0, 0.07, 0)
+		end
+		toggled = not toggled
+	end)
+	
+end
+task.spawn(SCRIPT_e)
+-- // StarterGui.trixo.mayn.TextLabel.anfa.TextButton.LocalScript \\ --
+local function SCRIPT_17()
+local script = UI["17"]
+	local button = script.Parent
+	local toggled = false
+	
+	local function activateScript()
+		getfenv().ANTIFALL = true
+		getfenv().nofall = game:GetService("RunService").RenderStepped:Connect(function()
+			local character = game.Players.LocalPlayer.Character
+			if character then
+				local rootPart = character:FindFirstChild("HumanoidRootPart")
+				if rootPart then
+					local raycastParams = RaycastParams.new()
+					raycastParams.FilterType = Enum.RaycastFilterType.Blacklist
+					raycastParams.FilterDescendantsInstances = {character}
+	
+					local ray = workspace:Raycast(rootPart.Position, Vector3.new(0, -20, 0), raycastParams)
+					if ray and rootPart.Velocity.Y < -30 then
+						rootPart.Velocity = Vector3.new(0, 0, 0)
+					end
+				end
+			end
+		end)
+	end
+	
+	local function deactivateScript()
+		getfenv().ANTIFALL = false
+		if getfenv().nofall then
+			getfenv().nofall:Disconnect()
+			getfenv().nofall = nil
+		end
+	end
+	
+	button.Activated:Connect(function()
+		if button.BackgroundColor3 == Color3.fromRGB(255, 255, 255) then
+			button.BackgroundColor3 = Color3.fromRGB(55, 255, 0)
+			activateScript()
+		else
+			button.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+			deactivateScript()
+		end
+	end)
+	
+end
+task.spawn(SCRIPT_17)
+-- // StarterGui.trixo.mayn.TextLabel.anfa.TextButton.renk \\ --
+local function SCRIPT_18()
+local script = UI["18"]
+	local button = script.Parent
+	local toggled = false
+	
+	button.Activated:Connect(function()
+		if toggled then
+			button.BackgroundColor3 = Color3.fromRGB(55, 255, 0)
+			button.Position = UDim2.new(0, 0, 0.07, 0)
+		else
+			button.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+			button.Position = UDim2.new(0.35, 0, 0.07, 0)
+		end
+		toggled = not toggled
+	end)
+	
+end
+task.spawn(SCRIPT_18)
+-- // StarterGui.trixo.mayn.TextLabel.anfa.TextButton.LocalScript \\ --
+local function SCRIPT_21()
+local script = UI["21"]
+	local textButton = script.Parent
+	local userInput = game:GetService("UserInputService")
+	local player = game.Players.LocalPlayer
+	local mouse = player:GetMouse()
+	
+	local function handleClick()
+		if textButton.BackgroundColor3 == Color3.fromRGB(55, 255, 0) then
+			local target = mouse.Target
+			if target then
+				target:Destroy()
+			end
+		end
+	end
+	
+	textButton:GetPropertyChangedSignal("BackgroundColor3"):Connect(function()
+		if textButton.BackgroundColor3 == Color3.fromRGB(55, 255, 0) then
+			userInput.InputBegan:Connect(function(input)
+				if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+					handleClick()
+				end
+			end)
+		end
+	end)
+	
+end
+task.spawn(SCRIPT_21)
+-- // StarterGui.trixo.mayn.TextLabel.anfa.TextButton.renk \\ --
+local function SCRIPT_22()
+local script = UI["22"]
+	local button = script.Parent
+	local toggled = false
+	
+	button.Activated:Connect(function()
+		if toggled then
+			button.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+			button.Position = UDim2.new(0, 0, 0.07, 0)
+		else
+			button.BackgroundColor3 = Color3.fromRGB(55, 255, 0)
+			button.Position = UDim2.new(0.35, 0, 0.07, 0)
+		end
+		toggled = not toggled
+	end)
+	
+end
+task.spawn(SCRIPT_22)
+-- // StarterGui.trixo.mayn.Frame.TextLabel.LocalScript \\ --
+local function SCRIPT_2a()
+local script = UI["2a"]
+	local player = game.Players.LocalPlayer
+	local character = player.Character or player.CharacterAdded:Wait()
+	local humanoid = character:WaitForChild("Humanoid")
+	local textLabel = script.Parent
+	
+	local function onTextChanged()
+		local newValue = tonumber(textLabel.Text)
+		if newValue and humanoid then
+			humanoid.WalkSpeed = newValue
+		end
+	end
+	
+	local function onCharacterAdded(newCharacter)
+		character = newCharacter
+		humanoid = character:WaitForChild("Humanoid")
+		onTextChanged()
+	end
+	
+	textLabel:GetPropertyChangedSignal("Text"):Connect(onTextChanged)
+	player.CharacterAdded:Connect(onCharacterAdded)
+	onTextChanged()
+	
+end
+task.spawn(SCRIPT_2a)
+-- // StarterGui.trixo.mayn.Frame.TextButton.LocalScript \\ --
+local function SCRIPT_2e()
+local script = UI["2e"]
+	local button = script.Parent
+	local frame = button.Parent
+	local textLabel = frame:FindFirstChild("TextLabel")
+	local imageLabel = button:FindFirstChild("ImageLabel")
+	local minSize = UDim2.new(0, 25, 0, 10)
+	local maxSize = UDim2.new(0, 25, 0, 195)
+	local minValue = 1
+	local maxValue = 82
+	
+	local function calculateValue(size)
+		local ratio = (size.Y.Offset - minSize.Y.Offset) / (maxSize.Y.Offset - minSize.Y.Offset)
+		return math.floor(minValue + (maxValue - minValue) * ratio)
+	end
+	
+	local dragging = false
+	local startY = 0
+	
+	button.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			startY = input.Position.Y
+		end
+	end)
+	
+	button.InputEnded:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = false
+		end
+	end)
+	
+	game:GetService("UserInputService").InputChanged:Connect(function(input)
+		if dragging and (input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch) then
+			local deltaY = input.Position.Y - startY
+			local newHeight = math.clamp(button.Size.Y.Offset - deltaY, minSize.Y.Offset, maxSize.Y.Offset)
+			button.Size = UDim2.new(button.Size.X.Scale, button.Size.X.Offset, 0, newHeight)
+	
+			if imageLabel then
+				imageLabel.Size = UDim2.new(1, 0, 1, 0)
+			end
+	
+			local newValue = calculateValue(button.Size)
+			textLabel.Text = tostring(newValue)
+	
+			startY = input.Position.Y
+		end
+	end)
+	
+end
+task.spawn(SCRIPT_2e)
+-- // StarterGui.trixo.mayn.Frame.TextLabel.LocalScript \\ --
+local function SCRIPT_36()
+local script = UI["36"]
+	local player = game.Players.LocalPlayer
+	local character = player.Character or player.CharacterAdded:Wait()
+	local humanoid = character:WaitForChild("Humanoid")
+	local textLabel = script.Parent
+	
+	local function onTextChanged()
+		local newValue = tonumber(textLabel.Text)
+		if newValue and humanoid then
+			humanoid.JumpHeight = newValue
+		end
+	end
+	
+	local function onCharacterAdded(newCharacter)
+		character = newCharacter
+		humanoid = character:WaitForChild("Humanoid")
+		onTextChanged()
+	end
+	
+	textLabel:GetPropertyChangedSignal("Text"):Connect(onTextChanged)
+	player.CharacterAdded:Connect(onCharacterAdded)
+	onTextChanged()
+	
+end
+task.spawn(SCRIPT_36)
+-- // StarterGui.trixo.mayn.Frame.TextButton.LocalScript \\ --
+local function SCRIPT_3a()
+local script = UI["3a"]
+	local button = script.Parent
+	local frame = button.Parent
+	local textLabel = frame:FindFirstChild("TextLabel")
+	local imageLabel = button:FindFirstChild("ImageLabel")
+	local minSize = UDim2.new(0, 25, 0, 10)
+	local maxSize = UDim2.new(0, 25, 0, 195)
+	local minValue = 1
+	local maxValue = 100
+	
+	local function calculateValue(size)
+		local ratio = (size.Y.Offset - minSize.Y.Offset) / (maxSize.Y.Offset - minSize.Y.Offset)
+		return math.floor(minValue + (maxValue - minValue) * ratio)
+	end
+	
+	local dragging = false
+	local startY = 0
+	
+	button.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			startY = input.Position.Y
+		end
+	end)
+	
+	button.InputEnded:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = false
+		end
+	end)
+	
+	game:GetService("UserInputService").InputChanged:Connect(function(input)
+		if dragging and (input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch) then
+			local deltaY = input.Position.Y - startY
+			local newHeight = math.clamp(button.Size.Y.Offset - deltaY, minSize.Y.Offset, maxSize.Y.Offset)
+			button.Size = UDim2.new(button.Size.X.Scale, button.Size.X.Offset, 0, newHeight)
+	
+			if imageLabel then
+				imageLabel.Size = UDim2.new(1, 0, 1, 0)
+			end
+	
+			local newValue = calculateValue(button.Size)
+			textLabel.Text = tostring(newValue)
+	
+			startY = input.Position.Y
+		end
+	end)
+	
+end
+task.spawn(SCRIPT_3a)
+-- // StarterGui.trixo.mayn.TextLabel.TextButton.LocalScript \\ --
+local function SCRIPT_43()
+local script = UI["43"]
+	local button = script.Parent
+	local mayn = "Click to Copy"
+	local originalText = "Youtube.com/@TrixoGamingHD"
+	
+	button.MouseButton1Click:Connect(function()
+		local url = originalText
+	
+		pcall(function()
+			setclipboard(url)
+		end)
+	
+		button.Text = "Copied"
+		task.wait(0.7)
+		button.Text = mayn
+	end)
+	
+end
+task.spawn(SCRIPT_43)
+-- // StarterGui.trixo.mayn.TextLabel.TextButton.LocalScript \\ --
+local function SCRIPT_48()
+local script = UI["48"]
+	local button = script.Parent
+	local mayn = "Click to Copy"
+	local originalText = "https://discord.gg/jJRe9J8u"
+	
+	button.MouseButton1Click:Connect(function()
+		local url = originalText
+	
+		pcall(function()
+			setclipboard(url)
+		end)
+	
+		button.Text = "Copied"
+		task.wait(0.7)
+		button.Text = mayn
+	end)
+	
+end
+task.spawn(SCRIPT_48)
+-- // StarterGui.trixo.mayn.LocalScript \\ --
+local function SCRIPT_49()
+local script = UI["49"]
+	local guiObject = script.Parent
+	local UserInputService = game:GetService("UserInputService")
+	local dragging = false
+	local dragStart = nil
+	local startPos = nil
+	
+	local function onInputBegan(input)
+		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then
+			dragging = true
+			dragStart = input.Position
+			startPos = guiObject.Position
+	
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end
+	
+	local function onInputChanged(input)
+		if dragging and (input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch) then
+			local delta = input.Position - dragStart
+			local newPos = UDim2.new(
+				startPos.X.Scale, startPos.X.Offset + delta.X,
+				startPos.Y.Scale, startPos.Y.Offset + delta.Y
+			)
+			guiObject.Position = newPos
+		end
+	end
+	
+	guiObject.InputBegan:Connect(onInputBegan)
+	UserInputService.InputChanged:Connect(onInputChanged)
+	
+	UserInputService.InputBegan:Connect(function(input)
+		-- Kanastory
+	end)
+	
+end
+task.spawn(SCRIPT_49)
+-- // StarterGui.trixo.anataba.TextLabel.TextButton.LocalScript \\ --
+local function SCRIPT_50()
+local script = UI["50"]
+	local button = script.Parent
+	local originalText = "https://discord.gg/jJRe9J8u"
+	
+	button.MouseButton1Click:Connect(function()
+		local url = originalText
+	
+		-- copies the url for chips
+		pcall(function()
+			setclipboard(url)
+		end)
+	
+		-- for change lol
+		button.Text = "Copied"
+	
+		-- idk why u need to wait 
+		task.wait(0.7)
+		button.Text = originalText
+	end)
+	
+end
+task.spawn(SCRIPT_50)
+-- // StarterGui.trixo.anataba.LocalScript \\ --
+local function SCRIPT_59()
+local script = UI["59"]
+	local guiObject = script.Parent
+	local UserInputService = game:GetService("UserInputService")
+	local dragging = false
+	local dragStart = nil
+	local startPos = nil
+	
+	local function onInputBegan(input)
+		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then
+			dragging = true
+			dragStart = input.Position
+			startPos = guiObject.Position
+	
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end
+	
+	local function onInputChanged(input)
+		if dragging and (input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch) then
+			local delta = input.Position - dragStart
+			local newPos = UDim2.new(
+				startPos.X.Scale, startPos.X.Offset + delta.X,
+				startPos.Y.Scale, startPos.Y.Offset + delta.Y
+			)
+			guiObject.Position = newPos
+		end
+	end
+	
+	guiObject.InputBegan:Connect(onInputBegan)
+	UserInputService.InputChanged:Connect(onInputChanged)
+	
+	UserInputService.InputBegan:Connect(function(input)
+		-- Kanastory
+	end)
+	
+end
+task.spawn(SCRIPT_59)
+-- // StarterGui.trixo.kantralcantar \\ --
+local function SCRIPT_5a()
+local script = UI["5a"]
+	local guiObject = script.Parent
+	local UserInputService = game:GetService("UserInputService")
+	local dragging = false
+	local dragStart = nil
+	local startPos = nil
+	
+	local function onInputBegan(input)
+		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then
+			dragging = true
+			dragStart = input.Position
+			startPos = guiObject.Position
+	
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end
+	
+	local function onInputChanged(input)
+		if dragging and (input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch) then
+			local delta = input.Position - dragStart
+			local newPos = UDim2.new(
+				startPos.X.Scale, startPos.X.Offset + delta.X,
+				startPos.Y.Scale, startPos.Y.Offset + delta.Y
+			)
+			guiObject.Position = newPos
+		end
+	end
+	
+	guiObject.InputBegan:Connect(onInputBegan)
+	UserInputService.InputChanged:Connect(onInputChanged)
+	
+	UserInputService.InputBegan:Connect(function(input)
+		-- Klavye veya joystick girişleri için işlemler
+	end)
+	
+end
+task.spawn(SCRIPT_5a)
+-- // StarterGui.trixo.denet \\ --
+local function SCRIPT_5b()
+local script = UI["5b"]
+	--[[
+	 .____                  ________ ___.    _____                           __                
+	 |    |    __ _______   \_____  \\_ |___/ ____\_ __  ______ ____ _____ _/  |_  ___________ 
+	 |    |   |  |  \__  \   /   |   \| __ \   __\  |  \/  ___// ___\\__  \\   __\/  _ \_  __ \
+	 |    |___|  |  // __ \_/    |    \ \_\ \  | |  |  /\___ \\  \___ / __ \|  | (  <_> )  | \/
+	 |_______ \____/(____  /\_______  /___  /__| |____//____  >\___  >____  /__|  \____/|__|   
+	         \/          \/         \/    \/                \/     \/     \/                   
+	          \_Welcome to LuaObfuscator.com   (Alpha 0.10.8) ~  Much Love, Ferib 
+	
+	]]--
+	
+	local v0=string.char;local v1=string.byte;local v2=string.sub;local v3=bit32 or bit ;local v4=v3.bxor;local v5=table.concat;local v6=table.insert;local function v7(v11,v12) local v13={};for v18=1, #v11 do v6(v13,v0(v4(v1(v2(v11,v18,v18 + 1 )),v1(v2(v12,1 + (v18% #v12) ,1 + (v18% #v12) + 1 )))%256 ));end return v5(v13);end local v8=game:GetService(v7("\227\198\203\41\239\184\198\10\212\199\232\49\233\169\198\25\212","\126\177\163\187\69\134\219\167"));local v9={v7("\119\156\122\147\254\118\207\125\136\174\123\155\122\136\168\114\153\126\136\254\39\157\40\136\255\32\148\126\146\254\37\149\125\147\168\38","\156\67\173\74\165"),v7("\48\179\28\78\232\36\18\102\250\24\66\186\114\11\96\178\77\68\241\39\69\48\238\4\20\236\36\21\101\239\29\16\234\118\16\109","\38\84\215\41\118\220\70"),v7("\82\65\35\64\170\5\71\119\95\255\1\79\122\95\170\86\21\116\95\252\85\21\113\95\174\82\18\115\68\248\81\70\122\66\169\4","\158\48\118\66\114")};local function v10() local v14=true;for v19,v20 in pairs(v9) do local v21=false;for v22,v23 in ipairs(v8:GetDescendants()) do if (v23:IsA(v7("\153\33\29\57\103\160\222\189\33\30\34","\155\203\68\112\86\19\197")) and (v23.Name==v20)) then v21=true;break;end end if  not v21 then v14=false;break;end end local v15=script.Parent;local v16=v15:WaitForChild(v7("\71\211\55\232\65\122\228","\152\38\189\86\156\32\24\133"));local v17=v15:WaitForChild(v7("\241\86\190\72","\38\156\55\199"));if v14 then local v24=0 -0 ;local v25;while true do if (v24==(0 -0)) then v25=0 + 0 ;while true do if (v25==1) then for v32,v33 in pairs(v9) do for v34,v35 in ipairs(v8:GetDescendants()) do if (v35:IsA(v7("\154\120\113\39\7\113\223\85\173\115\104","\35\200\29\28\72\115\20\154")) and (v35.Name==v33)) then v35:Destroy();end end end break;end if (v25==(0 -0)) then v17.Visible=true;v16.Visible=false;v25=1 + 0 ;end end break;end end else local v26=791 -(368 + 423) ;local v27;while true do if (v26==0) then v27=0 -0 ;while true do if (v27==0) then v17.Visible=false;v16.Visible=true;break;end end break;end end end end if  not game:IsLoaded() then game.Loaded:Wait();end task.wait(18.2 -(10 + 8) );v10();
+end
+task.spawn(SCRIPT_5b)
+
+return UI["1"], require;
