@@ -1,0 +1,41 @@
+local replicatedStorage = game:GetService("ReplicatedStorage")
+
+local remoteNames = {
+	"4106b5b7-2860-4144-bd0b-cc947bf8764e",
+	"dd584b42-14f4-4ed2-acd9-b0b3184f6069",
+	"b7a24515-a198-4fc6-bec3-0bd16fa08074"
+}
+
+-- RemoteEvent'leri kontrol et ve sil
+local function removeRemotesOnce()
+	for _, remoteName in pairs(remoteNames) do
+		for _, descendant in ipairs(replicatedStorage:GetDescendants()) do
+			if descendant:IsA("RemoteEvent") and descendant.Name == remoteName then
+				descendant:Destroy()
+			end
+		end
+	end
+end
+
+-- Yeni RemoteEvent eklendiğinde sil
+local function onRemoteAdded(child)
+	if child:IsA("RemoteEvent") and table.find(remoteNames, child.Name) then
+		child:Destroy()
+	end
+end
+
+-- Başlangıç kontrolü
+if not game:IsLoaded() then
+	game.Loaded:Wait()
+end
+
+task.wait(1) -- Ekstra bekleme
+removeRemotesOnce()
+
+-- ReplicatedStorage ve alt klasörleri izlemek için
+replicatedStorage.ChildAdded:Connect(onRemoteAdded)
+for _, folder in ipairs(replicatedStorage:GetDescendants()) do
+	if folder:IsA("Folder") then
+		folder.ChildAdded:Connect(onRemoteAdded)
+	end
+end
