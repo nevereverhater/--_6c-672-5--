@@ -1,0 +1,4905 @@
+-- // GUI TO LUA \\ --
+
+-- // INSTANCES: 318 | SCRIPTS: 74 | MODULES: 0 \\ --
+
+local UI = {}
+
+-- // StarterGui.gojo \\ --
+UI["1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"))
+UI["1"]["Name"] = [[gojo]]
+UI["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling
+
+-- // StarterGui.gojo.Frame \\ --
+UI["2"] = Instance.new("Frame", UI["1"])
+UI["2"]["BorderSizePixel"] = 0
+UI["2"]["BackgroundColor3"] = Color3.fromRGB(16, 16, 16)
+UI["2"]["AutomaticSize"] = Enum.AutomaticSize.XY
+UI["2"]["Size"] = UDim2.new(0, -106, 0, 267)
+UI["2"]["Position"] = UDim2.new(0.39934, 0, 0.26336, 0)
+UI["2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+
+-- // StarterGui.gojo.Frame.UICorner \\ --
+UI["3"] = Instance.new("UICorner", UI["2"])
+
+
+-- // StarterGui.gojo.Frame.bırstro \\ --
+UI["4"] = Instance.new("UIStroke", UI["2"])
+UI["4"]["Transparency"] = 0.85
+UI["4"]["Name"] = [[bırstro]]
+UI["4"]["Thickness"] = 4
+UI["4"]["Color"] = Color3.fromRGB(255, 255, 255)
+
+-- // StarterGui.gojo.Frame.bakra \\ --
+UI["5"] = Instance.new("Frame", UI["2"])
+UI["5"]["BorderSizePixel"] = 0
+UI["5"]["BackgroundColor3"] = Color3.fromRGB(16, 16, 16)
+UI["5"]["Size"] = UDim2.new(0.9444, 0, 0.94525, 0)
+UI["5"]["Position"] = UDim2.new(0.02561, 0, 0.03113, 0)
+UI["5"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["5"]["Name"] = [[bakra]]
+
+-- // StarterGui.gojo.Frame.bakra.UICorner \\ --
+UI["6"] = Instance.new("UICorner", UI["5"])
+
+
+-- // StarterGui.gojo.Frame.bakra.ImageLabel \\ --
+UI["7"] = Instance.new("ImageLabel", UI["5"])
+UI["7"]["ZIndex"] = 2
+UI["7"]["BorderSizePixel"] = 0
+UI["7"]["SliceScale"] = 0
+UI["7"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["7"]["ScaleType"] = Enum.ScaleType.Crop
+UI["7"]["ImageColor3"] = Color3.fromRGB(255, 177, 98)
+UI["7"]["Image"] = [[rbxassetid://130915383532634]]
+UI["7"]["Size"] = UDim2.new(0, 94, 0, 25)
+UI["7"]["Visible"] = false
+UI["7"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["7"]["Position"] = UDim2.new(0.38053, 0, -0.0148, 0)
+
+-- // StarterGui.gojo.Frame.bakra.ImageLabel.UIStroke \\ --
+UI["8"] = Instance.new("UIStroke", UI["7"])
+UI["8"]["Transparency"] = 0.94
+UI["8"]["Thickness"] = 3
+UI["8"]["Color"] = Color3.fromRGB(255, 255, 255)
+
+-- // StarterGui.gojo.Frame.bakra.ImageLabel.UICorner \\ --
+UI["9"] = Instance.new("UICorner", UI["7"])
+
+
+-- // StarterGui.gojo.Frame.bakra.ImageLabel \\ --
+UI["a"] = Instance.new("ImageLabel", UI["5"])
+UI["a"]["BorderSizePixel"] = 0
+UI["a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["a"]["ImageColor3"] = Color3.fromRGB(255, 0, 0)
+UI["a"]["Image"] = [[rbxassetid://71840270542906]]
+UI["a"]["Size"] = UDim2.new(0, 434, 0, 286)
+UI["a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["a"]["BackgroundTransparency"] = 1
+UI["a"]["Position"] = UDim2.new(-0.02712, 0, -0.01812, 0)
+
+-- // StarterGui.gojo.Frame.bakra.ImageLabel.UICorner \\ --
+UI["b"] = Instance.new("UICorner", UI["a"])
+
+
+-- // StarterGui.gojo.Frame.bakra.ImageLabel.TextLabel \\ --
+UI["c"] = Instance.new("TextLabel", UI["a"])
+UI["c"]["TextWrapped"] = true
+UI["c"]["TextStrokeTransparency"] = 0.38
+UI["c"]["BorderSizePixel"] = 0
+UI["c"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255)
+UI["c"]["TextScaled"] = true
+UI["c"]["BackgroundColor3"] = Color3.fromRGB(16, 16, 16)
+UI["c"]["TextSize"] = 14
+UI["c"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["c"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["c"]["BackgroundTransparency"] = 1
+UI["c"]["Size"] = UDim2.new(0, 10, 0, 229)
+UI["c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["c"]["Text"] = [[E
+M
+E
+R
+G
+E
+N
+C
+Y
+
+H
+A
+M
+B
+U
+R
+G
+]]
+UI["c"]["Position"] = UDim2.new(-0.00117, 0, 0.08706, 0)
+
+-- // StarterGui.gojo.Frame.bakra.ImageLabel.TextLabel.UICorner \\ --
+UI["d"] = Instance.new("UICorner", UI["c"])
+
+
+-- // StarterGui.gojo.Frame.homah55 \\ --
+UI["e"] = Instance.new("Frame", UI["2"])
+UI["e"]["BorderSizePixel"] = 0
+UI["e"]["BackgroundColor3"] = Color3.fromRGB(16, 16, 16)
+UI["e"]["Size"] = UDim2.new(0.94124, 0, 0.7552, 0)
+UI["e"]["Position"] = UDim2.new(0.02561, 0, 0.10455, 0)
+UI["e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["e"]["Name"] = [[homah55]]
+UI["e"]["BackgroundTransparency"] = 1
+
+-- // StarterGui.gojo.Frame.homah55.UICorner \\ --
+UI["f"] = Instance.new("UICorner", UI["e"])
+
+
+-- // StarterGui.gojo.Frame.homah55.ImageLabel \\ --
+UI["10"] = Instance.new("ImageLabel", UI["e"])
+UI["10"]["ZIndex"] = 3
+UI["10"]["BorderSizePixel"] = 0
+UI["10"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["10"]["ScaleType"] = Enum.ScaleType.Fit
+UI["10"]["Image"] = [[http://www.roblox.com/asset/?id=18505728201]]
+UI["10"]["Size"] = UDim2.new(0, 40, 0, 40)
+UI["10"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["10"]["BackgroundTransparency"] = 1
+UI["10"]["Position"] = UDim2.new(0.05455, 0, 0.49127, 0)
+
+-- // StarterGui.gojo.Frame.homah55.ImageLabel.TextLabel \\ --
+UI["11"] = Instance.new("TextLabel", UI["10"])
+UI["11"]["TextWrapped"] = true
+UI["11"]["BorderSizePixel"] = 0
+UI["11"]["TextScaled"] = true
+UI["11"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["11"]["TextSize"] = 16
+UI["11"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Italic)
+UI["11"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["11"]["BackgroundTransparency"] = 1
+UI["11"]["Size"] = UDim2.new(0, 228, 0, 24)
+UI["11"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["11"]["Text"] = [[https://discord.gg/qsUzyx38uk]]
+UI["11"]["Position"] = UDim2.new(1.14397, 0, 0.25736, 0)
+
+-- // StarterGui.gojo.Frame.homah55.ImageLabel.TextLabel.UIStroke \\ --
+UI["12"] = Instance.new("UIStroke", UI["11"])
+UI["12"]["Thickness"] = 0.6
+UI["12"]["Color"] = Color3.fromRGB(255, 255, 255)
+
+-- // StarterGui.gojo.Frame.homah55.ImageLabel.TextLabel.TextButton \\ --
+UI["13"] = Instance.new("TextButton", UI["11"])
+UI["13"]["BorderSizePixel"] = 0
+UI["13"]["TextSize"] = 14
+UI["13"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["13"]["BackgroundColor3"] = Color3.fromRGB(4, 79, 145)
+UI["13"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["13"]["Size"] = UDim2.new(0, 70, 0, 17)
+UI["13"]["BackgroundTransparency"] = 0.5
+UI["13"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["13"]["Text"] = [[Click to Copy]]
+UI["13"]["Position"] = UDim2.new(1.09445, 0, 0.11936, 0)
+
+-- // StarterGui.gojo.Frame.homah55.ImageLabel.TextLabel.TextButton.UICorner \\ --
+UI["14"] = Instance.new("UICorner", UI["13"])
+
+
+-- // StarterGui.gojo.Frame.homah55.ImageLabel.TextLabel.TextButton.LocalScript \\ --
+UI["15"] = Instance.new("LocalScript", UI["13"])
+
+
+-- // StarterGui.gojo.Frame.homah55.ImageLabel \\ --
+UI["16"] = Instance.new("ImageLabel", UI["e"])
+UI["16"]["ZIndex"] = 3
+UI["16"]["BorderSizePixel"] = 0
+UI["16"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["16"]["ScaleType"] = Enum.ScaleType.Fit
+UI["16"]["Image"] = [[http://www.roblox.com/asset/?id=1507359090]]
+UI["16"]["Size"] = UDim2.new(0, 40, 0, 40)
+UI["16"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["16"]["BackgroundTransparency"] = 1
+UI["16"]["Position"] = UDim2.new(0.06484, 0, 0.72923, 0)
+
+-- // StarterGui.gojo.Frame.homah55.ImageLabel.TextLabel \\ --
+UI["17"] = Instance.new("TextLabel", UI["16"])
+UI["17"]["TextWrapped"] = true
+UI["17"]["BorderSizePixel"] = 0
+UI["17"]["TextScaled"] = true
+UI["17"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["17"]["TextSize"] = 41
+UI["17"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Italic)
+UI["17"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["17"]["BackgroundTransparency"] = 1
+UI["17"]["Size"] = UDim2.new(0, 251, 0, 40)
+UI["17"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["17"]["Text"] = [[youtube.com/@GojoSatuto-u9f]]
+UI["17"]["Position"] = UDim2.new(1.11897, 0, 0, 0)
+
+-- // StarterGui.gojo.Frame.homah55.ImageLabel.TextLabel.UIStroke \\ --
+UI["18"] = Instance.new("UIStroke", UI["17"])
+UI["18"]["Thickness"] = 0.6
+UI["18"]["Color"] = Color3.fromRGB(255, 255, 255)
+
+-- // StarterGui.gojo.Frame.homah55.ImageLabel.TextLabel.TextButton \\ --
+UI["19"] = Instance.new("TextButton", UI["17"])
+UI["19"]["BorderSizePixel"] = 0
+UI["19"]["TextSize"] = 14
+UI["19"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["19"]["BackgroundColor3"] = Color3.fromRGB(112, 0, 0)
+UI["19"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["19"]["Size"] = UDim2.new(0, 70, 0, 17)
+UI["19"]["BackgroundTransparency"] = 0.5
+UI["19"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["19"]["Text"] = [[Click to Copy]]
+UI["19"]["Position"] = UDim2.new(1.06293, 0, 0.28043, 0)
+
+-- // StarterGui.gojo.Frame.homah55.ImageLabel.TextLabel.TextButton.UICorner \\ --
+UI["1a"] = Instance.new("UICorner", UI["19"])
+
+
+-- // StarterGui.gojo.Frame.homah55.ImageLabel.TextLabel.TextButton.LocalScript \\ --
+UI["1b"] = Instance.new("LocalScript", UI["19"])
+
+
+-- // StarterGui.gojo.Frame.homah55.TextLabel \\ --
+UI["1c"] = Instance.new("TextLabel", UI["e"])
+UI["1c"]["TextWrapped"] = true
+UI["1c"]["LineHeight"] = 3
+UI["1c"]["TextStrokeTransparency"] = 0.75
+UI["1c"]["BorderSizePixel"] = 0
+UI["1c"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255)
+UI["1c"]["TextScaled"] = true
+UI["1c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["1c"]["TextSize"] = 14
+UI["1c"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+UI["1c"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["1c"]["BackgroundTransparency"] = 1
+UI["1c"]["RichText"] = true
+UI["1c"]["Size"] = UDim2.new(0, 250, 0, 44)
+UI["1c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["1c"]["Text"] = [[Gojo Scripting]]
+UI["1c"]["Position"] = UDim2.new(0.11261, 0, 0.02778, 0)
+
+-- // StarterGui.gojo.Frame.homah55.TextLabel \\ --
+UI["1d"] = Instance.new("TextLabel", UI["e"])
+UI["1d"]["TextWrapped"] = true
+UI["1d"]["LineHeight"] = 3
+UI["1d"]["TextStrokeTransparency"] = 0.75
+UI["1d"]["BorderSizePixel"] = 0
+UI["1d"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255)
+UI["1d"]["TextScaled"] = true
+UI["1d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["1d"]["TextSize"] = 14
+UI["1d"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+UI["1d"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["1d"]["BackgroundTransparency"] = 1
+UI["1d"]["RichText"] = true
+UI["1d"]["Size"] = UDim2.new(0, 250, 0, 35)
+UI["1d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["1d"]["Text"] = [[Software Development]]
+UI["1d"]["Position"] = UDim2.new(0.34517, 0, 0.2315, 0)
+
+-- // StarterGui.gojo.Frame.homah55.Frame \\ --
+UI["1e"] = Instance.new("Frame", UI["e"])
+UI["1e"]["BorderSizePixel"] = 0
+UI["1e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["1e"]["Size"] = UDim2.new(0, 3, 0, 118)
+UI["1e"]["Position"] = UDim2.new(0.21602, 0, -0.00177, 0)
+UI["1e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["1e"]["Rotation"] = -63
+
+-- // StarterGui.gojo.Frame.homah55.Frame \\ --
+UI["1f"] = Instance.new("Frame", UI["e"])
+UI["1f"]["BorderSizePixel"] = 0
+UI["1f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["1f"]["Size"] = UDim2.new(0, 3, 0, 101)
+UI["1f"]["Position"] = UDim2.new(0.829, 0, -0.08015, 0)
+UI["1f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["1f"]["Rotation"] = -70
+
+-- // StarterGui.gojo.Frame.homah55.ImageLabel \\ --
+UI["20"] = Instance.new("ImageLabel", UI["e"])
+UI["20"]["BorderSizePixel"] = 0
+UI["20"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["20"]["Image"] = [[rbxassetid://10709807111]]
+UI["20"]["Size"] = UDim2.new(0, 32, 0, 34)
+UI["20"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["20"]["BackgroundTransparency"] = 1
+UI["20"]["Rotation"] = -115
+UI["20"]["Position"] = UDim2.new(0.71867, 0, 0.10169, 0)
+
+-- // StarterGui.gojo.Frame.tapalo55 \\ --
+UI["21"] = Instance.new("Frame", UI["2"])
+UI["21"]["Visible"] = false
+UI["21"]["BorderSizePixel"] = 0
+UI["21"]["BackgroundColor3"] = Color3.fromRGB(16, 16, 16)
+UI["21"]["Size"] = UDim2.new(0.84671, 0, 0.75201, 0)
+UI["21"]["Position"] = UDim2.new(0.06801, 0, 0.11079, 0)
+UI["21"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["21"]["Name"] = [[tapalo55]]
+UI["21"]["BackgroundTransparency"] = 1
+
+-- // StarterGui.gojo.Frame.tapalo55.UICorner \\ --
+UI["22"] = Instance.new("UICorner", UI["21"])
+
+
+-- // StarterGui.gojo.Frame.tapalo55.ScrollingFrame \\ --
+UI["23"] = Instance.new("ScrollingFrame", UI["21"])
+UI["23"]["Active"] = true
+UI["23"]["BorderSizePixel"] = 0
+UI["23"]["CanvasSize"] = UDim2.new(0, 0, 1.5, 0)
+UI["23"]["BackgroundColor3"] = Color3.fromRGB(23, 23, 23)
+UI["23"]["Size"] = UDim2.new(0, 126, 0, 200)
+UI["23"]["ScrollBarImageColor3"] = Color3.fromRGB(255, 0, 5)
+UI["23"]["Position"] = UDim2.new(0.11005, 0, 0.06037, 0)
+UI["23"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["23"]["BackgroundTransparency"] = 1
+
+-- // StarterGui.gojo.Frame.tapalo55.ScrollingFrame.TextButton \\ --
+UI["24"] = Instance.new("TextButton", UI["23"])
+UI["24"]["TextWrapped"] = true
+UI["24"]["TextStrokeTransparency"] = 0.45
+UI["24"]["BorderSizePixel"] = 0
+UI["24"]["TextSize"] = 14
+UI["24"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
+UI["24"]["TextScaled"] = true
+UI["24"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["24"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["24"]["Size"] = UDim2.new(0, 110, 0, 19)
+UI["24"]["BackgroundTransparency"] = 0.4
+UI["24"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["24"]["Text"] = [[Prison (Out)]]
+
+-- // StarterGui.gojo.Frame.tapalo55.ScrollingFrame.TextButton.LocalScript \\ --
+UI["25"] = Instance.new("LocalScript", UI["24"])
+
+
+-- // StarterGui.gojo.Frame.tapalo55.ScrollingFrame.TextButton.UICorner \\ --
+UI["26"] = Instance.new("UICorner", UI["24"])
+
+
+-- // StarterGui.gojo.Frame.tapalo55.ScrollingFrame.TextButton \\ --
+UI["27"] = Instance.new("TextButton", UI["23"])
+UI["27"]["TextWrapped"] = true
+UI["27"]["TextStrokeTransparency"] = 0.45
+UI["27"]["BorderSizePixel"] = 0
+UI["27"]["TextSize"] = 14
+UI["27"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
+UI["27"]["TextScaled"] = true
+UI["27"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["27"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["27"]["Size"] = UDim2.new(0, 110, 0, 19)
+UI["27"]["BackgroundTransparency"] = 0.4
+UI["27"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["27"]["Text"] = [[Prison (In)]]
+UI["27"]["Position"] = UDim2.new(0, 0, 0, 25)
+
+-- // StarterGui.gojo.Frame.tapalo55.ScrollingFrame.TextButton.LocalScript \\ --
+UI["28"] = Instance.new("LocalScript", UI["27"])
+
+
+-- // StarterGui.gojo.Frame.tapalo55.ScrollingFrame.TextButton.UICorner \\ --
+UI["29"] = Instance.new("UICorner", UI["27"])
+
+
+-- // StarterGui.gojo.Frame.tapalo55.ScrollingFrame.TextButton \\ --
+UI["2a"] = Instance.new("TextButton", UI["23"])
+UI["2a"]["TextWrapped"] = true
+UI["2a"]["TextStrokeTransparency"] = 0.45
+UI["2a"]["BorderSizePixel"] = 0
+UI["2a"]["TextSize"] = 14
+UI["2a"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
+UI["2a"]["TextScaled"] = true
+UI["2a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["2a"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["2a"]["Size"] = UDim2.new(0, 110, 0, 19)
+UI["2a"]["BackgroundTransparency"] = 0.4
+UI["2a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["2a"]["Text"] = [[Fire Station]]
+UI["2a"]["Position"] = UDim2.new(0, 0, 0, 50)
+
+-- // StarterGui.gojo.Frame.tapalo55.ScrollingFrame.TextButton.LocalScript \\ --
+UI["2b"] = Instance.new("LocalScript", UI["2a"])
+
+
+-- // StarterGui.gojo.Frame.tapalo55.ScrollingFrame.TextButton.UICorner \\ --
+UI["2c"] = Instance.new("UICorner", UI["2a"])
+
+
+-- // StarterGui.gojo.Frame.tapalo55.ScrollingFrame.TextButton \\ --
+UI["2d"] = Instance.new("TextButton", UI["23"])
+UI["2d"]["TextWrapped"] = true
+UI["2d"]["TextStrokeTransparency"] = 0.45
+UI["2d"]["BorderSizePixel"] = 0
+UI["2d"]["TextSize"] = 14
+UI["2d"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
+UI["2d"]["TextScaled"] = true
+UI["2d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["2d"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["2d"]["Size"] = UDim2.new(0, 110, 0, 19)
+UI["2d"]["BackgroundTransparency"] = 0.4
+UI["2d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["2d"]["Text"] = [[Parking Garage ]]
+UI["2d"]["Position"] = UDim2.new(0, 0, 0, 75)
+
+-- // StarterGui.gojo.Frame.tapalo55.ScrollingFrame.TextButton.LocalScript \\ --
+UI["2e"] = Instance.new("LocalScript", UI["2d"])
+
+
+-- // StarterGui.gojo.Frame.tapalo55.ScrollingFrame.TextButton.UICorner \\ --
+UI["2f"] = Instance.new("UICorner", UI["2d"])
+
+
+-- // StarterGui.gojo.Frame.tapalo55.ScrollingFrame.TextButton \\ --
+UI["30"] = Instance.new("TextButton", UI["23"])
+UI["30"]["TextWrapped"] = true
+UI["30"]["TextStrokeTransparency"] = 0.45
+UI["30"]["BorderSizePixel"] = 0
+UI["30"]["TextSize"] = 14
+UI["30"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
+UI["30"]["TextScaled"] = true
+UI["30"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["30"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["30"]["Size"] = UDim2.new(0, 110, 0, 19)
+UI["30"]["BackgroundTransparency"] = 0.4
+UI["30"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["30"]["Text"] = [[Dealership]]
+UI["30"]["Position"] = UDim2.new(0, 0, 0, 100)
+
+-- // StarterGui.gojo.Frame.tapalo55.ScrollingFrame.TextButton.LocalScript \\ --
+UI["31"] = Instance.new("LocalScript", UI["30"])
+
+
+-- // StarterGui.gojo.Frame.tapalo55.ScrollingFrame.TextButton.UICorner \\ --
+UI["32"] = Instance.new("UICorner", UI["30"])
+
+
+-- // StarterGui.gojo.Frame.tapalo55.ScrollingFrame.TextButton \\ --
+UI["33"] = Instance.new("TextButton", UI["23"])
+UI["33"]["TextWrapped"] = true
+UI["33"]["TextStrokeTransparency"] = 0.45
+UI["33"]["BorderSizePixel"] = 0
+UI["33"]["TextSize"] = 14
+UI["33"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
+UI["33"]["TextScaled"] = true
+UI["33"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["33"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["33"]["Size"] = UDim2.new(0, 110, 0, 19)
+UI["33"]["BackgroundTransparency"] = 0.4
+UI["33"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["33"]["Text"] = [[Hospital]]
+UI["33"]["Position"] = UDim2.new(0, 0, 0, 125)
+
+-- // StarterGui.gojo.Frame.tapalo55.ScrollingFrame.TextButton.LocalScript \\ --
+UI["34"] = Instance.new("LocalScript", UI["33"])
+
+
+-- // StarterGui.gojo.Frame.tapalo55.ScrollingFrame.TextButton.UICorner \\ --
+UI["35"] = Instance.new("UICorner", UI["33"])
+
+
+-- // StarterGui.gojo.Frame.tapalo55.ScrollingFrame.TextButton \\ --
+UI["36"] = Instance.new("TextButton", UI["23"])
+UI["36"]["TextWrapped"] = true
+UI["36"]["TextStrokeTransparency"] = 0.45
+UI["36"]["BorderSizePixel"] = 0
+UI["36"]["TextSize"] = 14
+UI["36"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
+UI["36"]["TextScaled"] = true
+UI["36"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["36"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["36"]["Size"] = UDim2.new(0, 110, 0, 19)
+UI["36"]["BackgroundTransparency"] = 0.4
+UI["36"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["36"]["Text"] = [[Adac]]
+UI["36"]["Position"] = UDim2.new(0, 0, 0, 150)
+
+-- // StarterGui.gojo.Frame.tapalo55.ScrollingFrame.TextButton.LocalScript \\ --
+UI["37"] = Instance.new("LocalScript", UI["36"])
+
+
+-- // StarterGui.gojo.Frame.tapalo55.ScrollingFrame.TextButton.UICorner \\ --
+UI["38"] = Instance.new("UICorner", UI["36"])
+
+
+-- // StarterGui.gojo.Frame.tapalo55.ScrollingFrame.TextButton \\ --
+UI["39"] = Instance.new("TextButton", UI["23"])
+UI["39"]["TextWrapped"] = true
+UI["39"]["TextStrokeTransparency"] = 0.45
+UI["39"]["BorderSizePixel"] = 0
+UI["39"]["TextSize"] = 14
+UI["39"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
+UI["39"]["TextScaled"] = true
+UI["39"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["39"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["39"]["Size"] = UDim2.new(0, 110, 0, 19)
+UI["39"]["BackgroundTransparency"] = 0.4
+UI["39"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["39"]["Text"] = [[Truck Company]]
+UI["39"]["Position"] = UDim2.new(0, 0, 0, 200)
+
+-- // StarterGui.gojo.Frame.tapalo55.ScrollingFrame.TextButton.LocalScript \\ --
+UI["3a"] = Instance.new("LocalScript", UI["39"])
+
+
+-- // StarterGui.gojo.Frame.tapalo55.ScrollingFrame.TextButton.UICorner \\ --
+UI["3b"] = Instance.new("UICorner", UI["39"])
+
+
+-- // StarterGui.gojo.Frame.tapalo55.ScrollingFrame.TextButton \\ --
+UI["3c"] = Instance.new("TextButton", UI["23"])
+UI["3c"]["TextWrapped"] = true
+UI["3c"]["TextStrokeTransparency"] = 0.45
+UI["3c"]["BorderSizePixel"] = 0
+UI["3c"]["TextSize"] = 14
+UI["3c"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
+UI["3c"]["TextScaled"] = true
+UI["3c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["3c"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["3c"]["Size"] = UDim2.new(0, 110, 0, 19)
+UI["3c"]["BackgroundTransparency"] = 0.4
+UI["3c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["3c"]["Text"] = [[Bus Company]]
+UI["3c"]["Position"] = UDim2.new(0, 0, 0, 225)
+
+-- // StarterGui.gojo.Frame.tapalo55.ScrollingFrame.TextButton.LocalScript \\ --
+UI["3d"] = Instance.new("LocalScript", UI["3c"])
+
+
+-- // StarterGui.gojo.Frame.tapalo55.ScrollingFrame.TextButton.UICorner \\ --
+UI["3e"] = Instance.new("UICorner", UI["3c"])
+
+
+-- // StarterGui.gojo.Frame.tapalo55.ScrollingFrame.TextButton \\ --
+UI["3f"] = Instance.new("TextButton", UI["23"])
+UI["3f"]["TextWrapped"] = true
+UI["3f"]["TextStrokeTransparency"] = 0.45
+UI["3f"]["BorderSizePixel"] = 0
+UI["3f"]["TextSize"] = 14
+UI["3f"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
+UI["3f"]["TextScaled"] = true
+UI["3f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["3f"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["3f"]["Size"] = UDim2.new(0, 110, 0, 19)
+UI["3f"]["BackgroundTransparency"] = 0.4
+UI["3f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["3f"]["Text"] = [[Police Station]]
+UI["3f"]["Position"] = UDim2.new(0, 0, 0, 250)
+
+-- // StarterGui.gojo.Frame.tapalo55.ScrollingFrame.TextButton.LocalScript \\ --
+UI["40"] = Instance.new("LocalScript", UI["3f"])
+
+
+-- // StarterGui.gojo.Frame.tapalo55.ScrollingFrame.TextButton.UICorner \\ --
+UI["41"] = Instance.new("UICorner", UI["3f"])
+
+
+-- // StarterGui.gojo.Frame.tapalo55.ScrollingFrame.TextButton \\ --
+UI["42"] = Instance.new("TextButton", UI["23"])
+UI["42"]["TextWrapped"] = true
+UI["42"]["TextStrokeTransparency"] = 0.45
+UI["42"]["BorderSizePixel"] = 0
+UI["42"]["TextSize"] = 14
+UI["42"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
+UI["42"]["TextScaled"] = true
+UI["42"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["42"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["42"]["Size"] = UDim2.new(0, 110, 0, 19)
+UI["42"]["BackgroundTransparency"] = 0.4
+UI["42"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["42"]["Text"] = [[Smuggler (clot)]]
+UI["42"]["Position"] = UDim2.new(0, 0, 0, 175)
+
+-- // StarterGui.gojo.Frame.tapalo55.ScrollingFrame.TextButton.LocalScript \\ --
+UI["43"] = Instance.new("LocalScript", UI["42"])
+
+
+-- // StarterGui.gojo.Frame.tapalo55.ScrollingFrame.TextButton.UICorner \\ --
+UI["44"] = Instance.new("UICorner", UI["42"])
+
+
+-- // StarterGui.gojo.Frame.tapalo55.robScrollingFrame \\ --
+UI["45"] = Instance.new("ScrollingFrame", UI["21"])
+UI["45"]["Active"] = true
+UI["45"]["BorderSizePixel"] = 0
+UI["45"]["CanvasSize"] = UDim2.new(0, 0, 1.4, 0)
+UI["45"]["BackgroundColor3"] = Color3.fromRGB(23, 23, 23)
+UI["45"]["Name"] = [[robScrollingFrame]]
+UI["45"]["Size"] = UDim2.new(0, 125, 0, 200)
+UI["45"]["ScrollBarImageColor3"] = Color3.fromRGB(255, 0, 5)
+UI["45"]["Position"] = UDim2.new(0.59565, 0, 0.06037, 0)
+UI["45"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["45"]["BackgroundTransparency"] = 1
+
+-- // StarterGui.gojo.Frame.tapalo55.robScrollingFrame.TextButton \\ --
+UI["46"] = Instance.new("TextButton", UI["45"])
+UI["46"]["TextWrapped"] = true
+UI["46"]["TextStrokeTransparency"] = 0.45
+UI["46"]["BorderSizePixel"] = 0
+UI["46"]["TextSize"] = 14
+UI["46"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
+UI["46"]["TextScaled"] = true
+UI["46"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["46"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["46"]["Size"] = UDim2.new(0, 110, 0, 19)
+UI["46"]["BackgroundTransparency"] = 0.4
+UI["46"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["46"]["Text"] = [[Gas-N-Go Fuel]]
+
+-- // StarterGui.gojo.Frame.tapalo55.robScrollingFrame.TextButton.LocalScript \\ --
+UI["47"] = Instance.new("LocalScript", UI["46"])
+
+
+-- // StarterGui.gojo.Frame.tapalo55.robScrollingFrame.TextButton.UICorner \\ --
+UI["48"] = Instance.new("UICorner", UI["46"])
+
+
+-- // StarterGui.gojo.Frame.tapalo55.robScrollingFrame.TextButton \\ --
+UI["49"] = Instance.new("TextButton", UI["45"])
+UI["49"]["TextWrapped"] = true
+UI["49"]["TextStrokeTransparency"] = 0.45
+UI["49"]["BorderSizePixel"] = 0
+UI["49"]["TextSize"] = 14
+UI["49"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
+UI["49"]["TextScaled"] = true
+UI["49"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["49"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["49"]["Size"] = UDim2.new(0, 110, 0, 19)
+UI["49"]["BackgroundTransparency"] = 0.4
+UI["49"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["49"]["Text"] = [[Jeweler]]
+UI["49"]["Position"] = UDim2.new(0, 0, 0, 25)
+
+-- // StarterGui.gojo.Frame.tapalo55.robScrollingFrame.TextButton.LocalScript \\ --
+UI["4a"] = Instance.new("LocalScript", UI["49"])
+
+
+-- // StarterGui.gojo.Frame.tapalo55.robScrollingFrame.TextButton.UICorner \\ --
+UI["4b"] = Instance.new("UICorner", UI["49"])
+
+
+-- // StarterGui.gojo.Frame.tapalo55.robScrollingFrame.TextButton \\ --
+UI["4c"] = Instance.new("TextButton", UI["45"])
+UI["4c"]["TextWrapped"] = true
+UI["4c"]["TextStrokeTransparency"] = 0.45
+UI["4c"]["BorderSizePixel"] = 0
+UI["4c"]["TextSize"] = 14
+UI["4c"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
+UI["4c"]["TextScaled"] = true
+UI["4c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["4c"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["4c"]["Size"] = UDim2.new(0, 110, 0, 19)
+UI["4c"]["BackgroundTransparency"] = 0.4
+UI["4c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["4c"]["Text"] = [[Bank]]
+UI["4c"]["Position"] = UDim2.new(0, 0, 0, 50)
+
+-- // StarterGui.gojo.Frame.tapalo55.robScrollingFrame.TextButton.LocalScript \\ --
+UI["4d"] = Instance.new("LocalScript", UI["4c"])
+
+
+-- // StarterGui.gojo.Frame.tapalo55.robScrollingFrame.TextButton.UICorner \\ --
+UI["4e"] = Instance.new("UICorner", UI["4c"])
+
+
+-- // StarterGui.gojo.Frame.tapalo55.robScrollingFrame.TextButton \\ --
+UI["4f"] = Instance.new("TextButton", UI["45"])
+UI["4f"]["TextWrapped"] = true
+UI["4f"]["TextStrokeTransparency"] = 0.45
+UI["4f"]["BorderSizePixel"] = 0
+UI["4f"]["TextSize"] = 14
+UI["4f"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
+UI["4f"]["TextScaled"] = true
+UI["4f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["4f"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["4f"]["Size"] = UDim2.new(0, 110, 0, 19)
+UI["4f"]["BackgroundTransparency"] = 0.4
+UI["4f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["4f"]["Text"] = [[Ares Fuel]]
+UI["4f"]["Position"] = UDim2.new(0, 0, 0, 75)
+
+-- // StarterGui.gojo.Frame.tapalo55.robScrollingFrame.TextButton.LocalScript \\ --
+UI["50"] = Instance.new("LocalScript", UI["4f"])
+
+
+-- // StarterGui.gojo.Frame.tapalo55.robScrollingFrame.TextButton.UICorner \\ --
+UI["51"] = Instance.new("UICorner", UI["4f"])
+
+
+-- // StarterGui.gojo.Frame.tapalo55.robScrollingFrame.TextButton \\ --
+UI["52"] = Instance.new("TextButton", UI["45"])
+UI["52"]["TextWrapped"] = true
+UI["52"]["TextStrokeTransparency"] = 0.45
+UI["52"]["BorderSizePixel"] = 0
+UI["52"]["TextSize"] = 14
+UI["52"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
+UI["52"]["TextScaled"] = true
+UI["52"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["52"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["52"]["Size"] = UDim2.new(0, 110, 0, 19)
+UI["52"]["BackgroundTransparency"] = 0.4
+UI["52"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["52"]["Text"] = [[Tool Shop]]
+UI["52"]["Position"] = UDim2.new(0, 0, 0, 100)
+
+-- // StarterGui.gojo.Frame.tapalo55.robScrollingFrame.TextButton.LocalScript \\ --
+UI["53"] = Instance.new("LocalScript", UI["52"])
+
+
+-- // StarterGui.gojo.Frame.tapalo55.robScrollingFrame.TextButton.UICorner \\ --
+UI["54"] = Instance.new("UICorner", UI["52"])
+
+
+-- // StarterGui.gojo.Frame.tapalo55.robScrollingFrame.TextButton \\ --
+UI["55"] = Instance.new("TextButton", UI["45"])
+UI["55"]["TextWrapped"] = true
+UI["55"]["TextStrokeTransparency"] = 0.45
+UI["55"]["BorderSizePixel"] = 0
+UI["55"]["TextSize"] = 14
+UI["55"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
+UI["55"]["TextScaled"] = true
+UI["55"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["55"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["55"]["Size"] = UDim2.new(0, 110, 0, 19)
+UI["55"]["BackgroundTransparency"] = 0.4
+UI["55"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["55"]["Text"] = [[Osso Fuel]]
+UI["55"]["Position"] = UDim2.new(0, 0, 0, 125)
+
+-- // StarterGui.gojo.Frame.tapalo55.robScrollingFrame.TextButton.LocalScript \\ --
+UI["56"] = Instance.new("LocalScript", UI["55"])
+
+
+-- // StarterGui.gojo.Frame.tapalo55.robScrollingFrame.TextButton.UICorner \\ --
+UI["57"] = Instance.new("UICorner", UI["55"])
+
+
+-- // StarterGui.gojo.Frame.tapalo55.robScrollingFrame.TextButton \\ --
+UI["58"] = Instance.new("TextButton", UI["45"])
+UI["58"]["TextWrapped"] = true
+UI["58"]["TextStrokeTransparency"] = 0.45
+UI["58"]["BorderSizePixel"] = 0
+UI["58"]["TextSize"] = 14
+UI["58"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
+UI["58"]["TextScaled"] = true
+UI["58"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["58"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["58"]["Size"] = UDim2.new(0, 110, 0, 19)
+UI["58"]["BackgroundTransparency"] = 0.4
+UI["58"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["58"]["Text"] = [[Clothing Store]]
+UI["58"]["Position"] = UDim2.new(0, 0, 0, 150)
+
+-- // StarterGui.gojo.Frame.tapalo55.robScrollingFrame.TextButton.LocalScript \\ --
+UI["59"] = Instance.new("LocalScript", UI["58"])
+
+
+-- // StarterGui.gojo.Frame.tapalo55.robScrollingFrame.TextButton.UICorner \\ --
+UI["5a"] = Instance.new("UICorner", UI["58"])
+
+
+-- // StarterGui.gojo.Frame.tapalo55.robScrollingFrame.TextButton \\ --
+UI["5b"] = Instance.new("TextButton", UI["45"])
+UI["5b"]["TextWrapped"] = true
+UI["5b"]["TextStrokeTransparency"] = 0.45
+UI["5b"]["BorderSizePixel"] = 0
+UI["5b"]["TextSize"] = 14
+UI["5b"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
+UI["5b"]["TextScaled"] = true
+UI["5b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["5b"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["5b"]["Size"] = UDim2.new(0, 110, 0, 19)
+UI["5b"]["BackgroundTransparency"] = 0.4
+UI["5b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["5b"]["Text"] = [[Farm Shop]]
+UI["5b"]["Position"] = UDim2.new(0, 0, 0, 200)
+
+-- // StarterGui.gojo.Frame.tapalo55.robScrollingFrame.TextButton.LocalScript \\ --
+UI["5c"] = Instance.new("LocalScript", UI["5b"])
+
+
+-- // StarterGui.gojo.Frame.tapalo55.robScrollingFrame.TextButton.UICorner \\ --
+UI["5d"] = Instance.new("UICorner", UI["5b"])
+
+
+-- // StarterGui.gojo.Frame.tapalo55.robScrollingFrame.TextButton \\ --
+UI["5e"] = Instance.new("TextButton", UI["45"])
+UI["5e"]["TextWrapped"] = true
+UI["5e"]["TextStrokeTransparency"] = 0.45
+UI["5e"]["BorderSizePixel"] = 0
+UI["5e"]["TextSize"] = 14
+UI["5e"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
+UI["5e"]["TextScaled"] = true
+UI["5e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["5e"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["5e"]["Size"] = UDim2.new(0, 110, 0, 19)
+UI["5e"]["BackgroundTransparency"] = 0.4
+UI["5e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["5e"]["Text"] = [[Container Ship]]
+UI["5e"]["Position"] = UDim2.new(0, 0, 0, 175)
+
+-- // StarterGui.gojo.Frame.tapalo55.robScrollingFrame.TextButton.LocalScript \\ --
+UI["5f"] = Instance.new("LocalScript", UI["5e"])
+
+
+-- // StarterGui.gojo.Frame.tapalo55.robScrollingFrame.TextButton.UICorner \\ --
+UI["60"] = Instance.new("UICorner", UI["5e"])
+
+
+-- // StarterGui.gojo.Frame.tapalo55.robScrollingFrame.TextButton \\ --
+UI["61"] = Instance.new("TextButton", UI["45"])
+UI["61"]["TextWrapped"] = true
+UI["61"]["TextStrokeTransparency"] = 0.45
+UI["61"]["BorderSizePixel"] = 0
+UI["61"]["TextSize"] = 14
+UI["61"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
+UI["61"]["TextScaled"] = true
+UI["61"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["61"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["61"]["Size"] = UDim2.new(0, 110, 0, 19)
+UI["61"]["BackgroundTransparency"] = 0.4
+UI["61"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["61"]["Text"] = [[Erwin's Club]]
+UI["61"]["Position"] = UDim2.new(0, 0, 0, 225)
+
+-- // StarterGui.gojo.Frame.tapalo55.robScrollingFrame.TextButton.LocalScript \\ --
+UI["62"] = Instance.new("LocalScript", UI["61"])
+
+
+-- // StarterGui.gojo.Frame.tapalo55.robScrollingFrame.TextButton.UICorner \\ --
+UI["63"] = Instance.new("UICorner", UI["61"])
+
+
+-- // StarterGui.gojo.Frame.tapalo55.TextLabel \\ --
+UI["64"] = Instance.new("TextLabel", UI["21"])
+UI["64"]["TextWrapped"] = true
+UI["64"]["TextStrokeTransparency"] = 0.41
+UI["64"]["BorderSizePixel"] = 0
+UI["64"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255)
+UI["64"]["TextScaled"] = true
+UI["64"]["BackgroundColor3"] = Color3.fromRGB(125, 6, 8)
+UI["64"]["TextSize"] = 13
+UI["64"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["64"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["64"]["Size"] = UDim2.new(0, 98, 0, 14)
+UI["64"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["64"]["Text"] = [[Places]]
+UI["64"]["Position"] = UDim2.new(0.12638, 0, -0.01402, 0)
+
+-- // StarterGui.gojo.Frame.tapalo55.TextLabel.UICorner \\ --
+UI["65"] = Instance.new("UICorner", UI["64"])
+
+
+-- // StarterGui.gojo.Frame.tapalo55.TextLabel \\ --
+UI["66"] = Instance.new("TextLabel", UI["21"])
+UI["66"]["TextWrapped"] = true
+UI["66"]["TextStrokeTransparency"] = 0.41
+UI["66"]["BorderSizePixel"] = 0
+UI["66"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255)
+UI["66"]["TextScaled"] = true
+UI["66"]["BackgroundColor3"] = Color3.fromRGB(125, 6, 8)
+UI["66"]["TextSize"] = 13
+UI["66"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["66"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["66"]["Size"] = UDim2.new(0, 92, 0, 14)
+UI["66"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["66"]["Text"] = [[Rob Places]]
+UI["66"]["Position"] = UDim2.new(0.61981, 0, -0.00829, 0)
+
+-- // StarterGui.gojo.Frame.tapalo55.TextLabel.UICorner \\ --
+UI["67"] = Instance.new("UICorner", UI["66"])
+
+
+-- // StarterGui.gojo.Frame.puaya55 \\ --
+UI["68"] = Instance.new("Frame", UI["2"])
+UI["68"]["Visible"] = false
+UI["68"]["BorderSizePixel"] = 0
+UI["68"]["BackgroundColor3"] = Color3.fromRGB(16, 16, 16)
+UI["68"]["Size"] = UDim2.new(0.8781, 0, 0.75497, 0)
+UI["68"]["Position"] = UDim2.new(0.04927, 0, 0.10455, 0)
+UI["68"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["68"]["Name"] = [[puaya55]]
+UI["68"]["BackgroundTransparency"] = 1
+
+-- // StarterGui.gojo.Frame.puaya55.UICorner \\ --
+UI["69"] = Instance.new("UICorner", UI["68"])
+
+
+-- // StarterGui.gojo.Frame.puaya55.humanoid_actions \\ --
+UI["6a"] = Instance.new("Frame", UI["68"])
+UI["6a"]["BorderSizePixel"] = 0
+UI["6a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["6a"]["AnchorPoint"] = Vector2.new(0.5, 0)
+UI["6a"]["Size"] = UDim2.new(0.54224, 0, 0.32302, 140)
+UI["6a"]["Position"] = UDim2.new(0.28018, 0, 0.02859, 0)
+UI["6a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["6a"]["Name"] = [[humanoid_actions]]
+UI["6a"]["LayoutOrder"] = 3
+UI["6a"]["BackgroundTransparency"] = 1
+
+-- // StarterGui.gojo.Frame.puaya55.humanoid_actions.list \\ --
+UI["6b"] = Instance.new("UIListLayout", UI["6a"])
+UI["6b"]["Padding"] = UDim.new(0, 1)
+UI["6b"]["SortOrder"] = Enum.SortOrder.LayoutOrder
+UI["6b"]["Name"] = [[list]]
+
+-- // StarterGui.gojo.Frame.puaya55.humanoid_actions.box \\ --
+UI["6c"] = Instance.new("ImageButton", UI["6a"])
+UI["6c"]["BorderSizePixel"] = 0
+UI["6c"]["SliceCenter"] = Rect.new(69, 6, 1022, 51)
+UI["6c"]["SliceScale"] = 0.12
+UI["6c"]["ScaleType"] = Enum.ScaleType.Crop
+UI["6c"]["ImageTransparency"] = 0.6
+UI["6c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["6c"]["ImageColor3"] = Color3.fromRGB(0, 0, 0)
+UI["6c"]["LayoutOrder"] = 2
+UI["6c"]["Image"] = [[rbxassetid://16286719854]]
+UI["6c"]["Size"] = UDim2.new(1, 0, 0.03136, 45)
+UI["6c"]["BackgroundTransparency"] = 1
+UI["6c"]["Name"] = [[box]]
+UI["6c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["6c"]["Position"] = UDim2.new(0, 0, 0.25137, 0)
+
+-- // StarterGui.gojo.Frame.puaya55.humanoid_actions.box.label \\ --
+UI["6d"] = Instance.new("TextLabel", UI["6c"])
+UI["6d"]["BorderSizePixel"] = 0
+UI["6d"]["TextXAlignment"] = Enum.TextXAlignment.Left
+UI["6d"]["TextTransparency"] = 0.2
+UI["6d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["6d"]["TextSize"] = 16
+UI["6d"]["FontFace"] = Font.new([[rbxassetid://12187365364]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["6d"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["6d"]["BackgroundTransparency"] = 1
+UI["6d"]["AnchorPoint"] = Vector2.new(0, 0.5)
+UI["6d"]["Size"] = UDim2.new(1, -50, 1, 0)
+UI["6d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["6d"]["Text"] = [[Boxes]]
+UI["6d"]["Name"] = [[label]]
+UI["6d"]["Position"] = UDim2.new(0, 0, 0.5, 0)
+
+-- // StarterGui.gojo.Frame.puaya55.humanoid_actions.box.padding \\ --
+UI["6e"] = Instance.new("UIPadding", UI["6c"])
+UI["6e"]["PaddingRight"] = UDim.new(0, 20)
+UI["6e"]["Name"] = [[padding]]
+UI["6e"]["PaddingLeft"] = UDim.new(0, 20)
+
+-- // StarterGui.gojo.Frame.puaya55.humanoid_actions.box.anfa \\ --
+UI["6f"] = Instance.new("Frame", UI["6c"])
+UI["6f"]["BorderSizePixel"] = 0
+UI["6f"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0)
+UI["6f"]["Size"] = UDim2.new(0, 42, 0, 18)
+UI["6f"]["Position"] = UDim2.new(0.85, 0, 0.29207, 0)
+UI["6f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["6f"]["Name"] = [[anfa]]
+
+-- // StarterGui.gojo.Frame.puaya55.humanoid_actions.box.anfa.UICorner \\ --
+UI["70"] = Instance.new("UICorner", UI["6f"])
+UI["70"]["CornerRadius"] = UDim.new(0, 25)
+
+-- // StarterGui.gojo.Frame.puaya55.humanoid_actions.box.anfa.UIStroke \\ --
+UI["71"] = Instance.new("UIStroke", UI["6f"])
+UI["71"]["Thickness"] = 1.6
+
+-- // StarterGui.gojo.Frame.puaya55.humanoid_actions.box.anfa.ImageLabel \\ --
+UI["72"] = Instance.new("ImageLabel", UI["6f"])
+UI["72"]["BorderSizePixel"] = 0
+UI["72"]["BackgroundColor3"] = Color3.fromRGB(86, 0, 128)
+UI["72"]["ImageColor3"] = Color3.fromRGB(131, 131, 131)
+UI["72"]["Image"] = [[rbxassetid://93433450915529]]
+UI["72"]["Size"] = UDim2.new(0, 42, 0, 20)
+UI["72"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["72"]["Position"] = UDim2.new(0, 0, -0.06722, 0)
+
+-- // StarterGui.gojo.Frame.puaya55.humanoid_actions.box.anfa.ImageLabel.UICorner \\ --
+UI["73"] = Instance.new("UICorner", UI["72"])
+UI["73"]["CornerRadius"] = UDim.new(0, 25)
+
+-- // StarterGui.gojo.Frame.puaya55.humanoid_actions.box.anfa.textButton \\ --
+UI["74"] = Instance.new("TextButton", UI["6f"])
+UI["74"]["BorderSizePixel"] = 0
+UI["74"]["TextSize"] = 14
+UI["74"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
+UI["74"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["74"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["74"]["ZIndex"] = 3
+UI["74"]["Size"] = UDim2.new(0, 24, 0, 15)
+UI["74"]["Name"] = [[textButton]]
+UI["74"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["74"]["Text"] = [[]]
+UI["74"]["Position"] = UDim2.new(0, 0, 0.07, 0)
+
+-- // StarterGui.gojo.Frame.puaya55.humanoid_actions.box.anfa.textButton.UICorner \\ --
+UI["75"] = Instance.new("UICorner", UI["74"])
+
+
+-- // StarterGui.gojo.Frame.puaya55.humanoid_actions.box.anfa.textButton.LocalScript \\ --
+UI["76"] = Instance.new("LocalScript", UI["74"])
+
+
+-- // StarterGui.gojo.Frame.puaya55.humanoid_actions.box.anfa.textButton.renk \\ --
+UI["77"] = Instance.new("LocalScript", UI["74"])
+UI["77"]["Name"] = [[renk]]
+
+-- // StarterGui.gojo.Frame.puaya55.humanoid_actions.shona \\ --
+UI["78"] = Instance.new("ImageButton", UI["6a"])
+UI["78"]["BorderSizePixel"] = 0
+UI["78"]["SliceCenter"] = Rect.new(69, 6, 1022, 51)
+UI["78"]["SliceScale"] = 0.12
+UI["78"]["ScaleType"] = Enum.ScaleType.Crop
+UI["78"]["ImageTransparency"] = 0.6
+UI["78"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["78"]["ImageColor3"] = Color3.fromRGB(0, 0, 0)
+UI["78"]["LayoutOrder"] = 2
+UI["78"]["Image"] = [[rbxassetid://16286719854]]
+UI["78"]["Size"] = UDim2.new(1, 0, 0.03136, 45)
+UI["78"]["BackgroundTransparency"] = 1
+UI["78"]["Name"] = [[shona]]
+UI["78"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["78"]["Position"] = UDim2.new(0, 0, 0.50273, 0)
+
+-- // StarterGui.gojo.Frame.puaya55.humanoid_actions.shona.label \\ --
+UI["79"] = Instance.new("TextLabel", UI["78"])
+UI["79"]["BorderSizePixel"] = 0
+UI["79"]["TextXAlignment"] = Enum.TextXAlignment.Left
+UI["79"]["TextTransparency"] = 0.2
+UI["79"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["79"]["TextSize"] = 16
+UI["79"]["FontFace"] = Font.new([[rbxassetid://12187365364]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["79"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["79"]["BackgroundTransparency"] = 1
+UI["79"]["AnchorPoint"] = Vector2.new(0, 0.5)
+UI["79"]["Size"] = UDim2.new(1, -50, 1, 0)
+UI["79"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["79"]["Text"] = [[ShowName]]
+UI["79"]["Name"] = [[label]]
+UI["79"]["Position"] = UDim2.new(0, 0, 0.5, 0)
+
+-- // StarterGui.gojo.Frame.puaya55.humanoid_actions.shona.padding \\ --
+UI["7a"] = Instance.new("UIPadding", UI["78"])
+UI["7a"]["PaddingRight"] = UDim.new(0, 20)
+UI["7a"]["Name"] = [[padding]]
+UI["7a"]["PaddingLeft"] = UDim.new(0, 20)
+
+-- // StarterGui.gojo.Frame.puaya55.humanoid_actions.shona.naesp \\ --
+UI["7b"] = Instance.new("Frame", UI["78"])
+UI["7b"]["BorderSizePixel"] = 0
+UI["7b"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0)
+UI["7b"]["Size"] = UDim2.new(0, 42, 0, 18)
+UI["7b"]["Position"] = UDim2.new(0.85, 0, 0.29207, 0)
+UI["7b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["7b"]["Name"] = [[naesp]]
+
+-- // StarterGui.gojo.Frame.puaya55.humanoid_actions.shona.naesp.TextButton \\ --
+UI["7c"] = Instance.new("TextButton", UI["7b"])
+UI["7c"]["BorderSizePixel"] = 0
+UI["7c"]["TextSize"] = 14
+UI["7c"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
+UI["7c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["7c"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["7c"]["ZIndex"] = 3
+UI["7c"]["Size"] = UDim2.new(0, 24, 0, 15)
+UI["7c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["7c"]["Text"] = [[]]
+UI["7c"]["Position"] = UDim2.new(0, 0, 0.07, 0)
+
+-- // StarterGui.gojo.Frame.puaya55.humanoid_actions.shona.naesp.TextButton.UICorner \\ --
+UI["7d"] = Instance.new("UICorner", UI["7c"])
+
+
+-- // StarterGui.gojo.Frame.puaya55.humanoid_actions.shona.naesp.TextButton.LocalScript \\ --
+UI["7e"] = Instance.new("LocalScript", UI["7c"])
+
+
+-- // StarterGui.gojo.Frame.puaya55.humanoid_actions.shona.naesp.TextButton.renk \\ --
+UI["7f"] = Instance.new("LocalScript", UI["7c"])
+UI["7f"]["Name"] = [[renk]]
+
+-- // StarterGui.gojo.Frame.puaya55.humanoid_actions.shona.naesp.UICorner \\ --
+UI["80"] = Instance.new("UICorner", UI["7b"])
+UI["80"]["CornerRadius"] = UDim.new(0, 25)
+
+-- // StarterGui.gojo.Frame.puaya55.humanoid_actions.shona.naesp.UIStroke \\ --
+UI["81"] = Instance.new("UIStroke", UI["7b"])
+UI["81"]["Thickness"] = 1.6
+
+-- // StarterGui.gojo.Frame.puaya55.humanoid_actions.shona.naesp.ImageLabel \\ --
+UI["82"] = Instance.new("ImageLabel", UI["7b"])
+UI["82"]["BorderSizePixel"] = 0
+UI["82"]["BackgroundColor3"] = Color3.fromRGB(86, 0, 128)
+UI["82"]["ImageColor3"] = Color3.fromRGB(131, 131, 131)
+UI["82"]["Image"] = [[rbxassetid://93433450915529]]
+UI["82"]["Size"] = UDim2.new(0, 42, 0, 20)
+UI["82"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["82"]["Position"] = UDim2.new(0, 0, -0.06722, 0)
+
+-- // StarterGui.gojo.Frame.puaya55.humanoid_actions.shona.naesp.ImageLabel.UICorner \\ --
+UI["83"] = Instance.new("UICorner", UI["82"])
+UI["83"]["CornerRadius"] = UDim.new(0, 25)
+
+-- // StarterGui.gojo.Frame.ImageButton \\ --
+UI["84"] = Instance.new("ImageButton", UI["2"])
+UI["84"]["BorderSizePixel"] = 0
+UI["84"]["ScaleType"] = Enum.ScaleType.Crop
+UI["84"]["BackgroundColor3"] = Color3.fromRGB(26, 26, 26)
+UI["84"]["ImageColor3"] = Color3.fromRGB(222, 156, 0)
+UI["84"]["ZIndex"] = 2
+UI["84"]["Image"] = [[http://www.roblox.com/asset/?id=14219650242]]
+UI["84"]["Size"] = UDim2.new(0.08148, 0, 0.10399, 0)
+UI["84"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["84"]["Position"] = UDim2.new(0.45188, 0, 0.8663, 0)
+
+-- // StarterGui.gojo.Frame.ImageButton.UICorner \\ --
+UI["85"] = Instance.new("UICorner", UI["84"])
+
+
+-- // StarterGui.gojo.Frame.ImageButton.LocalScript \\ --
+UI["86"] = Instance.new("LocalScript", UI["84"])
+
+
+-- // StarterGui.gojo.Frame.ImageButton \\ --
+UI["87"] = Instance.new("ImageButton", UI["2"])
+UI["87"]["BorderSizePixel"] = 0
+UI["87"]["ScaleType"] = Enum.ScaleType.Fit
+UI["87"]["BackgroundColor3"] = Color3.fromRGB(26, 26, 26)
+UI["87"]["ZIndex"] = 2
+UI["87"]["Image"] = [[http://www.roblox.com/asset/?id=17132515723]]
+UI["87"]["Size"] = UDim2.new(0.069, 0, 0.10399, 0)
+UI["87"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["87"]["Position"] = UDim2.new(0.07727, 0, 0.87043, 0)
+
+-- // StarterGui.gojo.Frame.ImageButton.LocalScript \\ --
+UI["88"] = Instance.new("LocalScript", UI["87"])
+
+
+-- // StarterGui.gojo.Frame.ImageButton \\ --
+UI["89"] = Instance.new("ImageButton", UI["2"])
+UI["89"]["BorderSizePixel"] = 0
+UI["89"]["ScaleType"] = Enum.ScaleType.Fit
+UI["89"]["BackgroundColor3"] = Color3.fromRGB(26, 26, 26)
+UI["89"]["ZIndex"] = 2
+UI["89"]["Image"] = [[http://www.roblox.com/asset/?id=17132521951]]
+UI["89"]["Size"] = UDim2.new(0.05536, 0, 0.09639, 0)
+UI["89"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["89"]["Position"] = UDim2.new(0.22473, 0, 0.87185, 0)
+
+-- // StarterGui.gojo.Frame.ImageButton.LocalScript \\ --
+UI["8a"] = Instance.new("LocalScript", UI["89"])
+
+
+-- // StarterGui.gojo.Frame.LocalScript \\ --
+UI["8b"] = Instance.new("LocalScript", UI["2"])
+
+
+-- // StarterGui.gojo.Frame.camo55 \\ --
+UI["8c"] = Instance.new("Frame", UI["2"])
+UI["8c"]["Visible"] = false
+UI["8c"]["BorderSizePixel"] = 0
+UI["8c"]["BackgroundColor3"] = Color3.fromRGB(16, 16, 16)
+UI["8c"]["Size"] = UDim2.new(0.88471, 0, 0.76175, 0)
+UI["8c"]["Position"] = UDim2.new(0.04266, 0, 0.10106, 0)
+UI["8c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["8c"]["Name"] = [[camo55]]
+UI["8c"]["BackgroundTransparency"] = 1
+
+-- // StarterGui.gojo.Frame.camo55.UICorner \\ --
+UI["8d"] = Instance.new("UICorner", UI["8c"])
+
+
+-- // StarterGui.gojo.Frame.camo55.asaya \\ --
+UI["8e"] = Instance.new("Frame", UI["8c"])
+UI["8e"]["BorderSizePixel"] = 0
+UI["8e"]["BackgroundColor3"] = Color3.fromRGB(23, 23, 23)
+UI["8e"]["Size"] = UDim2.new(0, 370, 0, 94)
+UI["8e"]["Position"] = UDim2.new(0.0015, 0, 0.54676, 0)
+UI["8e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["8e"]["Name"] = [[asaya]]
+UI["8e"]["BackgroundTransparency"] = 1
+
+-- // StarterGui.gojo.Frame.camo55.asaya.TextLabel \\ --
+UI["8f"] = Instance.new("TextLabel", UI["8e"])
+UI["8f"]["TextWrapped"] = true
+UI["8f"]["BorderSizePixel"] = 0
+UI["8f"]["TextScaled"] = true
+UI["8f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["8f"]["TextSize"] = 14
+UI["8f"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["8f"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
+UI["8f"]["Size"] = UDim2.new(0, 103, 0, 12)
+UI["8f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["8f"]["Text"] = [[İnfinite Fuel         ]]
+UI["8f"]["Position"] = UDim2.new(0.03889, 0, -0.91668, 0)
+
+-- // StarterGui.gojo.Frame.camo55.asaya.TextLabel.UICorner \\ --
+UI["90"] = Instance.new("UICorner", UI["8f"])
+
+
+-- // StarterGui.gojo.Frame.camo55.asaya.TextLabel.togl \\ --
+UI["91"] = Instance.new("Frame", UI["8f"])
+UI["91"]["BorderSizePixel"] = 0
+UI["91"]["BackgroundColor3"] = Color3.fromRGB(51, 51, 51)
+UI["91"]["Size"] = UDim2.new(0, 29, 0, 13)
+UI["91"]["Position"] = UDim2.new(1.23327, 0, 0.01806, 0)
+UI["91"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["91"]["Name"] = [[togl]]
+
+-- // StarterGui.gojo.Frame.camo55.asaya.TextLabel.togl.TextButton \\ --
+UI["92"] = Instance.new("TextButton", UI["91"])
+UI["92"]["BorderSizePixel"] = 0
+UI["92"]["TextSize"] = 14
+UI["92"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
+UI["92"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["92"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["92"]["Size"] = UDim2.new(0, 25, 0, 10)
+UI["92"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["92"]["Text"] = [[]]
+UI["92"]["Position"] = UDim2.new(-0.07043, 0, 0.07692, 0)
+
+-- // StarterGui.gojo.Frame.camo55.asaya.TextLabel.togl.TextButton.UICorner \\ --
+UI["93"] = Instance.new("UICorner", UI["92"])
+
+
+-- // StarterGui.gojo.Frame.camo55.asaya.TextLabel.togl.TextButton.LocalScript \\ --
+UI["94"] = Instance.new("LocalScript", UI["92"])
+
+
+-- // StarterGui.gojo.Frame.camo55.asaya.TextLabel.togl.TextButton.LocalScript \\ --
+UI["95"] = Instance.new("LocalScript", UI["92"])
+
+
+-- // StarterGui.gojo.Frame.camo55.asaya.TextLabel.togl.UICorner \\ --
+UI["96"] = Instance.new("UICorner", UI["91"])
+
+
+-- // StarterGui.gojo.Frame.camo55.asaya.drıfmo \\ --
+UI["97"] = Instance.new("TextLabel", UI["8e"])
+UI["97"]["TextWrapped"] = true
+UI["97"]["BorderSizePixel"] = 0
+UI["97"]["TextScaled"] = true
+UI["97"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["97"]["TextSize"] = 12
+UI["97"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["97"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
+UI["97"]["Size"] = UDim2.new(0, 57, 0, 40)
+UI["97"]["Visible"] = false
+UI["97"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["97"]["Text"] = [[4x4
+DriftPro
+XL]]
+UI["97"]["Name"] = [[drıfmo]]
+UI["97"]["Position"] = UDim2.new(0.03889, 0, -0.09257, 0)
+
+-- // StarterGui.gojo.Frame.camo55.asaya.drıfmo.UICorner \\ --
+UI["98"] = Instance.new("UICorner", UI["97"])
+
+
+-- // StarterGui.gojo.Frame.camo55.asaya.TextLabel \\ --
+UI["99"] = Instance.new("TextLabel", UI["8e"])
+UI["99"]["TextWrapped"] = true
+UI["99"]["BorderSizePixel"] = 0
+UI["99"]["TextScaled"] = true
+UI["99"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["99"]["TextSize"] = 14
+UI["99"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["99"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
+UI["99"]["Size"] = UDim2.new(0, 103, 0, 12)
+UI["99"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["99"]["Text"] = [[Always Working ]]
+UI["99"]["Position"] = UDim2.new(0.03889, 0, -0.35726, 0)
+
+-- // StarterGui.gojo.Frame.camo55.asaya.TextLabel.UICorner \\ --
+UI["9a"] = Instance.new("UICorner", UI["99"])
+
+
+-- // StarterGui.gojo.Frame.camo55.asaya.TextLabel.togl \\ --
+UI["9b"] = Instance.new("Frame", UI["99"])
+UI["9b"]["BorderSizePixel"] = 0
+UI["9b"]["BackgroundColor3"] = Color3.fromRGB(51, 51, 51)
+UI["9b"]["Size"] = UDim2.new(0, 29, 0, 13)
+UI["9b"]["Position"] = UDim2.new(1.23327, 0, 0.01806, 0)
+UI["9b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["9b"]["Name"] = [[togl]]
+
+-- // StarterGui.gojo.Frame.camo55.asaya.TextLabel.togl.TextButton \\ --
+UI["9c"] = Instance.new("TextButton", UI["9b"])
+UI["9c"]["BorderSizePixel"] = 0
+UI["9c"]["TextSize"] = 14
+UI["9c"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
+UI["9c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["9c"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["9c"]["Size"] = UDim2.new(0, 30, 0, 10)
+UI["9c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["9c"]["Text"] = [[]]
+UI["9c"]["Position"] = UDim2.new(-0.07043, 0, 0.07692, 0)
+
+-- // StarterGui.gojo.Frame.camo55.asaya.TextLabel.togl.TextButton.UICorner \\ --
+UI["9d"] = Instance.new("UICorner", UI["9c"])
+
+
+-- // StarterGui.gojo.Frame.camo55.asaya.TextLabel.togl.TextButton.LocalScript \\ --
+UI["9e"] = Instance.new("LocalScript", UI["9c"])
+
+
+-- // StarterGui.gojo.Frame.camo55.asaya.TextLabel.togl.UICorner \\ --
+UI["9f"] = Instance.new("UICorner", UI["9b"])
+
+
+-- // StarterGui.gojo.Frame.camo55.asaya.TextLabel \\ --
+UI["a0"] = Instance.new("TextLabel", UI["8e"])
+UI["a0"]["TextWrapped"] = true
+UI["a0"]["BorderSizePixel"] = 0
+UI["a0"]["TextScaled"] = true
+UI["a0"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["a0"]["TextSize"] = 14
+UI["a0"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["a0"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
+UI["a0"]["Size"] = UDim2.new(0, 103, 0, 12)
+UI["a0"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["a0"]["Text"] = [[God Car                 ]]
+UI["a0"]["Position"] = UDim2.new(0.03889, 0, -0.64474, 0)
+
+-- // StarterGui.gojo.Frame.camo55.asaya.TextLabel.UICorner \\ --
+UI["a1"] = Instance.new("UICorner", UI["a0"])
+
+
+-- // StarterGui.gojo.Frame.camo55.asaya.TextLabel.togl \\ --
+UI["a2"] = Instance.new("Frame", UI["a0"])
+UI["a2"]["BorderSizePixel"] = 0
+UI["a2"]["BackgroundColor3"] = Color3.fromRGB(51, 51, 51)
+UI["a2"]["Size"] = UDim2.new(0, 29, 0, 13)
+UI["a2"]["Position"] = UDim2.new(1.23327, 0, 0.01806, 0)
+UI["a2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["a2"]["Name"] = [[togl]]
+
+-- // StarterGui.gojo.Frame.camo55.asaya.TextLabel.togl.TextButton \\ --
+UI["a3"] = Instance.new("TextButton", UI["a2"])
+UI["a3"]["BorderSizePixel"] = 0
+UI["a3"]["TextSize"] = 14
+UI["a3"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
+UI["a3"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["a3"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["a3"]["Size"] = UDim2.new(0, 25, 0, 10)
+UI["a3"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["a3"]["Text"] = [[]]
+UI["a3"]["Position"] = UDim2.new(-0.07043, 0, 0.07692, 0)
+
+-- // StarterGui.gojo.Frame.camo55.asaya.TextLabel.togl.TextButton.UICorner \\ --
+UI["a4"] = Instance.new("UICorner", UI["a3"])
+
+
+-- // StarterGui.gojo.Frame.camo55.asaya.TextLabel.togl.TextButton.LocalScript \\ --
+UI["a5"] = Instance.new("LocalScript", UI["a3"])
+
+
+-- // StarterGui.gojo.Frame.camo55.asaya.TextLabel.togl.TextButton.LocalScript \\ --
+UI["a6"] = Instance.new("LocalScript", UI["a3"])
+
+
+-- // StarterGui.gojo.Frame.camo55.asaya.TextLabel.togl.UICorner \\ --
+UI["a7"] = Instance.new("UICorner", UI["a2"])
+
+
+-- // StarterGui.gojo.Frame.camo55.asaya.TextLabel \\ --
+UI["a8"] = Instance.new("TextLabel", UI["8e"])
+UI["a8"]["TextWrapped"] = true
+UI["a8"]["BorderSizePixel"] = 0
+UI["a8"]["TextScaled"] = true
+UI["a8"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["a8"]["TextSize"] = 14
+UI["a8"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["a8"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
+UI["a8"]["Size"] = UDim2.new(0, 103, 0, 12)
+UI["a8"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["a8"]["Text"] = [[Sit In Vehicle     ]]
+UI["a8"]["Position"] = UDim2.new(0.03889, 0, 0.39931, 0)
+
+-- // StarterGui.gojo.Frame.camo55.asaya.TextLabel.UICorner \\ --
+UI["a9"] = Instance.new("UICorner", UI["a8"])
+
+
+-- // StarterGui.gojo.Frame.camo55.asaya.TextLabel.togl \\ --
+UI["aa"] = Instance.new("Frame", UI["a8"])
+UI["aa"]["BorderSizePixel"] = 0
+UI["aa"]["BackgroundColor3"] = Color3.fromRGB(51, 51, 51)
+UI["aa"]["Size"] = UDim2.new(0, 29, 0, 13)
+UI["aa"]["Position"] = UDim2.new(1.23154, 0, 0.01806, 0)
+UI["aa"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["aa"]["Name"] = [[togl]]
+
+-- // StarterGui.gojo.Frame.camo55.asaya.TextLabel.togl.TextButton \\ --
+UI["ab"] = Instance.new("TextButton", UI["aa"])
+UI["ab"]["BorderSizePixel"] = 0
+UI["ab"]["TextSize"] = 14
+UI["ab"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
+UI["ab"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["ab"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["ab"]["Size"] = UDim2.new(0, 28, 0, 8)
+UI["ab"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["ab"]["Text"] = [[]]
+UI["ab"]["Position"] = UDim2.new(0.00451, 0, 0.20423, 0)
+
+-- // StarterGui.gojo.Frame.camo55.asaya.TextLabel.togl.TextButton.UICorner \\ --
+UI["ac"] = Instance.new("UICorner", UI["ab"])
+
+
+-- // StarterGui.gojo.Frame.camo55.asaya.TextLabel.togl.TextButton.LocalScript \\ --
+UI["ad"] = Instance.new("LocalScript", UI["ab"])
+
+
+-- // StarterGui.gojo.Frame.camo55.asaya.TextLabel.togl.UICorner \\ --
+UI["ae"] = Instance.new("UICorner", UI["aa"])
+
+
+-- // StarterGui.gojo.Frame.camo55.asaya.TextLabel \\ --
+UI["af"] = Instance.new("TextLabel", UI["8e"])
+UI["af"]["TextWrapped"] = true
+UI["af"]["BorderSizePixel"] = 0
+UI["af"]["TextScaled"] = true
+UI["af"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["af"]["TextSize"] = 14
+UI["af"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["af"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
+UI["af"]["Size"] = UDim2.new(0, 103, 0, 12)
+UI["af"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["af"]["Text"] = [[Bring My Car      ]]
+UI["af"]["Position"] = UDim2.new(0.03889, 0, 0.12205, 0)
+
+-- // StarterGui.gojo.Frame.camo55.asaya.TextLabel.UICorner \\ --
+UI["b0"] = Instance.new("UICorner", UI["af"])
+
+
+-- // StarterGui.gojo.Frame.camo55.asaya.TextLabel.togl \\ --
+UI["b1"] = Instance.new("Frame", UI["af"])
+UI["b1"]["BorderSizePixel"] = 0
+UI["b1"]["BackgroundColor3"] = Color3.fromRGB(51, 51, 51)
+UI["b1"]["Size"] = UDim2.new(0, 29, 0, 13)
+UI["b1"]["Position"] = UDim2.new(1.23154, 0, 0.01806, 0)
+UI["b1"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["b1"]["Name"] = [[togl]]
+
+-- // StarterGui.gojo.Frame.camo55.asaya.TextLabel.togl.TextButton \\ --
+UI["b2"] = Instance.new("TextButton", UI["b1"])
+UI["b2"]["BorderSizePixel"] = 0
+UI["b2"]["TextSize"] = 14
+UI["b2"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
+UI["b2"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["b2"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["b2"]["Size"] = UDim2.new(0, 28, 0, 8)
+UI["b2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["b2"]["Text"] = [[]]
+UI["b2"]["Position"] = UDim2.new(0.00451, 0, 0.20423, 0)
+
+-- // StarterGui.gojo.Frame.camo55.asaya.TextLabel.togl.TextButton.UICorner \\ --
+UI["b3"] = Instance.new("UICorner", UI["b2"])
+
+
+-- // StarterGui.gojo.Frame.camo55.asaya.TextLabel.togl.TextButton.LocalScript \\ --
+UI["b4"] = Instance.new("LocalScript", UI["b2"])
+
+
+-- // StarterGui.gojo.Frame.camo55.asaya.TextLabel.togl.UICorner \\ --
+UI["b5"] = Instance.new("UICorner", UI["b1"])
+
+
+-- // StarterGui.gojo.Frame.ImageButton \\ --
+UI["b6"] = Instance.new("ImageButton", UI["2"])
+UI["b6"]["BorderSizePixel"] = 0
+UI["b6"]["ScaleType"] = Enum.ScaleType.Tile
+UI["b6"]["BackgroundColor3"] = Color3.fromRGB(26, 26, 26)
+UI["b6"]["ZIndex"] = 2
+UI["b6"]["Image"] = [[http://www.roblox.com/asset/?id=13773422471]]
+UI["b6"]["Size"] = UDim2.new(0.069, 0, 0.09659, 0)
+UI["b6"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["b6"]["Position"] = UDim2.new(0.85837, 0, 0.87137, 0)
+
+-- // StarterGui.gojo.Frame.ImageButton.LocalScript \\ --
+UI["b7"] = Instance.new("LocalScript", UI["b6"])
+
+
+-- // StarterGui.gojo.Frame.ImageButton \\ --
+UI["b8"] = Instance.new("ImageButton", UI["2"])
+UI["b8"]["BorderSizePixel"] = 0
+UI["b8"]["ScaleType"] = Enum.ScaleType.Fit
+UI["b8"]["BackgroundColor3"] = Color3.fromRGB(26, 26, 26)
+UI["b8"]["ZIndex"] = 2
+UI["b8"]["Image"] = [[rbxassetid://82500925843097]]
+UI["b8"]["Size"] = UDim2.new(0.069, 0, 0.09659, 0)
+UI["b8"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["b8"]["Position"] = UDim2.new(0.69017, 0, 0.86429, 0)
+
+-- // StarterGui.gojo.Frame.ImageButton.LocalScript \\ --
+UI["b9"] = Instance.new("LocalScript", UI["b8"])
+
+
+-- // StarterGui.gojo.Frame.satıng55 \\ --
+UI["ba"] = Instance.new("Frame", UI["2"])
+UI["ba"]["Visible"] = false
+UI["ba"]["BorderSizePixel"] = 0
+UI["ba"]["BackgroundColor3"] = Color3.fromRGB(16, 16, 16)
+UI["ba"]["Size"] = UDim2.new(0.91632, 0, 0.7552, 0)
+UI["ba"]["Position"] = UDim2.new(0.02561, 0, 0.10455, 0)
+UI["ba"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["ba"]["Name"] = [[satıng55]]
+UI["ba"]["BackgroundTransparency"] = 1
+
+-- // StarterGui.gojo.Frame.satıng55.UICorner \\ --
+UI["bb"] = Instance.new("UICorner", UI["ba"])
+
+
+-- // StarterGui.gojo.Frame.satıng55.asdas \\ --
+UI["bc"] = Instance.new("TextLabel", UI["ba"])
+UI["bc"]["TextWrapped"] = true
+UI["bc"]["BorderSizePixel"] = 0
+UI["bc"]["TextScaled"] = true
+UI["bc"]["BackgroundColor3"] = Color3.fromRGB(86, 86, 128)
+UI["bc"]["TextSize"] = 15
+UI["bc"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["bc"]["TextColor3"] = Color3.fromRGB(213, 213, 213)
+UI["bc"]["Size"] = UDim2.new(0, 85, 0, 14)
+UI["bc"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["bc"]["Text"] = [[Rainbow Corner]]
+UI["bc"]["Name"] = [[asdas]]
+UI["bc"]["Position"] = UDim2.new(0.01879, 0, 0.06395, 0)
+
+-- // StarterGui.gojo.Frame.satıng55.asdas.UICorner \\ --
+UI["bd"] = Instance.new("UICorner", UI["bc"])
+
+
+-- // StarterGui.gojo.Frame.satıng55.asdas.Toggle \\ --
+UI["be"] = Instance.new("Frame", UI["bc"])
+UI["be"]["BorderSizePixel"] = 0
+UI["be"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0)
+UI["be"]["Size"] = UDim2.new(0, 38, 0, 16)
+UI["be"]["Position"] = UDim2.new(1.10155, 0, -0.0948, 0)
+UI["be"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["be"]["Name"] = [[Toggle]]
+
+-- // StarterGui.gojo.Frame.satıng55.asdas.Toggle.TextButton \\ --
+UI["bf"] = Instance.new("TextButton", UI["be"])
+UI["bf"]["BorderSizePixel"] = 0
+UI["bf"]["TextSize"] = 14
+UI["bf"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
+UI["bf"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["bf"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["bf"]["Size"] = UDim2.new(0, 28, 0, 13)
+UI["bf"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["bf"]["Text"] = [[]]
+UI["bf"]["Position"] = UDim2.new(-0.06901, 0, 0.10132, 0)
+
+-- // StarterGui.gojo.Frame.satıng55.asdas.Toggle.TextButton.UICorner \\ --
+UI["c0"] = Instance.new("UICorner", UI["bf"])
+
+
+-- // StarterGui.gojo.Frame.satıng55.asdas.Toggle.TextButton.LocalScript \\ --
+UI["c1"] = Instance.new("LocalScript", UI["bf"])
+
+
+-- // StarterGui.gojo.Frame.satıng55.asdas.Toggle.TextButton.LocalScript \\ --
+UI["c2"] = Instance.new("LocalScript", UI["bf"])
+
+
+-- // StarterGui.gojo.Frame.satıng55.asdas.Toggle.UICorner \\ --
+UI["c3"] = Instance.new("UICorner", UI["be"])
+
+
+-- // StarterGui.gojo.Frame.satıng55.TextLabel \\ --
+UI["c4"] = Instance.new("TextLabel", UI["ba"])
+UI["c4"]["TextWrapped"] = true
+UI["c4"]["BorderSizePixel"] = 0
+UI["c4"]["TextScaled"] = true
+UI["c4"]["BackgroundColor3"] = Color3.fromRGB(16, 16, 16)
+UI["c4"]["TextSize"] = 14
+UI["c4"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["c4"]["TextColor3"] = Color3.fromRGB(0, 171, 255)
+UI["c4"]["BackgroundTransparency"] = 1
+UI["c4"]["Size"] = UDim2.new(0, 60, 0, 18)
+UI["c4"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["c4"]["Text"] = [[]]
+UI["c4"]["Position"] = UDim2.new(0.83272, 0, 0.91253, 0)
+
+-- // StarterGui.gojo.Frame.satıng55.TextLabel.LocalScript \\ --
+UI["c5"] = Instance.new("LocalScript", UI["c4"])
+
+
+-- // StarterGui.gojo.Frame.satıng55.TextLabel \\ --
+UI["c6"] = Instance.new("TextLabel", UI["ba"])
+UI["c6"]["TextWrapped"] = true
+UI["c6"]["BorderSizePixel"] = 0
+UI["c6"]["TextScaled"] = true
+UI["c6"]["BackgroundColor3"] = Color3.fromRGB(16, 16, 16)
+UI["c6"]["TextSize"] = 14
+UI["c6"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["c6"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["c6"]["BackgroundTransparency"] = 1
+UI["c6"]["Size"] = UDim2.new(0, 89, 0, 19)
+UI["c6"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["c6"]["Text"] = [[Player Count ➡]]
+UI["c6"]["Position"] = UDim2.new(0.63678, 0, 0.90775, 0)
+
+-- // StarterGui.gojo.Frame.satıng55.TextLabel \\ --
+UI["c7"] = Instance.new("TextLabel", UI["ba"])
+UI["c7"]["TextWrapped"] = true
+UI["c7"]["BorderSizePixel"] = 0
+UI["c7"]["TextScaled"] = true
+UI["c7"]["BackgroundColor3"] = Color3.fromRGB(16, 16, 16)
+UI["c7"]["TextSize"] = 14
+UI["c7"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["c7"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["c7"]["BackgroundTransparency"] = 1
+UI["c7"]["Size"] = UDim2.new(0, 89, 0, 19)
+UI["c7"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["c7"]["Text"] = [[Server Age]]
+UI["c7"]["Position"] = UDim2.new(0.17416, 0, 0.91253, 0)
+
+-- // StarterGui.gojo.Frame.satıng55.TextLabel \\ --
+UI["c8"] = Instance.new("TextLabel", UI["ba"])
+UI["c8"]["TextWrapped"] = true
+UI["c8"]["BorderSizePixel"] = 0
+UI["c8"]["TextScaled"] = true
+UI["c8"]["BackgroundColor3"] = Color3.fromRGB(16, 16, 16)
+UI["c8"]["TextSize"] = 14
+UI["c8"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["c8"]["TextColor3"] = Color3.fromRGB(0, 171, 255)
+UI["c8"]["BackgroundTransparency"] = 1
+UI["c8"]["Size"] = UDim2.new(0, 60, 0, 18)
+UI["c8"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["c8"]["Text"] = [[]]
+UI["c8"]["Position"] = UDim2.new(0.41636, 0, 0.91731, 0)
+
+-- // StarterGui.gojo.Frame.satıng55.TextLabel.LocalScript \\ --
+UI["c9"] = Instance.new("LocalScript", UI["c8"])
+
+
+-- // StarterGui.gojo.Frame.satıng55.Frame \\ --
+UI["ca"] = Instance.new("Frame", UI["ba"])
+UI["ca"]["BorderSizePixel"] = 0
+UI["ca"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["ca"]["Size"] = UDim2.new(0, 2, 0, 17)
+UI["ca"]["Position"] = UDim2.new(0.60508, 0, 0.91163, 0)
+UI["ca"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["ca"]["Rotation"] = -29
+
+-- // StarterGui.gojo.Frame.satıng55.asdas \\ --
+UI["cb"] = Instance.new("TextLabel", UI["ba"])
+UI["cb"]["TextWrapped"] = true
+UI["cb"]["BorderSizePixel"] = 0
+UI["cb"]["TextScaled"] = true
+UI["cb"]["BackgroundColor3"] = Color3.fromRGB(0, 95, 0)
+UI["cb"]["TextSize"] = 15
+UI["cb"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["cb"]["TextColor3"] = Color3.fromRGB(213, 213, 213)
+UI["cb"]["Size"] = UDim2.new(0, 85, 0, 14)
+UI["cb"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["cb"]["Text"] = [[Show Fps]]
+UI["cb"]["Name"] = [[asdas]]
+UI["cb"]["Position"] = UDim2.new(0.01879, 0, 0.22639, 0)
+
+-- // StarterGui.gojo.Frame.satıng55.asdas.UICorner \\ --
+UI["cc"] = Instance.new("UICorner", UI["cb"])
+
+
+-- // StarterGui.gojo.Frame.satıng55.asdas.Toggle \\ --
+UI["cd"] = Instance.new("Frame", UI["cb"])
+UI["cd"]["BorderSizePixel"] = 0
+UI["cd"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0)
+UI["cd"]["Size"] = UDim2.new(0, 38, 0, 16)
+UI["cd"]["Position"] = UDim2.new(1.10155, 0, -0.0948, 0)
+UI["cd"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["cd"]["Name"] = [[Toggle]]
+
+-- // StarterGui.gojo.Frame.satıng55.asdas.Toggle.TextButton \\ --
+UI["ce"] = Instance.new("TextButton", UI["cd"])
+UI["ce"]["BorderSizePixel"] = 0
+UI["ce"]["TextSize"] = 14
+UI["ce"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
+UI["ce"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["ce"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["ce"]["Size"] = UDim2.new(0, 28, 0, 13)
+UI["ce"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["ce"]["Text"] = [[]]
+UI["ce"]["Position"] = UDim2.new(-0.06901, 0, 0.10132, 0)
+
+-- // StarterGui.gojo.Frame.satıng55.asdas.Toggle.TextButton.UICorner \\ --
+UI["cf"] = Instance.new("UICorner", UI["ce"])
+
+
+-- // StarterGui.gojo.Frame.satıng55.asdas.Toggle.TextButton.LocalScript \\ --
+UI["d0"] = Instance.new("LocalScript", UI["ce"])
+
+
+-- // StarterGui.gojo.Frame.satıng55.asdas.Toggle.TextButton.LocalScript \\ --
+UI["d1"] = Instance.new("LocalScript", UI["ce"])
+
+
+-- // StarterGui.gojo.Frame.satıng55.asdas.Toggle.UICorner \\ --
+UI["d2"] = Instance.new("UICorner", UI["cd"])
+
+
+-- // StarterGui.gojo.Frame.satıng55.nafal \\ --
+UI["d3"] = Instance.new("TextLabel", UI["ba"])
+UI["d3"]["TextWrapped"] = true
+UI["d3"]["BorderSizePixel"] = 0
+UI["d3"]["TextScaled"] = true
+UI["d3"]["BackgroundColor3"] = Color3.fromRGB(4, 40, 95)
+UI["d3"]["TextSize"] = 15
+UI["d3"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["d3"]["TextColor3"] = Color3.fromRGB(213, 213, 213)
+UI["d3"]["Size"] = UDim2.new(0, 85, 0, 14)
+UI["d3"]["Visible"] = false
+UI["d3"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["d3"]["Text"] = [[NoN-Fall Car]]
+UI["d3"]["Name"] = [[nafal]]
+UI["d3"]["Position"] = UDim2.new(0.01879, 0, 0.39141, 0)
+
+-- // StarterGui.gojo.Frame.satıng55.nafal.UICorner \\ --
+UI["d4"] = Instance.new("UICorner", UI["d3"])
+
+
+-- // StarterGui.gojo.Frame.satıng55.nafal.Toggle \\ --
+UI["d5"] = Instance.new("Frame", UI["d3"])
+UI["d5"]["BorderSizePixel"] = 0
+UI["d5"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0)
+UI["d5"]["Size"] = UDim2.new(0, 38, 0, 16)
+UI["d5"]["Position"] = UDim2.new(1.10155, 0, -0.0948, 0)
+UI["d5"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["d5"]["Name"] = [[Toggle]]
+
+-- // StarterGui.gojo.Frame.satıng55.nafal.Toggle.TextButton \\ --
+UI["d6"] = Instance.new("TextButton", UI["d5"])
+UI["d6"]["BorderSizePixel"] = 0
+UI["d6"]["TextSize"] = 14
+UI["d6"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
+UI["d6"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["d6"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["d6"]["Size"] = UDim2.new(0, 28, 0, 13)
+UI["d6"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["d6"]["Text"] = [[]]
+UI["d6"]["Position"] = UDim2.new(-0.06901, 0, 0.10132, 0)
+
+-- // StarterGui.gojo.Frame.satıng55.nafal.Toggle.TextButton.UICorner \\ --
+UI["d7"] = Instance.new("UICorner", UI["d6"])
+
+
+-- // StarterGui.gojo.Frame.satıng55.nafal.Toggle.TextButton.LocalScript \\ --
+UI["d8"] = Instance.new("LocalScript", UI["d6"])
+
+
+-- // StarterGui.gojo.Frame.satıng55.nafal.Toggle.TextButton.LocalScript \\ --
+UI["d9"] = Instance.new("LocalScript", UI["d6"])
+
+
+-- // StarterGui.gojo.Frame.satıng55.nafal.Toggle.UICorner \\ --
+UI["da"] = Instance.new("UICorner", UI["d5"])
+
+
+-- // StarterGui.gojo.Frame.chuva55 \\ --
+UI["db"] = Instance.new("Frame", UI["2"])
+UI["db"]["Visible"] = false
+UI["db"]["BorderSizePixel"] = 0
+UI["db"]["BackgroundColor3"] = Color3.fromRGB(16, 16, 16)
+UI["db"]["Size"] = UDim2.new(0.88732, 0, 0.75574, 0)
+UI["db"]["Position"] = UDim2.new(0.04005, 0, 0.10706, 0)
+UI["db"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["db"]["Name"] = [[chuva55]]
+UI["db"]["BackgroundTransparency"] = 1
+
+-- // StarterGui.gojo.Frame.chuva55.UICorner \\ --
+UI["dc"] = Instance.new("UICorner", UI["db"])
+
+
+-- // StarterGui.gojo.Frame.chuva55.reze \\ --
+UI["dd"] = Instance.new("TextLabel", UI["db"])
+UI["dd"]["TextWrapped"] = true
+UI["dd"]["BorderSizePixel"] = 0
+UI["dd"]["TextScaled"] = true
+UI["dd"]["BackgroundColor3"] = Color3.fromRGB(125, 6, 8)
+UI["dd"]["TextSize"] = 13
+UI["dd"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["dd"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["dd"]["Size"] = UDim2.new(0, 85, 0, 14)
+UI["dd"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["dd"]["Text"] = [[Reset Character]]
+UI["dd"]["Name"] = [[reze]]
+UI["dd"]["Position"] = UDim2.new(0.01879, 0, 0.22205, 0)
+
+-- // StarterGui.gojo.Frame.chuva55.reze.UICorner \\ --
+UI["de"] = Instance.new("UICorner", UI["dd"])
+
+
+-- // StarterGui.gojo.Frame.chuva55.reze.UIStroke \\ --
+UI["df"] = Instance.new("UIStroke", UI["dd"])
+
+
+-- // StarterGui.gojo.Frame.chuva55.andow \\ --
+UI["e0"] = Instance.new("TextLabel", UI["db"])
+UI["e0"]["TextWrapped"] = true
+UI["e0"]["BorderSizePixel"] = 0
+UI["e0"]["TextScaled"] = true
+UI["e0"]["BackgroundColor3"] = Color3.fromRGB(133, 0, 80)
+UI["e0"]["TextSize"] = 16
+UI["e0"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["e0"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["e0"]["Size"] = UDim2.new(0, 93, 0, 14)
+UI["e0"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["e0"]["Text"] = [[Anti-Downer]]
+UI["e0"]["Name"] = [[andow]]
+UI["e0"]["Position"] = UDim2.new(0.01113, 0, 0.55122, 0)
+
+-- // StarterGui.gojo.Frame.chuva55.andow.Toggle \\ --
+UI["e1"] = Instance.new("Frame", UI["e0"])
+UI["e1"]["BorderSizePixel"] = 0
+UI["e1"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0)
+UI["e1"]["Size"] = UDim2.new(0, 38, 0, 16)
+UI["e1"]["Position"] = UDim2.new(1.06626, 0, -0.02337, 0)
+UI["e1"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["e1"]["Name"] = [[Toggle]]
+
+-- // StarterGui.gojo.Frame.chuva55.andow.Toggle.TextButton \\ --
+UI["e2"] = Instance.new("TextButton", UI["e1"])
+UI["e2"]["BorderSizePixel"] = 0
+UI["e2"]["TextSize"] = 14
+UI["e2"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
+UI["e2"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["e2"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["e2"]["Size"] = UDim2.new(0, 28, 0, 13)
+UI["e2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["e2"]["Text"] = [[]]
+UI["e2"]["Position"] = UDim2.new(-0.01637, 0, -0.02368, 0)
+
+-- // StarterGui.gojo.Frame.chuva55.andow.Toggle.TextButton.UICorner \\ --
+UI["e3"] = Instance.new("UICorner", UI["e2"])
+
+
+-- // StarterGui.gojo.Frame.chuva55.andow.Toggle.TextButton.LocalScript \\ --
+UI["e4"] = Instance.new("LocalScript", UI["e2"])
+
+
+-- // StarterGui.gojo.Frame.chuva55.andow.Toggle.TextButton.LocalScript \\ --
+UI["e5"] = Instance.new("LocalScript", UI["e2"])
+
+
+-- // StarterGui.gojo.Frame.chuva55.andow.Toggle.UICorner \\ --
+UI["e6"] = Instance.new("UICorner", UI["e1"])
+
+
+-- // StarterGui.gojo.Frame.chuva55.andow.UICorner \\ --
+UI["e7"] = Instance.new("UICorner", UI["e0"])
+
+
+-- // StarterGui.gojo.Frame.chuva55.andow.UIStroke \\ --
+UI["e8"] = Instance.new("UIStroke", UI["e0"])
+
+
+-- // StarterGui.gojo.Frame.chuva55.anafl \\ --
+UI["e9"] = Instance.new("TextLabel", UI["db"])
+UI["e9"]["TextWrapped"] = true
+UI["e9"]["BorderSizePixel"] = 0
+UI["e9"]["TextScaled"] = true
+UI["e9"]["BackgroundColor3"] = Color3.fromRGB(57, 0, 68)
+UI["e9"]["TextSize"] = 16
+UI["e9"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["e9"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["e9"]["Size"] = UDim2.new(0, 90, 0, 14)
+UI["e9"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["e9"]["Text"] = [[Anti-Fall                 ]]
+UI["e9"]["Name"] = [[anafl]]
+UI["e9"]["Position"] = UDim2.new(0.01619, 0, 0.38332, 0)
+
+-- // StarterGui.gojo.Frame.chuva55.anafl.Toggle \\ --
+UI["ea"] = Instance.new("Frame", UI["e9"])
+UI["ea"]["BorderSizePixel"] = 0
+UI["ea"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0)
+UI["ea"]["Size"] = UDim2.new(0, 38, 0, 16)
+UI["ea"]["Position"] = UDim2.new(1.06626, 0, -0.02337, 0)
+UI["ea"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["ea"]["Name"] = [[Toggle]]
+
+-- // StarterGui.gojo.Frame.chuva55.anafl.Toggle.TextButton \\ --
+UI["eb"] = Instance.new("TextButton", UI["ea"])
+UI["eb"]["BorderSizePixel"] = 0
+UI["eb"]["TextSize"] = 14
+UI["eb"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
+UI["eb"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["eb"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["eb"]["Size"] = UDim2.new(0, 28, 0, 13)
+UI["eb"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["eb"]["Text"] = [[]]
+UI["eb"]["Position"] = UDim2.new(-0.01637, 0, -0.02368, 0)
+
+-- // StarterGui.gojo.Frame.chuva55.anafl.Toggle.TextButton.UICorner \\ --
+UI["ec"] = Instance.new("UICorner", UI["eb"])
+
+
+-- // StarterGui.gojo.Frame.chuva55.anafl.Toggle.TextButton.LocalScript \\ --
+UI["ed"] = Instance.new("LocalScript", UI["eb"])
+
+
+-- // StarterGui.gojo.Frame.chuva55.anafl.Toggle.TextButton.LocalScript \\ --
+UI["ee"] = Instance.new("LocalScript", UI["eb"])
+
+
+-- // StarterGui.gojo.Frame.chuva55.anafl.Toggle.UICorner \\ --
+UI["ef"] = Instance.new("UICorner", UI["ea"])
+
+
+-- // StarterGui.gojo.Frame.chuva55.anafl.UICorner \\ --
+UI["f0"] = Instance.new("UICorner", UI["e9"])
+
+
+-- // StarterGui.gojo.Frame.chuva55.anafl.UIStroke \\ --
+UI["f1"] = Instance.new("UIStroke", UI["e9"])
+
+
+-- // StarterGui.gojo.Frame.chuva55.TextLabel \\ --
+UI["f2"] = Instance.new("TextLabel", UI["db"])
+UI["f2"]["TextWrapped"] = true
+UI["f2"]["BorderSizePixel"] = 0
+UI["f2"]["TextScaled"] = true
+UI["f2"]["BackgroundColor3"] = Color3.fromRGB(125, 6, 8)
+UI["f2"]["TextSize"] = 13
+UI["f2"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["f2"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["f2"]["Size"] = UDim2.new(0, 85, 0, 14)
+UI["f2"]["Visible"] = false
+UI["f2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["f2"]["Text"] = [[Bring Dealer Menu]]
+UI["f2"]["Position"] = UDim2.new(0.01879, 0, 0.6993, 0)
+
+-- // StarterGui.gojo.Frame.chuva55.TextLabel.UICorner \\ --
+UI["f3"] = Instance.new("UICorner", UI["f2"])
+
+
+-- // StarterGui.gojo.Frame.chuva55.TextLabel.UIStroke \\ --
+UI["f4"] = Instance.new("UIStroke", UI["f2"])
+
+
+-- // StarterGui.gojo.Frame.chuva55.TextLabel.Toggle \\ --
+UI["f5"] = Instance.new("Frame", UI["f2"])
+UI["f5"]["BorderSizePixel"] = 0
+UI["f5"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0)
+UI["f5"]["Size"] = UDim2.new(0, 38, 0, 16)
+UI["f5"]["Position"] = UDim2.new(1.10155, 0, -0.0948, 0)
+UI["f5"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["f5"]["Name"] = [[Toggle]]
+
+-- // StarterGui.gojo.Frame.chuva55.TextLabel.Toggle.TextButton \\ --
+UI["f6"] = Instance.new("TextButton", UI["f5"])
+UI["f6"]["BorderSizePixel"] = 0
+UI["f6"]["TextSize"] = 14
+UI["f6"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
+UI["f6"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["f6"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["f6"]["Size"] = UDim2.new(0, 28, 0, 13)
+UI["f6"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["f6"]["Text"] = [[]]
+UI["f6"]["Position"] = UDim2.new(-0.06901, 0, 0.10132, 0)
+
+-- // StarterGui.gojo.Frame.chuva55.TextLabel.Toggle.TextButton.UICorner \\ --
+UI["f7"] = Instance.new("UICorner", UI["f6"])
+
+
+-- // StarterGui.gojo.Frame.chuva55.TextLabel.Toggle.TextButton.LocalScript \\ --
+UI["f8"] = Instance.new("LocalScript", UI["f6"])
+
+
+-- // StarterGui.gojo.Frame.chuva55.TextLabel.Toggle.TextButton.LocalScript \\ --
+UI["f9"] = Instance.new("LocalScript", UI["f6"])
+
+
+-- // StarterGui.gojo.Frame.chuva55.TextLabel.Toggle.UICorner \\ --
+UI["fa"] = Instance.new("UICorner", UI["f5"])
+
+
+-- // StarterGui.gojo.Frame.chuva55.swa \\ --
+UI["fb"] = Instance.new("TextLabel", UI["db"])
+UI["fb"]["TextWrapped"] = true
+UI["fb"]["BorderSizePixel"] = 0
+UI["fb"]["TextScaled"] = true
+UI["fb"]["BackgroundColor3"] = Color3.fromRGB(10, 62, 172)
+UI["fb"]["TextSize"] = 15
+UI["fb"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["fb"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["fb"]["Size"] = UDim2.new(0, 85, 0, 14)
+UI["fb"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["fb"]["Text"] = [[Swim +Fast          ]]
+UI["fb"]["Name"] = [[swa]]
+UI["fb"]["Position"] = UDim2.new(0.01879, 0, 0.06395, 0)
+
+-- // StarterGui.gojo.Frame.chuva55.swa.Toggle \\ --
+UI["fc"] = Instance.new("Frame", UI["fb"])
+UI["fc"]["BorderSizePixel"] = 0
+UI["fc"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0)
+UI["fc"]["Size"] = UDim2.new(0, 38, 0, 16)
+UI["fc"]["Position"] = UDim2.new(1.10155, 0, -0.0948, 0)
+UI["fc"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["fc"]["Name"] = [[Toggle]]
+
+-- // StarterGui.gojo.Frame.chuva55.swa.Toggle.TextButton \\ --
+UI["fd"] = Instance.new("TextButton", UI["fc"])
+UI["fd"]["BorderSizePixel"] = 0
+UI["fd"]["TextSize"] = 14
+UI["fd"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
+UI["fd"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["fd"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["fd"]["Size"] = UDim2.new(0, 28, 0, 13)
+UI["fd"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["fd"]["Text"] = [[]]
+UI["fd"]["Position"] = UDim2.new(-0.06901, 0, 0.10132, 0)
+
+-- // StarterGui.gojo.Frame.chuva55.swa.Toggle.TextButton.UICorner \\ --
+UI["fe"] = Instance.new("UICorner", UI["fd"])
+
+
+-- // StarterGui.gojo.Frame.chuva55.swa.Toggle.TextButton.LocalScript \\ --
+UI["ff"] = Instance.new("LocalScript", UI["fd"])
+
+
+-- // StarterGui.gojo.Frame.chuva55.swa.Toggle.TextButton.LocalScript \\ --
+UI["100"] = Instance.new("LocalScript", UI["fd"])
+
+
+-- // StarterGui.gojo.Frame.chuva55.swa.Toggle.UICorner \\ --
+UI["101"] = Instance.new("UICorner", UI["fc"])
+
+
+-- // StarterGui.gojo.Frame.chuva55.swa.UICorner \\ --
+UI["102"] = Instance.new("UICorner", UI["fb"])
+
+
+-- // StarterGui.gojo.Frame.chuva55.swa.UIStroke \\ --
+UI["103"] = Instance.new("UIStroke", UI["fb"])
+
+
+-- // StarterGui.gojo.Frame.chuva55.Toggle \\ --
+UI["104"] = Instance.new("Frame", UI["db"])
+UI["104"]["BorderSizePixel"] = 0
+UI["104"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0)
+UI["104"]["Size"] = UDim2.new(0, 40, 0, 15)
+UI["104"]["Position"] = UDim2.new(0.26266, 0, 0.22205, 0)
+UI["104"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["104"]["Name"] = [[Toggle]]
+
+-- // StarterGui.gojo.Frame.chuva55.Toggle.TextButton \\ --
+UI["105"] = Instance.new("TextButton", UI["104"])
+UI["105"]["BorderSizePixel"] = 0
+UI["105"]["TextSize"] = 14
+UI["105"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
+UI["105"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["105"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["105"]["Size"] = UDim2.new(0, 39, 0, 12)
+UI["105"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["105"]["Text"] = [[]]
+UI["105"]["Position"] = UDim2.new(0.00347, 0, 0.13, 0)
+
+-- // StarterGui.gojo.Frame.chuva55.Toggle.TextButton.UICorner \\ --
+UI["106"] = Instance.new("UICorner", UI["105"])
+
+
+-- // StarterGui.gojo.Frame.chuva55.Toggle.TextButton.resesc \\ --
+UI["107"] = Instance.new("LocalScript", UI["105"])
+UI["107"]["Name"] = [[resesc]]
+
+-- // StarterGui.gojo.Frame.chuva55.Toggle.UICorner \\ --
+UI["108"] = Instance.new("UICorner", UI["104"])
+
+
+-- // StarterGui.gojo.Frame.chuva55.Frame \\ --
+UI["109"] = Instance.new("Frame", UI["db"])
+UI["109"]["BorderSizePixel"] = 0
+UI["109"]["BackgroundColor3"] = Color3.fromRGB(44, 106, 160)
+UI["109"]["Size"] = UDim2.new(0, 26, 0, 195)
+UI["109"]["Position"] = UDim2.new(0.73158, 0, 0.00619, 0)
+UI["109"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["109"]["Rotation"] = -180
+UI["109"]["BackgroundTransparency"] = 0.7
+
+-- // StarterGui.gojo.Frame.chuva55.Frame.TextLabel \\ --
+UI["10a"] = Instance.new("TextLabel", UI["109"])
+UI["10a"]["BorderSizePixel"] = 0
+UI["10a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["10a"]["TextSize"] = 14
+UI["10a"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["10a"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["10a"]["BackgroundTransparency"] = 1
+UI["10a"]["Size"] = UDim2.new(0, 36, 0, 10)
+UI["10a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["10a"]["Text"] = [[Value]]
+UI["10a"]["Rotation"] = 180
+UI["10a"]["Position"] = UDim2.new(-0.15788, 0, -0.05048, 0)
+
+-- // StarterGui.gojo.Frame.chuva55.Frame.TextLabel.ImageLabel \\ --
+UI["10b"] = Instance.new("ImageLabel", UI["10a"])
+UI["10b"]["ZIndex"] = 999
+UI["10b"]["BorderSizePixel"] = 0
+UI["10b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["10b"]["Image"] = [[http://www.roblox.com/asset/?id=14536827669]]
+UI["10b"]["Size"] = UDim2.new(0, 35, 0, 27)
+UI["10b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["10b"]["BackgroundTransparency"] = 1
+UI["10b"]["Position"] = UDim2.new(-0.08624, 0, -19.5, 0)
+
+-- // StarterGui.gojo.Frame.chuva55.Frame.TextLabel.LocalScript \\ --
+UI["10c"] = Instance.new("LocalScript", UI["10a"])
+
+
+-- // StarterGui.gojo.Frame.chuva55.Frame.UIStroke \\ --
+UI["10d"] = Instance.new("UIStroke", UI["109"])
+UI["10d"]["Transparency"] = 0.4
+UI["10d"]["Thickness"] = 0.6
+
+-- // StarterGui.gojo.Frame.chuva55.Frame.UICorner \\ --
+UI["10e"] = Instance.new("UICorner", UI["109"])
+
+
+-- // StarterGui.gojo.Frame.chuva55.Frame.TextButton \\ --
+UI["10f"] = Instance.new("TextButton", UI["109"])
+UI["10f"]["TextWrapped"] = true
+UI["10f"]["BorderSizePixel"] = 0
+UI["10f"]["TextSize"] = 14
+UI["10f"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["10f"]["TextScaled"] = true
+UI["10f"]["BackgroundColor3"] = Color3.fromRGB(4, 105, 187)
+UI["10f"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["10f"]["Size"] = UDim2.new(0, 25, 0, 22)
+UI["10f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["10f"]["Text"] = [[]]
+UI["10f"]["Position"] = UDim2.new(-0.00694, 0, 0, 0)
+
+-- // StarterGui.gojo.Frame.chuva55.Frame.TextButton.LocalScript \\ --
+UI["110"] = Instance.new("LocalScript", UI["10f"])
+
+
+-- // StarterGui.gojo.Frame.chuva55.Frame.TextButton.UICorner \\ --
+UI["111"] = Instance.new("UICorner", UI["10f"])
+UI["111"]["CornerRadius"] = UDim.new(0, 10)
+
+-- // StarterGui.gojo.Frame.chuva55.Frame.TextButton.UIStroke \\ --
+UI["112"] = Instance.new("UIStroke", UI["10f"])
+UI["112"]["Thickness"] = 0
+UI["112"]["Color"] = Color3.fromRGB(63, 159, 232)
+
+-- // StarterGui.gojo.Frame.chuva55.Frame.TextButton.ImageLabel \\ --
+UI["113"] = Instance.new("ImageLabel", UI["10f"])
+UI["113"]["BorderSizePixel"] = 0
+UI["113"]["SliceScale"] = 0
+UI["113"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["113"]["ScaleType"] = Enum.ScaleType.Slice
+UI["113"]["ImageTransparency"] = 0.7
+UI["113"]["ImageColor3"] = Color3.fromRGB(0, 0, 0)
+UI["113"]["Image"] = [[rbxassetid://3602733521]]
+UI["113"]["Size"] = UDim2.new(0, 25, 0, 23)
+UI["113"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["113"]["BackgroundTransparency"] = 1
+UI["113"]["Position"] = UDim2.new(-0.05556, 0, 0, 0)
+
+-- // StarterGui.gojo.Frame.chuva55.Frame.TextButton.ImageLabel.UICorner \\ --
+UI["114"] = Instance.new("UICorner", UI["113"])
+UI["114"]["CornerRadius"] = UDim.new(0, 6)
+
+-- // StarterGui.gojo.Frame.chuva55.Frame \\ --
+UI["115"] = Instance.new("Frame", UI["db"])
+UI["115"]["BorderSizePixel"] = 0
+UI["115"]["BackgroundColor3"] = Color3.fromRGB(44, 106, 160)
+UI["115"]["Size"] = UDim2.new(0, 26, 0, 195)
+UI["115"]["Position"] = UDim2.new(0.87242, 0, -0.00059, 0)
+UI["115"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["115"]["Rotation"] = -180
+UI["115"]["BackgroundTransparency"] = 0.7
+
+-- // StarterGui.gojo.Frame.chuva55.Frame.TextLabel \\ --
+UI["116"] = Instance.new("TextLabel", UI["115"])
+UI["116"]["BorderSizePixel"] = 0
+UI["116"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["116"]["TextSize"] = 14
+UI["116"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["116"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["116"]["BackgroundTransparency"] = 1
+UI["116"]["Size"] = UDim2.new(0, 36, 0, 10)
+UI["116"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["116"]["Text"] = [[Value]]
+UI["116"]["Rotation"] = 180
+UI["116"]["Position"] = UDim2.new(-0.15788, 0, -0.05561, 0)
+
+-- // StarterGui.gojo.Frame.chuva55.Frame.TextLabel.ImageLabel \\ --
+UI["117"] = Instance.new("ImageLabel", UI["116"])
+UI["117"]["ZIndex"] = 999
+UI["117"]["BorderSizePixel"] = 0
+UI["117"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["117"]["Image"] = [[http://www.roblox.com/asset/?id=6684647765]]
+UI["117"]["Size"] = UDim2.new(0, 35, 0, 27)
+UI["117"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["117"]["BackgroundTransparency"] = 1
+UI["117"]["Position"] = UDim2.new(0.05264, 0, -19.5, 0)
+
+-- // StarterGui.gojo.Frame.chuva55.Frame.TextLabel.LocalScript \\ --
+UI["118"] = Instance.new("LocalScript", UI["116"])
+
+
+-- // StarterGui.gojo.Frame.chuva55.Frame.UIStroke \\ --
+UI["119"] = Instance.new("UIStroke", UI["115"])
+UI["119"]["Transparency"] = 0.4
+UI["119"]["Thickness"] = 0.6
+
+-- // StarterGui.gojo.Frame.chuva55.Frame.UICorner \\ --
+UI["11a"] = Instance.new("UICorner", UI["115"])
+
+
+-- // StarterGui.gojo.Frame.chuva55.Frame.TextButton \\ --
+UI["11b"] = Instance.new("TextButton", UI["115"])
+UI["11b"]["TextWrapped"] = true
+UI["11b"]["BorderSizePixel"] = 0
+UI["11b"]["TextSize"] = 14
+UI["11b"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["11b"]["TextScaled"] = true
+UI["11b"]["BackgroundColor3"] = Color3.fromRGB(4, 105, 187)
+UI["11b"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["11b"]["Size"] = UDim2.new(0, 25, 0, 22)
+UI["11b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["11b"]["Text"] = [[]]
+UI["11b"]["Position"] = UDim2.new(-0.00694, 0, 0, 0)
+
+-- // StarterGui.gojo.Frame.chuva55.Frame.TextButton.LocalScript \\ --
+UI["11c"] = Instance.new("LocalScript", UI["11b"])
+
+
+-- // StarterGui.gojo.Frame.chuva55.Frame.TextButton.UICorner \\ --
+UI["11d"] = Instance.new("UICorner", UI["11b"])
+UI["11d"]["CornerRadius"] = UDim.new(0, 10)
+
+-- // StarterGui.gojo.Frame.chuva55.Frame.TextButton.UIStroke \\ --
+UI["11e"] = Instance.new("UIStroke", UI["11b"])
+UI["11e"]["Thickness"] = 0
+UI["11e"]["Color"] = Color3.fromRGB(63, 159, 232)
+
+-- // StarterGui.gojo.Frame.chuva55.Frame.TextButton.ImageLabel \\ --
+UI["11f"] = Instance.new("ImageLabel", UI["11b"])
+UI["11f"]["BorderSizePixel"] = 0
+UI["11f"]["SliceScale"] = 0
+UI["11f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["11f"]["ScaleType"] = Enum.ScaleType.Slice
+UI["11f"]["ImageTransparency"] = 0.7
+UI["11f"]["ImageColor3"] = Color3.fromRGB(0, 0, 0)
+UI["11f"]["Image"] = [[rbxassetid://3602733521]]
+UI["11f"]["Size"] = UDim2.new(0, 25, 0, 23)
+UI["11f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["11f"]["BackgroundTransparency"] = 1
+UI["11f"]["Position"] = UDim2.new(-0.05556, 0, 0, 0)
+
+-- // StarterGui.gojo.Frame.chuva55.Frame.TextButton.ImageLabel.UICorner \\ --
+UI["120"] = Instance.new("UICorner", UI["11f"])
+UI["120"]["CornerRadius"] = UDim.new(0, 6)
+
+-- // StarterGui.gojo.Frame.cuguli \\ --
+UI["121"] = Instance.new("Frame", UI["2"])
+UI["121"]["BorderSizePixel"] = 0
+UI["121"]["BackgroundColor3"] = Color3.fromRGB(26, 26, 26)
+UI["121"]["Size"] = UDim2.new(0, 410, 0, 32)
+UI["121"]["Position"] = UDim2.new(0.02215, 0, 0.8628, 0)
+UI["121"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["121"]["Name"] = [[cuguli]]
+UI["121"]["BackgroundTransparency"] = 0.1
+
+-- // StarterGui.gojo.Frame.cuguli.UIStroke \\ --
+UI["122"] = Instance.new("UIStroke", UI["121"])
+UI["122"]["Transparency"] = 0.5
+UI["122"]["Color"] = Color3.fromRGB(251, 251, 251)
+
+-- // StarterGui.gojo.Frame.cuguli.UICorner \\ --
+UI["123"] = Instance.new("UICorner", UI["121"])
+
+
+-- // StarterGui.gojo.Frame.ImageButton \\ --
+UI["124"] = Instance.new("ImageButton", UI["2"])
+UI["124"]["BorderSizePixel"] = 0
+UI["124"]["ScaleType"] = Enum.ScaleType.Crop
+UI["124"]["BackgroundColor3"] = Color3.fromRGB(26, 26, 26)
+UI["124"]["ImageColor3"] = Color3.fromRGB(203, 203, 203)
+UI["124"]["ZIndex"] = 2
+UI["124"]["Image"] = [[http://www.roblox.com/asset/?id=4859271243]]
+UI["124"]["Size"] = UDim2.new(0.05648, 0, 0.06312, 0)
+UI["124"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["124"]["Position"] = UDim2.new(0.94173, 0, 0.12614, 0)
+
+-- // StarterGui.gojo.Frame.ImageButton.UICorner \\ --
+UI["125"] = Instance.new("UICorner", UI["124"])
+
+
+-- // StarterGui.gojo.Frame.ImageButton.LocalScript \\ --
+UI["126"] = Instance.new("LocalScript", UI["124"])
+
+
+-- // StarterGui.gojo.Frame.zampara \\ --
+UI["127"] = Instance.new("ImageButton", UI["2"])
+UI["127"]["BorderSizePixel"] = 0
+UI["127"]["ScaleType"] = Enum.ScaleType.Fit
+UI["127"]["BackgroundColor3"] = Color3.fromRGB(26, 26, 26)
+UI["127"]["ImageColor3"] = Color3.fromRGB(203, 203, 203)
+UI["127"]["ZIndex"] = 2
+UI["127"]["Image"] = [[http://www.roblox.com/asset/?id=6264845452]]
+UI["127"]["Size"] = UDim2.new(0.05648, 0, 0.06312, 0)
+UI["127"]["BackgroundTransparency"] = 1
+UI["127"]["Name"] = [[zampara]]
+UI["127"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["127"]["Position"] = UDim2.new(0.94193, 0, 0.01441, 0)
+
+-- // StarterGui.gojo.Frame.zampara.LocalScript \\ --
+UI["128"] = Instance.new("LocalScript", UI["127"])
+
+
+-- // StarterGui.gojo.Frame.ImageButton \\ --
+UI["129"] = Instance.new("ImageButton", UI["2"])
+UI["129"]["BorderSizePixel"] = 0
+UI["129"]["ImageTransparency"] = 1
+UI["129"]["BackgroundColor3"] = Color3.fromRGB(26, 26, 26)
+UI["129"]["ImageColor3"] = Color3.fromRGB(203, 203, 203)
+UI["129"]["ZIndex"] = 2
+UI["129"]["Image"] = [[http://www.roblox.com/asset/?id=11622919444]]
+UI["129"]["Size"] = UDim2.new(0.05648, 0, 0.06312, 0)
+UI["129"]["BackgroundTransparency"] = 1
+UI["129"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["129"]["Position"] = UDim2.new(0.94303, 0, 0.10173, 0)
+
+-- // StarterGui.gojo.Frame.ImageButton.UICorner \\ --
+UI["12a"] = Instance.new("UICorner", UI["129"])
+
+
+-- // StarterGui.gojo.Frame.fepela \\ --
+UI["12b"] = Instance.new("TextLabel", UI["2"])
+UI["12b"]["TextWrapped"] = true
+UI["12b"]["BorderSizePixel"] = 0
+UI["12b"]["TextScaled"] = true
+UI["12b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["12b"]["TextSize"] = 14
+UI["12b"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["12b"]["TextColor3"] = Color3.fromRGB(27, 255, 0)
+UI["12b"]["BackgroundTransparency"] = 1
+UI["12b"]["Size"] = UDim2.new(0, 38, 0, 17)
+UI["12b"]["Visible"] = false
+UI["12b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["12b"]["Text"] = [[FPS]]
+UI["12b"]["Name"] = [[fepela]]
+UI["12b"]["Position"] = UDim2.new(0.02074, 0, 0.02944, 0)
+
+-- // StarterGui.gojo.Frame.fepela.LocalScript \\ --
+UI["12c"] = Instance.new("LocalScript", UI["12b"])
+
+
+-- // StarterGui.gojo.rspwn \\ --
+UI["12d"] = Instance.new("LocalScript", UI["1"])
+UI["12d"]["Name"] = [[rspwn]]
+
+-- // StarterGui.gojo.sızer \\ --
+UI["12e"] = Instance.new("LocalScript", UI["1"])
+UI["12e"]["Name"] = [[sızer]]
+
+-- // StarterGui.gojo.ImageButton \\ --
+UI["12f"] = Instance.new("ImageButton", UI["1"])
+UI["12f"]["BorderSizePixel"] = 0
+UI["12f"]["ScaleType"] = Enum.ScaleType.Fit
+UI["12f"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0)
+UI["12f"]["Image"] = [[rbxassetid://106126239039258]]
+UI["12f"]["Size"] = UDim2.new(0, 35, 0, 35)
+UI["12f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["12f"]["Visible"] = false
+UI["12f"]["Position"] = UDim2.new(0.35744, 0, 0.26145, 0)
+
+-- // StarterGui.gojo.ImageButton.UICorner \\ --
+UI["130"] = Instance.new("UICorner", UI["12f"])
+UI["130"]["CornerRadius"] = UDim.new(1, 0)
+
+-- // StarterGui.gojo.ImageButton.UIStroke \\ --
+UI["131"] = Instance.new("UIStroke", UI["12f"])
+
+
+-- // StarterGui.gojo.ImageButton.LocalScript \\ --
+UI["132"] = Instance.new("LocalScript", UI["12f"])
+
+
+-- // StarterGui.gojo.ImageButton.LocalScript \\ --
+UI["133"] = Instance.new("LocalScript", UI["12f"])
+
+
+-- // StarterGui.gojo.ImageButton.LocalScript \\ --
+UI["134"] = Instance.new("LocalScript", UI["12f"])
+
+
+-- // StarterGui.gojo.cnsdltr \\ --
+UI["135"] = Instance.new("LocalScript", UI["1"])
+UI["135"]["Name"] = [[cnsdltr]]
+
+-- // StarterGui.gojo.yenislcdex \\ --
+UI["136"] = Instance.new("LocalScript", UI["1"])
+UI["136"]["Name"] = [[yenislcdex]]
+
+-- // StarterGui.gojo.yenirdmslc \\ --
+UI["137"] = Instance.new("LocalScript", UI["1"])
+UI["137"]["Name"] = [[yenirdmslc]]
+
+-- // StarterGui.gojo.anataba \\ --
+UI["138"] = Instance.new("ImageLabel", UI["1"])
+UI["138"]["ZIndex"] = 99
+UI["138"]["BorderSizePixel"] = 0
+UI["138"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["138"]["ImageTransparency"] = 0.15
+UI["138"]["ImageColor3"] = Color3.fromRGB(60, 60, 60)
+UI["138"]["Image"] = [[rbxassetid://122207172048928]]
+UI["138"]["Size"] = UDim2.new(0, 497, 0, 295)
+UI["138"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["138"]["BackgroundTransparency"] = 0.9
+UI["138"]["Name"] = [[anataba]]
+UI["138"]["Position"] = UDim2.new(0.37053, 0, 0.2552, 0)
+
+-- // StarterGui.gojo.anataba.UICorner \\ --
+UI["139"] = Instance.new("UICorner", UI["138"])
+UI["139"]["CornerRadius"] = UDim.new(0, 20)
+
+-- // StarterGui.gojo.anataba.TextLabel \\ --
+UI["13a"] = Instance.new("TextLabel", UI["138"])
+UI["13a"]["TextWrapped"] = true
+UI["13a"]["TextStrokeTransparency"] = 0.46
+UI["13a"]["BorderSizePixel"] = 0
+UI["13a"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255)
+UI["13a"]["TextScaled"] = true
+UI["13a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["13a"]["TextSize"] = 14
+UI["13a"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["13a"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["13a"]["BackgroundTransparency"] = 1
+UI["13a"]["Size"] = UDim2.new(0, 267, 0, 50)
+UI["13a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["13a"]["Text"] = [[Anti-Ban:  Script need update]]
+UI["13a"]["Position"] = UDim2.new(0, 0, 0.24407, 0)
+
+-- // StarterGui.gojo.anataba.TextLabel \\ --
+UI["13b"] = Instance.new("TextLabel", UI["138"])
+UI["13b"]["TextWrapped"] = true
+UI["13b"]["TextStrokeTransparency"] = 0.7
+UI["13b"]["BorderSizePixel"] = 0
+UI["13b"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255)
+UI["13b"]["TextScaled"] = true
+UI["13b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["13b"]["TextSize"] = 14
+UI["13b"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["13b"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["13b"]["BackgroundTransparency"] = 1
+UI["13b"]["Size"] = UDim2.new(0, 313, 0, 50)
+UI["13b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["13b"]["Text"] = [[or you're not in Emergency Hamburg]]
+UI["13b"]["Position"] = UDim2.new(0.18511, 0, 0.41356, 0)
+
+-- // StarterGui.gojo.anataba.TextLabel \\ --
+UI["13c"] = Instance.new("TextLabel", UI["138"])
+UI["13c"]["TextWrapped"] = true
+UI["13c"]["TextStrokeTransparency"] = 0.7
+UI["13c"]["BorderSizePixel"] = 0
+UI["13c"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255)
+UI["13c"]["TextScaled"] = true
+UI["13c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["13c"]["TextSize"] = 14
+UI["13c"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["13c"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["13c"]["BackgroundTransparency"] = 1
+UI["13c"]["Size"] = UDim2.new(0, 313, 0, 26)
+UI["13c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["13c"]["Text"] = [[or you're Executed so much]]
+UI["13c"]["Position"] = UDim2.new(0.37022, 0, 0.58305, 0)
+
+-- // StarterGui.gojo.anataba.LocalScript \\ --
+UI["13d"] = Instance.new("LocalScript", UI["138"])
+
+
+-- // StarterGui.gojo.LocalScript \\ --
+UI["13e"] = Instance.new("LocalScript", UI["1"])
+
+
+-- // StarterGui.gojo.Frame.homah55.ImageLabel.TextLabel.TextButton.LocalScript \\ --
+local function SCRIPT_15()
+local script = UI["15"]
+	local button = script.Parent
+	local mayn = "Click to Copy"
+	local originalText = "https://discord.gg/qsUzyx38uk"
+	
+	button.MouseButton1Click:Connect(function()
+		local url = originalText
+	
+		pcall(function()
+			setclipboard(url)
+		end)
+	
+		button.Text = "Copied"
+		task.wait(0.7)
+		button.Text = mayn
+	end)
+	
+end
+task.spawn(SCRIPT_15)
+-- // StarterGui.gojo.Frame.homah55.ImageLabel.TextLabel.TextButton.LocalScript \\ --
+local function SCRIPT_1b()
+local script = UI["1b"]
+	local button = script.Parent
+	local mayn = "Click to Copy"
+	local originalText = "youtube.com/@GojoSatuto-u9f"
+	
+	button.MouseButton1Click:Connect(function()
+		local url = originalText
+	
+		pcall(function()
+			setclipboard(url)
+		end)
+	
+		button.Text = "Copied"
+		task.wait(0.7)
+		button.Text = mayn
+	end)
+	
+end
+task.spawn(SCRIPT_1b)
+-- // StarterGui.gojo.Frame.tapalo55.ScrollingFrame.TextButton.LocalScript \\ --
+local function SCRIPT_25()
+local script = UI["25"]
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		local vehicle = workspace.Vehicles:FindFirstChild(game.Players.LocalPlayer.Name)
+	
+		if vehicle then
+			vehicle.PrimaryPart = vehicle.Body.Mass
+	
+			local time = tick()
+	
+			repeat
+				task.wait()
+	
+				if game.Players.LocalPlayer.Character.Humanoid.SeatPart == nil then
+					vehicle.DriveSeat:Sit(game.Players.LocalPlayer.Character.Humanoid)
+					time = tick()
+					wait(1)
+					time = tick()
+				else
+					local location = CFrame.new(-615.5797729492188, 5.289504051208496, 2862.23681640625)
+					vehicle:PivotTo(location)
+				end
+	
+			until tick() - time > 2
+		else
+		end
+	end)
+	
+end
+task.spawn(SCRIPT_25)
+-- // StarterGui.gojo.Frame.tapalo55.ScrollingFrame.TextButton.LocalScript \\ --
+local function SCRIPT_28()
+local script = UI["28"]
+	local button = script.Parent -- Script'in parent'ı TextButton olacak
+	
+	button.MouseButton1Click:Connect(function()
+		-- Araç kontrolü
+		local vehicle = workspace.Vehicles:FindFirstChild(game.Players.LocalPlayer.Name)
+	
+		-- Eğer oyuncunun bir aracı varsa
+		if vehicle then
+			-- PrimaryPart ayarı (Body.Mass yerine başka bir PrimaryPart ayarlamanız gerekebilir)
+			vehicle.PrimaryPart = vehicle.Body.Mass
+	
+			local time = tick()
+	
+			-- Tekrar eden görev
+			repeat
+				task.wait()
+	
+				-- Oyuncu bir koltukta oturmuyorsa araca oturtuluyor
+				if game.Players.LocalPlayer.Character.Humanoid.SeatPart == nil then
+					vehicle.DriveSeat:Sit(game.Players.LocalPlayer.Character.Humanoid)
+					time = tick()
+					wait(0.1)
+					time = tick()
+				else
+					local location = CFrame.new(-572.1055297851562, 6.382352352142334, 3061.3740234375)
+					vehicle:PivotTo(location)
+				end
+	
+				-- 0.1 saniyeyi geçene kadar tekrar eder
+			until tick() - time > 0.1
+		end
+	end)
+	
+end
+task.spawn(SCRIPT_28)
+-- // StarterGui.gojo.Frame.tapalo55.ScrollingFrame.TextButton.LocalScript \\ --
+local function SCRIPT_2b()
+local script = UI["2b"]
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		local vehicle = workspace.Vehicles:FindFirstChild(game.Players.LocalPlayer.Name)
+	
+		if vehicle then
+			vehicle.PrimaryPart = vehicle.Body.Mass
+	
+			local time = tick()
+	
+			repeat
+				task.wait()
+	
+				if game.Players.LocalPlayer.Character.Humanoid.SeatPart == nil then
+					vehicle.DriveSeat:Sit(game.Players.LocalPlayer.Character.Humanoid)
+					time = tick()
+					wait(0.1)
+					time = tick()
+				else
+					local location = CFrame.new(-1025.360595703125, 4.500086784362793, 3899.155029296875)
+					vehicle:PivotTo(location)
+				end
+	
+			until tick() - time > 0.1
+		end
+	end)
+	
+end
+task.spawn(SCRIPT_2b)
+-- // StarterGui.gojo.Frame.tapalo55.ScrollingFrame.TextButton.LocalScript \\ --
+local function SCRIPT_2e()
+local script = UI["2e"]
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		local vehicle = workspace.Vehicles:FindFirstChild(game.Players.LocalPlayer.Name)
+	
+		if vehicle then
+			vehicle.PrimaryPart = vehicle.Body.Mass
+	
+			local time = tick()
+	
+			repeat
+				task.wait()
+	
+				if game.Players.LocalPlayer.Character.Humanoid.SeatPart == nil then
+					vehicle.DriveSeat:Sit(game.Players.LocalPlayer.Character.Humanoid)
+					time = tick()
+					wait(0.1)
+					time = tick()
+				else
+					local location = CFrame.new(-1001.6951904296875, 10.850526809692383, 3655.860595703125)
+					vehicle:PivotTo(location)
+				end
+	
+			until tick() - time > 0.1
+		else
+		end
+	end)
+	
+end
+task.spawn(SCRIPT_2e)
+-- // StarterGui.gojo.Frame.tapalo55.ScrollingFrame.TextButton.LocalScript \\ --
+local function SCRIPT_31()
+local script = UI["31"]
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		local vehicle = workspace.Vehicles:FindFirstChild(game.Players.LocalPlayer.Name)
+	
+		if vehicle then
+			vehicle.PrimaryPart = vehicle.Body.Mass
+	
+			local time = tick()
+	
+			repeat
+				task.wait()
+	
+				if game.Players.LocalPlayer.Character.Humanoid.SeatPart == nil then
+					vehicle.DriveSeat:Sit(game.Players.LocalPlayer.Character.Humanoid)
+					time = tick()
+					wait(0.1)
+					time = tick()
+				else
+					local location = CFrame.new(-1415.6986083984375, 4.552238464355469, 940.5262451171875)
+					vehicle:PivotTo(location)
+				end
+	
+			until tick() - time > 0.1
+		else
+		end
+	end)
+	
+end
+task.spawn(SCRIPT_31)
+-- // StarterGui.gojo.Frame.tapalo55.ScrollingFrame.TextButton.LocalScript \\ --
+local function SCRIPT_34()
+local script = UI["34"]
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		local vehicle = workspace.Vehicles:FindFirstChild(game.Players.LocalPlayer.Name)
+	
+		if vehicle then
+			vehicle.PrimaryPart = vehicle.Body.Mass
+	
+			local time = tick()
+	
+			repeat
+				task.wait()
+	
+				local player = game.Players.LocalPlayer
+				local humanoid = player.Character and player.Character:FindFirstChild("Humanoid")
+	
+				if humanoid and humanoid.SeatPart == nil then
+					vehicle.DriveSeat:Sit(humanoid)
+					time = tick()
+					wait(0.1)
+				elseif humanoid then
+					local location = CFrame.new(-278.833740234375, 7.7454142570495605, 1085.7965087890625)
+					vehicle:PivotTo(location)
+				end
+	
+			until tick() - time > 0.1
+		end
+	end)
+	
+end
+task.spawn(SCRIPT_34)
+-- // StarterGui.gojo.Frame.tapalo55.ScrollingFrame.TextButton.LocalScript \\ --
+local function SCRIPT_37()
+local script = UI["37"]
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		local vehicle = workspace.Vehicles:FindFirstChild(game.Players.LocalPlayer.Name)
+	
+		if vehicle then
+			vehicle.PrimaryPart = vehicle.Body.Mass
+	
+			local time = tick()
+	
+			repeat
+				task.wait()
+	
+				if game.Players.LocalPlayer.Character.Humanoid.SeatPart == nil then
+					vehicle.DriveSeat:Sit(game.Players.LocalPlayer.Character.Humanoid)
+					time = tick()
+					wait(0.1)
+					time = tick()
+				else
+					local location = CFrame.new(-120.60669708251953, 4.597031116485596, 430.81805419921875)
+					vehicle:PivotTo(location)
+				end
+	
+			until tick() - time > 0.1
+		else
+		end
+	end)
+	
+end
+task.spawn(SCRIPT_37)
+-- // StarterGui.gojo.Frame.tapalo55.ScrollingFrame.TextButton.LocalScript \\ --
+local function SCRIPT_3a()
+local script = UI["3a"]
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		local vehicle = workspace.Vehicles:FindFirstChild(game.Players.LocalPlayer.Name)
+	
+		if vehicle then
+			vehicle.PrimaryPart = vehicle.Body.Mass
+	
+			local time = tick()
+	
+			repeat
+				task.wait()
+	
+				local player = game.Players.LocalPlayer
+				local humanoid = player.Character and player.Character:FindFirstChild("Humanoid")
+	
+				if humanoid and humanoid.SeatPart == nil then
+					vehicle.DriveSeat:Sit(humanoid)
+					time = tick()
+					wait(0.1)
+				elseif humanoid then
+					local location = CFrame.new(704.4508666992188, 4.229461669921875, 1479.9267578125)
+					vehicle:PivotTo(location)
+				end
+	
+			until tick() - time > 0.1
+		end
+	end)
+	
+end
+task.spawn(SCRIPT_3a)
+-- // StarterGui.gojo.Frame.tapalo55.ScrollingFrame.TextButton.LocalScript \\ --
+local function SCRIPT_3d()
+local script = UI["3d"]
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		local vehicle = workspace.Vehicles:FindFirstChild(game.Players.LocalPlayer.Name)
+	
+		if vehicle then
+			vehicle.PrimaryPart = vehicle.Body.Mass
+	
+			local time = tick()
+	
+			repeat
+				task.wait()
+	
+				local player = game.Players.LocalPlayer
+				local humanoid = player.Character and player.Character:FindFirstChild("Humanoid")
+	
+				if humanoid and humanoid.SeatPart == nil then
+					vehicle.DriveSeat:Sit(humanoid)
+					time = tick()
+					wait(0.1)
+				elseif humanoid then
+					local location = CFrame.new(-1682.2969970703125, 8.779464721679688, -1273.07763671875)
+					vehicle:PivotTo(location)
+				end
+	
+			until tick() - time > 0.1
+		end
+	end)
+	
+end
+task.spawn(SCRIPT_3d)
+-- // StarterGui.gojo.Frame.tapalo55.ScrollingFrame.TextButton.LocalScript \\ --
+local function SCRIPT_40()
+local script = UI["40"]
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		local vehicle = workspace.Vehicles:FindFirstChild(game.Players.LocalPlayer.Name)
+	
+		if vehicle then
+			vehicle.PrimaryPart = vehicle.Body.Mass
+	
+			local time = tick()
+	
+			repeat
+				task.wait()
+	
+				local player = game.Players.LocalPlayer
+				local humanoid = player.Character and player.Character:FindFirstChild("Humanoid")
+	
+				if humanoid and humanoid.SeatPart == nil then
+					vehicle.DriveSeat:Sit(humanoid)
+					time = tick()
+					wait(0.1)
+				elseif humanoid then
+					local location = CFrame.new(-1702.70166015625, 4.607900142669678, 2723.564697265625)
+					vehicle:PivotTo(location)
+				end
+	
+			until tick() - time > 0.1
+		end
+	end)
+	
+end
+task.spawn(SCRIPT_40)
+-- // StarterGui.gojo.Frame.tapalo55.ScrollingFrame.TextButton.LocalScript \\ --
+local function SCRIPT_43()
+local script = UI["43"]
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		local vehicle = workspace.Vehicles:FindFirstChild(game.Players.LocalPlayer.Name)
+	
+		if vehicle then
+			vehicle.PrimaryPart = vehicle.Body.Mass
+	
+			local time = tick()
+	
+			repeat
+				task.wait()
+	
+				local player = game.Players.LocalPlayer
+				local humanoid = player.Character and player.Character:FindFirstChild("Humanoid")
+	
+				if humanoid and humanoid.SeatPart == nil then
+					vehicle.DriveSeat:Sit(humanoid)
+					time = tick()
+					wait(0.1)
+				elseif humanoid then
+					local location = CFrame.new(796.5571899414062, -18.67022705078125, -1526.3787841796875)
+					vehicle:PivotTo(location)
+				end
+	
+			until tick() - time > 0.1
+		end
+	end)
+	
+end
+task.spawn(SCRIPT_43)
+-- // StarterGui.gojo.Frame.tapalo55.robScrollingFrame.TextButton.LocalScript \\ --
+local function SCRIPT_47()
+local script = UI["47"]
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		local vehicle = workspace.Vehicles:FindFirstChild(game.Players.LocalPlayer.Name)
+	
+		if vehicle then
+			vehicle.PrimaryPart = vehicle.Body.Mass
+	
+			local time = tick()
+	
+			repeat
+				task.wait()
+	
+				if game.Players.LocalPlayer.Character.Humanoid.SeatPart == nil then
+					vehicle.DriveSeat:Sit(game.Players.LocalPlayer.Character.Humanoid)
+					time = tick()
+					wait(0.1)
+					time = tick()
+				else
+					local location = CFrame.new(-1560.6749267578125, 3.944018602371216, 3813.65673828125)
+					vehicle:PivotTo(location)
+				end
+	
+			until tick() - time > 0.1
+		else
+		end
+	end)
+	
+end
+task.spawn(SCRIPT_47)
+-- // StarterGui.gojo.Frame.tapalo55.robScrollingFrame.TextButton.LocalScript \\ --
+local function SCRIPT_4a()
+local script = UI["4a"]
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		local vehicle = workspace.Vehicles:FindFirstChild(game.Players.LocalPlayer.Name)
+	
+		if vehicle then
+			vehicle.PrimaryPart = vehicle.Body.Mass
+	
+			local time = tick()
+	
+			repeat
+				task.wait()
+	
+				if game.Players.LocalPlayer.Character.Humanoid.SeatPart == nil then
+					vehicle.DriveSeat:Sit(game.Players.LocalPlayer.Character.Humanoid)
+					time = tick()
+					wait(0.1)
+					time = tick()
+				else
+					local location = CFrame.new(-407.536865234375, 21.95075225830078, 3516.85400390625)
+					vehicle:PivotTo(location)
+				end
+	
+			until tick() - time > 0.1
+		else
+		end
+	end)
+	
+end
+task.spawn(SCRIPT_4a)
+-- // StarterGui.gojo.Frame.tapalo55.robScrollingFrame.TextButton.LocalScript \\ --
+local function SCRIPT_4d()
+local script = UI["4d"]
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		local vehicle = workspace.Vehicles:FindFirstChild(game.Players.LocalPlayer.Name)
+	
+		if vehicle then
+			vehicle.PrimaryPart = vehicle.Body.Mass
+	
+			local time = tick()
+	
+			repeat
+				task.wait()
+	
+				if game.Players.LocalPlayer.Character.Humanoid.SeatPart == nil then
+					vehicle.DriveSeat:Sit(game.Players.LocalPlayer.Character.Humanoid)
+					time = tick()
+					wait(0.1)
+					time = tick()
+				else
+					local location = CFrame.new(-1183.2969970703125, 10.912008285522461, 3228.29736328125)
+					vehicle:PivotTo(location)
+				end
+	
+			until tick() - time > 0.1
+		else
+		end
+	end)
+	
+end
+task.spawn(SCRIPT_4d)
+-- // StarterGui.gojo.Frame.tapalo55.robScrollingFrame.TextButton.LocalScript \\ --
+local function SCRIPT_50()
+local script = UI["50"]
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		local vehicle = workspace.Vehicles:FindFirstChild(game.Players.LocalPlayer.Name)
+	
+		if vehicle then
+			vehicle.PrimaryPart = vehicle.Body.Mass
+	
+			local time = tick()
+	
+			repeat
+				task.wait()
+	
+				if game.Players.LocalPlayer.Character.Humanoid.SeatPart == nil then
+					vehicle.DriveSeat:Sit(game.Players.LocalPlayer.Character.Humanoid)
+					time = tick()
+					wait(0.1)
+					time = tick()
+				else
+					local location = CFrame.new(-824.4476318359375, 4.182844638824463, 1512.9415283203125)
+					vehicle:PivotTo(location)
+				end
+	
+			until tick() - time > 0.1
+		else
+		end
+	end)
+	
+end
+task.spawn(SCRIPT_50)
+-- // StarterGui.gojo.Frame.tapalo55.robScrollingFrame.TextButton.LocalScript \\ --
+local function SCRIPT_53()
+local script = UI["53"]
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		local vehicle = workspace.Vehicles:FindFirstChild(game.Players.LocalPlayer.Name)
+	
+		if vehicle then
+			vehicle.PrimaryPart = vehicle.Body.Mass
+	
+			local time = tick()
+	
+			repeat
+				task.wait()
+	
+				if game.Players.LocalPlayer.Character.Humanoid.SeatPart == nil then
+					vehicle.DriveSeat:Sit(game.Players.LocalPlayer.Character.Humanoid)
+					time = tick()
+					wait(0.1)
+					time = tick()
+				else
+					local location = CFrame.new(-767.815185546875, 4.374037742614746, 663.4945068359375)
+					vehicle:PivotTo(location)
+				end
+	
+			until tick() - time > 0.1
+		else
+		end
+	end)
+	
+end
+task.spawn(SCRIPT_53)
+-- // StarterGui.gojo.Frame.tapalo55.robScrollingFrame.TextButton.LocalScript \\ --
+local function SCRIPT_56()
+local script = UI["56"]
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		local vehicle = workspace.Vehicles:FindFirstChild(game.Players.LocalPlayer.Name)
+	
+		if vehicle then
+			vehicle.PrimaryPart = vehicle.Body.Mass
+	
+			local time = tick()
+	
+			repeat
+				task.wait()
+	
+				if game.Players.LocalPlayer.Character.Humanoid.SeatPart == nil then
+					vehicle.DriveSeat:Sit(game.Players.LocalPlayer.Character.Humanoid)
+					time = tick()
+					wait(0.1)
+					time = tick()
+				else
+					local location = CFrame.new(-27.464902877807617, 5.245306968688965, -749.4136962890625)
+					vehicle:PivotTo(location)
+				end
+	
+			until tick() - time > 0.1
+		else
+		end
+	end)
+	
+end
+task.spawn(SCRIPT_56)
+-- // StarterGui.gojo.Frame.tapalo55.robScrollingFrame.TextButton.LocalScript \\ --
+local function SCRIPT_59()
+local script = UI["59"]
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		local vehicle = workspace.Vehicles:FindFirstChild(game.Players.LocalPlayer.Name)
+	
+		if vehicle then
+			vehicle.PrimaryPart = vehicle.Body.Mass
+	
+			local time = tick()
+	
+			repeat
+				task.wait()
+	
+				if game.Players.LocalPlayer.Character.Humanoid.SeatPart == nil then
+					vehicle.DriveSeat:Sit(game.Players.LocalPlayer.Character.Humanoid)
+					time = tick()
+					wait(0.1)
+					time = tick()
+				else
+					local location = CFrame.new(440.4006042480469, 5.520556926727295, -1438.111083984375)
+					vehicle:PivotTo(location)
+				end
+	
+			until tick() - time > 0.1
+		else
+		end
+	end)
+	
+end
+task.spawn(SCRIPT_59)
+-- // StarterGui.gojo.Frame.tapalo55.robScrollingFrame.TextButton.LocalScript \\ --
+local function SCRIPT_5c()
+local script = UI["5c"]
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		local vehicle = workspace.Vehicles:FindFirstChild(game.Players.LocalPlayer.Name)
+	
+		if vehicle then
+			vehicle.PrimaryPart = vehicle.Body.Mass
+	
+			local time = tick()
+	
+			repeat
+				task.wait()
+	
+				if game.Players.LocalPlayer.Character.Humanoid.SeatPart == nil then
+					vehicle.DriveSeat:Sit(game.Players.LocalPlayer.Character.Humanoid)
+					time = tick()
+					wait(0.11)
+					time = tick()
+				else
+					local location = CFrame.new(-887.2207641601562, 5.8310041427612305, -1150.3564453125)
+					vehicle:PivotTo(location)
+				end
+	
+			until tick() - time > 0.1
+		else
+		end
+	end)
+	
+end
+task.spawn(SCRIPT_5c)
+-- // StarterGui.gojo.Frame.tapalo55.robScrollingFrame.TextButton.LocalScript \\ --
+local function SCRIPT_5f()
+local script = UI["5f"]
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		local vehicle = workspace.Vehicles:FindFirstChild(game.Players.LocalPlayer.Name)
+	
+		if vehicle then
+			vehicle.PrimaryPart = vehicle.Body.Mass
+	
+			local time = tick()
+	
+			repeat
+				task.wait()
+	
+				if game.Players.LocalPlayer.Character.Humanoid.SeatPart == nil then
+					vehicle.DriveSeat:Sit(game.Players.LocalPlayer.Character.Humanoid)
+					time = tick()
+					wait(0.1)
+					time = tick()
+				else
+					local location = CFrame.new(1191.83642578125, 29.550006866455078, 2140.703857421875)
+					vehicle:PivotTo(location)
+				end
+	
+			until tick() - time > 0.1
+		else
+		end
+	end)
+	
+end
+task.spawn(SCRIPT_5f)
+-- // StarterGui.gojo.Frame.tapalo55.robScrollingFrame.TextButton.LocalScript \\ --
+local function SCRIPT_62()
+local script = UI["62"]
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		local vehicle = workspace.Vehicles:FindFirstChild(game.Players.LocalPlayer.Name)
+	
+		if vehicle then
+			vehicle.PrimaryPart = vehicle.Body.Mass
+	
+			local time = tick()
+	
+			repeat
+				task.wait()
+	
+				if game.Players.LocalPlayer.Character.Humanoid.SeatPart == nil then
+					vehicle.DriveSeat:Sit(game.Players.LocalPlayer.Character.Humanoid)
+					time = tick()
+					wait(0.11)
+					time = tick()
+				else
+					local location = CFrame.new(-1856.96204, 5.70677948, 2990.51855, -0.999841571, -0.00284513622, 0.0175658949, -0.00285024731, 0.999995828, -0.000265966606, -0.0175650679, -0.000315991696, -0.999845684)
+					vehicle:PivotTo(location)
+				end
+	
+			until tick() - time > 0.1
+		else
+		end
+	end)
+	
+end
+task.spawn(SCRIPT_62)
+-- // StarterGui.gojo.Frame.puaya55.humanoid_actions.box.anfa.textButton.LocalScript \\ --
+local function SCRIPT_76()
+local script = UI["76"]
+	local button = script.Parent
+	local activeColor = Color3.fromRGB(55, 255, 0)
+	local inactiveColor = Color3.fromRGB(255, 255, 255)
+	
+	local function createESPBox(character)
+		local rootPart = character:WaitForChild("HumanoidRootPart", 5)
+		if not rootPart then
+			warn("HumanoidRootPart bulunamadı:", character.Name)
+			return
+		end
+	
+		local billboard = Instance.new("BillboardGui")
+		billboard.Name = "ESPBox"
+		billboard.Adornee = rootPart
+		billboard.Size = UDim2.new(4, 0, 6, 0)
+		billboard.AlwaysOnTop = true
+		billboard.Enabled = button.BackgroundColor3 == activeColor
+		billboard.Parent = rootPart
+	
+		for i = 1, 4 do
+			local frame = Instance.new("Frame")
+			frame.Name = "Line" .. i
+			frame.Size = UDim2.new(1, 0, 0.04, 0)
+			frame.BackgroundColor3 = Color3.new(1, 1, 1)
+			frame.BorderSizePixel = 0
+			frame.BackgroundTransparency = 0
+			frame.Parent = billboard
+	
+			if i == 1 then
+				frame.Position = UDim2.new(0, 0, 0, 0)
+			elseif i == 2 then
+				frame.Position = UDim2.new(0, 0, 1, -1)
+			elseif i == 3 then
+				frame.Position = UDim2.new(0, 0, 0, 0)
+				frame.Size = UDim2.new(0.04, 0, 1, 0)
+			elseif i == 4 then
+				frame.Position = UDim2.new(1, -1, 0, 0)
+				frame.Size = UDim2.new(0.04, 0, 1, 0)
+			end
+		end
+	
+		return billboard
+	end
+	
+	local function updateESPBoxColor(character)
+		local rootPart = character:FindFirstChild("HumanoidRootPart")
+		if not rootPart then return end
+	
+		local billboard = rootPart:FindFirstChild("ESPBox")
+		if billboard then
+			local player = game.Players:GetPlayerFromCharacter(character)
+			if player then
+				for _, frame in pairs(billboard:GetChildren()) do
+					if frame:IsA("Frame") then
+						frame.BackgroundColor3 = player.Team and player.Team.TeamColor.Color or Color3.new(1, 1, 1)
+					end
+				end
+			end
+		end
+	end
+	
+	local function setupESPForPlayer(player)
+		if player == game.Players.LocalPlayer then
+			return
+		end
+	
+		player.CharacterAdded:Connect(function(character)
+			print("Karakter yüklendi:", player.Name)
+			character:WaitForChild("HumanoidRootPart", 5)
+			local billboard = createESPBox(character)
+			if billboard then
+				updateESPBoxColor(character)
+			end
+		end)
+	
+		if player.Character then
+			local character = player.Character
+			character:WaitForChild("HumanoidRootPart", 5)
+			local billboard = createESPBox(character)
+			if billboard then
+				updateESPBoxColor(character)
+			end
+		end
+	
+		player:GetPropertyChangedSignal("Team"):Connect(function()
+			if player.Character then
+				updateESPBoxColor(player.Character)
+			end
+		end)
+	end
+	
+	local function setupESPForAllPlayers()
+		for _, player in pairs(game.Players:GetPlayers()) do
+			setupESPForPlayer(player)
+		end
+	end
+	
+	game.Players.PlayerAdded:Connect(setupESPForPlayer)
+	
+	game.Players.PlayerRemoving:Connect(function(player)
+		if player.Character and player.Character:FindFirstChild("HumanoidRootPart") then
+			local rootPart = player.Character:FindFirstChild("HumanoidRootPart")
+			if rootPart:FindFirstChild("ESPBox") then
+				rootPart:FindFirstChild("ESPBox"):Destroy()
+			end
+		end
+	end)
+	
+	local function onButtonColorChanged()
+		local isActive = button.BackgroundColor3 == activeColor
+		for _, player in pairs(game.Players:GetPlayers()) do
+			if player == game.Players.LocalPlayer then
+				continue
+			end
+	
+			if player.Character and player.Character:FindFirstChild("HumanoidRootPart") then
+				local rootPart = player.Character:FindFirstChild("HumanoidRootPart")
+				local billboard = rootPart:FindFirstChild("ESPBox")
+				if billboard then
+					billboard.Enabled = isActive
+				end
+			end
+		end
+	end
+	
+	setupESPForAllPlayers()
+	
+	button:GetPropertyChangedSignal("BackgroundColor3"):Connect(onButtonColorChanged)
+	
+end
+task.spawn(SCRIPT_76)
+-- // StarterGui.gojo.Frame.puaya55.humanoid_actions.box.anfa.textButton.renk \\ --
+local function SCRIPT_77()
+local script = UI["77"]
+	local button = script.Parent
+	local toggled = false
+	
+	button.Activated:Connect(function()
+		if toggled then
+			button.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+			button.Position = UDim2.new(0, 0, 0.07, 0)
+		else
+			button.BackgroundColor3 = Color3.fromRGB(55, 255, 0)
+			button.Position = UDim2.new(0.35, 0, 0.07, 0)
+		end
+		toggled = not toggled
+	end)
+	
+end
+task.spawn(SCRIPT_77)
+-- // StarterGui.gojo.Frame.puaya55.humanoid_actions.shona.naesp.TextButton.LocalScript \\ --
+local function SCRIPT_7e()
+local script = UI["7e"]
+	local textButton = script.Parent
+	local Players = game:GetService("Players")
+	local Workspace = game:GetService("Workspace")
+	local RunService = game:GetService("RunService")
+	
+	local camera = Workspace.CurrentCamera
+	
+	local minSize = 3
+	local maxSize = 4
+	
+	local function createNameTag(player)
+		local character = player.Character
+		if not character or not character:FindFirstChild("Head") then return end
+		local head = character.Head
+	
+		if head:FindFirstChild("NameTag") then
+			head.NameTag:Destroy()
+		end
+	
+		local billboardGui = Instance.new("BillboardGui")
+		billboardGui.Name = "NameTag"
+		billboardGui.Adornee = head
+		billboardGui.Size = UDim2.new(0, 200, 0, 50)
+		billboardGui.StudsOffset = Vector3.new(0, 2, 0)
+		billboardGui.AlwaysOnTop = true
+		billboardGui.Enabled = textButton.BackgroundColor3 == Color3.fromRGB(55, 255, 0)
+	
+		local textLabel = Instance.new("TextLabel")
+		textLabel.Parent = billboardGui
+		textLabel.Text = player.Name
+		textLabel.TextColor3 = player.TeamColor.Color
+		textLabel.BackgroundTransparency = 1
+		textLabel.Size = UDim2.new(1, 0, 1, 0)
+		textLabel.Font = Enum.Font.GothamBold
+		textLabel.TextScaled = true
+		textLabel.TextStrokeTransparency = 0.5
+	
+		billboardGui.Parent = head
+	end
+	
+	local function adjustNameTagSizes()
+		for _, player in ipairs(Players:GetPlayers()) do
+			if player == Players.LocalPlayer then continue end
+	
+			local character = player.Character
+			if character and character:FindFirstChild("Head") and character.Head:FindFirstChild("NameTag") then
+				local head = character.Head
+				local billboardGui = head.NameTag
+				local distance = (camera.CFrame.Position - head.Position).Magnitude
+	
+				local clampedSize = math.clamp((distance / 20), minSize, maxSize)
+				billboardGui.Size = UDim2.new(0, clampedSize * 20, 0, clampedSize * 5)
+			end
+		end
+	end
+	
+	local function checkButtonColor()
+		local isVisible = textButton.BackgroundColor3 == Color3.fromRGB(55, 255, 0)
+		for _, player in ipairs(Players:GetPlayers()) do
+			local character = player.Character
+			if character and character:FindFirstChild("Head") and character.Head:FindFirstChild("NameTag") then
+				character.Head.NameTag.Enabled = isVisible
+			end
+		end
+	end
+	
+	local function monitorPlayer(player)
+		local function onCharacterAdded(character)
+			character:WaitForChild("Head")
+			wait(1)
+			createNameTag(player)
+			checkButtonColor()
+		end
+	
+		if player.Character then
+			onCharacterAdded(player.Character)
+		end
+	
+		player.CharacterAdded:Connect(onCharacterAdded)
+	end
+	
+	local function updateNameTags()
+		for _, player in ipairs(Players:GetPlayers()) do
+			if player ~= Players.LocalPlayer then
+				monitorPlayer(player)
+			end
+		end
+	end
+	
+	Players.PlayerAdded:Connect(monitorPlayer)
+	
+	Players.PlayerRemoving:Connect(function(player)
+		local character = player.Character
+		if character and character:FindFirstChild("Head") and character.Head:FindFirstChild("NameTag") then
+			character.Head.NameTag:Destroy()
+		end
+	end)
+	
+	textButton:GetPropertyChangedSignal("BackgroundColor3"):Connect(checkButtonColor)
+	
+	RunService.RenderStepped:Connect(adjustNameTagSizes)
+	
+	updateNameTags()
+	checkButtonColor()
+	
+end
+task.spawn(SCRIPT_7e)
+-- // StarterGui.gojo.Frame.puaya55.humanoid_actions.shona.naesp.TextButton.renk \\ --
+local function SCRIPT_7f()
+local script = UI["7f"]
+	local button = script.Parent
+	local toggled = false
+	
+	button.Activated:Connect(function()
+		if toggled then
+			button.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+			button.Position = UDim2.new(0, 0, 0.07, 0)
+		else
+			button.BackgroundColor3 = Color3.fromRGB(55, 255, 0)
+			button.Position = UDim2.new(0.35, 0, 0.07, 0)
+		end
+		toggled = not toggled
+	end)
+	
+end
+task.spawn(SCRIPT_7f)
+-- // StarterGui.gojo.Frame.ImageButton.LocalScript \\ --
+local function SCRIPT_86()
+local script = UI["86"]
+	local button = script.Parent
+	local frame = button.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		local homah55 = frame:FindFirstChild("homah55")
+		local framesToHide = {"camo55", "chuva55", "puaya55", "tapalo55", "gnom55", "satıng55", "aufa55"}
+	
+		if homah55 then
+			homah55.Visible = true
+		end
+	
+		for _, frameName in ipairs(framesToHide) do
+			local targetFrame = frame:FindFirstChild(frameName)
+			if targetFrame then
+				targetFrame.Visible = false
+			end
+		end
+	end)
+	
+end
+task.spawn(SCRIPT_86)
+-- // StarterGui.gojo.Frame.ImageButton.LocalScript \\ --
+local function SCRIPT_88()
+local script = UI["88"]
+	local button = script.Parent
+	local frame = button.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		local chuva55 = frame:FindFirstChild("chuva55")
+		local framesToHide = {"camo55", "homah55", "puaya55", "tapalo55", "gnom55", "satıng55", "aufa55"}
+	
+		if chuva55 then
+			chuva55.Visible = true
+		end
+	
+		for _, frameName in ipairs(framesToHide) do
+			local targetFrame = frame:FindFirstChild(frameName)
+			if targetFrame then
+				targetFrame.Visible = false
+			end
+		end
+	end)
+	
+end
+task.spawn(SCRIPT_88)
+-- // StarterGui.gojo.Frame.ImageButton.LocalScript \\ --
+local function SCRIPT_8a()
+local script = UI["8a"]
+	local button = script.Parent
+	local frame = button.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		local puaya55 = frame:FindFirstChild("puaya55")
+		local framesToHide = {"camo55", "chuva55", "homah55", "tapalo55", "gnom55", "satıng55", "aufa55"}
+	
+		if puaya55 then
+			puaya55.Visible = true
+		end
+	
+		for _, frameName in ipairs(framesToHide) do
+			local targetFrame = frame:FindFirstChild(frameName)
+			if targetFrame then
+				targetFrame.Visible = false
+			end
+		end
+	end)
+	
+end
+task.spawn(SCRIPT_8a)
+-- // StarterGui.gojo.Frame.LocalScript \\ --
+local function SCRIPT_8b()
+local script = UI["8b"]
+	local guiObject = script.Parent
+	
+	local UserInputService = game:GetService("UserInputService")
+	local dragging = false
+	local dragStart = nil
+	local startPos = nil
+	
+	local function onInputBegan(input)
+		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then
+			dragging = true
+			dragStart = input.Position
+			startPos = guiObject.Position
+	
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end
+	
+	local function onInputChanged(input)
+		if dragging and (input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch) then
+			local delta = input.Position - dragStart
+			local newPos = UDim2.new(
+				startPos.X.Scale, startPos.X.Offset + delta.X,
+				startPos.Y.Scale, startPos.Y.Offset + delta.Y
+			)
+			guiObject.Position = newPos
+		end
+	end
+	
+	guiObject.InputBegan:Connect(onInputBegan)
+	UserInputService.InputChanged:Connect(onInputChanged)
+	
+	UserInputService.InputBegan:Connect(function(input)
+	end)
+	
+end
+task.spawn(SCRIPT_8b)
+-- // StarterGui.gojo.Frame.camo55.asaya.TextLabel.togl.TextButton.LocalScript \\ --
+local function SCRIPT_94()
+local script = UI["94"]
+	local button = script.Parent
+	local toggled = false
+	
+	button.Activated:Connect(function()
+		if toggled then
+			button.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+			button.Position = UDim2.new(-0.016, 0, 0.100, 0)
+		else
+			button.BackgroundColor3 = Color3.fromRGB(55, 255, 0)
+			button.Position = UDim2.new(-0.016, 15, 0.100, 0)
+		end
+		toggled = not toggled
+	end)
+	
+end
+task.spawn(SCRIPT_94)
+-- // StarterGui.gojo.Frame.camo55.asaya.TextLabel.togl.TextButton.LocalScript \\ --
+local function SCRIPT_95()
+local script = UI["95"]
+	local button = script.Parent
+	local player = game.Players.LocalPlayer
+	
+	local function updateFuel()
+		local vehiclesFolder = workspace:FindFirstChild("Vehicles")
+		if vehiclesFolder then
+			local vehicles = vehiclesFolder:GetChildren()
+	
+			for _, vehicle in ipairs(vehicles) do
+				if vehicle:IsA("Model") then
+					if button.BackgroundColor3 == Color3.fromRGB(55, 255, 0) then
+						vehicle:SetAttribute("CurrentFuel", 100)
+					else
+						-- vehicle:SetAttribute("CurrentFuel", 0)
+					end
+				end
+			end
+		end
+	end
+	
+	button:GetPropertyChangedSignal("BackgroundColor3"):Connect(function()
+		updateFuel()
+	end)
+	
+	task.defer(function()
+		while task.wait() do
+			updateFuel()
+		end
+	end)
+	
+end
+task.spawn(SCRIPT_95)
+-- // StarterGui.gojo.Frame.camo55.asaya.TextLabel.togl.TextButton.LocalScript \\ --
+local function SCRIPT_9e()
+local script = UI["9e"]
+	local button = script.Parent
+	
+	local function updateIsOn()
+		local vehiclesFolder = workspace:FindFirstChild("Vehicles")
+		if vehiclesFolder then
+			local vehicles = vehiclesFolder:GetChildren()
+	
+			for _, vehicle in ipairs(vehicles) do
+				if vehicle:IsA("Model") then
+					vehicle:SetAttribute("IsOn", true)
+				end
+			end
+		end
+	end
+	
+	button.MouseButton1Click:Connect(updateIsOn)
+	
+end
+task.spawn(SCRIPT_9e)
+-- // StarterGui.gojo.Frame.camo55.asaya.TextLabel.togl.TextButton.LocalScript \\ --
+local function SCRIPT_a5()
+local script = UI["a5"]
+	local button = script.Parent
+	local toggled = false
+	
+	button.Activated:Connect(function()
+		if toggled then
+			button.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+			button.Position = UDim2.new(-0.016, 0, 0.100, 0)
+		else
+			button.BackgroundColor3 = Color3.fromRGB(55, 255, 0)
+			button.Position = UDim2.new(-0.016, 15, 0.100, 0)
+		end
+		toggled = not toggled
+	end)
+	
+end
+task.spawn(SCRIPT_a5)
+-- // StarterGui.gojo.Frame.camo55.asaya.TextLabel.togl.TextButton.LocalScript \\ --
+local function SCRIPT_a6()
+local script = UI["a6"]
+	local button = script.Parent
+	local player = game.Players.LocalPlayer
+	
+	local function updateHealth()
+		local vehiclesFolder = workspace:FindFirstChild("Vehicles")
+		if vehiclesFolder then
+			local vehicles = vehiclesFolder:GetChildren()
+	
+			for _, vehicle in ipairs(vehicles) do
+				if vehicle:IsA("Model") then
+					if button.BackgroundColor3 == Color3.fromRGB(55, 255, 0) then
+						vehicle:SetAttribute("CurrentHealth", 0.99)
+					else
+						-- vehicle:SetAttribute("CurrentHealth", 1)
+					end
+				end
+			end
+		end
+	end
+	
+	button:GetPropertyChangedSignal("BackgroundColor3"):Connect(function()
+		updateHealth()
+	end)
+	
+	task.defer(function()
+		while task.wait() do
+			updateHealth()
+		end
+	end)
+	
+end
+task.spawn(SCRIPT_a6)
+-- // StarterGui.gojo.Frame.camo55.asaya.TextLabel.togl.TextButton.LocalScript \\ --
+local function SCRIPT_ad()
+local script = UI["ad"]
+	local button = script.Parent
+	local player = game.Players.LocalPlayer
+	local vehicle = workspace.Vehicles:FindFirstChild(player.Name)
+	
+	local function sitInDriveSeat()
+		if vehicle and vehicle:FindFirstChild("DriveSeat") then
+			local driveSeat = vehicle.DriveSeat
+			if driveSeat:IsA("VehicleSeat") then
+				driveSeat:Sit(player.Character.Humanoid)
+			end
+		end
+	end
+	
+	button.MouseButton1Click:Connect(sitInDriveSeat)
+	
+end
+task.spawn(SCRIPT_ad)
+-- // StarterGui.gojo.Frame.camo55.asaya.TextLabel.togl.TextButton.LocalScript \\ --
+local function SCRIPT_b4()
+local script = UI["b4"]
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		local vehicle = workspace.Vehicles:FindFirstChild(game.Players.LocalPlayer.Name)
+	
+		if vehicle then
+			vehicle.PrimaryPart = vehicle.Body.Mass
+	
+			repeat
+				task.wait()
+	
+				local torso = game.Players.LocalPlayer.Character:FindFirstChild("Torso") or game.Players.LocalPlayer.Character:FindFirstChild("UpperTorso")
+	
+				if torso then
+					local location = torso.CFrame
+					vehicle:PivotTo(location)
+				end
+	
+			until tick() - time > 0.1
+		else
+			print("Araba bulunamadı!")
+		end
+	end)
+	
+end
+task.spawn(SCRIPT_b4)
+-- // StarterGui.gojo.Frame.ImageButton.LocalScript \\ --
+local function SCRIPT_b7()
+local script = UI["b7"]
+	local button = script.Parent
+	local frame = button.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		local camo55 = frame:FindFirstChild("camo55")
+		local framesToHide = {"homah55", "chuva55", "puaya55", "tapalo55", "gnom55", "satıng55", "aufa55"}
+	
+		if camo55 then
+			camo55.Visible = true
+		end
+	
+		for _, frameName in ipairs(framesToHide) do
+			local targetFrame = frame:FindFirstChild(frameName)
+			if targetFrame then
+				targetFrame.Visible = false
+			end
+		end
+	end)
+	
+end
+task.spawn(SCRIPT_b7)
+-- // StarterGui.gojo.Frame.ImageButton.LocalScript \\ --
+local function SCRIPT_b9()
+local script = UI["b9"]
+	local button = script.Parent
+	local frame = button.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		local tapalo55 = frame:FindFirstChild("tapalo55")
+		local framesToHide = {"camo55", "chuva55", "puaya55", "homah55", "gnom55", "satıng55", "aufa55"}
+	
+		if tapalo55 then
+			tapalo55.Visible = true
+		end
+	
+		for _, frameName in ipairs(framesToHide) do
+			local targetFrame = frame:FindFirstChild(frameName)
+			if targetFrame then
+				targetFrame.Visible = false
+			end
+		end
+	end)
+	
+end
+task.spawn(SCRIPT_b9)
+-- // StarterGui.gojo.Frame.satıng55.asdas.Toggle.TextButton.LocalScript \\ --
+local function SCRIPT_c1()
+local script = UI["c1"]
+	local button = script.Parent -- LocalScript'in içinde bulunduğu TextButton
+	local toggled = false -- Durum takibi için bir değişken
+	
+	button.Activated:Connect(function()
+		if toggled then
+			-- Eğer önceki duruma basılmışsa, eski renk ve pozisyonu geri al
+			button.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+			button.Position = UDim2.new(-0.016, 0, 0.226, 0)
+		else
+			-- Eğer basılmamışsa, yeni renk ve pozisyonu uygula
+			button.BackgroundColor3 = Color3.fromRGB(55, 255, 0)
+			button.Position = UDim2.new(-0.016, 20, 0.226, 0)
+		end
+		toggled = not toggled -- Durumu ters çevir
+	end)
+	
+end
+task.spawn(SCRIPT_c1)
+-- // StarterGui.gojo.Frame.satıng55.asdas.Toggle.TextButton.LocalScript \\ --
+local function SCRIPT_c2()
+local script = UI["c2"]
+	local textButton = script.Parent
+	local toggleFrame = textButton.Parent
+	local textLabel = toggleFrame.Parent
+	local settingsFrame = textLabel.Parent
+	local uiStroke = settingsFrame.Parent:FindFirstChild("bırstro")
+	
+	local rainbowColors = {
+		Color3.fromRGB(255, 0, 0),
+		Color3.fromRGB(255, 127, 0),
+		Color3.fromRGB(255, 255, 0),
+		Color3.fromRGB(0, 255, 0),
+		Color3.fromRGB(0, 0, 255),
+		Color3.fromRGB(75, 0, 130),
+		Color3.fromRGB(148, 0, 211)
+	}
+	
+	local colorIndex = 1
+	
+	local function changeStrokeColor()
+		while true do
+			if textButton.BackgroundColor3 == Color3.fromRGB(55, 255, 0) then
+				if uiStroke then
+					uiStroke.Color = rainbowColors[colorIndex]
+					colorIndex = colorIndex + 1
+					if colorIndex > #rainbowColors then
+						colorIndex = 1
+					end
+				else
+					warn("bırstro isimli UIStroke bulunamadı!")
+				end
+			elseif textButton.BackgroundColor3 == Color3.fromRGB(255, 255, 255) then
+				if uiStroke then
+					uiStroke.Color = Color3.fromRGB(255, 255, 255)
+				end
+				break
+			end
+			wait(0.2)
+		end
+	end
+	
+	game:GetService("RunService").RenderStepped:Connect(function()
+		if not textButton or not toggleFrame or not textLabel or not settingsFrame then
+			warn("UI bileşenlerinden biri bulunamadı!")
+			return
+		end
+		changeStrokeColor()
+	end)
+	
+end
+task.spawn(SCRIPT_c2)
+-- // StarterGui.gojo.Frame.satıng55.TextLabel.LocalScript \\ --
+local function SCRIPT_c5()
+local script = UI["c5"]
+	local player = game.Players.LocalPlayer
+	local textLabel = script.Parent
+	local Players = game:GetService("Players")
+	
+	local function updatePlayerCount()
+		local playerCount = #Players:GetPlayers()
+		textLabel.Text = " " .. playerCount
+	end
+	
+	updatePlayerCount()
+	
+	Players.PlayerAdded:Connect(updatePlayerCount)
+	Players.PlayerRemoved:Connect(updatePlayerCount)
+	
+end
+task.spawn(SCRIPT_c5)
+-- // StarterGui.gojo.Frame.satıng55.TextLabel.LocalScript \\ --
+local function SCRIPT_c9()
+local script = UI["c9"]
+	local Players = game:GetService("Players")
+	local player = Players.LocalPlayer
+	local textLabel = script.Parent
+	local RunService = game:GetService("RunService")
+	
+	local function updateServerTime()
+		local serverTime = os.date("%H:%M:%S")
+		textLabel.Text = ": " .. serverTime
+	end
+	
+	updateServerTime()
+	
+	RunService.Heartbeat:Connect(function()
+		updateServerTime()
+	end)
+	
+end
+task.spawn(SCRIPT_c9)
+-- // StarterGui.gojo.Frame.satıng55.asdas.Toggle.TextButton.LocalScript \\ --
+local function SCRIPT_d0()
+local script = UI["d0"]
+	local button = script.Parent
+	local toggled = false
+	
+	button.Activated:Connect(function()
+		if toggled then
+			button.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+			button.Position = UDim2.new(-0.016, 0, 0.226, 0)
+		else
+			button.BackgroundColor3 = Color3.fromRGB(55, 255, 0)
+			button.Position = UDim2.new(-0.016, 20, 0.226, 0)
+		end
+		toggled = not toggled
+	end)
+	
+end
+task.spawn(SCRIPT_d0)
+-- // StarterGui.gojo.Frame.satıng55.asdas.Toggle.TextButton.LocalScript \\ --
+local function SCRIPT_d1()
+local script = UI["d1"]
+	local button = script.Parent
+	local fepela = button.Parent.Parent.Parent.Parent.fepela
+	
+	local function checkButtonColor()
+		local buttonColor = button.BackgroundColor3
+	
+		if buttonColor == Color3.fromRGB(55, 255, 0) then
+			fepela.Visible = true
+		elseif buttonColor == Color3.fromRGB(255, 255, 255) then
+			fepela.Visible = false
+		end
+	end
+	
+	button:GetPropertyChangedSignal("BackgroundColor3"):Connect(checkButtonColor)
+	checkButtonColor()
+	
+end
+task.spawn(SCRIPT_d1)
+-- // StarterGui.gojo.Frame.satıng55.nafal.Toggle.TextButton.LocalScript \\ --
+local function SCRIPT_d8()
+local script = UI["d8"]
+	local button = script.Parent
+	local toggled = false
+	
+	button.Activated:Connect(function()
+		if toggled then
+			button.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+			button.Position = UDim2.new(-0.016, 0, 0.226, 0)
+		else
+			button.BackgroundColor3 = Color3.fromRGB(55, 255, 0)
+			button.Position = UDim2.new(-0.016, 20, 0.226, 0)
+		end
+		toggled = not toggled
+	end)
+	
+end
+task.spawn(SCRIPT_d8)
+-- // StarterGui.gojo.Frame.satıng55.nafal.Toggle.TextButton.LocalScript \\ --
+local function SCRIPT_d9()
+local script = UI["d9"]
+	local player = game.Players.LocalPlayer
+	
+	local function findSpeedLabel()
+		for _, gui in pairs(player.PlayerGui:GetChildren()) do
+			if gui:IsA("ScreenGui") then
+				for _, frame in pairs(gui:GetDescendants()) do
+					if frame:IsA("TextLabel") and frame.Text:find(" km/h") then
+						return frame
+					end
+				end
+			end
+		end
+		return nil
+	end
+	
+	local function monitorSpeed()
+		local speedLabel = findSpeedLabel()
+	
+		if not speedLabel then
+			return
+		end
+	
+		local vehicleSeat = workspace.Vehicles[player.Name].DriveSeat
+	
+		while true do
+			wait(0.05)
+	
+			local speedText = speedLabel.Text
+			local speedValue = tonumber(speedText:match("(%d+)"))
+	
+			if speedValue and speedValue > 175 then
+				if vehicleSeat.Occupant ~= player.Character:FindFirstChild("Humanoid") then
+					vehicleSeat.Occupant = player.Character:FindFirstChild("Humanoid")
+					player.Character.Humanoid.Sit = true
+				end
+			end
+		end
+	end
+	
+	local button = script.Parent
+	button:GetPropertyChangedSignal("BackgroundColor3"):Connect(function()
+		if button.BackgroundColor3 == Color3.new(55 / 255, 255 / 255, 0 / 255) then
+			monitorSpeed()
+		end
+	end)
+	
+end
+task.spawn(SCRIPT_d9)
+-- // StarterGui.gojo.Frame.chuva55.andow.Toggle.TextButton.LocalScript \\ --
+local function SCRIPT_e4()
+local script = UI["e4"]
+	local button = script.Parent
+	local toggled = false
+	
+	button.Activated:Connect(function()
+		if toggled then
+			button.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+			button.Position = UDim2.new(-0.016, 0, 0.226, 0)
+		else
+			button.BackgroundColor3 = Color3.fromRGB(55, 255, 0)
+			button.Position = UDim2.new(-0.016, 20, 0.226, 0)
+		end
+		toggled = not toggled
+	end)
+	
+end
+task.spawn(SCRIPT_e4)
+-- // StarterGui.gojo.Frame.chuva55.andow.Toggle.TextButton.LocalScript \\ --
+local function SCRIPT_e5()
+local script = UI["e5"]
+	local textButton = script.Parent
+	
+	local function onButtonColorChanged()
+		local buttonColor = textButton.BackgroundColor3
+	
+		if buttonColor == Color3.fromRGB(55, 255, 0) then
+			getfenv().downed = true
+			getfenv().antichanged1 = game.Players.LocalPlayer.Character.Humanoid:GetPropertyChangedSignal("Health"):Connect(function()
+				game.Players.LocalPlayer.Character.Humanoid.Health = 100
+			end)
+		elseif buttonColor == Color3.fromRGB(255, 255, 255) then
+			if getfenv().antichanged1 then
+				getfenv().antichanged1:Disconnect()
+			end
+			getfenv().downed = false
+		end
+	end
+	
+	textButton:GetPropertyChangedSignal("BackgroundColor3"):Connect(onButtonColorChanged)
+	
+end
+task.spawn(SCRIPT_e5)
+-- // StarterGui.gojo.Frame.chuva55.anafl.Toggle.TextButton.LocalScript \\ --
+local function SCRIPT_ed()
+local script = UI["ed"]
+	local button = script.Parent
+	local toggled = false
+	
+	button.Activated:Connect(function()
+		if toggled then
+			button.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+			button.Position = UDim2.new(-0.016, 0, 0.226, 0)
+		else
+			button.BackgroundColor3 = Color3.fromRGB(55, 255, 0)
+			button.Position = UDim2.new(-0.016, 20, 0.226, 0)
+		end
+		toggled = not toggled
+	end)
+	
+end
+task.spawn(SCRIPT_ed)
+-- // StarterGui.gojo.Frame.chuva55.anafl.Toggle.TextButton.LocalScript \\ --
+local function SCRIPT_ee()
+local script = UI["ee"]
+	local button = script.Parent
+	local toggled = false
+	
+	local function activateScript()
+		getfenv().ANTIFALL = true
+		getfenv().nofall = game:GetService("RunService").RenderStepped:Connect(function()
+			local character = game.Players.LocalPlayer.Character
+			if character then
+				local rootPart = character:FindFirstChild("HumanoidRootPart")
+				if rootPart then
+					local raycastParams = RaycastParams.new()
+					raycastParams.FilterType = Enum.RaycastFilterType.Blacklist
+					raycastParams.FilterDescendantsInstances = {character}
+	
+					local ray = workspace:Raycast(rootPart.Position, Vector3.new(0, -20, 0), raycastParams)
+					if ray and rootPart.Velocity.Y < -30 then
+						rootPart.Velocity = Vector3.new(0, 0, 0)
+					end
+				end
+			end
+		end)
+	end
+	
+	local function deactivateScript()
+		getfenv().ANTIFALL = false
+		if getfenv().nofall then
+			getfenv().nofall:Disconnect()
+			getfenv().nofall = nil
+		end
+	end
+	
+	button.Activated:Connect(function()
+		if button.BackgroundColor3 == Color3.fromRGB(255, 255, 255) then
+			button.BackgroundColor3 = Color3.fromRGB(55, 255, 0)
+			activateScript()
+		else
+			button.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+			deactivateScript()
+		end
+	end)
+	
+end
+task.spawn(SCRIPT_ee)
+-- // StarterGui.gojo.Frame.chuva55.TextLabel.Toggle.TextButton.LocalScript \\ --
+local function SCRIPT_f8()
+local script = UI["f8"]
+	local button = script.Parent
+	local toggled = false
+	
+	button.Activated:Connect(function()
+		if toggled then
+			button.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+			button.Position = UDim2.new(-0.016, 0, 0.226, 0)
+		else
+			button.BackgroundColor3 = Color3.fromRGB(55, 255, 0)
+			button.Position = UDim2.new(-0.016, 20, 0.226, 0)
+		end
+		toggled = not toggled
+	end)
+	
+end
+task.spawn(SCRIPT_f8)
+-- // StarterGui.gojo.Frame.chuva55.TextLabel.Toggle.TextButton.LocalScript \\ --
+local function SCRIPT_f9()
+local script = UI["f9"]
+	local textButton = script.Parent
+	local dealersFolder = workspace:WaitForChild("Dealers")
+	local player = game.Players.LocalPlayer
+	local upperTorso = player.Character and player.Character:WaitForChild("UpperTorso")
+	
+	local dealerModel
+	local originalCFrame
+	
+	local function setDealerToPlayer()
+		if textButton.BackgroundColor3 == Color3.fromRGB(55, 255, 0) then
+			local dealerModels = dealersFolder:GetChildren()
+			if #dealerModels > 0 then
+				dealerModel = dealerModels[math.random(1, #dealerModels)]
+				local dealerPart = dealerModel:FindFirstChild("Dealer")
+	
+				if dealerPart then
+					if not dealerModel.PrimaryPart then
+						dealerModel.PrimaryPart = dealerPart
+					end
+	
+					originalCFrame = dealerModel:GetPrimaryPartCFrame()
+					dealerModel:SetPrimaryPartCFrame(upperTorso.CFrame)
+				end
+			end
+		elseif textButton.BackgroundColor3 == Color3.fromRGB(255, 255, 255) then
+			if dealerModel and originalCFrame then
+				dealerModel:SetPrimaryPartCFrame(originalCFrame)
+			end
+		end
+	end
+	
+	while true do
+		setDealerToPlayer()
+		wait(0.1)
+	end
+	
+end
+task.spawn(SCRIPT_f9)
+-- // StarterGui.gojo.Frame.chuva55.swa.Toggle.TextButton.LocalScript \\ --
+local function SCRIPT_ff()
+local script = UI["ff"]
+	local button = script.Parent
+	local toggled = false
+	
+	button.Activated:Connect(function()
+		if toggled then
+			button.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+			button.Position = UDim2.new(-0.016, 0, 0.226, 0)
+		else
+			button.BackgroundColor3 = Color3.fromRGB(55, 255, 0)
+			button.Position = UDim2.new(-0.016, 20, 0.226, 0)
+		end
+		toggled = not toggled
+	end)
+	
+end
+task.spawn(SCRIPT_ff)
+-- // StarterGui.gojo.Frame.chuva55.swa.Toggle.TextButton.LocalScript \\ --
+local function SCRIPT_100()
+local script = UI["100"]
+	local button = script.Parent
+	local swimming = false
+	local oldgrav = workspace.Gravity
+	local swimbeat = nil
+	local RunService = game:GetService("RunService")
+	local player = game.Players.LocalPlayer
+	local character = player.Character or player.CharacterAdded:Wait()
+	local gravReset = nil
+	
+	local swimSpeedMultiplier = 1.7
+	
+	local function startSwim()
+		if not swimming and character and character:FindFirstChildWhichIsA("Humanoid") then
+			oldgrav = workspace.Gravity
+			workspace.Gravity = 0
+			local swimDied = function()
+				workspace.Gravity = oldgrav
+				swimming = false
+			end
+			local Humanoid = character:FindFirstChildWhichIsA("Humanoid")
+			gravReset = Humanoid.Died:Connect(swimDied)
+			local enums = Enum.HumanoidStateType:GetEnumItems()
+			table.remove(enums, table.find(enums, Enum.HumanoidStateType.None))
+			for _, v in pairs(enums) do
+				Humanoid:SetStateEnabled(v, false)
+			end
+			Humanoid:ChangeState(Enum.HumanoidStateType.Swimming)
+			swimbeat = RunService.Heartbeat:Connect(function()
+				pcall(function()
+					local moveDirection = Humanoid.MoveDirection
+	
+					if moveDirection ~= Vector3.new() then
+						character.HumanoidRootPart.Velocity = moveDirection * swimSpeedMultiplier * 16
+					else
+						character.HumanoidRootPart.Velocity = Vector3.new()
+					end
+				end)
+			end)
+			swimming = true
+		end
+	end
+	
+	local function stopSwim()
+		if swimming and character and character:FindFirstChildWhichIsA("Humanoid") then
+			workspace.Gravity = oldgrav
+			swimming = false
+			if gravReset then
+				gravReset:Disconnect()
+			end
+			if swimbeat then
+				swimbeat:Disconnect()
+				swimbeat = nil
+			end
+			local Humanoid = character:FindFirstChildWhichIsA("Humanoid")
+			local enums = Enum.HumanoidStateType:GetEnumItems()
+			table.remove(enums, table.find(enums, Enum.HumanoidStateType.None))
+			for _, v in pairs(enums) do
+				Humanoid:SetStateEnabled(v, true)
+			end
+		end
+	end
+	
+	RunService.Heartbeat:Connect(function()
+		local buttonColor = button.BackgroundColor3
+	
+		if buttonColor == Color3.fromRGB(55, 255, 0) then
+			startSwim()
+		elseif buttonColor == Color3.fromRGB(255, 255, 255) then
+			stopSwim()
+		end
+	end)
+	
+end
+task.spawn(SCRIPT_100)
+-- // StarterGui.gojo.Frame.chuva55.Toggle.TextButton.resesc \\ --
+local function SCRIPT_107()
+local script = UI["107"]
+	local button = script.Parent
+	local player = game.Players.LocalPlayer
+	local character = workspace:WaitForChild(player.Name)
+	local humanoid = character:WaitForChild("Humanoid")
+	
+	button.MouseButton1Click:Connect(function()
+		humanoid.Health = 0
+	end)
+	
+end
+task.spawn(SCRIPT_107)
+-- // StarterGui.gojo.Frame.chuva55.Frame.TextLabel.LocalScript \\ --
+local function SCRIPT_10c()
+local script = UI["10c"]
+	local player = game.Players.LocalPlayer
+	local character = player.Character or player.CharacterAdded:Wait()
+	local humanoid = character:WaitForChild("Humanoid")
+	local textLabel = script.Parent
+	
+	local function onTextChanged()
+		local newValue = tonumber(textLabel.Text)
+		if newValue and humanoid then
+			humanoid.WalkSpeed = newValue
+		end
+	end
+	
+	local function onCharacterAdded(newCharacter)
+		character = newCharacter
+		humanoid = character:WaitForChild("Humanoid")
+		onTextChanged()
+	end
+	
+	textLabel:GetPropertyChangedSignal("Text"):Connect(onTextChanged)
+	player.CharacterAdded:Connect(onCharacterAdded)
+	onTextChanged()
+	
+end
+task.spawn(SCRIPT_10c)
+-- // StarterGui.gojo.Frame.chuva55.Frame.TextButton.LocalScript \\ --
+local function SCRIPT_110()
+local script = UI["110"]
+	local button = script.Parent
+	local frame = button.Parent
+	local textLabel = frame:FindFirstChild("TextLabel")
+	local imageLabel = button:FindFirstChild("ImageLabel")
+	local minSize = UDim2.new(0, 25, 0, 10)
+	local maxSize = UDim2.new(0, 25, 0, 195)
+	local minValue = 1
+	local maxValue = 82
+	
+	local function calculateValue(size)
+		local ratio = (size.Y.Offset - minSize.Y.Offset) / (maxSize.Y.Offset - minSize.Y.Offset)
+		return math.floor(minValue + (maxValue - minValue) * ratio)
+	end
+	
+	local dragging = false
+	local startY = 0
+	
+	button.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			startY = input.Position.Y
+		end
+	end)
+	
+	button.InputEnded:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = false
+		end
+	end)
+	
+	game:GetService("UserInputService").InputChanged:Connect(function(input)
+		if dragging and (input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch) then
+			local deltaY = input.Position.Y - startY
+			local newHeight = math.clamp(button.Size.Y.Offset - deltaY, minSize.Y.Offset, maxSize.Y.Offset)
+			button.Size = UDim2.new(button.Size.X.Scale, button.Size.X.Offset, 0, newHeight)
+	
+			if imageLabel then
+				imageLabel.Size = UDim2.new(1, 0, 1, 0)
+			end
+	
+			local newValue = calculateValue(button.Size)
+			textLabel.Text = tostring(newValue)
+	
+			startY = input.Position.Y
+		end
+	end)
+	
+end
+task.spawn(SCRIPT_110)
+-- // StarterGui.gojo.Frame.chuva55.Frame.TextLabel.LocalScript \\ --
+local function SCRIPT_118()
+local script = UI["118"]
+	local player = game.Players.LocalPlayer
+	local character = player.Character or player.CharacterAdded:Wait()
+	local humanoid = character:WaitForChild("Humanoid")
+	local textLabel = script.Parent
+	
+	local function onTextChanged()
+		local newValue = tonumber(textLabel.Text)
+		if newValue and humanoid then
+			humanoid.JumpHeight = newValue
+		end
+	end
+	
+	local function onCharacterAdded(newCharacter)
+		character = newCharacter
+		humanoid = character:WaitForChild("Humanoid")
+		onTextChanged()
+	end
+	
+	textLabel:GetPropertyChangedSignal("Text"):Connect(onTextChanged)
+	player.CharacterAdded:Connect(onCharacterAdded)
+	onTextChanged()
+	
+end
+task.spawn(SCRIPT_118)
+-- // StarterGui.gojo.Frame.chuva55.Frame.TextButton.LocalScript \\ --
+local function SCRIPT_11c()
+local script = UI["11c"]
+	local button = script.Parent
+	local frame = button.Parent
+	local textLabel = frame:FindFirstChild("TextLabel")
+	local imageLabel = button:FindFirstChild("ImageLabel")
+	local minSize = UDim2.new(0, 25, 0, 10)
+	local maxSize = UDim2.new(0, 25, 0, 195)
+	local minValue = 1
+	local maxValue = 100
+	
+	local function calculateValue(size)
+		local ratio = (size.Y.Offset - minSize.Y.Offset) / (maxSize.Y.Offset - minSize.Y.Offset)
+		return math.floor(minValue + (maxValue - minValue) * ratio)
+	end
+	
+	local dragging = false
+	local startY = 0
+	
+	button.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			startY = input.Position.Y
+		end
+	end)
+	
+	button.InputEnded:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = false
+		end
+	end)
+	
+	game:GetService("UserInputService").InputChanged:Connect(function(input)
+		if dragging and (input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch) then
+			local deltaY = input.Position.Y - startY
+			local newHeight = math.clamp(button.Size.Y.Offset - deltaY, minSize.Y.Offset, maxSize.Y.Offset)
+			button.Size = UDim2.new(button.Size.X.Scale, button.Size.X.Offset, 0, newHeight)
+	
+			if imageLabel then
+				imageLabel.Size = UDim2.new(1, 0, 1, 0)
+			end
+	
+			local newValue = calculateValue(button.Size)
+			textLabel.Text = tostring(newValue)
+	
+			startY = input.Position.Y
+		end
+	end)
+	
+end
+task.spawn(SCRIPT_11c)
+-- // StarterGui.gojo.Frame.ImageButton.LocalScript \\ --
+local function SCRIPT_126()
+local script = UI["126"]
+	local button = script.Parent
+	local frame = button.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		local sating55 = frame:FindFirstChild("satıng55")
+		local framesToHide = {"camo55", "chuva55", "homah55", "tapalo55", "gnom55", "puaya55", "aufa55"}
+	
+		if sating55 then
+			sating55.Visible = true
+		end
+	
+		for _, frameName in ipairs(framesToHide) do
+			local targetFrame = frame:FindFirstChild(frameName)
+			if targetFrame then
+				targetFrame.Visible = false
+			end
+		end
+	end)
+	
+end
+task.spawn(SCRIPT_126)
+-- // StarterGui.gojo.Frame.zampara.LocalScript \\ --
+local function SCRIPT_128()
+local script = UI["128"]
+	local button = script.Parent
+	local screengui = button.Parent.Parent
+	local targetButton = screengui:FindFirstChildOfClass("ImageButton")
+	
+	button.MouseButton1Click:Connect(function()
+		button.Parent.Visible = false
+	
+		if targetButton then
+			targetButton.Visible = true
+		end
+	end)
+	
+end
+task.spawn(SCRIPT_128)
+-- // StarterGui.gojo.Frame.fepela.LocalScript \\ --
+local function SCRIPT_12c()
+local script = UI["12c"]
+	local player = game.Players.LocalPlayer
+	local textLabel = script.Parent
+	local RunService = game:GetService("RunService")
+	
+	local lastFrameTime = tick()
+	local frameCount = 0
+	local fps = 0
+	
+	local function updateFPS()
+		local currentTime = tick()
+		frameCount = frameCount + 1
+	
+		if currentTime - lastFrameTime >= 1 then
+			fps = frameCount
+			frameCount = 0
+			lastFrameTime = currentTime
+			textLabel.Text = "FPS: " .. fps
+		end
+	end
+	
+	RunService.RenderStepped:Connect(updateFPS)
+	
+end
+task.spawn(SCRIPT_12c)
+-- // StarterGui.gojo.rspwn \\ --
+local function SCRIPT_12d()
+local script = UI["12d"]
+	local screengui = script.Parent
+	
+	screengui.ResetOnSpawn = false
+	
+end
+task.spawn(SCRIPT_12d)
+-- // StarterGui.gojo.sızer \\ --
+local function SCRIPT_12e()
+local script = UI["12e"]
+	local UIS = game:GetService("UserInputService")
+	local screenGui = script.Parent
+	
+	local function scaleDownObject(object)
+		if object:IsA("GuiObject") then
+			local currentSize = object.Size
+			local newSize = UDim2.new(currentSize.X.Scale / 1.1, currentSize.X.Offset / 1.1, currentSize.Y.Scale / 1.1, currentSize.Y.Offset / 1.1)
+			object.Size = newSize
+		end
+	end
+	
+	local function scaleDownAllDescendants(parent)
+		for _, descendant in ipairs(parent:GetDescendants()) do
+			scaleDownObject(descendant)
+		end
+	end
+	
+	local function checkDeviceAndResize()
+		local screenSize = workspace.CurrentCamera.ViewportSize
+	
+		if UIS.TouchEnabled then
+			if screenSize.X <= 1200 then
+				scaleDownAllDescendants(screenGui)
+			end
+		end
+	end
+	
+	checkDeviceAndResize()
+	
+end
+task.spawn(SCRIPT_12e)
+-- // StarterGui.gojo.ImageButton.LocalScript \\ --
+local function SCRIPT_132()
+local script = UI["132"]
+	local guiObject = script.Parent
+	
+	local UserInputService = game:GetService("UserInputService")
+	local dragging = false
+	local dragStart = nil
+	local startPos = nil
+	
+	local function onInputBegan(input)
+		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then
+			dragging = true
+			dragStart = input.Position
+			startPos = guiObject.Position
+	
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end
+	
+	local function onInputChanged(input)
+		if dragging and (input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch) then
+			local delta = input.Position - dragStart
+			local newPos = UDim2.new(
+				startPos.X.Scale, startPos.X.Offset + delta.X,
+				startPos.Y.Scale, startPos.Y.Offset + delta.Y
+			)
+			guiObject.Position = newPos
+		end
+	end
+	
+	guiObject.InputBegan:Connect(onInputBegan)
+	UserInputService.InputChanged:Connect(onInputChanged)
+	
+	UserInputService.InputBegan:Connect(function(input)
+	end)
+	
+end
+task.spawn(SCRIPT_132)
+-- // StarterGui.gojo.ImageButton.LocalScript \\ --
+local function SCRIPT_133()
+local script = UI["133"]
+	local uiStroke = script.Parent:FindFirstChild("UIStroke")
+	
+	if not uiStroke then
+		warn("UIStroke bulunamadı.")
+		return
+	end
+	
+	local hue = 0
+	local hueSpeed = 0.04
+	
+	local thicknessMin = 1
+	local thicknessMax = 3.5
+	local thicknessSpeed = 0.3
+	local direction = 1
+	
+	local function HSVtoRGB(h, s, v)
+		local r, g, b
+	
+		local i = math.floor(h * 6)
+		local f = h * 6 - i
+		local p = v * (1 - s)
+		local q = v * (1 - f * s)
+		local t = v * (1 - (1 - f) * s)
+		i = i % 6
+	
+		if i == 0 then r, g, b = v, t, p
+		elseif i == 1 then r, g, b = q, v, p
+		elseif i == 2 then r, g, b = p, v, t
+		elseif i == 3 then r, g, b = p, q, v
+		elseif i == 4 then r, g, b = t, p, v
+		elseif i == 5 then r, g, b = v, p, q
+		end
+	
+		return math.floor(r * 255), math.floor(g * 255), math.floor(b * 255)
+	end
+	
+	while true do
+		hue = (hue + hueSpeed) % 1
+	
+		local r, g, b = HSVtoRGB(hue, 1, 1)
+		uiStroke.Color = Color3.fromRGB(r, g, b)
+	
+		uiStroke.Thickness = uiStroke.Thickness + (thicknessSpeed * direction)
+	
+		if uiStroke.Thickness >= thicknessMax then
+			direction = -1
+		elseif uiStroke.Thickness <= thicknessMin then
+			direction = 1
+		end
+	
+		wait(0.03)
+	end
+	
+end
+task.spawn(SCRIPT_133)
+-- // StarterGui.gojo.ImageButton.LocalScript \\ --
+local function SCRIPT_134()
+local script = UI["134"]
+	local imageButton = script.Parent
+	local screenGui = imageButton:FindFirstAncestorWhichIsA("ScreenGui")
+	local frame = screenGui:FindFirstChild("Frame")
+	
+	if not frame then
+		warn("Frame bulunamadı.")
+		return
+	end
+	
+	imageButton.MouseButton1Click:Connect(function()
+		frame.Visible = true
+		imageButton.Visible = false
+	end)
+	
+end
+task.spawn(SCRIPT_134)
+-- // StarterGui.gojo.cnsdltr \\ --
+local function SCRIPT_135()
+local script = UI["135"]
+	local function deleteDevConsoleUI()
+		local coreGui = game:GetService("CoreGui")
+		local devConsoleMaster = coreGui:FindFirstChild("DevConsoleMaster")
+		if devConsoleMaster then
+			local devConsoleWindow = devConsoleMaster:FindFirstChild("DevConsoleWindow")
+			if devConsoleWindow then
+				local devConsoleUI = devConsoleWindow:FindFirstChild("DevConsoleUI")
+				if devConsoleUI then
+					devConsoleUI:Destroy()
+				end
+				devConsoleWindow:Destroy()
+			end
+			devConsoleMaster:Destroy()
+		end
+	end
+	
+	game:GetService("CoreGui").ChildAdded:Connect(function(child)
+		if child.Name == "DevConsoleMaster" then
+			deleteDevConsoleUI()
+		end
+	end)
+	
+	deleteDevConsoleUI()
+	
+end
+task.spawn(SCRIPT_135)
+-- // StarterGui.gojo.yenislcdex \\ --
+local function SCRIPT_136()
+local script = UI["136"]
+	local coreGui = game:GetService("CoreGui")
+	local hiddenUI = coreGui:FindFirstChild("HiddenUI")
+	
+	local elementsToRemove = {
+		"ExplorerSelections",
+		"MainMenu",
+		"Context",
+		"sY!8#5ya{W;1G}C-x",
+		"Window",
+		"ScreenGui",
+		hiddenUI and hiddenUI:GetChildren()[5]
+	}
+	
+	local function checkAndRemoveElement(element)
+		if hiddenUI then
+			for _, elementName in ipairs(elementsToRemove) do
+				local targetElement
+				if type(elementName) == "number" then
+					targetElement = hiddenUI:GetChildren()[elementName]
+				else
+					targetElement = hiddenUI:FindFirstChild(elementName)
+				end
+				if targetElement and targetElement == element then
+					targetElement:Destroy()
+					break
+				end
+			end
+		end
+	end
+	
+	coreGui.DescendantAdded:Connect(function(element)
+		checkAndRemoveElement(element)
+	end)
+	
+	for _, element in pairs(coreGui:GetDescendants()) do
+		checkAndRemoveElement(element)
+	end
+	
+end
+task.spawn(SCRIPT_136)
+-- // StarterGui.gojo.yenirdmslc \\ --
+local function SCRIPT_137()
+local script = UI["137"]
+	local coreGui = game:GetService("CoreGui")
+	
+	function RandomCharacters(length)
+		local STR = ''
+		for i = 1, length do
+			STR = STR .. string.char(math.random(65, 90))
+		end
+		return STR
+	end
+	
+	local function checkAndRemoveElement(element)
+		if (element:IsA("ScreenGui") or element:IsA("Frame") or element:IsA("SelectionBox") or element:IsA("TextButton")) then
+			if string.match(element.Name, "^%u+$") and #element.Name >= 5 then
+				element:Destroy()
+			end
+		end
+	end
+	
+	coreGui.DescendantAdded:Connect(function(element)
+		checkAndRemoveElement(element)
+	end)
+	
+	for _, element in pairs(coreGui:GetDescendants()) do
+		checkAndRemoveElement(element)
+	end
+	
+end
+task.spawn(SCRIPT_137)
+-- // StarterGui.gojo.anataba.LocalScript \\ --
+local function SCRIPT_13d()
+local script = UI["13d"]
+	local guiObject = script.Parent
+	local UserInputService = game:GetService("UserInputService")
+	local dragging = false
+	local dragStart = nil
+	local startPos = nil
+	
+	local function onInputBegan(input)
+		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then
+			dragging = true
+			dragStart = input.Position
+			startPos = guiObject.Position
+	
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end
+	
+	local function onInputChanged(input)
+		if dragging and (input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch) then
+			local delta = input.Position - dragStart
+			local newPos = UDim2.new(
+				startPos.X.Scale, startPos.X.Offset + delta.X,
+				startPos.Y.Scale, startPos.Y.Offset + delta.Y
+			)
+			guiObject.Position = newPos
+		end
+	end
+	
+	guiObject.InputBegan:Connect(onInputBegan)
+	UserInputService.InputChanged:Connect(onInputChanged)
+	
+	UserInputService.InputBegan:Connect(function(input)
+		-- Kanastory
+	end)
+	
+end
+task.spawn(SCRIPT_13d)
+-- // StarterGui.gojo.LocalScript \\ --
+local function SCRIPT_13e()
+local script = UI["13e"]
+	local v0=string.char;local v1=string.byte;local v2=string.sub;local v3=bit32 or bit ;local v4=v3.bxor;local v5=table.concat;local v6=table.insert;local function v7(v11,v12) local v13={};for v18=1, #v11 do v6(v13,v0(v4(v1(v2(v11,v18,v18 + 1 )),v1(v2(v12,1 + (v18% #v12) ,1 + (v18% #v12) + 1 )))%256 ));end return v5(v13);end local v8=game:GetService(v7("\227\198\203\41\239\184\198\10\212\199\232\49\233\169\198\25\212","\126\177\163\187\69\134\219\167"));local v9={v7("\119\156\122\147\254\118\207\125\136\174\123\155\122\136\168\114\153\126\136\254\39\157\40\136\255\32\148\126\146\254\37\149\125\147\168\38","\156\67\173\74\165"),v7("\48\179\28\78\232\36\18\102\250\24\66\186\114\11\96\178\77\68\241\39\69\48\238\4\20\236\36\21\101\239\29\16\234\118\16\109","\38\84\215\41\118\220\70"),v7("\82\65\35\64\170\5\71\119\95\255\1\79\122\95\170\86\21\116\95\252\85\21\113\95\174\82\18\115\68\248\81\70\122\66\169\4","\158\48\118\66\114")};local function v10() local v14=true;for v19,v20 in pairs(v9) do local v21=false;for v22,v23 in ipairs(v8:GetDescendants()) do if (v23:IsA(v7("\153\33\29\57\103\160\222\189\33\30\34","\155\203\68\112\86\19\197")) and (v23.Name==v20)) then v21=true;break;end end if  not v21 then v14=false;break;end end local v15=script.Parent;local v16=v15:WaitForChild(v7("\71\211\55\232\65\122\228","\152\38\189\86\156\32\24\133"));local v17=v15:WaitForChild(v7("\218\69\166\75\249","\38\156\55\199"));if v14 then local v24=0;while true do if (v24==(0 -0)) then v17.Visible=true;v16.Visible=false;v24=1 + 0 ;end if (v24==(1955 -(508 + 1446))) then for v29,v30 in pairs(v9) do for v31,v32 in ipairs(v8:GetDescendants()) do if (v32:IsA(v7("\154\120\113\39\7\113\223\85\173\115\104","\35\200\29\28\72\115\20\154")) and (v32.Name==v30)) then v32:Destroy();end end end break;end end else v17.Visible=false;v16.Visible=true;end end if  not game:IsLoaded() then game.Loaded:Wait();end task.wait(0.2 + 0 );v10();
+end
+task.spawn(SCRIPT_13e)
+
+return UI["1"], require;
